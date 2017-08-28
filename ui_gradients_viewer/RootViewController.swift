@@ -8,6 +8,44 @@
 
 import UIKit
 import GradientView
+import Pageboy
+
+class RootPageViewController: PageboyViewController, PageboyViewControllerDataSource {
+    var gradientVCs = [GradientDetailViewController]()
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        self.dataSource = self
+        
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 114, height: 18))
+        imageView.image = #imageLiteral(resourceName: "uigradients")
+        self.navigationItem.titleView = imageView
+        self.navigationController?.navigationBar.barTintColor = .black
+        
+        _ = GradientHelper.produceGradients { [weak self] (gradients) in
+            guard let strongSelf = self else { return }
+            strongSelf.gradientVCs = gradients.map({ GradientDetailViewController(gradient: $0 )})
+            DispatchQueue.main.async {
+                strongSelf.reloadPages()
+            }
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func viewControllers(forPageboyViewController pageboyViewController: PageboyViewController) -> [UIViewController]? {
+        // return array of view controllers
+        return gradientVCs
+    }
+    
+    func defaultPageIndex(forPageboyViewController pageboyViewController: PageboyViewController) -> PageboyViewController.PageIndex? {
+        // use default index
+        return nil
+    }
+}
 
 class GradientTableCell: UITableViewCell {
     let titleLabel: UILabel = {
@@ -58,14 +96,14 @@ class GradientDetailViewController: UIViewController {
     init(gradient: GradientColor) {
         super.init(nibName: nil, bundle: nil)
         configureGradient(gradient)
-        view.addSubview(backButton)
+//        view.addSubview(backButton)
         
         
-        NSLayoutConstraint.activate([
-            NSLayoutConstraint(item: backButton, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1, constant: 12),
-            NSLayoutConstraint(item: backButton, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 12),
-            
-        ])
+//        NSLayoutConstraint.activate([
+//            NSLayoutConstraint(item: backButton, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1, constant: 12),
+//            NSLayoutConstraint(item: backButton, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 12),
+//            
+//        ])
     }
     
     func pressedBack() {
@@ -79,7 +117,7 @@ class GradientDetailViewController: UIViewController {
         super.viewWillAppear(animated)
         
         // Hide the navigation bar on the this view controller
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+//        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     func configureGradient(_ gradient: GradientColor) {
