@@ -1,15 +1,18 @@
 PODS:
   - GradientView (2.2.0)
+  - Pageboy (1.4.0)
   - SwiftHEXColors (1.1.0)
 
 DEPENDENCIES:
   - GradientView
+  - Pageboy
   - SwiftHEXColors
 
 SPEC CHECKSUMS:
   GradientView: a5397174594f158dc1511127f2004ec25c9d2300
+  Pageboy: e81348c9f5193951f0be909fc332a3afe668d642
   SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
 
-PODFILE CHECKSUM: a23ea0ba708c62ad696ef0ede75738dd54c8b72a
+PODFILE CHECKSUM: a23f7e15a91efca41395ab925a4d6a1a3397d397
 
 COCOAPODS: 1.2.1

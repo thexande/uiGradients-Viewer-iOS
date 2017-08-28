@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pageboy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ui_gradients_viewer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>89E285A7849BCA8A670B5D3FC316746A</key>
+		<key>639ADF14D3D17E0E337CF4310D623267</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +57,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B40FD1D5784587EED2F3732E3813E35F</key>
+		<key>D1A536D32A3AB205243F6F605B3B5BCF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D88A423C8D8C8ECCC5487BB2709F3700</key>
 		<dict>
 			<key>primary</key>
 			<true/>
