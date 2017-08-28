@@ -47,26 +47,39 @@ class GradientDetailViewController: UIViewController {
         return label
     }()
     
+    lazy var backButton: UIButton = {
+        let button = UIButton()
+        button.addTarget(self, action: #selector(pressedBack), for: .touchUpInside)
+        button.setImage(#imageLiteral(resourceName: "back_button"), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     init(gradient: GradientColor) {
         super.init(nibName: nil, bundle: nil)
         configureGradient(gradient)
+        view.addSubview(backButton)
         
-        self.title = gradient.title
+        
+        NSLayoutConstraint.activate([
+            NSLayoutConstraint(item: backButton, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1, constant: 12),
+            NSLayoutConstraint(item: backButton, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 12),
+            
+        ])
+    }
+    
+    func pressedBack() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
-        self.navigationController?.navigationBar.tintColor = .clear
-        self.navigationController?.navigationBar.backgroundColor = .clear
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     func configureGradient(_ gradient: GradientColor) {
@@ -74,6 +87,8 @@ class GradientDetailViewController: UIViewController {
         view.insertSubview(gradientView, at: 0)
         titleLabel.text = gradient.title.uppercased()
         view.addSubview(titleLabel)
+        
+        self.navigationController?.navigationBar.barTintColor = .black
         
         let viewsDict = ["title":titleLabel, "grad":gradientView]
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[title]-12-|", options: [], metrics: nil, views: viewsDict))
@@ -86,6 +101,13 @@ class GradientDetailViewController: UIViewController {
 
 class RootViewController: UITableViewController {
     var gradients: [GradientColor]?
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
