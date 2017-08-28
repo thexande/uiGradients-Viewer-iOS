@@ -7,6 +7,7 @@ target 'ui_gradients_viewer' do
 
   # Pods for ui_gradients_viewer
     pod 'GradientView'
+    pod 'SwiftHEXColors'
 
   target 'ui_gradients_viewerTests' do
     inherit! :search_paths

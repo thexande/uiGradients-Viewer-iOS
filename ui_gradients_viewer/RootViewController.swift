@@ -7,45 +7,15 @@
 //
 
 import UIKit
-
-
-extension UIColor {
-    public convenience init?(hexString: String) {
-        let r, g, b, a: CGFloat
-        
-        if hexString.hasPrefix("#") {
-            let start = hexString.index(hexString.startIndex, offsetBy: 1)
-            let hexColor = hexString.substring(from: start)
-            
-            if hexColor.characters.count == 8 {
-                let scanner = Scanner(string: hexColor)
-                var hexNumber: UInt64 = 0
-                
-                if scanner.scanHexInt64(&hexNumber) {
-                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
-                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
-                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
-                    a = CGFloat(hexNumber & 0x000000ff) / 255
-                    
-                    self.init(red: r, green: g, blue: b, alpha: a)
-                    return
-                }
-            }
-        }
-        
-        return nil
-    }
-}
+import GradientView
+import SwiftHEXColors
 
 struct GradientColor {
     let title: String
-    let hexOne: String
-    let hexTwo: String
-    let colorOne: UIColor
-    let colorTwo: UIColor
+    let colors: [[String:UIColor]]
 }
 
-class RootViewController: UITableViewController {
+class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,21 +29,51 @@ class RootViewController: UITableViewController {
         self.title = "woot"
         
         
-        makeGetCall()
-        
-        
-        
+        GradientHelper.produceGradients { [weak self] (gradients) in
+            print(gradients)
+            guard let strongSelf = self else { return }
+            let gradientView = GradientView()
+            gradientView.translatesAutoresizingMaskIntoConstraints = false
+            
+            guard let colors = gradients.first?.colors.map({ (colorDict) -> UIColor? in
+                return colorDict.values.first
+            }).flatMap({ $0 }) else { return }
+            
+            gradientView.colors = colors
+            
+            DispatchQueue.main.async {
+                strongSelf.view.addSubview(gradientView)
+                
+                NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[grad]|", options: [], metrics: nil, views: ["grad":gradientView]))
+                NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[grad]|", options: [], metrics: nil, views: ["grad":gradientView]))
+            }
+            
+        }
     }
+}
 
+class GradientHelper {
+    static func produceGradients(_ completion: @escaping([GradientColor]) -> Void) {
+        GradientHelper.fetchGradientData { (gradientData) in
+            let gradientStructs: [GradientColor] = gradientData.map({ (grad) -> GradientColor? in
+                guard let gradName = grad["name"] as? String, let colors = grad["colors"] as? [String] else { return nil }
+                
+                let colorDicts = colors.map({ (colorHexString) -> [String:UIColor]? in
+                    guard let color = UIColor(hexString: colorHexString) else { return nil }
+                    return [colorHexString:color]
+                }).flatMap({ $0 })
+                
+                return GradientColor(title: gradName, colors: colorDicts)
+            }).flatMap({$0})
+            
+            completion(gradientStructs)
+        }
+    }
     
-    func makeGetCall() {
+    static func fetchGradientData(_ completion: @escaping([[String:Any]]) -> Void) {
         // Set up the URL request
         let todoEndpoint: String = "https://raw.githubusercontent.com/Ghosh/uiGradients/master/gradients.json"
-        guard let url = URL(string: todoEndpoint) else {
-            print("Error: cannot create URL")
-            return
-        }
-        
+        guard let url = URL(string: todoEndpoint) else { return }
         
         let urlRequest = URLRequest(url: url)
         // set up the session
@@ -82,58 +82,21 @@ class RootViewController: UITableViewController {
         
         // make the request
         let task = session.dataTask(with: urlRequest) { (data, response, error) in
-            
-            if let data = data {
-                print(String(data: data, encoding: .utf8) ?? "NO DATA")
-            }
-            
-            if let response = response {
-                print(response)
-            }
-            
-            // check for any errors
-            guard error == nil else {
-                print("error calling GET on /todos/1")
-                print(error!)
+            guard let responseData = data, error == nil else {
+                completion([])
                 return
             }
-            // make sure we got data
-            guard let responseData = data else {
-                print("Error: did not receive data")
-                return
-            }
-            // parse the result as JSON, since that's what the API provides
             do {
-                guard let gradients = try JSONSerialization.jsonObject(with: responseData, options: []) as? [[String: Any]] else {
+                guard let gradientData = try JSONSerialization.jsonObject(with: responseData, options: []) as? [[String: Any]] else {
                     print("error trying to convert data to JSON")
                     return
                 }
-                
-                for grad in gradients {
-                    guard let gradName = grad["name"] as? String else { return }
-                    guard let colors = grad["colors"] as? [String] else { return }
-                    print("name here \(gradName)")
-                    print("colors here \(colors)")
-                    
-                    
-                }
-                
-//                print("The todo is: " + todo.description)
-                
-                // the todo object is a dictionary
-                // so we just access the title using the "title" key
-                // so check for a title and print it if we have one
-//                guard let todoTitle = todo["name"] as? String else {
-//                    print("Could not get todo title from JSON")
-//                    return
-//                }
-//                print("The title is: " + todoTitle)
+                completion(gradientData)
             } catch  {
                 print("failed to serialize data to JSON")
                 return
             }
         }
-        
         task.resume()
     }
 }
