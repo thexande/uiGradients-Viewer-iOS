@@ -10,33 +10,78 @@ import UIKit
 import GradientView
 
 class GradientTableCell: UITableViewCell {
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    func configureGradient(_ gradient: GradientColor) {
+        let gradientView = GradientHelper.produceGradientView(gradient)
+        contentView.insertSubview(gradientView, at: 0)
+        titleLabel.text = gradient.title.uppercased()
+        contentView.addSubview(titleLabel)
+        
+        let viewsDict = ["title":titleLabel, "grad":gradientView]
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[title]-12-|", options: [], metrics: nil, views: viewsDict))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[title]", options: [], metrics: nil, views: viewsDict))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[grad]|", options: [], metrics: nil, views: viewsDict))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[grad]|", options: [], metrics: nil, views: viewsDict))
+    }
+    
+    override func prepareForReuse() {
+        for view in contentView.subviews {
+            view.removeFromSuperview()
+        }
+    }
+}
+
+class GradientDetailViewController: UIViewController {
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 30)
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    init(gradient: GradientColor) {
+        super.init(nibName: nil, bundle: nil)
+        configureGradient(gradient)
+        
+        self.title = gradient.title
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureGradient(_ gradient: GradientColor) {
-        let gradientView = produceGradientView(gradient)
-        contentView.addSubview(gradientView)
-        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[grad]|", options: [], metrics: nil, views: ["grad":gradientView]))
-        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[grad]|", options: [], metrics: nil, views: ["grad":gradientView]))
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        self.navigationController?.navigationBar.tintColor = .clear
+        self.navigationController?.navigationBar.backgroundColor = .clear
     }
     
-    func produceGradientView(_ gradient: GradientColor) -> GradientView {
-        let gradientView = GradientView()
-        gradientView.translatesAutoresizingMaskIntoConstraints = false
+    func configureGradient(_ gradient: GradientColor) {
+        let gradientView = GradientHelper.produceGradientView(gradient)
+        view.insertSubview(gradientView, at: 0)
+        titleLabel.text = gradient.title.uppercased()
+        view.addSubview(titleLabel)
         
-        let colors = gradient.colors.map({ (colorDict) -> UIColor? in
-            return colorDict.values.first
-        }).flatMap({ $0 })
-        
-        gradientView.colors = colors
-        return gradientView
+        let viewsDict = ["title":titleLabel, "grad":gradientView]
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[title]-12-|", options: [], metrics: nil, views: viewsDict))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[title]", options: [], metrics: nil, views: viewsDict))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[grad]|", options: [], metrics: nil, views: viewsDict))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[grad]|", options: [], metrics: nil, views: viewsDict))
     }
+    
 }
 
 class RootViewController: UITableViewController {
@@ -44,21 +89,29 @@ class RootViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
+        tableView.tableFooterView = UIView()
         tableView.register(GradientTableCell.self, forCellReuseIdentifier: NSStringFromClass(GradientTableCell.self))
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
-        self.navigationController?.navigationBar.backgroundColor = .clear
-        self.title = "woot"
         
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 114, height: 18))
+        imageView.image = #imageLiteral(resourceName: "uigradients")
+        self.navigationItem.titleView = imageView
+        self.navigationController?.navigationBar.barTintColor = .black
         
-        GradientHelper.produceGradients { [weak self] (gradients) in
+        _ = GradientHelper.produceGradients { [weak self] (gradients) in
             guard let strongSelf = self else { return }
             strongSelf.gradients = gradients
-            strongSelf.tableView.reloadData()
+            DispatchQueue.main.async {
+                strongSelf.tableView.reloadData()
+            }
         }
+    }
+}
+
+// MARK:- UITableViewDataSource, UITableViewDelegate
+extension RootViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let gradients = gradients else { return }
+        navigationController?.pushViewController(GradientDetailViewController(gradient: gradients[indexPath.row]), animated: true)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -74,7 +127,7 @@ class RootViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 100
     }
 }
 

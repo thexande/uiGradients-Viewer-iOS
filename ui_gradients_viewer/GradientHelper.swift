@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftHEXColors
+import GradientView
 
 struct GradientColor {
     let title: String
@@ -15,6 +16,18 @@ struct GradientColor {
 }
 
 class GradientHelper {
+    static func produceGradientView(_ gradient: GradientColor) -> GradientView {
+        let gradientView = GradientView()
+        gradientView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let colors = gradient.colors.map({ (colorDict) -> UIColor? in
+            return colorDict.values.first
+        }).flatMap({ $0 })
+        
+        gradientView.colors = colors
+        return gradientView
+    }
+    
     static func produceGradients(_ completion: @escaping([GradientColor]) -> Void) {
         GradientHelper.fetchGradientData { (gradientData) in
             let gradientStructs: [GradientColor] = gradientData.map({ (grad) -> GradientColor? in
