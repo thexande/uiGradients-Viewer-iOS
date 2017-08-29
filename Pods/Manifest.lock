@@ -1,24 +1,18 @@
 PODS:
-  - FontAwesome.swift (1.2.0)
   - GradientView (2.2.0)
   - Pageboy (1.4.0)
-  - SlideMenuControllerSwift (3.0.1)
   - SwiftHEXColors (1.1.0)
 
 DEPENDENCIES:
-  - FontAwesome.swift
   - GradientView
   - Pageboy
-  - SlideMenuControllerSwift
   - SwiftHEXColors
 
 SPEC CHECKSUMS:
-  FontAwesome.swift: 60063e3f19ba4801155d4b0f2334ab7585763ab3
   GradientView: a5397174594f158dc1511127f2004ec25c9d2300
   Pageboy: e81348c9f5193951f0be909fc332a3afe668d642
-  SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
   SwiftHEXColors: 8f7e364df7929e32cff9f9eeb044bb215167d6be
 
-PODFILE CHECKSUM: 9273c342c6ddf1a131243ea38c544d6c7bbf8bc6
+PODFILE CHECKSUM: c1d66a185d4da1e415550c005c623bafbc01b68f
 
 COCOAPODS: 1.2.1

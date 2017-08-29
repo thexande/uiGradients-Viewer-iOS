@@ -9,8 +9,7 @@ target 'ui_gradients_viewer' do
     pod 'GradientView'
     pod 'SwiftHEXColors'
     pod 'Pageboy'
-    pod 'SlideMenuControllerSwift'
-    pod 'FontAwesome.swift'
+  
   target 'ui_gradients_viewerTests' do
     inherit! :search_paths
     # Pods for testing

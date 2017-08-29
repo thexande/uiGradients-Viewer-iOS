@@ -126,17 +126,18 @@
 				B00186C61F53C8550027FB3A /* GradientHelper.swift */,
 			);
 			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B0A4610E1F53B65C0075B9F6 = {
 			isa = PBXGroup;
 			children = (
+				5DFC5D042C38E9098F71357A /* Frameworks */,
+				1603381F4D8093D17796F1EE /* Pods */,
+				B0A461181F53B65C0075B9F6 /* Products */,
 				B0A461191F53B65C0075B9F6 /* ui_gradients_viewer */,
 				B0A4612E1F53B65C0075B9F6 /* ui_gradients_viewerTests */,
 				B0A461391F53B65C0075B9F6 /* ui_gradients_viewerUITests */,
-				B0A461181F53B65C0075B9F6 /* Products */,
-				1603381F4D8093D17796F1EE /* Pods */,
-				5DFC5D042C38E9098F71357A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,8 +156,8 @@
 			children = (
 				B0B7C0381F55341E007BE6DF /* Application */,
 				B0B7C0311F553384007BE6DF /* Controllers */,
-				B0B7C0301F553375007BE6DF /* Views */,
 				B00186C51F53C8480027FB3A /* Helpers */,
+				B0B7C0301F553375007BE6DF /* Views */,
 			);
 			path = ui_gradients_viewer;
 			sourceTree = "<group>";
@@ -164,8 +165,8 @@
 		B0A4612E1F53B65C0075B9F6 /* ui_gradients_viewerTests */ = {
 			isa = PBXGroup;
 			children = (
-				B0A4612F1F53B65C0075B9F6 /* ui_gradients_viewerTests.swift */,
 				B0A461311F53B65C0075B9F6 /* Info.plist */,
+				B0A4612F1F53B65C0075B9F6 /* ui_gradients_viewerTests.swift */,
 			);
 			path = ui_gradients_viewerTests;
 			sourceTree = "<group>";
@@ -173,8 +174,8 @@
 		B0A461391F53B65C0075B9F6 /* ui_gradients_viewerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B0A4613A1F53B65C0075B9F6 /* ui_gradients_viewerUITests.swift */,
 				B0A4613C1F53B65C0075B9F6 /* Info.plist */,
+				B0A4613A1F53B65C0075B9F6 /* ui_gradients_viewerUITests.swift */,
 			);
 			path = ui_gradients_viewerUITests;
 			sourceTree = "<group>";
@@ -185,28 +186,31 @@
 				B0B7C0321F55339E007BE6DF /* GradientTableCell.swift */,
 			);
 			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B0B7C0311F553384007BE6DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */,
-				B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */,
 				B0B7C0341F5533BB007BE6DF /* GradientDetailViewController.swift */,
+				B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */,
 				B0B7C0361F5533EC007BE6DF /* RootTableViewController.swift */,
+				B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */,
 			);
 			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		B0B7C0381F55341E007BE6DF /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */,
-				B0A461231F53B65C0075B9F6 /* LaunchScreen.storyboard */,
-				B0A461261F53B65C0075B9F6 /* Info.plist */,
 				B0A461211F53B65C0075B9F6 /* Assets.xcassets */,
+				B0A461261F53B65C0075B9F6 /* Info.plist */,
+				B0A461231F53B65C0075B9F6 /* LaunchScreen.storyboard */,
 			);
 			name = Application;
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,6 +544,7 @@
 				B0A461241F53B65C0075B9F6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -646,7 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9L49SS68XP;
-				INFOPLIST_FILE = ui_gradients_viewer/Info.plist;
+				INFOPLIST_FILE = ui_gradients_viewer/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -660,7 +665,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9L49SS68XP;
-				INFOPLIST_FILE = ui_gradients_viewer/Info.plist;
+				INFOPLIST_FILE = ui_gradients_viewer/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
