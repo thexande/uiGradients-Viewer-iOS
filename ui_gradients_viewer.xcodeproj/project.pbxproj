@@ -11,6 +11,7 @@
 		22CFFA91DD3FEF5078EB3005 /* Pods_ui_gradients_viewerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EB301B369B08F866254F9D /* Pods_ui_gradients_viewerTests.framework */; };
 		6EBE5D3D77A1A5C090ADF0C0 /* Pods_ui_gradients_viewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D7E6E441D1C497DBBF5CC4 /* Pods_ui_gradients_viewerUITests.framework */; };
 		B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00186C61F53C8550027FB3A /* GradientHelper.swift */; };
+		B00186C91F54F33B0027FB3A /* SelectGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */; };
 		B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */; };
 		B0A4611D1F53B65C0075B9F6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611C1F53B65C0075B9F6 /* RootViewController.swift */; };
 		B0A461221F53B65C0075B9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A461211F53B65C0075B9F6 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		78ED629103DEDE16A5598CB8 /* Pods-ui_gradients_viewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ui_gradients_viewerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ui_gradients_viewerUITests/Pods-ui_gradients_viewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		87B7BB6F89EC192F1C1AC996 /* Pods_ui_gradients_viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ui_gradients_viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00186C61F53C8550027FB3A /* GradientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
+		B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGradientViewController.swift; sourceTree = "<group>"; };
 		B0A461171F53B65C0075B9F6 /* ui_gradients_viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_gradients_viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A4611C1F53B65C0075B9F6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				B0A461211F53B65C0075B9F6 /* Assets.xcassets */,
 				B0A461231F53B65C0075B9F6 /* LaunchScreen.storyboard */,
 				B0A461261F53B65C0075B9F6 /* Info.plist */,
+				B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */,
 			);
 			path = ui_gradients_viewer;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A4611D1F53B65C0075B9F6 /* RootViewController.swift in Sources */,
+				B00186C91F54F33B0027FB3A /* SelectGradientViewController.swift in Sources */,
 				B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 			);

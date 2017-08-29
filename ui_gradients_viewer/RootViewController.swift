@@ -9,19 +9,20 @@
 import UIKit
 import GradientView
 import Pageboy
+import FontAwesome_swift
 
 class RootPageViewController: PageboyViewController, PageboyViewControllerDataSource {
+    
     var gradientVCs = [GradientDetailViewController]()
+    let createVC = UINavigationController(rootViewController: CreateGradientViewController())
     
     init() {
         super.init(nibName: nil, bundle: nil)
         self.dataSource = self
         
-        
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 114, height: 18))
         imageView.image = #imageLiteral(resourceName: "uigradients")
         self.navigationItem.titleView = imageView
-        self.navigationController?.navigationBar.barTintColor = .black
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
             guard let strongSelf = self else { return }
@@ -44,6 +45,41 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
     func defaultPageIndex(forPageboyViewController pageboyViewController: PageboyViewController) -> PageboyViewController.PageIndex? {
         // use default index
         return nil
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        self.navigationController?.navigationBar.backgroundColor = .clear
+        
+        
+        let navItemImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        navItemImageView.image = #imageLiteral(resourceName: "hamburger_menu").withRenderingMode(.alwaysTemplate)
+        navItemImageView.contentMode = .scaleAspectFit
+        navItemImageView.tintColor = .white
+        navItemImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didPressOpenMenu)))
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navItemImageView)
+    }
+    
+    func didPressOpenMenu() {
+        let select = UINavigationController(rootViewController: SelectGradientViewController())
+        select.modalPresentationStyle = .overCurrentContext
+        present(select, animated: true, completion: nil)
+    }
+    
+    func didPressCreate() {
+        self.present(createVC, animated: true, completion: nil)
+    }
+}
+
+class CreateGradientViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = .black
     }
 }
 
