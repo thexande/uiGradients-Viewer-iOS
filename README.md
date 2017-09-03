@@ -1,4 +1,4 @@
-# UIGradients Viewer for iOS
+# uiGradients Viewer for iOS
 ### An open source application for viewing gradients posted on [UI Gradients](https://uigradients.com/).
 ![demo](image_assets/device_mockup.png?raw=true "Demo")
 
