@@ -1,6 +1,7 @@
 # uiGradients Viewer for iOS
 ### An open source application for viewing gradients posted on [UI Gradients](https://uigradients.com/).
 ![demo](image_assets/device_mockup.png?raw=true "Demo")
+![](image_assets/ui_gradients_viewer.gif)
 
 - Implements a full screen pager to view open sourced gradient color combinations
 - Supports interface rotation
