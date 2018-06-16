@@ -2,14 +2,10 @@
 
 Easily use gradients in UIKit. Gradient View is a simple UIView wrapper around CGGradient.
 
-Gradient View is tested on iOS 8. Released under the [MIT license](LICENSE).
-
-[![Version](https://img.shields.io/github/release/soffes/GradientView.svg)](https://github.com/soffes/GradientView/releases) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![CocoaPods compatible](https://img.shields.io/cocoapods/v/GradientView.svg)](https://cocoapods.org/pods/GradientView)
-
-| Swift Version | Crypto Version |
-| ------------- | -------------- |
-| 3.0           | 2.2.0          |
-| 2.2           | 2.1.1          |
+[![Version](https://img.shields.io/github/release/soffes/GradientView.svg)](https://github.com/soffes/GradientView/releases)
+![Swift Version](https://img.shields.io/badge/swift-4.0-orange.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/GradientView.svg)](https://cocoapods.org/pods/GradientView)
 
 
 ## Usage
@@ -35,16 +31,17 @@ gradientView.bottomBorderColor = UIColor.blueColor()
 view.addSubview(gradientView)
 ```
 
-See the [source](GradientView.swift) for full documentation.
+See the [source](GradientView/GradientView.swift) for full documentation.
 
 
 ## Example
 
-![Screenshot](http://soff.me/WetB/Screenshot.png) ![Screenshot](http://soff.me/Wg7G/Screenshot2.png)
+<img src="Example/Screenshots/Screenshot1@2x.png" width="320" alt="Screenshot 1"> <img src="Example/Screenshots/Screenshot2@2x.png" width="320" alt="Screenshot 2">
 
 Open up the included Xcode project for an example app.
 
 
 ## Installation
 
-Simply add the files in the <GradientView/GradientView.swift> to your project. Gradient View also supports installation with [Carthage](https://github.com/Carthage/Carthage) and [CocoaPods](https://cocoapods.org/pods/GradientView).
+Gradient View supports installation with [Carthage](https://github.com/Carthage/Carthage) or [CocoaPods](https://cocoapods.org/pods/GradientView). You can also simply add [GradientView.swift](GradientView/GradientView.swift) to your project if you’d prefer.
+
