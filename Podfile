@@ -9,6 +9,7 @@ target 'ui_gradients_viewer' do
     pod 'GradientView'
     pod 'SwiftHEXColors'
     pod 'Pageboy'
+    pod 'Pulley'
   
   target 'ui_gradients_viewerTests' do
     inherit! :search_paths

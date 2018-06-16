@@ -11,6 +11,18 @@ import GradientView
 import Pageboy
 
 class RootPageViewController: PageboyViewController, PageboyViewControllerDataSource {
+    func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
+        return gradientVCs.count
+    }
+    
+    func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
+        return gradientVCs[index]
+    }
+    
+    func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
+        return nil
+    }
+    
     var gradientVCs = [GradientDetailViewController]()
     
     init() {
@@ -32,16 +44,6 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    func viewControllers(forPageboyViewController pageboyViewController: PageboyViewController) -> [UIViewController]? {
-        // return array of view controllers
-        return gradientVCs
-    }
-    
-    func defaultPageIndex(forPageboyViewController pageboyViewController: PageboyViewController) -> PageboyViewController.PageIndex? {
-        // use default index
-        return nil
     }
     
     override func viewDidLoad() {
