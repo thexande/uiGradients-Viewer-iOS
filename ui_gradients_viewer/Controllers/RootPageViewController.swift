@@ -62,7 +62,7 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navItemImageView)
     }
     
-    func didPressOpenMenu() {
+    @objc func didPressOpenMenu() {
         let select = UINavigationController(rootViewController: SelectGradientViewController())
         select.modalPresentationStyle = .overCurrentContext
         present(select, animated: true, completion: nil)

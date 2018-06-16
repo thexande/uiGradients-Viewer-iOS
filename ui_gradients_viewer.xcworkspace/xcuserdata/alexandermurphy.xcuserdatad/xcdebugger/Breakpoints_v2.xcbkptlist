@@ -49,38 +49,6 @@
             endingLineNumber = "98"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ui_gradients_viewer.SelectGradientViewController.tableView (__ObjC.UITableView, didSelectRowAt : Foundation.IndexPath) -&gt; ()"
-                  moduleName = "ui_gradients_viewer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Desktop/ui_gradients_viewer/ui_gradients_viewer/SelectGradientViewController.swift"
-                  timestampString = "525668541.860337"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "480">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ui_gradients_viewer.SelectGradientViewController.(tableView (__ObjC.UITableView, didSelectRowAt : Foundation.IndexPath) -&gt; ()).(closure #1)"
-                  moduleName = "ui_gradients_viewer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Desktop/ui_gradients_viewer/ui_gradients_viewer/SelectGradientViewController.swift"
-                  timestampString = "525668541.86404"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

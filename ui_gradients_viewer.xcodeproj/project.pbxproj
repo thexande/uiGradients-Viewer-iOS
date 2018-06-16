@@ -125,7 +125,6 @@
 			children = (
 				B00186C61F53C8550027FB3A /* GradientHelper.swift */,
 			);
-			name = Helpers;
 			path = Helpers;
 			sourceTree = "<group>";
 		};
@@ -185,7 +184,6 @@
 			children = (
 				B0B7C0321F55339E007BE6DF /* GradientTableCell.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -197,7 +195,6 @@
 				B0B7C0361F5533EC007BE6DF /* RootTableViewController.swift */,
 				B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */,
 			);
-			name = Controllers;
 			path = Controllers;
 			sourceTree = "<group>";
 		};
@@ -209,7 +206,6 @@
 				B0A461261F53B65C0075B9F6 /* Info.plist */,
 				B0A461231F53B65C0075B9F6 /* LaunchScreen.storyboard */,
 			);
-			name = Application;
 			path = Application;
 			sourceTree = "<group>";
 		};
@@ -291,17 +287,20 @@
 					B0A461161F53B65C0075B9F6 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9L49SS68XP;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					B0A4612A1F53B65C0075B9F6 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9L49SS68XP;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B0A461161F53B65C0075B9F6;
 					};
 					B0A461351F53B65C0075B9F6 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9L49SS68XP;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B0A461161F53B65C0075B9F6;
 					};
@@ -671,7 +670,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -685,7 +685,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -700,7 +701,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ui_gradients_viewer.app/ui_gradients_viewer";
 			};
 			name = Debug;
@@ -716,7 +718,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ui_gradients_viewer.app/ui_gradients_viewer";
 			};
 			name = Release;
@@ -731,7 +734,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = ui_gradients_viewer;
 			};
 			name = Debug;
@@ -746,7 +750,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thexande.ui-gradients-viewerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = ui_gradients_viewer;
 			};
 			name = Release;

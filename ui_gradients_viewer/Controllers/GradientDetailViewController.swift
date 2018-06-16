@@ -43,7 +43,7 @@ class GradientDetailViewController: UIViewController {
         configureGradient(gradient)
     }
     
-    func pressedBack() {
+    @objc func pressedBack() {
         self.navigationController?.popViewController(animated: true)
     }
     
