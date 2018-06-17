@@ -11,8 +11,13 @@ import SwiftHEXColors
 import GradientView
 
 struct GradientColor {
+    struct Color {
+        let hex: String
+        let color: UIColor
+    }
+    
     let title: String
-    let colors: [[String:UIColor]]
+    let colors: [Color]
 }
 
 class GradientHelper {
@@ -20,9 +25,7 @@ class GradientHelper {
         let gradientView = GradientView()
         gradientView.translatesAutoresizingMaskIntoConstraints = false
         
-        let colors = gradient.colors.map({ (colorDict) -> UIColor? in
-            return colorDict.values.first
-        }).flatMap({ $0 })
+        let colors: [UIColor] = gradient.colors.map({ $0.color })
         
         gradientView.colors = colors
         return gradientView
@@ -33,13 +36,13 @@ class GradientHelper {
             let gradientStructs: [GradientColor] = gradientData.map({ (grad) -> GradientColor? in
                 guard let gradName = grad["name"] as? String, let colors = grad["colors"] as? [String] else { return nil }
                 
-                let colorDicts = colors.map({ (colorHexString) -> [String:UIColor]? in
+                let colorDicts = colors.map({ (colorHexString) -> GradientColor.Color? in
                     guard let color = UIColor(hexString: colorHexString) else { return nil }
-                    return [colorHexString:color]
-                }).flatMap({ $0 })
+                    return GradientColor.Color(hex: colorHexString, color: color)
+                }).compactMap({ $0 })
                 
                 return GradientColor(title: gradName, colors: colorDicts)
-            }).flatMap({$0})
+            }).compactMap({$0})
             
             completion(gradientStructs)
         }

@@ -10,7 +10,12 @@ import UIKit
 import GradientView
 import Pageboy
 
-class RootPageViewController: PageboyViewController, PageboyViewControllerDataSource {
+class RootPageViewController: PageboyViewController, PageboyViewControllerDataSource, PageboyViewControllerDelegate {
+    
+    func pageboyViewController(_ pageboyViewController: PageboyViewController, didScrollToPageAt index: Int, direction: PageboyViewController.NavigationDirection, animated: Bool) {
+        dispatch?.dispatch(.selectedGradient(index))
+    }
+    
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
         return gradientVCs.count
     }
@@ -23,7 +28,9 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
         return .at(index: startingIndex)
     }
     
+    
     var startingIndex: Int = 0
+    weak var dispatch: GradientActionDispatching?
     
     var gradientVCs = [GradientDetailViewController]() {
         didSet {
@@ -36,6 +43,7 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
     init() {
         super.init(nibName: nil, bundle: nil)
         self.dataSource = self
+        self.delegate = self
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 114, height: 18))
         imageView.image = #imageLiteral(resourceName: "uigradients")

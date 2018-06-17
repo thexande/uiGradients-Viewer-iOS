@@ -1,12 +1,25 @@
 import UIKit
 import Pulley
 
+enum GradientAction {
+    case selectedGradient(Int)
+}
+
+protocol GradientActionDispatching: class {
+    func dispatch(_ action: GradientAction)
+}
+
 final class GradientCoordinator {
     let root: PulleyViewController?
     let content: RootPageViewController
     let drawer: SelectGradientViewController
     var gradients: [GradientColor] = []
-    var selectedGradient: GradientColor?
+    
+    var selectedGradient: GradientColor? {
+        didSet {
+            drawer.gradient = selectedGradient
+        }
+    }
     
     init() {
         let drawer = SelectGradientViewController()
@@ -16,6 +29,8 @@ final class GradientCoordinator {
         self.content = content
         
         root = PulleyViewController(contentViewController: self.content, drawerViewController: self.drawer)
+        
+        self.content.dispatch = self
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
             guard let strongSelf = self else { return }
@@ -32,3 +47,13 @@ final class GradientCoordinator {
         }
     }
 }
+
+extension GradientCoordinator: GradientActionDispatching {
+    func dispatch(_ action: GradientAction) {
+        switch action {
+        case .selectedGradient(let index):
+            selectedGradient = gradients[index]
+        }
+    }
+}
+

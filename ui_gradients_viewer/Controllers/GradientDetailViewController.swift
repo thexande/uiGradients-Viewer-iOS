@@ -60,7 +60,7 @@ class GradientDetailViewController: UIViewController {
         view.insertSubview(gradientView, at: 0)
         titleLabel.text = gradient.title.uppercased()
         subTitleLabel.text = gradient.colors.map({ (stringDict) -> String? in
-            return stringDict.keys.first
+            return stringDict.hex
         }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
         
         header.contentView.addSubview(titleLabel)
