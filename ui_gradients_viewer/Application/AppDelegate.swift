@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pulley
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        window?.rootViewController = RootPageViewController()
+        let pulley = PulleyViewController(contentViewController: RootPageViewController(), drawerViewController: SelectGradientViewController())
+        
+        window?.rootViewController = pulley
         window?.makeKeyAndVisible()
         
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent

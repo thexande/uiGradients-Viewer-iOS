@@ -35,8 +35,9 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
             guard let strongSelf = self else { return }
-            strongSelf.gradientVCs = gradients.map({ GradientDetailViewController(gradient: $0 )})
+            
             DispatchQueue.main.async {
+                strongSelf.gradientVCs = gradients.map({ GradientDetailViewController(gradient: $0 )})
                 strongSelf.reloadPages()
             }
         }

@@ -31,8 +31,8 @@ class RootTableViewController: UITableViewController {
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
             guard let strongSelf = self else { return }
-            strongSelf.gradients = gradients
             DispatchQueue.main.async {
+                strongSelf.gradients = gradients
                 strongSelf.tableView.reloadData()
             }
         }
