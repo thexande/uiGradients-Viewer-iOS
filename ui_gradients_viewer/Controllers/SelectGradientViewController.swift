@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Anchorage
+import ChromaColorPicker
 
 class GradientRowCell: UITableViewCell {
     var gradient: GradientColor? {
@@ -40,7 +41,8 @@ class GradientRowCell: UITableViewCell {
 class SelectGradientViewController: UIViewController {
     var gradients: [GradientColor]?
     let tableView = UITableView()
-    let searchBar = UIView()
+    let header = UIView()
+    let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 75, height: UIScreen.main.bounds.width - 75))
     
     let backgroundView: UIView = {
         let view = UIVisualEffectView(effect: UIBlurEffect(style: .light))
@@ -76,10 +78,19 @@ class SelectGradientViewController: UIViewController {
         tableView.backgroundColor = .clear
         tableView.register(GradientRowCell.self, forCellReuseIdentifier: String(describing: GradientRowCell.self))
         
-        searchBar.heightAnchor == 100
-        searchBar.backgroundColor = .clear
         
-        let stack = UIStackView(arrangedSubviews: [searchBar, tableView])
+        
+        header.addSubview(colorPicker)
+        header.backgroundColor = .clear
+        
+        colorPicker.stroke = 10
+        colorPicker.sizeAnchors == CGSize(width: 300, height: 300)
+        colorPicker.topAnchor == header.topAnchor
+        colorPicker.centerXAnchor == header.centerXAnchor
+        colorPicker.bottomAnchor == header.bottomAnchor
+        
+        
+        let stack = UIStackView(arrangedSubviews: [header, tableView])
         stack.axis = .vertical
         view.addSubview(stack)
         view.backgroundColor = .clear
@@ -89,7 +100,7 @@ class SelectGradientViewController: UIViewController {
         imageView.image = #imageLiteral(resourceName: "uigradients")
         self.navigationItem.titleView = imageView
         self.navigationController?.navigationBar.barTintColor = .black
-     
+        
         
         
         let navItemImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
