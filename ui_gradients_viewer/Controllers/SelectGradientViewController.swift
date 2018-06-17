@@ -11,27 +11,57 @@ import UIKit
 import Anchorage
 import ChromaColorPicker
 import Pulley
+import GradientView
 
-class GradientRowCell: UITableViewCell {
+class GradientCollectionCell: UICollectionViewCell {
+    let blur = UIVisualEffectView(effect: UIBlurEffect(style: .extraLight))
+    let title = UILabel()
+    let sub = UILabel()
+    let clipping = UIView()
+    let gradientView = GradientView()
+    
     var gradient: GradientColor? {
         didSet {
             if let gradient = gradient {
                 backgroundColor = .clear
-                textLabel?.text = gradient.title
+                title.text = gradient.title
                 
                 let gradColors = gradient.colors.map({ (stringDict) -> String? in
                     return stringDict.hex
                 }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
+                sub.text = gradColors
                 
-                detailTextLabel?.text = gradColors
-                detailTextLabel?.textColor = .black
-                textLabel?.textColor = .black
+                gradientView.colors = gradient.colors.map { $0.color }
             }
         }
     }
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        gradientView.direction = .horizontal
+        clipping.insertSubview(gradientView, at: 0)
+        gradientView.edgeAnchors == clipping.edgeAnchors
+        
+        let stack = UIStackView(arrangedSubviews: [title, sub])
+        stack.spacing = 2
+        stack.axis = .vertical
+        
+        title.font = UIFont.systemFont(ofSize: 16)
+        title.numberOfLines = 0
+        sub.font = UIFont.systemFont(ofSize: 12)
+        sub.numberOfLines = 0
+        
+        blur.contentView.addSubview(stack)
+        clipping.addSubview(blur)
+        clipping.layer.cornerRadius = 8
+        clipping.clipsToBounds = true
+        
+        stack.edgeAnchors == blur.edgeAnchors + UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+        blur.bottomAnchor == clipping.bottomAnchor
+        blur.horizontalAnchors == clipping.horizontalAnchors
+        
+        contentView.addSubview(clipping)
+        clipping.edgeAnchors == contentView.edgeAnchors
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -50,7 +80,7 @@ extension UIView {
 
 final class SelectGradientViewController: UIViewController {
     var gradients: [GradientColor]?
-    let tableView = UITableView()
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     let header = UIView()
     let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 75, height: UIScreen.main.bounds.width - 75))
     let colorOne = UIView()
@@ -58,6 +88,7 @@ final class SelectGradientViewController: UIViewController {
     let colorThree = UIView()
     let colorFour = UIView()
     let indicator = UIImageView(image: #imageLiteral(resourceName: "pulley_indicator"))
+    weak var dispatch: GradientActionDispatching?
     
     var gradient: GradientColor? {
         didSet {
@@ -111,18 +142,40 @@ final class SelectGradientViewController: UIViewController {
         colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
     }
     
+    func configureColorTiles() {
+        colorOne.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorOneSelected)))
+        colorTwo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorTwoSelected)))
+        colorThree.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorThreeSelected)))
+        colorFour.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorFourSelected)))
+    }
+    
+    @objc func colorOneSelected() {
+        UIView.animate(withDuration: 0.3) {
+            self.colorOne.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        }
+    }
+    
+    @objc func colorTwoSelected() {
+        
+    }
+    
+    @objc func colorThreeSelected() {
+        
+    }
+    
+    @objc func colorFourSelected() {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureColorTiles()
         view.backgroundColor = .clear
-        tableView.backgroundView = backgroundView
-        tableView.separatorEffect = UIVibrancyEffect(blurEffect: UIBlurEffect(style: .prominent))
-        tableView.tableFooterView = UIView()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.backgroundColor = .clear
-        tableView.register(GradientRowCell.self, forCellReuseIdentifier: String(describing: GradientRowCell.self))
         
-        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.backgroundColor = .clear
+        collectionView.register(GradientCollectionCell.self, forCellWithReuseIdentifier: String(describing: GradientCollectionCell.self))
         
         header.addSubview(colorPicker)
         header.backgroundColor = .clear
@@ -138,8 +191,7 @@ final class SelectGradientViewController: UIViewController {
         indicator.centerXAnchor == header.centerXAnchor
         indicator.topAnchor == header.topAnchor + 6
         
-        
-        let stack = UIStackView(arrangedSubviews: [header, tableView])
+        let stack = UIStackView(arrangedSubviews: [header, collectionView])
         stack.axis = .vertical
         view.addSubview(stack)
         view.backgroundColor = .clear
@@ -181,7 +233,7 @@ final class SelectGradientViewController: UIViewController {
             guard let strongSelf = self else { return }
             strongSelf.gradients = gradients
             DispatchQueue.main.async {
-                strongSelf.tableView.reloadData()
+                strongSelf.collectionView.reloadData()
             }
         }
     }
@@ -191,33 +243,38 @@ final class SelectGradientViewController: UIViewController {
     }
 }
 
-extension SelectGradientViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let presenter = presentingViewController?.childViewControllers.first as? RootPageViewController else { return }
-        dismiss(animated: true) { 
-            presenter.scrollToPage(.at(index: indexPath.row), animated: true)
-        }
+extension SelectGradientViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return gradients?.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let gradients = gradients,
-            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GradientRowCell.self), for: indexPath) as? GradientRowCell else {
-                return UITableViewCell()
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: GradientCollectionCell.self), for: indexPath) as? GradientCollectionCell else {
+            return UICollectionViewCell()
         }
-        cell.gradient = gradients[indexPath.row]
+        
+        if let gradients = gradients {
+            cell.gradient = gradients[indexPath.row]
+        }
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let gradients = gradients else { return 0 }
-        return gradients.count
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (collectionView.frame.width - 36) / 2, height: 100)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 12
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        dispatch?.dispatch(.selectedGradientFromDrawer(indexPath.row))
     }
 }
-
 
 extension SelectGradientViewController: PulleyDrawerViewControllerDelegate {
     func supportedDrawerPositions() -> [PulleyPosition] {

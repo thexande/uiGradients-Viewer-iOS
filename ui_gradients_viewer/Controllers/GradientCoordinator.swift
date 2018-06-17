@@ -3,6 +3,7 @@ import Pulley
 
 enum GradientAction {
     case selectedGradient(Int)
+    case selectedGradientFromDrawer(Int)
 }
 
 protocol GradientActionDispatching: class {
@@ -53,6 +54,9 @@ extension GradientCoordinator: GradientActionDispatching {
         switch action {
         case .selectedGradient(let index):
             selectedGradient = gradients[index]
+        case .selectedGradientFromDrawer(let index):
+            let gradient = gradients[index]
+            content.scrollToPage(.at(index: index), animated: true)
         }
     }
 }
