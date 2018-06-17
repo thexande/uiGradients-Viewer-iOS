@@ -12,6 +12,7 @@ target 'ui_gradients_viewer' do
     pod 'Pulley'
     pod 'Anchorage'
     pod 'ChromaColorPicker'
+    pod 'Haptica'
     
   target 'ui_gradients_viewerTests' do
     inherit! :search_paths

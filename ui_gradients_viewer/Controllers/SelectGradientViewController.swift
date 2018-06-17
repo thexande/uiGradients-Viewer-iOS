@@ -134,6 +134,10 @@ final class SelectGradientViewController: UIViewController {
         colorPicker.centerXAnchor == header.centerXAnchor
         colorPicker.bottomAnchor == header.bottomAnchor
         
+        header.addSubview(indicator)
+        indicator.centerXAnchor == header.centerXAnchor
+        indicator.topAnchor == header.topAnchor + 6
+        
         
         let stack = UIStackView(arrangedSubviews: [header, tableView])
         stack.axis = .vertical
