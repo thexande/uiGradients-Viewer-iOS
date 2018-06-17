@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let pulley = PulleyViewController(contentViewController: RootPageViewController(), drawerViewController: GradientDrawerViewController())
+//        let pulley = PulleyViewController(contentViewController: RootPageViewController(), drawerViewController: <#T##UIViewController#>)
         
-        window?.rootViewController = pulley
+        window?.rootViewController = RootPageViewController()
         window?.makeKeyAndVisible()
         
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
