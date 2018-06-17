@@ -12,6 +12,7 @@
 		6EBE5D3D77A1A5C090ADF0C0 /* Pods_ui_gradients_viewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D7E6E441D1C497DBBF5CC4 /* Pods_ui_gradients_viewerUITests.framework */; };
 		B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00186C61F53C8550027FB3A /* GradientHelper.swift */; };
 		B00186C91F54F33B0027FB3A /* SelectGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */; };
+		B04EC0E520D5DD5F003EC88B /* GradientDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04EC0E420D5DD5F003EC88B /* GradientDrawerViewController.swift */; };
 		B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */; };
 		B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */; };
 		B0A461221F53B65C0075B9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A461211F53B65C0075B9F6 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		87B7BB6F89EC192F1C1AC996 /* Pods_ui_gradients_viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ui_gradients_viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00186C61F53C8550027FB3A /* GradientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
 		B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGradientViewController.swift; sourceTree = "<group>"; };
+		B04EC0E420D5DD5F003EC88B /* GradientDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDrawerViewController.swift; sourceTree = "<group>"; };
 		B0A461171F53B65C0075B9F6 /* ui_gradients_viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_gradients_viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */,
 				B0B7C0361F5533EC007BE6DF /* RootTableViewController.swift */,
 				B00186C81F54F33B0027FB3A /* SelectGradientViewController.swift */,
+				B04EC0E420D5DD5F003EC88B /* GradientDrawerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ui_gradients_viewer/Pods-ui_gradients_viewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework",
 				"${BUILT_PRODUCTS_DIR}/GradientView/GradientView.framework",
 				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
 				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
@@ -398,6 +402,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchorage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
@@ -436,6 +441,7 @@
 				B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */,
 				B00186C91F54F33B0027FB3A /* SelectGradientViewController.swift in Sources */,
 				B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */,
+				B04EC0E520D5DD5F003EC88B /* GradientDrawerViewController.swift in Sources */,
 				B0B7C0371F5533EC007BE6DF /* RootTableViewController.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 				B0B7C0331F55339E007BE6DF /* GradientTableCell.swift in Sources */,

@@ -1,10 +1,12 @@
 PODS:
+  - Anchorage (4.2.2)
   - GradientView (2.3.3)
   - Pageboy (2.5.1)
   - Pulley (2.4.2)
   - SwiftHEXColors (1.1.1)
 
 DEPENDENCIES:
+  - Anchorage
   - GradientView
   - Pageboy
   - Pulley
@@ -12,17 +14,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Anchorage
     - GradientView
     - Pageboy
     - Pulley
     - SwiftHEXColors
 
 SPEC CHECKSUMS:
+  Anchorage: cba8707ea6475f604e04047882ba47c07e4b2ac1
   GradientView: b044fa46c24062ee245a07a4e8bea4c5c4d63de0
   Pageboy: f0295ea949f0b0123a1b486fd347ea892d0078e0
   Pulley: d3d144a0323b65b8aa1dd601d515d08481103034
   SwiftHEXColors: 9681e756dc78a99ae97f277165b3f5e33b087553
 
-PODFILE CHECKSUM: 5d73a26a09751ee4276c13709fc60956864db5e7
+PODFILE CHECKSUM: 56baf9c012f293e7a24aaa1cd47cd74f08374f04
 
 COCOAPODS: 1.5.3
