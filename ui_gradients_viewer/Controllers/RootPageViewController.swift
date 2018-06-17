@@ -20,10 +20,18 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
     }
     
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
-        return nil
+        return .at(index: startingIndex)
     }
     
-    var gradientVCs = [GradientDetailViewController]()
+    var startingIndex: Int = 0
+    
+    var gradientVCs = [GradientDetailViewController]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.reloadPages()
+            }
+        }
+    }
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -32,15 +40,6 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 114, height: 18))
         imageView.image = #imageLiteral(resourceName: "uigradients")
         self.navigationItem.titleView = imageView
-        
-        _ = GradientHelper.produceGradients { [weak self] (gradients) in
-            guard let strongSelf = self else { return }
-            
-            DispatchQueue.main.async {
-                strongSelf.gradientVCs = gradients.map({ GradientDetailViewController(gradient: $0 )})
-                strongSelf.reloadPages()
-            }
-        }
     }
     
     required init?(coder aDecoder: NSCoder) {

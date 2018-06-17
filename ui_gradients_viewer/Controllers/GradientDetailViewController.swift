@@ -39,7 +39,7 @@ class GradientDetailViewController: UIViewController {
         return button
     }()
     
-    init(gradient: GradientColor) {
+    init(_ gradient: GradientColor) {
         super.init(nibName: nil, bundle: nil)
         configureGradient(gradient)
     }

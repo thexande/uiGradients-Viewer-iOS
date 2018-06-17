@@ -13,15 +13,19 @@ import Pulley
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var coordinator: GradientCoordinator?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        coordinator = GradientCoordinator()
         
-        let pulley = PulleyViewController(contentViewController: RootPageViewController(), drawerViewController: SelectGradientViewController())
+        guard let root = coordinator?.root else {
+            return false
+        }
         
-        window?.rootViewController = pulley
+        window?.rootViewController = root
         window?.makeKeyAndVisible()
         
         return true

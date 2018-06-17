@@ -43,7 +43,7 @@ class RootTableViewController: UITableViewController {
 extension RootTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let gradients = gradients else { return }
-        navigationController?.pushViewController(GradientDetailViewController(gradient: gradients[indexPath.row]), animated: true)
+        navigationController?.pushViewController(GradientDetailViewController(gradients[indexPath.row]), animated: true)
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
