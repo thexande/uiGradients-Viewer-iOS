@@ -51,7 +51,13 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 12
+        return 18
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 18
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -64,7 +70,7 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(
-            width: (UIScreen.main.bounds.width - 36) / CGFloat(items.count),
+            width: (collectionView.frame.width - CGFloat(((items.count - 1) * 18))) / CGFloat(items.count),
             height: collectionView.frame.height
         )
     }
@@ -74,7 +80,9 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
         return true
     }
     
-    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView,
+                        moveItemAt sourceIndexPath: IndexPath,
+                        to destinationIndexPath: IndexPath) {
         print("Starting Index: \(sourceIndexPath.item)")
             print("Ending Index: \(destinationIndexPath.item)")
     }
@@ -84,7 +92,8 @@ final class DrawerHeaderView: UIView {
     let indicator = UIImageView(image: #imageLiteral(resourceName: "pulley_indicator"))
     let colorCollection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     let colorSection = ColorPickerCollectionSectionController()
-    let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 75, height: UIScreen.main.bounds.width - 75))
+    let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+    let segmented = UISegmentedControl(items: ["Customize", "Popular", "Export"])
     
     var gradient: GradientColor? {
         didSet {
@@ -98,18 +107,29 @@ final class DrawerHeaderView: UIView {
         colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
         colorSection.items = gradient.colors
         colorCollection.reloadData()
+        segmented.tintColor = gradient.colors.first?.color ?? .black
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
+        addSubview(segmented)
+        segmented.applyShadow()
+        
         addSubview(colorCollection)
+        colorCollection.clipsToBounds = false
         colorCollection.horizontalAnchors == horizontalAnchors + 18
         colorCollection.topAnchor == topAnchor + 18
-        colorCollection.heightAnchor == 100
+        colorCollection.heightAnchor == 64
         colorCollection.delegate = colorSection
         colorCollection.dataSource = colorSection
         colorCollection.backgroundColor = .clear
         colorSection.registerReusableTypes(collectionView: colorCollection)
+        
+        segmented.horizontalAnchors == colorCollection.horizontalAnchors
+        segmented.topAnchor == colorCollection.bottomAnchor + 18
+        segmented.selectedSegmentIndex = 0
+        
         
         if let layout = colorCollection.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
@@ -118,7 +138,7 @@ final class DrawerHeaderView: UIView {
         addSubview(colorPicker)
         colorPicker.stroke = 10
         colorPicker.sizeAnchors == CGSize(width: 300, height: 300)
-        colorPicker.topAnchor == colorCollection.bottomAnchor + 18
+        colorPicker.topAnchor == segmented.bottomAnchor + 18
         colorPicker.centerXAnchor == centerXAnchor
         colorPicker.bottomAnchor == bottomAnchor
         
@@ -133,7 +153,6 @@ final class DrawerHeaderView: UIView {
 }
 
 final class SelectGradientViewController: UIViewController {
-    weak var dispatch: GradientActionDispatching?
     let cardSection = GradientCardSectionController()
     let gradientCardCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     let header = DrawerHeaderView()
@@ -148,6 +167,12 @@ final class SelectGradientViewController: UIViewController {
     var gradient: GradientColor? {
         didSet {
             header.gradient = gradient
+        }
+    }
+    
+    weak var dispatch: GradientActionDispatching? {
+        didSet {
+            cardSection.dispatch = dispatch
         }
     }
     
@@ -226,7 +251,7 @@ extension SelectGradientViewController: PulleyDrawerViewControllerDelegate {
     }
     
     func collapsedDrawerHeight(bottomSafeArea: CGFloat) -> CGFloat {
-        return 100
+        return bottomSafeArea + 120
     }
     
     func partialRevealDrawerHeight(bottomSafeArea: CGFloat) -> CGFloat {
