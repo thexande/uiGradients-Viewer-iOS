@@ -22,9 +22,68 @@ extension UIView {
     }
 }
 
+
+
+
+final class ColorPickerCollectionSectionController: NSObject, CollectionSectionController {
+    var items: [GradientColor.Color] = []
+    
+    func registerReusableTypes(collectionView: UICollectionView) {
+        collectionView.register(ColorPickerCollectionCell.self,
+                                forCellWithReuseIdentifier: String(describing: ColorPickerCollectionCell.self))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ColorPickerCollectionCell.self),
+                                                            for: indexPath) as? ColorPickerCollectionCell else {
+            return UICollectionViewCell()
+        }
+        cell.color = items[indexPath.row]
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 12
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(
+            width: (UIScreen.main.bounds.width - 36) / CGFloat(items.count),
+            height: collectionView.frame.height
+        )
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        canMoveItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        print("Starting Index: \(sourceIndexPath.item)")
+            print("Ending Index: \(destinationIndexPath.item)")
+    }
+}
+
 final class DrawerHeaderView: UIView {
     let indicator = UIImageView(image: #imageLiteral(resourceName: "pulley_indicator"))
     let colorCollection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    let colorSection = ColorPickerCollectionSectionController()
     let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 75, height: UIScreen.main.bounds.width - 75))
     
     var gradient: GradientColor? {
@@ -36,15 +95,30 @@ final class DrawerHeaderView: UIView {
     }
     
     func setGradient(_ gradient: GradientColor) {
-        
+        colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
+        colorSection.items = gradient.colors
+        colorCollection.reloadData()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addSubview(colorCollection)
+        colorCollection.horizontalAnchors == horizontalAnchors + 18
+        colorCollection.topAnchor == topAnchor + 18
+        colorCollection.heightAnchor == 100
+        colorCollection.delegate = colorSection
+        colorCollection.dataSource = colorSection
+        colorCollection.backgroundColor = .clear
+        colorSection.registerReusableTypes(collectionView: colorCollection)
+        
+        if let layout = colorCollection.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.scrollDirection = .horizontal
+        }
+        
         addSubview(colorPicker)
         colorPicker.stroke = 10
         colorPicker.sizeAnchors == CGSize(width: 300, height: 300)
-        colorPicker.topAnchor == topAnchor
+        colorPicker.topAnchor == colorCollection.bottomAnchor + 18
         colorPicker.centerXAnchor == centerXAnchor
         colorPicker.bottomAnchor == bottomAnchor
         
@@ -63,12 +137,7 @@ final class SelectGradientViewController: UIViewController {
     let cardSection = GradientCardSectionController()
     let gradientCardCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     let header = DrawerHeaderView()
-    
-    let colorOne = UIView()
-    let colorTwo = UIView()
-    let colorThree = UIView()
-    let colorFour = UIView()
-    
+    let backgroundView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     
     var gradients: [GradientColor] = [] {
         didSet {
@@ -78,76 +147,22 @@ final class SelectGradientViewController: UIViewController {
     
     var gradient: GradientColor? {
         didSet {
-            if let gradient = gradient {
-                setGradient(gradient)
-            }
+            header.gradient = gradient
         }
-    }
-    
-    let backgroundView: UIView = {
-        let view = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    
-    func setGradient(_ gradient: GradientColor) {
-        [colorOne, colorTwo, colorThree, colorFour].forEach { $0.isHidden = true }
-        gradient.colors.enumerated().forEach { offset, color in
-            switch offset {
-            case 0: colorOne.backgroundColor = color.color
-            colorOne.isHidden = false
-            case 1: colorTwo.backgroundColor = color.color
-            colorTwo.isHidden = false
-            case 2: colorThree.backgroundColor = color.color
-            colorThree.isHidden = false
-            case 3: colorFour.backgroundColor = color.color
-            colorFour.isHidden = false
-            default: return
-            }
-        }
-        
-        header.colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
-    }
-    
-    func configureColorTiles() {
-        colorOne.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorOneSelected)))
-        colorTwo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorTwoSelected)))
-        colorThree.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorThreeSelected)))
-        colorFour.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(colorFourSelected)))
-    }
-    
-    @objc func colorOneSelected() {
-        UIView.animate(withDuration: 0.3) {
-            self.colorOne.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-        }
-    }
-    
-    @objc func colorTwoSelected() {
-        
-    }
-    
-    @objc func colorThreeSelected() {
-        
-    }
-    
-    @objc func colorFourSelected() {
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureColorTiles()
         view.backgroundColor = .clear
         
         header.colorPicker.delegate = self
+        header.colorCollection.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture(gesture:))))
         pulleyViewController?.topInset = 100
         
         gradientCardCollectionView.delegate = cardSection
         gradientCardCollectionView.dataSource = cardSection
         cardSection.registerReusableTypes(collectionView: gradientCardCollectionView)
         gradientCardCollectionView.backgroundColor = .clear
-        
         
         let stack = UIStackView(arrangedSubviews: [header, gradientCardCollectionView])
         stack.axis = .vertical
@@ -166,25 +181,6 @@ final class SelectGradientViewController: UIViewController {
         navItemImageView.tintColor = .white
         navItemImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(close)))
         
-        [colorOne, colorTwo, colorThree, colorFour].forEach { colorView in
-            header.addSubview(colorView)
-            colorView.sizeAnchors == CGSize(width: 60, height: 60)
-            colorView.layer.cornerRadius = 8
-            colorView.applyShadow()
-        }
-        
-        colorOne.leadingAnchor == header.leadingAnchor + 12
-        colorOne.topAnchor == header.topAnchor + 12
-        
-        colorTwo.trailingAnchor == header.trailingAnchor - 12
-        colorTwo.topAnchor == header.topAnchor + 12
-        
-        colorThree.leadingAnchor == header.leadingAnchor + 12
-        colorThree.bottomAnchor == header.bottomAnchor - 12
-        
-        colorFour.trailingAnchor == header.trailingAnchor - 12
-        colorFour.bottomAnchor == header.bottomAnchor - 12
-        
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navItemImageView)
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
@@ -198,6 +194,24 @@ final class SelectGradientViewController: UIViewController {
     
     @objc func close() {
         dismiss(animated: true, completion: nil)
+    }
+            
+
+    @objc func handleLongGesture(gesture: UILongPressGestureRecognizer) {
+        switch(gesture.state) {
+            
+        case .began:
+            guard let selectedIndexPath = header.colorCollection.indexPathForItem(at: gesture.location(in: header.colorCollection)) else {
+                break
+            }
+            header.colorCollection.beginInteractiveMovementForItem(at: selectedIndexPath)
+        case .changed:
+            header.colorCollection.updateInteractiveMovementTargetPosition(gesture.location(in: gesture.view!))
+        case .ended:
+            header.colorCollection.endInteractiveMovement()
+        default:
+            header.colorCollection.cancelInteractiveMovement()
+        }
     }
 }
 
