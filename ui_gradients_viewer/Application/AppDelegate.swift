@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Pulley
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,11 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-//        let pulley = PulleyViewController(contentViewController: RootPageViewController(), drawerViewController: <#T##UIViewController#>)
         
         window?.rootViewController = RootPageViewController()
         window?.makeKeyAndVisible()

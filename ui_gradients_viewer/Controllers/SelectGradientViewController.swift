@@ -47,7 +47,7 @@ class SelectGradientViewController: UITableViewController {
         
         let gradColors = gradient.colors.map({ (stringDict) -> String? in
             return stringDict.keys.first
-        }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
+        }).flatMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
         
         cell.detailTextLabel?.text = gradColors
         cell.detailTextLabel?.textColor = .white
@@ -94,7 +94,7 @@ class SelectGradientViewController: UITableViewController {
 
 extension SelectGradientViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let presenter = presentingViewController?.children.first as? RootPageViewController else { return }
+        guard let presenter = presentingViewController?.childViewControllers.first as? RootPageViewController else { return }
         dismiss(animated: true) { 
             presenter.scrollToPage(.at(index: indexPath.row), animated: true)
         }
