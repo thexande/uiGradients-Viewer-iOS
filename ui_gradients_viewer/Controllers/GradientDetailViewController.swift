@@ -11,7 +11,7 @@ import UIKit
 import Anchorage
 
 class GradientDetailViewController: UIViewController {
-    let header = UIVisualEffectView(effect: UIBlurEffect(style: .extraLight))
+    let header = UIView()
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -63,8 +63,8 @@ class GradientDetailViewController: UIViewController {
             return stringDict.hex
         }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
         
-        header.contentView.addSubview(titleLabel)
-        header.contentView.addSubview(subTitleLabel)
+        header.addSubview(titleLabel)
+        header.addSubview(subTitleLabel)
         
         view.addSubview(header)
         header.horizontalAnchors == view.horizontalAnchors

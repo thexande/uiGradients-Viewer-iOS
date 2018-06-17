@@ -39,7 +39,16 @@ class GradientRowCell: UITableViewCell {
     }
 }
 
-class SelectGradientViewController: UIViewController {
+extension UIView {
+    func applyShadow() {
+        layer.shadowRadius = 4
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowOpacity = 0.6
+    }
+}
+
+final class SelectGradientViewController: UIViewController {
     var gradients: [GradientColor]?
     let tableView = UITableView()
     let header = UIView()
@@ -48,6 +57,7 @@ class SelectGradientViewController: UIViewController {
     let colorTwo = UIView()
     let colorThree = UIView()
     let colorFour = UIView()
+    let indicator = UIImageView(image: #imageLiteral(resourceName: "pulley_indicator"))
     
     var gradient: GradientColor? {
         didSet {
@@ -57,30 +67,13 @@ class SelectGradientViewController: UIViewController {
         }
     }
     
-    func setGradient(_ gradient: GradientColor) {
-        [colorOne, colorTwo, colorThree, colorFour].forEach { $0.isHidden = true }
-        gradient.colors.enumerated().forEach { offset, color in
-            switch offset {
-            case 0: colorOne.backgroundColor = color.color
-                colorOne.isHidden = false
-            case 1: colorTwo.backgroundColor = color.color
-                colorTwo.isHidden = false
-            case 2: colorThree.backgroundColor = color.color
-                colorThree.isHidden = false
-            case 3: colorFour.backgroundColor = color.color
-                colorFour.isHidden = false
-            default: return
-            }
-        }
-        
-        colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
-    }
-    
     let backgroundView: UIView = {
         let view = UIVisualEffectView(effect: UIBlurEffect(style: .light))
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
+    
     
     
     func cellFactory(_ gradient: GradientColor) -> UITableViewCell {
@@ -97,6 +90,25 @@ class SelectGradientViewController: UIViewController {
         cell.detailTextLabel?.textColor = .white
         cell.textLabel?.textColor = .white
         return cell
+    }
+    
+    func setGradient(_ gradient: GradientColor) {
+        [colorOne, colorTwo, colorThree, colorFour].forEach { $0.isHidden = true }
+        gradient.colors.enumerated().forEach { offset, color in
+            switch offset {
+            case 0: colorOne.backgroundColor = color.color
+            colorOne.isHidden = false
+            case 1: colorTwo.backgroundColor = color.color
+            colorTwo.isHidden = false
+            case 2: colorThree.backgroundColor = color.color
+            colorThree.isHidden = false
+            case 3: colorFour.backgroundColor = color.color
+            colorFour.isHidden = false
+            default: return
+            }
+        }
+        
+        colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
     }
     
     override func viewDidLoad() {
@@ -116,6 +128,7 @@ class SelectGradientViewController: UIViewController {
         header.backgroundColor = .clear
         
         colorPicker.stroke = 10
+        colorPicker.delegate = self
         colorPicker.sizeAnchors == CGSize(width: 300, height: 300)
         colorPicker.topAnchor == header.topAnchor
         colorPicker.centerXAnchor == header.centerXAnchor
@@ -143,7 +156,7 @@ class SelectGradientViewController: UIViewController {
             header.addSubview(colorView)
             colorView.sizeAnchors == CGSize(width: 60, height: 60)
             colorView.layer.cornerRadius = 8
-            colorView.backgroundColor = .black
+            colorView.applyShadow()
         }
         
         colorOne.leadingAnchor == header.leadingAnchor + 12
@@ -220,3 +233,8 @@ extension SelectGradientViewController: PulleyDrawerViewControllerDelegate {
     }
 }
 
+extension SelectGradientViewController: ChromaColorPickerDelegate {
+    func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor) {
+        
+    }
+}
