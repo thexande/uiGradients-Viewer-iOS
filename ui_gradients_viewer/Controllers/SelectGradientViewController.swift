@@ -25,132 +25,11 @@ extension UIView {
 
 
 
-final class ColorPickerCollectionSectionController: NSObject, CollectionSectionController {
-    var items: [GradientColor.Color] = []
-    
-    func registerReusableTypes(collectionView: UICollectionView) {
-        collectionView.register(ColorPickerCollectionCell.self,
-                                forCellWithReuseIdentifier: String(describing: ColorPickerCollectionCell.self))
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ColorPickerCollectionCell.self),
-                                                            for: indexPath) as? ColorPickerCollectionCell else {
-            return UICollectionViewCell()
-        }
-        cell.color = items[indexPath.row]
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 18
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 18
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .zero
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(
-            width: (collectionView.frame.width - CGFloat(((items.count - 1) * 18))) / CGFloat(items.count),
-            height: collectionView.frame.height
-        )
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        canMoveItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        moveItemAt sourceIndexPath: IndexPath,
-                        to destinationIndexPath: IndexPath) {
-        print("Starting Index: \(sourceIndexPath.item)")
-            print("Ending Index: \(destinationIndexPath.item)")
-    }
-}
 
-final class DrawerHeaderView: UIView {
-    let indicator = UIImageView(image: #imageLiteral(resourceName: "pulley_indicator"))
-    let colorCollection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-    let colorSection = ColorPickerCollectionSectionController()
-    let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-    let segmented = UISegmentedControl(items: ["Customize", "Popular", "Export"])
-    
-    var gradient: GradientColor? {
-        didSet {
-            if let gradient = gradient {
-                setGradient(gradient)
-            }
-        }
-    }
-    
-    func setGradient(_ gradient: GradientColor) {
-        colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
-        colorSection.items = gradient.colors
-        colorCollection.reloadData()
-        segmented.tintColor = gradient.colors.first?.color ?? .black
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        addSubview(segmented)
-        segmented.applyShadow()
-        
-        addSubview(colorCollection)
-        colorCollection.clipsToBounds = false
-        colorCollection.horizontalAnchors == horizontalAnchors + 18
-        colorCollection.topAnchor == topAnchor + 18
-        colorCollection.heightAnchor == 64
-        colorCollection.delegate = colorSection
-        colorCollection.dataSource = colorSection
-        colorCollection.backgroundColor = .clear
-        colorSection.registerReusableTypes(collectionView: colorCollection)
-        
-        segmented.horizontalAnchors == colorCollection.horizontalAnchors
-        segmented.topAnchor == colorCollection.bottomAnchor + 18
-        segmented.selectedSegmentIndex = 0
-        
-        
-        if let layout = colorCollection.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .horizontal
-        }
-        
-        addSubview(colorPicker)
-        colorPicker.stroke = 10
-        colorPicker.sizeAnchors == CGSize(width: 300, height: 300)
-        colorPicker.topAnchor == segmented.bottomAnchor + 18
-        colorPicker.centerXAnchor == centerXAnchor
-        colorPicker.bottomAnchor == bottomAnchor
-        
-        addSubview(indicator)
-        indicator.centerXAnchor == centerXAnchor
-        indicator.topAnchor == topAnchor + 6
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
+
+
+
+
 
 final class SelectGradientViewController: UIViewController {
     let cardSection = GradientCardSectionController()
@@ -255,7 +134,7 @@ extension SelectGradientViewController: PulleyDrawerViewControllerDelegate {
     }
     
     func partialRevealDrawerHeight(bottomSafeArea: CGFloat) -> CGFloat {
-        return 300 + bottomSafeArea
+        return 270 + bottomSafeArea
     }
 }
 

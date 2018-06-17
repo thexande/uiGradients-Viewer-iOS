@@ -21,6 +21,12 @@
 		B0B7C0331F55339E007BE6DF /* GradientTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B7C0321F55339E007BE6DF /* GradientTableCell.swift */; };
 		B0B7C0351F5533BB007BE6DF /* GradientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B7C0341F5533BB007BE6DF /* GradientDetailViewController.swift */; };
 		B0B7C0371F5533EC007BE6DF /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B7C0361F5533EC007BE6DF /* RootTableViewController.swift */; };
+		B0BA30C120D7025200FD8B1D /* ColorPickerCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30C020D7025200FD8B1D /* ColorPickerCollectionCell.swift */; };
+		B0BA30C320D7122600FD8B1D /* ColorPickerCollectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30C220D7122600FD8B1D /* ColorPickerCollectionSectionController.swift */; };
+		B0BA30C520D7148700FD8B1D /* SegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30C420D7148700FD8B1D /* SegmentedView.swift */; };
+		B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30C620D714A400FD8B1D /* SwitchView.swift */; };
+		B0BA30C920D714BF00FD8B1D /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30C820D714BF00FD8B1D /* SliderView.swift */; };
+		B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */; };
 		B0F93BC020D600F6007FCD5F /* GradientCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */; };
 		B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */; };
 		B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */; };
@@ -69,6 +75,12 @@
 		B0B7C0321F55339E007BE6DF /* GradientTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientTableCell.swift; sourceTree = "<group>"; };
 		B0B7C0341F5533BB007BE6DF /* GradientDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDetailViewController.swift; sourceTree = "<group>"; };
 		B0B7C0361F5533EC007BE6DF /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		B0BA30C020D7025200FD8B1D /* ColorPickerCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerCollectionCell.swift; sourceTree = "<group>"; };
+		B0BA30C220D7122600FD8B1D /* ColorPickerCollectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerCollectionSectionController.swift; sourceTree = "<group>"; };
+		B0BA30C420D7148700FD8B1D /* SegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedView.swift; sourceTree = "<group>"; };
+		B0BA30C620D714A400FD8B1D /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		B0BA30C820D714BF00FD8B1D /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerHeaderView.swift; sourceTree = "<group>"; };
 		B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCoordinator.swift; sourceTree = "<group>"; };
 		B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureProxy.swift; sourceTree = "<group>"; };
 		B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionController.swift; sourceTree = "<group>"; };
@@ -195,6 +207,11 @@
 			children = (
 				B0B7C0321F55339E007BE6DF /* GradientTableCell.swift */,
 				B0F93BC720D6ED34007FCD5F /* GradientCollectionCell.swift */,
+				B0BA30C020D7025200FD8B1D /* ColorPickerCollectionCell.swift */,
+				B0BA30C420D7148700FD8B1D /* SegmentedView.swift */,
+				B0BA30C620D714A400FD8B1D /* SwitchView.swift */,
+				B0BA30C820D714BF00FD8B1D /* SliderView.swift */,
+				B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +226,7 @@
 				B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */,
 				B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */,
 				B0F93BC520D6ECF3007FCD5F /* GradientCardSectionController.swift */,
+				B0BA30C220D7122600FD8B1D /* ColorPickerCollectionSectionController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -460,10 +478,16 @@
 				B0F93BC620D6ECF3007FCD5F /* GradientCardSectionController.swift in Sources */,
 				B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */,
 				B0B7C0371F5533EC007BE6DF /* RootTableViewController.swift in Sources */,
+				B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 				B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */,
+				B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */,
 				B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */,
+				B0BA30C320D7122600FD8B1D /* ColorPickerCollectionSectionController.swift in Sources */,
+				B0BA30C920D714BF00FD8B1D /* SliderView.swift in Sources */,
 				B0B7C0331F55339E007BE6DF /* GradientTableCell.swift in Sources */,
+				B0BA30C520D7148700FD8B1D /* SegmentedView.swift in Sources */,
+				B0BA30C120D7025200FD8B1D /* ColorPickerCollectionCell.swift in Sources */,
 				B0F93BC020D600F6007FCD5F /* GradientCoordinator.swift in Sources */,
 				B0B7C0351F5533BB007BE6DF /* GradientDetailViewController.swift in Sources */,
 			);
