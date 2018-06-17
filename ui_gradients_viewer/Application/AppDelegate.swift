@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = pulley
         window?.makeKeyAndVisible()
         
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         return true
     }
 

@@ -11,10 +11,12 @@ import UIKit
 import Anchorage
 
 class GradientDetailViewController: UIViewController {
+    let header = UIVisualEffectView(effect: UIBlurEffect(style: .extraLight))
+    
     let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 24)
-        label.textColor = .white
+        label.textColor = .black
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -23,7 +25,7 @@ class GradientDetailViewController: UIViewController {
     let subTitleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
-        label.textColor = .white
+        label.textColor = .black
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -61,19 +63,26 @@ class GradientDetailViewController: UIViewController {
             return stringDict.keys.first
         }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
         
-        view.addSubview(titleLabel)
-        view.addSubview(subTitleLabel)
+        header.contentView.addSubview(titleLabel)
+        header.contentView.addSubview(subTitleLabel)
+        
+        view.addSubview(header)
+        header.horizontalAnchors == view.horizontalAnchors
+        header.topAnchor == view.topAnchor
+        header.bottomAnchor == subTitleLabel.bottomAnchor + 18
         
         self.navigationController?.navigationBar.barTintColor = .black
         
         let viewsDict = ["title":titleLabel, "grad":gradientView, "sub_title":subTitleLabel]
-        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[title]-18-[sub_title]", options: [], metrics: nil, views: viewsDict))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:[title]-12-[sub_title]", options: [], metrics: nil, views: viewsDict))
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[title]-12-|", options: [], metrics: nil, views: viewsDict))
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[sub_title]-12-|", options: [], metrics: nil, views: viewsDict))
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|[grad]|", options: [], metrics: nil, views: viewsDict))
         NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|[grad]|", options: [], metrics: nil, views: viewsDict))
         
+        
         titleLabel.topAnchor == view.safeAreaLayoutGuide.topAnchor + 12
+        
     }
     
 }

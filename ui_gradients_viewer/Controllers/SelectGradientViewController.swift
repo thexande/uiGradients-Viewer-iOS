@@ -8,21 +8,28 @@
 
 import Foundation
 import UIKit
+import Anchorage
 
-class SelectGradientHeader: UIView {
-    let imageView: UIImageView = {
-        let view = UIImageView(image: #imageLiteral(resourceName: "uig_glyph"))
-        view.contentMode = .scaleAspectFit
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+class GradientRowCell: UITableViewCell {
+    var gradient: GradientColor? {
+        didSet {
+            if let gradient = gradient {
+                backgroundColor = .clear
+                textLabel?.text = gradient.title
+                
+                let gradColors = gradient.colors.map({ (stringDict) -> String? in
+                    return stringDict.keys.first
+                }).flatMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
+                
+                detailTextLabel?.text = gradColors
+                detailTextLabel?.textColor = .black
+                textLabel?.textColor = .black
+            }
+        }
+    }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        addSubview(imageView)
-        
-        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "V:|-60-[image]-60-|", options: [], metrics: nil, views: ["image":imageView]))
-        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(withVisualFormat: "H:|-60-[image]-60-|", options: [], metrics: nil, views: ["image":imageView]))
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,14 +37,17 @@ class SelectGradientHeader: UIView {
     }
 }
 
-class SelectGradientViewController: UITableViewController {
+class SelectGradientViewController: UIViewController {
     var gradients: [GradientColor]?
+    let tableView = UITableView()
+    let searchBar = UIView()
     
     let backgroundView: UIView = {
-        let view = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+        let view = UIVisualEffectView(effect: UIBlurEffect(style: .light))
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     
     func cellFactory(_ gradient: GradientColor) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "reuse")
@@ -59,9 +69,21 @@ class SelectGradientViewController: UITableViewController {
         super.viewDidLoad()
         view.backgroundColor = .clear
         tableView.backgroundView = backgroundView
-        tableView.separatorColor = .white
+        tableView.separatorEffect = UIVibrancyEffect(blurEffect: UIBlurEffect(style: .prominent))
         tableView.tableFooterView = UIView()
-        tableView.tableHeaderView = SelectGradientHeader(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 250))
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.backgroundColor = .clear
+        tableView.register(GradientRowCell.self, forCellReuseIdentifier: String(describing: GradientRowCell.self))
+        
+        searchBar.heightAnchor == 100
+        searchBar.backgroundColor = .clear
+        
+        let stack = UIStackView(arrangedSubviews: [searchBar, tableView])
+        stack.axis = .vertical
+        view.addSubview(stack)
+        view.backgroundColor = .clear
+        stack.edgeAnchors == view.edgeAnchors
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 114, height: 18))
         imageView.image = #imageLiteral(resourceName: "uigradients")
@@ -92,26 +114,29 @@ class SelectGradientViewController: UITableViewController {
     }
 }
 
-extension SelectGradientViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+extension SelectGradientViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let presenter = presentingViewController?.childViewControllers.first as? RootPageViewController else { return }
         dismiss(animated: true) { 
             presenter.scrollToPage(.at(index: indexPath.row), animated: true)
         }
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let gradients = gradients else { return UITableViewCell() }
-        let cell = cellFactory(gradients[indexPath.row])
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let gradients = gradients,
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GradientRowCell.self), for: indexPath) as? GradientRowCell else {
+                return UITableViewCell()
+        }
+        cell.gradient = gradients[indexPath.row]
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let gradients = gradients else { return 0 }
         return gradients.count
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
 }
