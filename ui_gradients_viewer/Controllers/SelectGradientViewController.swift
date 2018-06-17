@@ -25,21 +25,45 @@ extension UIView {
 
 
 
-
+final class GradientCardView: UIView {
+    let gradientCardCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    let cardSection = GradientCardSectionController()
+    
+    var gradients: [GradientColor] = [] {
+        didSet {
+            cardSection.gradients = gradients
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        gradientCardCollectionView.delegate = cardSection
+        gradientCardCollectionView.dataSource = cardSection
+        cardSection.registerReusableTypes(collectionView: gradientCardCollectionView)
+        gradientCardCollectionView.backgroundColor = .clear
+        addSubview(gradientCardCollectionView)
+        gradientCardCollectionView.edgeAnchors == edgeAnchors
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
 
 
 
 
 
 final class SelectGradientViewController: UIViewController {
-    let cardSection = GradientCardSectionController()
-    let gradientCardCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    let cardView = GradientCardView()
     let header = DrawerHeaderView()
+    let pager = PagerView()
+    let customize = CustomizeGradientView()
     let backgroundView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     
     var gradients: [GradientColor] = [] {
         didSet {
-            cardSection.gradients = gradients
+            cardView.cardSection.gradients = gradients
         }
     }
     
@@ -51,7 +75,7 @@ final class SelectGradientViewController: UIViewController {
     
     weak var dispatch: GradientActionDispatching? {
         didSet {
-            cardSection.dispatch = dispatch
+            cardView.cardSection.dispatch = dispatch
         }
     }
     
@@ -59,16 +83,15 @@ final class SelectGradientViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .clear
         
-        header.colorPicker.delegate = self
+        
+        pager.pagerDatasource = self
+        pager.pagerDelegate = self
+        pager.collection.reloadData()
+        
         header.colorCollection.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture(gesture:))))
         pulleyViewController?.topInset = 100
         
-        gradientCardCollectionView.delegate = cardSection
-        gradientCardCollectionView.dataSource = cardSection
-        cardSection.registerReusableTypes(collectionView: gradientCardCollectionView)
-        gradientCardCollectionView.backgroundColor = .clear
-        
-        let stack = UIStackView(arrangedSubviews: [header, gradientCardCollectionView])
+        let stack = UIStackView(arrangedSubviews: [header, pager])
         stack.axis = .vertical
         view.addSubview(stack)
         view.backgroundColor = .clear
@@ -91,7 +114,7 @@ final class SelectGradientViewController: UIViewController {
             guard let strongSelf = self else { return }
             strongSelf.gradients = gradients
             DispatchQueue.main.async {
-                strongSelf.gradientCardCollectionView.reloadData()
+                strongSelf.cardView.gradientCardCollectionView.reloadData()
             }
         }
     }
@@ -141,5 +164,20 @@ extension SelectGradientViewController: PulleyDrawerViewControllerDelegate {
 extension SelectGradientViewController: ChromaColorPickerDelegate {
     func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor) {
         
+    }
+}
+
+
+extension SelectGradientViewController: PagerDelegate, PagerDatasource {
+    func numberOfPages() -> Int {
+        return 3
+    }
+    
+    func pageForItem(at indexPath: IndexPath) -> UIView {
+        switch indexPath.row {
+        case 0: return customize
+        case 1: return cardView
+        default: return UIView()
+        }
     }
 }

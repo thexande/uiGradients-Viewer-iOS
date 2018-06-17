@@ -27,6 +27,8 @@
 		B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30C620D714A400FD8B1D /* SwitchView.swift */; };
 		B0BA30C920D714BF00FD8B1D /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30C820D714BF00FD8B1D /* SliderView.swift */; };
 		B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */; };
+		B0BA30CD20D7234E00FD8B1D /* CustomizeGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CC20D7234E00FD8B1D /* CustomizeGradientView.swift */; };
+		B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CE20D7237B00FD8B1D /* PagerView.swift */; };
 		B0F93BC020D600F6007FCD5F /* GradientCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */; };
 		B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */; };
 		B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */; };
@@ -81,6 +83,8 @@
 		B0BA30C620D714A400FD8B1D /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		B0BA30C820D714BF00FD8B1D /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerHeaderView.swift; sourceTree = "<group>"; };
+		B0BA30CC20D7234E00FD8B1D /* CustomizeGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGradientView.swift; sourceTree = "<group>"; };
+		B0BA30CE20D7237B00FD8B1D /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCoordinator.swift; sourceTree = "<group>"; };
 		B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureProxy.swift; sourceTree = "<group>"; };
 		B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionController.swift; sourceTree = "<group>"; };
@@ -212,6 +216,8 @@
 				B0BA30C620D714A400FD8B1D /* SwitchView.swift */,
 				B0BA30C820D714BF00FD8B1D /* SliderView.swift */,
 				B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */,
+				B0BA30CC20D7234E00FD8B1D /* CustomizeGradientView.swift */,
+				B0BA30CE20D7237B00FD8B1D /* PagerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -474,11 +480,13 @@
 			files = (
 				B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */,
 				B0F93BC820D6ED34007FCD5F /* GradientCollectionCell.swift in Sources */,
+				B0BA30CD20D7234E00FD8B1D /* CustomizeGradientView.swift in Sources */,
 				B00186C91F54F33B0027FB3A /* SelectGradientViewController.swift in Sources */,
 				B0F93BC620D6ECF3007FCD5F /* GradientCardSectionController.swift in Sources */,
 				B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */,
 				B0B7C0371F5533EC007BE6DF /* RootTableViewController.swift in Sources */,
 				B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */,
+				B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 				B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */,
 				B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */,
