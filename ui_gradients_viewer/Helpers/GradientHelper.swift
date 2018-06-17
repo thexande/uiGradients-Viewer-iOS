@@ -22,7 +22,7 @@ class GradientHelper {
         
         let colors = gradient.colors.map({ (colorDict) -> UIColor? in
             return colorDict.values.first
-        }).flatMap({ $0 })
+        }).compactMap({ $0 })
         
         gradientView.colors = colors
         return gradientView
@@ -36,10 +36,10 @@ class GradientHelper {
                 let colorDicts = colors.map({ (colorHexString) -> [String:UIColor]? in
                     guard let color = UIColor(hexString: colorHexString) else { return nil }
                     return [colorHexString:color]
-                }).flatMap({ $0 })
+                }).compactMap({ $0 })
                 
                 return GradientColor(title: gradName, colors: colorDicts)
-            }).flatMap({$0})
+            }).compactMap({$0})
             
             completion(gradientStructs)
         }

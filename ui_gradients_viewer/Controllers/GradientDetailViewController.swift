@@ -32,8 +32,8 @@ class GradientDetailViewController: UIViewController {
     
     lazy var backButton: UIButton = {
         let button = UIButton()
-        button.addTarget(self, action: #selector(pressedBack), for: .touchUpInside)
-        button.setImage(#imageLiteral(resourceName: "back_button"), for: .normal)
+        button.addTarget(self, action: #selector(pressedBack), for: UIControl.Event.touchUpInside)
+        button.setImage(#imageLiteral(resourceName: "back_button"), for: UIControl.State.normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -60,7 +60,7 @@ class GradientDetailViewController: UIViewController {
         titleLabel.text = gradient.title.uppercased()
         subTitleLabel.text = gradient.colors.map({ (stringDict) -> String? in
             return stringDict.keys.first
-        }).flatMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
+        }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
         
         view.addSubview(titleLabel)
         view.addSubview(subTitleLabel)
