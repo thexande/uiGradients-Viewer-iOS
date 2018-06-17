@@ -61,6 +61,7 @@ class GradientCollectionCell: UICollectionViewCell {
         blur.horizontalAnchors == clipping.horizontalAnchors
         
         contentView.addSubview(clipping)
+        contentView.applyShadow()
         clipping.edgeAnchors == contentView.edgeAnchors
     }
     
@@ -74,7 +75,7 @@ extension UIView {
         layer.shadowRadius = 4
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 2)
-        layer.shadowOpacity = 0.6
+        layer.shadowOpacity = 0.3
     }
 }
 
@@ -104,24 +105,6 @@ final class SelectGradientViewController: UIViewController {
         return view
     }()
     
-    
-    
-    
-    func cellFactory(_ gradient: GradientColor) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "reuse")
-        cell.contentView.backgroundColor = .clear
-        cell.backgroundColor = .clear
-        cell.textLabel?.text = gradient.title
-        
-//        let gradColors = gradient.colors.map({ (stringDict) -> String? in
-//            return stringDict.keys.first
-//        }).flatMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
-        
-//        cell.detailTextLabel?.text = gradColors
-        cell.detailTextLabel?.textColor = .white
-        cell.textLabel?.textColor = .white
-        return cell
-    }
     
     func setGradient(_ gradient: GradientColor) {
         [colorOne, colorTwo, colorThree, colorFour].forEach { $0.isHidden = true }
@@ -171,6 +154,8 @@ final class SelectGradientViewController: UIViewController {
         super.viewDidLoad()
         configureColorTiles()
         view.backgroundColor = .clear
+        
+        pulleyViewController?.topInset = 100
         
         collectionView.delegate = self
         collectionView.dataSource = self

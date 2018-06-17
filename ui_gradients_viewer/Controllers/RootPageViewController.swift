@@ -32,7 +32,7 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
     
     var startingIndex: Int = 0
     weak var dispatch: GradientActionDispatching?
-    let save = UIButton()
+    
     
     var gradientVCs = [GradientDetailViewController]() {
         didSet {
@@ -47,16 +47,11 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
         self.dataSource = self
         self.delegate = self
         
-        save.setImage(UIImage(named: "save"), for: .normal)
-        save.sizeAnchors == CGSize(width: 40, height: 40)
-        
-        view.addSubview(save)
-        save.topAnchor == view.safeAreaLayoutGuide.topAnchor + 18
-        save.trailingAnchor == view.trailingAnchor - 18
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 114, height: 18))
         imageView.image = #imageLiteral(resourceName: "uigradients")
         self.navigationItem.titleView = imageView
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -9,9 +9,13 @@
 import Foundation
 import UIKit
 import Anchorage
+import GradientView
 
 class GradientDetailViewController: UIViewController {
     let header = UIView()
+    let save = UIButton()
+    var gradientView: GradientView?
+    weak var dispatch: GradientActionDispatching?
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -42,6 +46,19 @@ class GradientDetailViewController: UIViewController {
     init(_ gradient: GradientColor) {
         super.init(nibName: nil, bundle: nil)
         configureGradient(gradient)
+        
+        save.setImage(UIImage(named: "save"), for: .normal)
+        save.sizeAnchors == CGSize(width: 40, height: 40)
+        
+        view.addSubview(save)
+        save.topAnchor == view.safeAreaLayoutGuide.topAnchor + 18
+        save.trailingAnchor == view.trailingAnchor - 18
+        
+        save.addAction { [weak self] in
+            if let gradientView = self?.gradientView {
+                self?.dispatch?.dispatch(.saveGradient(gradientView.getSnapshotImage()))
+            }
+        }
     }
     
     @objc func pressedBack() {
@@ -57,6 +74,7 @@ class GradientDetailViewController: UIViewController {
     
     func configureGradient(_ gradient: GradientColor) {
         let gradientView = GradientHelper.produceGradientView(gradient)
+        self.gradientView = gradientView
         view.insertSubview(gradientView, at: 0)
         titleLabel.text = gradient.title.uppercased()
         subTitleLabel.text = gradient.colors.map({ (stringDict) -> String? in

@@ -54,33 +54,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "550907990.9683141"
+            timestampString = "550955739.408621"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "dispatch(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ui_gradients_viewer/Controllers/SelectGradientViewController.swift"
-            timestampString = "550907990.968416"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "gradient"
-            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ui_gradients_viewer.GradientCoordinator.dispatch(ui_gradients_viewer.GradientAction) -&gt; ()"
+                  moduleName = "ui_gradients_viewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandermurphy/Documents/thexande_apps/uiGradients-Viewer-iOS/ui_gradients_viewer/Controllers/GradientCoordinator.swift"
+                  timestampString = "550955419.3223341"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1100">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ui_gradients_viewer.GradientColor.Color) -&gt; __C.UIColor in ui_gradients_viewer.GradientCoordinator.dispatch(ui_gradients_viewer.GradientAction) -&gt; ()"
+                  moduleName = "ui_gradients_viewer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexandermurphy/Documents/thexande_apps/uiGradients-Viewer-iOS/ui_gradients_viewer/Controllers/GradientCoordinator.swift"
+                  timestampString = "550955419.327289"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -89,13 +105,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "550907990.969147"
+            filePath = "ui_gradients_viewer/Controllers/SelectGradientViewController.swift"
+            timestampString = "550955739.408733"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "dispatch(_:)"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
