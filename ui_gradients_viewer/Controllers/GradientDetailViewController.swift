@@ -54,9 +54,9 @@ class GradientDetailViewController: UIViewController {
         save.setImage(UIImage(named: "save"), for: .normal)
         save.sizeAnchors == CGSize(width: 40, height: 40)
         
-        view.addSubview(save)
-        save.topAnchor == view.safeAreaLayoutGuide.topAnchor + 18
-        save.trailingAnchor == view.trailingAnchor - 18
+//        view.addSubview(save)
+//        save.topAnchor == view.safeAreaLayoutGuide.topAnchor + 18
+//        save.trailingAnchor == view.trailingAnchor - 18
         
         save.addAction { [weak self] in
             if let gradientView = self?.gradientView {

@@ -24,6 +24,7 @@ final class PagerView: UIView {
         collection.edgeAnchors == edgeAnchors
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: String(describing: UICollectionViewCell.self))
         collection.showsHorizontalScrollIndicator = false
+        collection.isScrollEnabled = false
         
         if let layout = collection.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal

@@ -70,12 +70,15 @@ final class SelectGradientViewController: UIViewController {
     var gradient: GradientColor? {
         didSet {
             header.gradient = gradient
+            customize.gradient = gradient
         }
     }
     
     weak var dispatch: GradientActionDispatching? {
         didSet {
             cardView.cardSection.dispatch = dispatch
+            customize.dispatch = dispatch
+            header.dispatch = dispatch
         }
     }
     
@@ -153,11 +156,11 @@ extension SelectGradientViewController: PulleyDrawerViewControllerDelegate {
     }
     
     func collapsedDrawerHeight(bottomSafeArea: CGFloat) -> CGFloat {
-        return bottomSafeArea + 120
+        return bottomSafeArea + 80
     }
     
     func partialRevealDrawerHeight(bottomSafeArea: CGFloat) -> CGFloat {
-        return 270 + bottomSafeArea
+        return 300 + bottomSafeArea
     }
 }
 

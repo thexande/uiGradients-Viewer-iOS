@@ -3,6 +3,7 @@ import Anchorage
 import ChromaColorPicker
 
 final class CustomizeGradientView: UIView {
+    weak var dispatch: GradientActionDispatching?
     let slider = Slider()
     let radius = Slider()
     let gradientSegmented = SegmentedView()

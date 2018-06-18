@@ -29,7 +29,7 @@ final class GradientCardSectionController: NSObject, CollectionSectionController
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 12, bottom: 0, right: 12)
+        return UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

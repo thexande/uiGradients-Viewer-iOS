@@ -8,6 +8,7 @@ final class DrawerHeaderView: UIView {
     let colorCollection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     let colorSection = ColorPickerCollectionSectionController()
     let segmented = UISegmentedControl(items: ["Customize", "Popular", "Export"])
+    weak var dispatch: GradientActionDispatching?
     
     var gradient: GradientColor? {
         didSet {
@@ -23,11 +24,20 @@ final class DrawerHeaderView: UIView {
         segmented.tintColor = gradient.colors.first?.color ?? .black
     }
     
+    @objc func segmentChanged(_ segment: UISegmentedControl) {
+        switch segment.selectedSegmentIndex {
+        case 0: dispatch?.dispatch(.drawerContextChange(.customize))
+        case 1: dispatch?.dispatch(.drawerContextChange(.popular))
+        case 2: dispatch?.dispatch(.drawerContextChange(.export))
+        default: return
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         let controlStack = UIStackView(arrangedSubviews: [colorCollection, segmented])
-        controlStack.spacing = 18
+        controlStack.spacing = 36
         controlStack.axis = .vertical
         addSubview(controlStack)
         
@@ -40,6 +50,7 @@ final class DrawerHeaderView: UIView {
         controlStack.edgeAnchors == edgeAnchors + UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
         
         segmented.selectedSegmentIndex = 0
+        segmented.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
         
         
         if let layout = colorCollection.collectionViewLayout as? UICollectionViewFlowLayout {

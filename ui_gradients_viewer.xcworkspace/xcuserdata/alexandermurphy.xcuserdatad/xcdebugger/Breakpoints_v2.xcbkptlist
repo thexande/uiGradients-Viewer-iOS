@@ -58,45 +58,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "550958494.493596"
+            timestampString = "550974338.384379"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "dispatch(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ui_gradients_viewer.GradientCoordinator.dispatch(ui_gradients_viewer.GradientAction) -&gt; ()"
-                  moduleName = "ui_gradients_viewer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Documents/thexande_apps/uiGradients-Viewer-iOS/ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-                  timestampString = "550955419.3223341"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "1100">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (ui_gradients_viewer.GradientColor.Color) -&gt; __C.UIColor in ui_gradients_viewer.GradientCoordinator.dispatch(ui_gradients_viewer.GradientAction) -&gt; ()"
-                  moduleName = "ui_gradients_viewer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Documents/thexande_apps/uiGradients-Viewer-iOS/ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-                  timestampString = "550955419.327289"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
+            timestampString = "550974338.384858"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "dispatch(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

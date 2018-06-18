@@ -5,9 +5,16 @@ import Photos
 import UIKit
 
 enum GradientAction {
+    enum DrawerContext {
+        case customize
+        case popular
+        case export
+    }
+    
     case selectedGradient(Int)
     case selectedGradientFromDrawer(Int)
     case saveGradient(UIImage)
+    case drawerContextChange(DrawerContext)
 }
 
 protocol GradientActionDispatching: class {
@@ -92,6 +99,13 @@ extension GradientCoordinator: GradientActionDispatching {
                     // Save photo failed with no error
                 }
             })
+            
+        case .drawerContextChange(let context):
+            switch context {
+            case .customize: drawer.pager.collection.scrollToItem(at: IndexPath(row: 0, section: 0), at: .centeredHorizontally, animated: true)
+            case .export: drawer.pager.collection.scrollToItem(at: IndexPath(row: 2, section: 0), at: .centeredHorizontally, animated: true)
+            case .popular: drawer.pager.collection.scrollToItem(at: IndexPath(row: 1, section: 0), at: .centeredHorizontally, animated: true)
+            }
         }
     }
 }
