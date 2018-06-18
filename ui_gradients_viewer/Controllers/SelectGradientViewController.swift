@@ -160,7 +160,7 @@ extension SelectGradientViewController: PulleyDrawerViewControllerDelegate {
     }
     
     func partialRevealDrawerHeight(bottomSafeArea: CGFloat) -> CGFloat {
-        return 300 + bottomSafeArea
+        return 310 + bottomSafeArea
     }
 }
 

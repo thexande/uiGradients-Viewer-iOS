@@ -28,8 +28,7 @@ final class CustomizeGradientView: UIView {
         super.init(frame: frame)
         gradientSegmented.title = "type".capitalized
         slider.title = "position".capitalized
-        radius.title = "radius".capitalized
-        
+        radius.title = "radius".capitalized        
         let stack = UIStackView(arrangedSubviews: [slider, gradientSegmented, radius])
         stack.spacing = 18
         stack.axis = .vertical
