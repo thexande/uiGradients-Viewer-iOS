@@ -55,10 +55,15 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
         return true
     }
     
+    
     func collectionView(_ collectionView: UICollectionView,
                         moveItemAt sourceIndexPath: IndexPath,
                         to destinationIndexPath: IndexPath) {
+        
+        
         print("Starting Index: \(sourceIndexPath.item)")
         print("Ending Index: \(destinationIndexPath.item)")
     }
+    
+    
 }

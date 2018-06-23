@@ -59,6 +59,7 @@ final class SelectGradientViewController: UIViewController {
     let header = DrawerHeaderView()
     let pager = PagerView()
     let customize = CustomizeGradientView()
+    let export = ExportView()
     let backgroundView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
     
     var gradients: [GradientColor] = [] {
@@ -71,6 +72,7 @@ final class SelectGradientViewController: UIViewController {
         didSet {
             header.gradient = gradient
             customize.gradient = gradient
+            export.gradient = gradient
         }
     }
     
@@ -180,7 +182,131 @@ extension SelectGradientViewController: PagerDelegate, PagerDatasource {
         switch indexPath.row {
         case 0: return customize
         case 1: return cardView
-        default: return UIView()
+        default: return export
         }
+    }
+}
+
+final class IPhoneXView: UIView {
+    let border = UIView()
+    let notch = UIView()
+    let background = GradientView()
+    let clock = UILabel()
+    let lock = UIImageView(image: UIImage(named: "ic_lock"))
+    let lockContainer = UIView()
+    let sub = UILabel()
+    
+    var gradient: GradientColor? {
+        didSet {
+            background.colors = gradient?.colors.map { $0.color } ?? []
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        addSubview(background)
+        background.edgeAnchors == edgeAnchors
+        background.clipsToBounds = true
+        background.layer.cornerRadius = 40
+        
+        addSubview(border)
+        border.edgeAnchors == edgeAnchors
+        border.layer.borderColor = UIColor.black.cgColor
+        border.layer.borderWidth = 8
+        border.layer.cornerRadius = 40
+        border.clipsToBounds = true
+        border.clipsToBounds = true
+        border.layer.cornerRadius = 40
+        
+        background.addSubview(notch)
+        notch.backgroundColor = .black
+        notch.heightAnchor == 40
+        notch.widthAnchor == 130
+        notch.centerXAnchor == centerXAnchor
+        notch.centerYAnchor == topAnchor
+        notch.layer.cornerRadius = 20
+        
+        lockContainer.addSubview(lock)
+        lock.verticalAnchors == lockContainer.verticalAnchors
+        lock.centerXAnchor == lockContainer.centerXAnchor
+        
+        lock.sizeAnchors == CGSize(width: 20, height: 20)
+        lock.contentMode = .scaleAspectFit
+        
+        let stack = UIStackView(arrangedSubviews: [lockContainer, clock, sub])
+        stack.axis = .vertical
+        stack.spacing = 4
+        
+        addSubview(stack)
+        stack.topAnchor == background.topAnchor + 36
+        stack.centerXAnchor == centerXAnchor
+        
+        clock.font = UIFont.systemFont(ofSize: 46, weight: .medium)
+        clock.textColor = .white
+        clock.text = "12:24"
+        clock.textAlignment = .center
+        
+        sub.font = UIFont.systemFont(ofSize: 10, weight: .medium)
+        sub.text = "Tuesday, September 13"
+        sub.textColor = .white
+        sub.textAlignment = .center
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+final class ExportView: UIView {
+    let iphone = IPhoneXView()
+    let export = UIButton()
+    let buttonGradient = GradientView()
+    
+    
+    var gradient: GradientColor? {
+        didSet {
+            iphone.gradient = gradient
+            buttonGradient.colors = gradient?.colors.map { $0.color } ?? []
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        addSubview(iphone)
+        addSubview(export)
+        export.addSubview(buttonGradient)
+        
+        iphone.applyShadow()
+        iphone.horizontalAnchors == horizontalAnchors + 60
+        iphone.topAnchor == export.bottomAnchor + 36
+        iphone.bottomAnchor == bottomAnchor + 40
+        
+        export.layer.cornerRadius = 8
+        export.applyShadow()
+        export.titleLabel?.textColor = .white
+        export.backgroundColor = .black
+        export.horizontalAnchors == horizontalAnchors + 36
+        export.heightAnchor == 36
+        export.topAnchor == topAnchor + 18
+        export.setTitle("Export", for: .normal)
+        export.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        
+        buttonGradient.edgeAnchors == export.edgeAnchors
+        buttonGradient.direction = .horizontal
+        buttonGradient.layer.cornerRadius = 8
+        buttonGradient.clipsToBounds = true
+        
+        
+        
+    }
+    
+    override func layoutSubviews() {
+//        export.setBackgroundImage(buttonGradient.getSnapshotImage(), for: .normal)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

@@ -12,12 +12,12 @@ import GradientView
 
 struct GradientColor {
     struct Color {
-        let hex: String
-        let color: UIColor
+        var hex: String
+        var color: UIColor
     }
     
-    let title: String
-    let colors: [Color]
+    var title: String
+    var colors: [Color]
 }
 
 class GradientHelper {
