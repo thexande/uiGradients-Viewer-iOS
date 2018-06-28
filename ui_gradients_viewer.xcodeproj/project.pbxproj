@@ -32,6 +32,8 @@
 		B0D933F520E4841700EFB802 /* IphoneXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F420E4841700EFB802 /* IphoneXView.swift */; };
 		B0D933F820E4845E00EFB802 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F720E4845E00EFB802 /* UIView.swift */; };
 		B0D933FA20E4849600EFB802 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F920E4849600EFB802 /* ExportView.swift */; };
+		B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933FB20E4856600EFB802 /* GradientCardView.swift */; };
+		B0D933FE20E4925200EFB802 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933FD20E4925200EFB802 /* UIColor.swift */; };
 		B0F93BC020D600F6007FCD5F /* GradientCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */; };
 		B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */; };
 		B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */; };
@@ -91,6 +93,8 @@
 		B0D933F420E4841700EFB802 /* IphoneXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneXView.swift; sourceTree = "<group>"; };
 		B0D933F720E4845E00EFB802 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B0D933F920E4849600EFB802 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		B0D933FB20E4856600EFB802 /* GradientCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardView.swift; sourceTree = "<group>"; };
+		B0D933FD20E4925200EFB802 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCoordinator.swift; sourceTree = "<group>"; };
 		B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureProxy.swift; sourceTree = "<group>"; };
 		B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionController.swift; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				B0BA30CE20D7237B00FD8B1D /* PagerView.swift */,
 				B0D933F420E4841700EFB802 /* IphoneXView.swift */,
 				B0D933F920E4849600EFB802 /* ExportView.swift */,
+				B0D933FB20E4856600EFB802 /* GradientCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				B0D933F720E4845E00EFB802 /* UIView.swift */,
+				B0D933FD20E4925200EFB802 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -507,12 +513,14 @@
 				B0D933F520E4841700EFB802 /* IphoneXView.swift in Sources */,
 				B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */,
 				B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */,
+				B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 				B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */,
 				B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */,
 				B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */,
 				B0BA30C320D7122600FD8B1D /* ColorPickerCollectionSectionController.swift in Sources */,
 				B0BA30C920D714BF00FD8B1D /* SliderView.swift in Sources */,
+				B0D933FE20E4925200EFB802 /* UIColor.swift in Sources */,
 				B0B7C0331F55339E007BE6DF /* GradientTableCell.swift in Sources */,
 				B0BA30C520D7148700FD8B1D /* SegmentedView.swift in Sources */,
 				B0BA30C120D7025200FD8B1D /* ColorPickerCollectionCell.swift in Sources */,

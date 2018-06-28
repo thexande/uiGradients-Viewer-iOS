@@ -31,6 +31,12 @@ final class GradientCoordinator {
     var selectedGradient: GradientColor? {
         didSet {
             drawer.gradient = selectedGradient
+            guard let gradientDetailViewController = content.gradientVCs.first(where: { vc in
+                vc.gradientColor?.title == selectedGradient?.title
+            }) else {
+                    return
+            }
+            gradientDetailViewController.gradientColor = selectedGradient
         }
     }
     
@@ -112,7 +118,13 @@ extension GradientCoordinator: GradientActionDispatching {
         case .saveGradient(let image): saveImage(image: image)
         case .drawerContextChange(let context): drawerContextDidChange(context)
         
-        case .colorIndexChange(let startingIndex, let endingIndex): return
+        case .colorIndexChange(let startingIndex, let endingIndex):
+            if let gradient = selectedGradient {
+                var colors = gradient.colors
+                let element = colors.remove(at: startingIndex)
+                colors.insert(element, at: endingIndex)
+                selectedGradient?.colors = colors
+            }
         }
     }
 }

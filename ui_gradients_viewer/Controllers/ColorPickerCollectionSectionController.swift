@@ -2,6 +2,7 @@ import UIKit
 
 final class ColorPickerCollectionSectionController: NSObject, CollectionSectionController {
     var items: [GradientColor.Color] = []
+    weak var dispatcher: GradientActionDispatching?
     
     func registerReusableTypes(collectionView: UICollectionView) {
         collectionView.register(ColorPickerCollectionCell.self,
@@ -59,11 +60,9 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
     func collectionView(_ collectionView: UICollectionView,
                         moveItemAt sourceIndexPath: IndexPath,
                         to destinationIndexPath: IndexPath) {
-        
-        
         print("Starting Index: \(sourceIndexPath.item)")
         print("Ending Index: \(destinationIndexPath.item)")
+        dispatcher?.dispatch(.colorIndexChange(startingIndex: sourceIndexPath.item,
+                                               endingIndex: destinationIndexPath.item))
     }
-    
-    
 }

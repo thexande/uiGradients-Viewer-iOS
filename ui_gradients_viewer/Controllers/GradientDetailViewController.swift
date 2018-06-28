@@ -1,12 +1,3 @@
-//
-//  GradientDetailViewController.swift
-//  ui_gradients_viewer
-//
-//  Created by Alexander Murphy on 8/28/17.
-//  Copyright © 2017 Alexander Murphy. All rights reserved.
-//
-
-import Foundation
 import UIKit
 import Anchorage
 import GradientView
@@ -14,11 +5,23 @@ import GradientView
 class GradientDetailViewController: UIViewController {
     let header = UIView()
     let save = UIButton()
-    var gradientView: GradientView?
+    let gradientView = GradientView()
     weak var dispatch: GradientActionDispatching?
     
+    var gradientColor: GradientColor? {
+        didSet {
+            if let gradientColor = gradientColor {
+                configureGradient(gradientColor)
+            }
+        }
+    }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .default
+        if let status = gradientColor?.colors.first?.color.isLight, status {
+            return .default
+        } else {
+            return .lightContent
+        }
     }
     
     let titleLabel: UILabel = {
@@ -49,42 +52,11 @@ class GradientDetailViewController: UIViewController {
     
     init(_ gradient: GradientColor) {
         super.init(nibName: nil, bundle: nil)
+        gradientColor = gradient
         configureGradient(gradient)
         
-        save.setImage(UIImage(named: "save"), for: .normal)
-        save.sizeAnchors == CGSize(width: 40, height: 40)
-        
-//        view.addSubview(save)
-//        save.topAnchor == view.safeAreaLayoutGuide.topAnchor + 18
-//        save.trailingAnchor == view.trailingAnchor - 18
-        
-        save.addAction { [weak self] in
-            if let gradientView = self?.gradientView {
-                self?.dispatch?.dispatch(.saveGradient(gradientView.getSnapshotImage()))
-            }
-        }
-    }
-    
-    @objc func pressedBack() {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
-    func configureGradient(_ gradient: GradientColor) {
-        let gradientView = GradientHelper.produceGradientView(gradient)
-        self.gradientView = gradientView
         view.insertSubview(gradientView, at: 0)
-        titleLabel.text = gradient.title.uppercased()
-        subTitleLabel.text = gradient.colors.map({ (stringDict) -> String? in
-            return stringDict.hex
-        }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
-        
+        gradientView.translatesAutoresizingMaskIntoConstraints = false
         header.addSubview(titleLabel)
         header.addSubview(subTitleLabel)
         
@@ -105,6 +77,35 @@ class GradientDetailViewController: UIViewController {
         
         titleLabel.topAnchor == view.safeAreaLayoutGuide.topAnchor + 12
         
+        save.addAction { [weak self] in
+            if let gradientView = self?.gradientView {
+                self?.dispatch?.dispatch(.saveGradient(gradientView.getSnapshotImage()))
+            }
+        }
     }
     
+    @objc func pressedBack() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    func configureGradient(_ gradient: GradientColor) {
+        self.gradientView.colors = gradient.colors.map { $0.color }
+        titleLabel.text = gradient.title.uppercased()
+        subTitleLabel.text = gradient.colors.map({ (stringDict) -> String? in
+            return stringDict.hex
+        }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
+        setNeedsStatusBarAppearanceUpdate()
+        
+        
+        [titleLabel, subTitleLabel].forEach { label in
+            label.textColor = ((gradient.colors.first?.color.isLight ?? false) ? .black : .white)
+        }  
+    }
 }

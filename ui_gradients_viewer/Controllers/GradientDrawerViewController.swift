@@ -1,58 +1,8 @@
-//
-//  SelectGradientViewController.swift
-//  ui_gradients_viewer
-//
-//  Created by Alexander Murphy on 8/28/17.
-//  Copyright © 2017 Alexander Murphy. All rights reserved.
-//
-
-import Foundation
 import UIKit
 import Anchorage
 import ChromaColorPicker
 import Pulley
 import GradientView
-
-extension UIView {
-    func applyShadow() {
-        layer.shadowRadius = 4
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 2)
-        layer.shadowOpacity = 0.3
-    }
-}
-
-
-
-
-final class GradientCardView: UIView {
-    let gradientCardCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-    let cardSection = GradientCardSectionController()
-    
-    var gradients: [GradientColor] = [] {
-        didSet {
-            cardSection.gradients = gradients
-        }
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        gradientCardCollectionView.delegate = cardSection
-        gradientCardCollectionView.dataSource = cardSection
-        cardSection.registerReusableTypes(collectionView: gradientCardCollectionView)
-        gradientCardCollectionView.backgroundColor = .clear
-        addSubview(gradientCardCollectionView)
-        gradientCardCollectionView.edgeAnchors == edgeAnchors
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-
-
-
 
 final class GradientDrawerViewController: UIViewController {
     let cardView = GradientCardView()
@@ -65,6 +15,7 @@ final class GradientDrawerViewController: UIViewController {
     var gradients: [GradientColor] = [] {
         didSet {
             cardView.cardSection.gradients = gradients
+            
         }
     }
     
@@ -81,13 +32,13 @@ final class GradientDrawerViewController: UIViewController {
             cardView.cardSection.dispatch = dispatch
             customize.dispatch = dispatch
             header.dispatch = dispatch
+            header.colorSection.dispatcher = dispatch
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .clear
-        
         
         pager.pagerDatasource = self
         pager.pagerDelegate = self
