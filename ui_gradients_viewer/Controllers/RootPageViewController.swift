@@ -77,7 +77,7 @@ class RootPageViewController: PageboyViewController, PageboyViewControllerDataSo
     }
     
     @objc func didPressOpenMenu() {
-        let select = UINavigationController(rootViewController: SelectGradientViewController())
+        let select = UINavigationController(rootViewController: GradientDrawerViewController())
         select.modalPresentationStyle = .overCurrentContext
         present(select, animated: true, completion: nil)
     }

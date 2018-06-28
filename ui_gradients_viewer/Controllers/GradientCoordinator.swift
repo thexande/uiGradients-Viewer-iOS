@@ -7,7 +7,7 @@ import UIKit
 enum GradientAction {
     enum DrawerContext {
         case customize
-        case populardddd
+        case popular
         case export
     }
     
@@ -25,7 +25,7 @@ protocol GradientActionDispatching: class {
 final class GradientCoordinator {
     let root: PulleyViewController?
     let content: RootPageViewController
-    let drawer: SelectGradientViewController
+    let drawer: GradientDrawerViewController
     var gradients: [GradientColor] = []
     
     var selectedGradient: GradientColor? {
@@ -35,7 +35,7 @@ final class GradientCoordinator {
     }
     
     init() {
-        let drawer = SelectGradientViewController()
+        let drawer = GradientDrawerViewController()
         self.drawer = drawer
         
         let content = RootPageViewController()
@@ -108,23 +108,13 @@ extension GradientCoordinator: GradientActionDispatching {
         case .selectedGradient(let index):
             selectedGradient = gradients[index]
         case .selectedGradientFromDrawer(let index):
-            let gradient = gradients[index]
             content.scrollToPage(.at(index: index), animated: true)
         case .saveGradient(let image): saveImage(image: image)
         case .drawerContextChange(let context): drawerContextDidChange(context)
         
-        case .colorIndexChange(let startingIndex, let endingIndex):return
+        case .colorIndexChange(let startingIndex, let endingIndex): return
         }
     }
 }
 
 
-extension UIView {
-    public func getSnapshotImage() -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.isOpaque, 0)
-        self.drawHierarchy(in: self.bounds, afterScreenUpdates: false)
-        let snapshotImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        return snapshotImage
-    }
-}
