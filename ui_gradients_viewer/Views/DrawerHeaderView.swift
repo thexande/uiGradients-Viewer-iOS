@@ -1,7 +1,6 @@
 import UIKit
 import Anchorage
 import GradientView
-import ChromaColorPicker
 
 final class DrawerHeaderView: UIView {
     let indicator = UIView()
@@ -64,9 +63,6 @@ final class DrawerHeaderView: UIView {
         indicator.heightAnchor == 4
         indicator.widthAnchor == 42
         indicator.layer.cornerRadius = 2
-        
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

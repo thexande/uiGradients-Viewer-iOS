@@ -1,19 +1,12 @@
-//
-//  GradientHelper.swift
-//  ui_gradients_viewer
-//
-//  Created by Alexander Murphy on 8/27/17.
-//  Copyright © 2017 Alexander Murphy. All rights reserved.
-//
-
 import Foundation
 import SwiftHEXColors
 import GradientView
 
 struct GradientColor {
-    struct Color {
+    struct Color: Equatable {
         var hex: String
         var color: UIColor
+        let identifier: UUID
     }
     
     var title: String
@@ -38,7 +31,7 @@ class GradientHelper {
                 
                 let colorDicts = colors.map({ (colorHexString) -> GradientColor.Color? in
                     guard let color = UIColor(hexString: colorHexString) else { return nil }
-                    return GradientColor.Color(hex: colorHexString, color: color)
+                    return GradientColor.Color(hex: colorHexString, color: color, identifier: UUID())
                 }).compactMap({ $0 })
                 
                 return GradientColor(title: gradName, colors: colorDicts)

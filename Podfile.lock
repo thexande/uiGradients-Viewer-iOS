@@ -1,6 +1,5 @@
 PODS:
   - Anchorage (4.2.2)
-  - ChromaColorPicker (1.7)
   - GradientView (2.3.3)
   - Haptica (2.0.2)
   - Pageboy (2.5.1)
@@ -9,7 +8,6 @@ PODS:
 
 DEPENDENCIES:
   - Anchorage
-  - ChromaColorPicker
   - GradientView
   - Haptica
   - Pageboy
@@ -19,7 +17,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Anchorage
-    - ChromaColorPicker
     - GradientView
     - Haptica
     - Pageboy
@@ -28,13 +25,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Anchorage: cba8707ea6475f604e04047882ba47c07e4b2ac1
-  ChromaColorPicker: 33efa67b17cca51dd253689d18b83ac7e05642c2
   GradientView: b044fa46c24062ee245a07a4e8bea4c5c4d63de0
   Haptica: fdf2cb787b131795b9f51f4e79db84f4389c5bdd
   Pageboy: f0295ea949f0b0123a1b486fd347ea892d0078e0
   Pulley: d3d144a0323b65b8aa1dd601d515d08481103034
   SwiftHEXColors: 9681e756dc78a99ae97f277165b3f5e33b087553
 
-PODFILE CHECKSUM: 410927cf8f5d140bf79f9f1df6765965298e59bd
+PODFILE CHECKSUM: c696cd529b3c95f668f9be8abe5d18cb30e74a7e
 
 COCOAPODS: 1.5.3

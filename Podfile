@@ -11,7 +11,7 @@ target 'ui_gradients_viewer' do
     pod 'Pageboy'
     pod 'Pulley'
     pod 'Anchorage'
-    pod 'ChromaColorPicker'
+#    pod 'ChromaColorPicker'
     pod 'Haptica'
     
   target 'ui_gradients_viewerTests' do

@@ -16,6 +16,7 @@ enum GradientAction {
     case saveGradient(UIImage)
     case drawerContextChange(DrawerContext)
     case colorIndexChange(startingIndex: Int, endingIndex: Int)
+    case colorChange(identifier: UUID, newColor: UIColor?)
 }
 
 protocol GradientActionDispatching: class {
@@ -106,6 +107,23 @@ final class GradientCoordinator {
         case .popular: drawer.pager.collection.scrollToItem(at: IndexPath(row: 1, section: 0), at: .centeredHorizontally, animated: true)
         }
     }
+    
+    
+    private func changeColor(identifier: UUID, newColor: UIColor?) {
+        guard
+            let gradient = self.selectedGradient,
+            let changedColor = gradient.colors.first(where: { $0.identifier == identifier }),
+            let index = gradient.colors.index(of: changedColor),
+            let newColor = newColor else {
+                return
+        }
+        
+        var colors = gradient.colors
+        var color = colors.remove(at: index)
+        color.color = newColor
+        colors.insert(color, at: index)
+        selectedGradient?.colors = colors
+    }
 }
 
 extension GradientCoordinator: GradientActionDispatching {
@@ -125,6 +143,8 @@ extension GradientCoordinator: GradientActionDispatching {
                 colors.insert(element, at: endingIndex)
                 selectedGradient?.colors = colors
             }
+        case let .colorChange(identifier, newColor):
+            changeColor(identifier: identifier, newColor: newColor)
         }
     }
 }

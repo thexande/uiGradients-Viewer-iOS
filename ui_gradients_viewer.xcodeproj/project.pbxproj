@@ -12,6 +12,12 @@
 		6EBE5D3D77A1A5C090ADF0C0 /* Pods_ui_gradients_viewerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D7E6E441D1C497DBBF5CC4 /* Pods_ui_gradients_viewerUITests.framework */; };
 		B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00186C61F53C8550027FB3A /* GradientHelper.swift */; };
 		B00186C91F54F33B0027FB3A /* GradientDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00186C81F54F33B0027FB3A /* GradientDrawerViewController.swift */; };
+		B02EF86D20EB378F001BE24A /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86520EB378F001BE24A /* ChromaShadeSlider.swift */; };
+		B02EF86E20EB378F001BE24A /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86620EB378F001BE24A /* UIColor+Utilities.swift */; };
+		B02EF86F20EB378F001BE24A /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86820EB378F001BE24A /* ChromaColorPicker.swift */; };
+		B02EF87020EB378F001BE24A /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86920EB378F001BE24A /* ColorModeToggleButton.swift */; };
+		B02EF87220EB378F001BE24A /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86B20EB378F001BE24A /* ChromaHandle.swift */; };
+		B02EF87320EB378F001BE24A /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86C20EB378F001BE24A /* ChromaAddButton.swift */; };
 		B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */; };
 		B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */; };
 		B0A461221F53B65C0075B9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A461211F53B65C0075B9F6 /* Assets.xcassets */; };
@@ -67,6 +73,13 @@
 		87B7BB6F89EC192F1C1AC996 /* Pods_ui_gradients_viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ui_gradients_viewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00186C61F53C8550027FB3A /* GradientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientHelper.swift; sourceTree = "<group>"; };
 		B00186C81F54F33B0027FB3A /* GradientDrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDrawerViewController.swift; sourceTree = "<group>"; };
+		B02EF86520EB378F001BE24A /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaShadeSlider.swift; sourceTree = "<group>"; };
+		B02EF86620EB378F001BE24A /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		B02EF86720EB378F001BE24A /* ChromaColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChromaColorPicker.h; sourceTree = "<group>"; };
+		B02EF86820EB378F001BE24A /* ChromaColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaColorPicker.swift; sourceTree = "<group>"; };
+		B02EF86920EB378F001BE24A /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModeToggleButton.swift; sourceTree = "<group>"; };
+		B02EF86B20EB378F001BE24A /* ChromaHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaHandle.swift; sourceTree = "<group>"; };
+		B02EF86C20EB378F001BE24A /* ChromaAddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaAddButton.swift; sourceTree = "<group>"; };
 		B0A461171F53B65C0075B9F6 /* ui_gradients_viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_gradients_viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +177,28 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		B02EF86320EB3770001BE24A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B02EF86420EB378F001BE24A /* ChromaColorPicker */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B02EF86420EB378F001BE24A /* ChromaColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B02EF86520EB378F001BE24A /* ChromaShadeSlider.swift */,
+				B02EF86620EB378F001BE24A /* UIColor+Utilities.swift */,
+				B02EF86720EB378F001BE24A /* ChromaColorPicker.h */,
+				B02EF86820EB378F001BE24A /* ChromaColorPicker.swift */,
+				B02EF86920EB378F001BE24A /* ColorModeToggleButton.swift */,
+				B02EF86B20EB378F001BE24A /* ChromaHandle.swift */,
+				B02EF86C20EB378F001BE24A /* ChromaAddButton.swift */,
+			);
+			path = ChromaColorPicker;
+			sourceTree = "<group>";
+		};
 		B0A4610E1F53B65C0075B9F6 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +224,7 @@
 		B0A461191F53B65C0075B9F6 /* ui_gradients_viewer */ = {
 			isa = PBXGroup;
 			children = (
+				B02EF86320EB3770001BE24A /* Libraries */,
 				B0D933F620E4845200EFB802 /* Extensions */,
 				B0B7C0381F55341E007BE6DF /* Application */,
 				B0B7C0311F553384007BE6DF /* Controllers */,
@@ -454,7 +490,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ui_gradients_viewer/Pods-ui_gradients_viewer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework",
-				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/GradientView/GradientView.framework",
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
@@ -464,7 +499,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Anchorage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
@@ -506,6 +540,9 @@
 				B0F93BC820D6ED34007FCD5F /* GradientCollectionCell.swift in Sources */,
 				B0D933F820E4845E00EFB802 /* UIView.swift in Sources */,
 				B0BA30CD20D7234E00FD8B1D /* CustomizeGradientView.swift in Sources */,
+				B02EF87220EB378F001BE24A /* ChromaHandle.swift in Sources */,
+				B02EF86F20EB378F001BE24A /* ChromaColorPicker.swift in Sources */,
+				B02EF87020EB378F001BE24A /* ColorModeToggleButton.swift in Sources */,
 				B00186C91F54F33B0027FB3A /* GradientDrawerViewController.swift in Sources */,
 				B0F93BC620D6ECF3007FCD5F /* GradientCardSectionController.swift in Sources */,
 				B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */,
@@ -514,13 +551,16 @@
 				B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */,
 				B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */,
 				B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */,
+				B02EF87320EB378F001BE24A /* ChromaAddButton.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
+				B02EF86E20EB378F001BE24A /* UIColor+Utilities.swift in Sources */,
 				B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */,
 				B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */,
 				B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */,
 				B0BA30C320D7122600FD8B1D /* ColorPickerCollectionSectionController.swift in Sources */,
 				B0BA30C920D714BF00FD8B1D /* SliderView.swift in Sources */,
 				B0D933FE20E4925200EFB802 /* UIColor.swift in Sources */,
+				B02EF86D20EB378F001BE24A /* ChromaShadeSlider.swift in Sources */,
 				B0B7C0331F55339E007BE6DF /* GradientTableCell.swift in Sources */,
 				B0BA30C520D7148700FD8B1D /* SegmentedView.swift in Sources */,
 				B0BA30C120D7025200FD8B1D /* ColorPickerCollectionCell.swift in Sources */,

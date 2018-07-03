@@ -144,7 +144,6 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GradientView/GradientView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework"
@@ -153,7 +152,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GradientView/GradientView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework"

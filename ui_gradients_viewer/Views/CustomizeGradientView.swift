@@ -1,6 +1,5 @@
 import UIKit
 import Anchorage
-import ChromaColorPicker
 
 final class CustomizeGradientView: UIView {
     weak var dispatch: GradientActionDispatching?

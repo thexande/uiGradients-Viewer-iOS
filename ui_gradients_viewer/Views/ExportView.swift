@@ -6,7 +6,7 @@ final class ExportView: UIView {
     let iphone = IPhoneXView()
     let export = UIButton()
     let buttonGradient = GradientView()
-    
+    weak var dispatch: GradientActionDispatching?
     
     var gradient: GradientColor? {
         didSet {
@@ -42,15 +42,14 @@ final class ExportView: UIView {
         buttonGradient.layer.cornerRadius = 8
         buttonGradient.clipsToBounds = true
         
-        
-        
-    }
-    
-    override func layoutSubviews() {
-        //        export.setBackgroundImage(buttonGradient.getSnapshotImage(), for: .normal)
+        buttonGradient.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapExport)))
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func didTapExport() {
+        
     }
 }

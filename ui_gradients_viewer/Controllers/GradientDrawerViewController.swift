@@ -1,6 +1,5 @@
 import UIKit
 import Anchorage
-import ChromaColorPicker
 import Pulley
 import GradientView
 
@@ -24,6 +23,12 @@ final class GradientDrawerViewController: UIViewController {
             header.gradient = gradient
             customize.gradient = gradient
             export.gradient = gradient
+            
+            if gradient?.colors.first?.color.isLight ?? false {
+             
+            } else {
+              
+            }
         }
     }
     
@@ -32,6 +37,7 @@ final class GradientDrawerViewController: UIViewController {
             cardView.cardSection.dispatch = dispatch
             customize.dispatch = dispatch
             header.dispatch = dispatch
+            export.dispatch = dispatch
             header.colorSection.dispatcher = dispatch
         }
     }
@@ -40,6 +46,7 @@ final class GradientDrawerViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .clear
         
+        customize.colorPicker.delegate = self
         pager.pagerDatasource = self
         pager.pagerDelegate = self
         pager.collection.reloadData()
@@ -118,8 +125,14 @@ extension GradientDrawerViewController: PulleyDrawerViewControllerDelegate {
 }
 
 extension GradientDrawerViewController: ChromaColorPickerDelegate {
+    
     func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor) {
-        
+        guard
+            let selectedIndex = header.colorCollection.indexPathsForSelectedItems?.first?.row,
+            let gradient = gradient else {
+                return
+        }
+        dispatch?.dispatch(.colorChange(identifier: gradient.colors[selectedIndex].identifier, newColor: color))
     }
 }
 
