@@ -9,7 +9,8 @@ final class GradientDrawerViewController: UIViewController {
     let pager = PagerView()
     let customize = CustomizeGradientView()
     let export = ExportView()
-    let backgroundView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+    let light = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+    let dark = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     
     var gradients: [GradientColor] = [] {
         didSet {
@@ -20,14 +21,26 @@ final class GradientDrawerViewController: UIViewController {
     
     var gradient: GradientColor? {
         didSet {
-            header.gradient = gradient
-            customize.gradient = gradient
-            export.gradient = gradient
-            
-            if gradient?.colors.first?.color.isLight ?? false {
-             
-            } else {
-              
+            if let gradient = gradient {
+                update(gradient)
+            }
+        }
+    }
+    
+    private func update(_ gradient: GradientColor) {
+        header.gradient = gradient
+        customize.gradient = gradient
+        export.gradient = gradient
+        
+        guard let pulley = parent as? PulleyViewController else { return }
+        
+        if gradient.colors.first?.color.isLight ?? false {
+            UIView.animate(withDuration: 0.3) {
+                pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .dark)
+            }
+        } else {
+            UIView.animate(withDuration: 0.3) {
+                pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .light)
             }
         }
     }

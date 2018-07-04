@@ -9,36 +9,37 @@
 /* Begin PBXBuildFile section */
 		0662FEB4E418BECE042850BDF3D80896 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 179D3C78551ABED56757E788AF60AE75 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		068E1D81BF6F2EB48E06E1E5988FE8D5 /* Anchorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 833843376FC47F8F6C8915B4CB90CB96 /* Anchorage-dummy.m */; };
-		0717E17A1C1FCB074DB2C8AA15C0A7D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		0A7F42981BA9F011764B1BEA00E93943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		0AC35AEA5DCFF25C7B45EC386FAAF9F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		0FF1D8C88F5D7BF5FE65A65F245DD8BB /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA951FF5CD872929DD8F6A3D63110A33 /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851FF2BFCFA02D976D8E55684A0880CF /* AnchorGroupProvider.swift */; };
+		1A207398B76554A825B117FE64DAB78C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		1C91A3F745BABD873AC4B1D6E9F0B664 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4A596205974D8594D8CE12893E9B4 /* Haptic.swift */; };
-		219D525C249450E6563FF2A7B43DD7B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		24E977D27D09CD817FFA42D46A5739D5 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C221C95D2B71288ABEB7346923EFB8E7 /* TransitionOperation.swift */; };
 		2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C734E3A267BFE7FDBD62EC1D3E92EBB /* NSLayoutAnchor+MultiplierConstraints.swift */; };
+		2703921981420A21DC1B1890386A5E58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		27A1D57FC3CDC50578125270B49F7683 /* Pods-ui_gradients_viewerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED2EA8C5FB4E774D07D642EBD6762F /* Pods-ui_gradients_viewerUITests-dummy.m */; };
 		2AA5FD5854467E66F30BD713A494A2F6 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110ACBE2D0D8D8E7C895461B53876B60 /* UIView+Localization.swift */; };
 		2CC44A75550F2E222D5A73F16E002024 /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51A869365E69988BB804018AED0619 /* UIPageViewController+ScrollView.swift */; };
 		30353469736B477B9D83932208592D65 /* UIView+constrainToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067E88958384CA4970DBC634791F8FC /* UIView+constrainToParent.swift */; };
-		308765F26648DCBDE230CFA20D32D919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		3476B48C22B858C81207A5718E61D817 /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C81A91F7D8AE81E1008B13816B341F /* PageboyViewController+AutoScrolling.swift */; };
 		36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 546F6A76A6DF4DE12E211C9D725AC54C /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36D7298BB0EEA1982F5B2978E9A554E3 /* Pods-ui_gradients_viewerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B040F4ADD91EF219DABD2D4C2967E7F /* Pods-ui_gradients_viewerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BEEF304DABB395FC2E8CFF0D4D0B97B /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 197809E823DBA49AA0A56A3B4805E6A0 /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C0B89FED1EA85923BC5B798CB48BAF1 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD961D81A26F1612D61FEA6750B3AC /* PageboyViewController+Management.swift */; };
-		3CC0B964A0729B2232572B19B290635C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3CC6AD85E0C9E7FE53ABD7907833CA29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		3EB5EF4E2E6887CABEF93D137C9FFFD0 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE682AA4B27C898727C861DC8C503FE9 /* PageboyViewController+Transitioning.swift */; };
-		42253A44954F38F17C9FBB786F83E76B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		4374111135C6E3366795E92193D1649A /* Pods-ui_gradients_viewerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D765C387F56EF78AE673AD1F12728052 /* Pods-ui_gradients_viewerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		478DBA27BBB46A13EEB7E7B199F3C2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		47F24EB38A73888770B7D205B3501121 /* PageboyViewController+NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0A6B2AEB811CB1BCE51BC3A2306FE /* PageboyViewController+NavigationDirection.swift */; };
+		48D79B0DA7E2E045A6D430DBE004B86E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		495B25AB0D85F3D95C6672527E6EB4EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		4A2311131476689B7CD6CB4052A12A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		538F8B4EA421F0CB2712A91C0A70CFF1 /* UIScrollView+ScrollActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490F59AB18B3BEC457B999ED24E2838 /* UIScrollView+ScrollActivity.swift */; };
+		548DE3CF3430B9EB2E0CB0C98C2A4E4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19CA1902F62644ACC72269292E5AA4 /* GradientView.swift */; };
-		57793E6514815367189FA59D707095CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		6929A18231635B7AC9E1C64F2C6A9729 /* Anchorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962D69A2697F938EC67E61F3B8CE31 /* Anchorage.swift */; };
 		6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC505AF5355279D2B5AD2302864253A3 /* Compatability.swift */; };
 		729C9CD811C3FA0F23ED6AD50F608A79 /* IndexedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7FA4367BD3FFC728824FD89C5D992 /* IndexedMap.swift */; };
+		775ADBEE76EF58D505A6EE4A4F19BC3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		7B9777DB10DA6A2E542F7F1755195848 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A46C12A89578EE6198D8B21DF1B4D7 /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DED17D3A56023E07444217C88BEAD53 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F7613485824ADC4E52F620872BA653 /* Haptica-dummy.m */; };
 		7E94E11C3CDFEBD635CF3B6C23D26792 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92696B6500652E0CC1240E06B65C4678 /* PulleyViewController.swift */; };
@@ -56,11 +57,11 @@
 		A6E6D292DC35CB585C376D7ED69DFAC0 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E039B91F08F5C0F8B469CF3CA55B5 /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7C7392BBE83B12E8A201F6973AAA28 /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222AF374D2220F5C014211632C09C8 /* UIApplication+SafeShared.swift */; };
 		ABF8938ADF988166B2B42624F9CDB54A /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E726D957E436D19F4552C452122399 /* SwiftHEXColors-dummy.m */; };
+		ADDADFED4BFED4D0DB6A1504164E060D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E8278250DABE6225C4592E22BAC43 /* Priority.swift */; };
 		B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A8059EDB68D3A9BE1B3C65C6B1855 /* GradientView-dummy.m */; };
-		BA49C0621A4F06854E828A72DF2C9B58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		BD6935EBE023390EA81BE1488A39A084 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
 		BEC5D8235769E93D5473C447C43F3711 /* GradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = C223BD2333100D18512E99FEE6BD888B /* GradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CADE67AEBCA937B28E8FC50481F8D57C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		CC83476762904F134EA948859F99CC98 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1852D82AD10BBC1FFC152F3CFE98240 /* TransitionOperation+Action.swift */; };
 		D0A690E6429EC710D1EB4CD4956F1530 /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AA899AAA5A1F39EA3996EAF0B3308 /* UIViewController+PulleyViewController.swift */; };
 		D24C6F97FAD05CCF4032A1881C6B9DEE /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFC9878EE0887BFD025C871F4356383 /* Pageboy-dummy.m */; };
@@ -70,7 +71,6 @@
 		DB3E4F32D528144684865AA87AC38A55 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2704964B39608AB75810FF77CE8FB /* PageboyAutoScroller.swift */; };
 		DCA04EBD90FF1B8C88C9B4F48E1C8665 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386769D7823F7DE946DB8C3A7F5C2C1 /* PulleyPassthroughScrollView.swift */; };
 		E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25927F55B7028D80C0F2F1AE58F507A /* Internal.swift */; };
-		E769252D7A98AC639251D1E43382D6C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		F8B93DFABDBFB9FD986AD46C2FE1BC9B /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CD11817F8C3D46AC81BE4EB83848CD /* Pulley-dummy.m */; };
 		FD0F221014DE5EECF6D902BCC95ECAF0 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA64882182A747287C2C01DFE6FF15 /* Associated.swift */; };
 /* End PBXBuildFile section */
@@ -194,6 +194,7 @@
 		8A19CA1902F62644ACC72269292E5AA4 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = GradientView/GradientView.swift; sourceTree = "<group>"; };
 		8D51A869365E69988BB804018AED0619 /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
 		8D98433F023A6F23AFFE1A460F9D3647 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		92696B6500652E0CC1240E06B65C4678 /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
 		9338C4F2CF574FA4632324B7AEDF6F8E /* Pods-ui_gradients_viewerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ui_gradients_viewerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -209,9 +210,9 @@
 		A9586B6496D905F5E8060146CE74D5F9 /* Pods_ui_gradients_viewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewerTests.framework; path = "Pods-ui_gradients_viewerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4A0F8FBAE7F8D502EE759B6D0830C5 /* WeakWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakWrapper.swift; path = Sources/Pageboy/Utilities/DataStructures/WeakWrapper.swift; sourceTree = "<group>"; };
 		B1D8995D43AC1D66B3B43BDDADD851CA /* Pods-ui_gradients_viewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B7EED279975C747ED73E0E6E440841D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBFC9878EE0887BFD025C871F4356383 /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BE682AA4B27C898727C861DC8C503FE9 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
 		C009F9916706BB07F97026F11AEE1CE5 /* Pods-ui_gradients_viewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C079C0C568292B259CE4CB08DC37241D /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
@@ -230,7 +231,6 @@
 		D4F7613485824ADC4E52F620872BA653 /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
 		D765C387F56EF78AE673AD1F12728052 /* Pods-ui_gradients_viewerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ui_gradients_viewerUITests-umbrella.h"; sourceTree = "<group>"; };
 		D848ED338CC487E60E8643C192DD2E04 /* Pods-ui_gradients_viewerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerUITests-frameworks.sh"; sourceTree = "<group>"; };
-		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DA951FF5CD872929DD8F6A3D63110A33 /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
 		DC505AF5355279D2B5AD2302864253A3 /* Compatability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatability.swift; path = Source/Compatability.swift; sourceTree = "<group>"; };
 		DC9C0198796231526AC8EA1EF38829D5 /* Pulley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pulley.framework; path = Pulley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,7 +257,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CADE67AEBCA937B28E8FC50481F8D57C /* Foundation.framework in Frameworks */,
+				495B25AB0D85F3D95C6672527E6EB4EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA49C0621A4F06854E828A72DF2C9B58 /* Foundation.framework in Frameworks */,
+				775ADBEE76EF58D505A6EE4A4F19BC3D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC6AD85E0C9E7FE53ABD7907833CA29 /* Foundation.framework in Frameworks */,
+				478DBA27BBB46A13EEB7E7B199F3C2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +281,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CC0B964A0729B2232572B19B290635C /* Foundation.framework in Frameworks */,
+				2703921981420A21DC1B1890386A5E58 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +289,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A7F42981BA9F011764B1BEA00E93943 /* Foundation.framework in Frameworks */,
-				42253A44954F38F17C9FBB786F83E76B /* UIKit.framework in Frameworks */,
+				4A2311131476689B7CD6CB4052A12A86 /* Foundation.framework in Frameworks */,
+				48D79B0DA7E2E045A6D430DBE004B86E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +298,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57793E6514815367189FA59D707095CE /* Foundation.framework in Frameworks */,
+				548DE3CF3430B9EB2E0CB0C98C2A4E4B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +306,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219D525C249450E6563FF2A7B43DD7B6 /* Foundation.framework in Frameworks */,
-				0717E17A1C1FCB074DB2C8AA15C0A7D5 /* UIKit.framework in Frameworks */,
+				0AC35AEA5DCFF25C7B45EC386FAAF9F2 /* Foundation.framework in Frameworks */,
+				BD6935EBE023390EA81BE1488A39A084 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +315,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E769252D7A98AC639251D1E43382D6C8 /* Foundation.framework in Frameworks */,
+				1A207398B76554A825B117FE64DAB78C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +323,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				308765F26648DCBDE230CFA20D32D919 /* Foundation.framework in Frameworks */,
+				ADDADFED4BFED4D0DB6A1504164E060D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +339,15 @@
 			);
 			name = SwiftHEXColors;
 			path = SwiftHEXColors;
+			sourceTree = "<group>";
+		};
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		1217AA4FE984C9CDB317E8509C7493FE /* Support Files */ = {
@@ -461,18 +470,9 @@
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
-				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		4859A37633C9D80EAD34EF2943157F78 /* Support Files */ = {

@@ -58,55 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "552288896.4155639"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "saveImage(image:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ui_gradients_viewer.GradientCoordinator.(saveImage in _313AED44037C93109E31A1AA3DAF2D93)(image: __C.UIImage) -&gt; ()"
-                  moduleName = "ui_gradients_viewer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Documents/thexande_apps/uiGradients-Viewer-iOS/ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-                  timestampString = "552288897.4864841"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ui_gradients_viewer.GradientCoordinator.(saveImage in _313AED44037C93109E31A1AA3DAF2D93)(image: __C.UIImage) -&gt; ()"
-                  moduleName = "ui_gradients_viewer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexandermurphy/Documents/thexande_apps/uiGradients-Viewer-iOS/ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-                  timestampString = "552288897.488776"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "20">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "552288896.415741"
+            timestampString = "552290491.7898591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "105"
@@ -122,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "552288896.415826"
+            timestampString = "552290491.790121"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "147"
@@ -138,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Controllers/GradientDrawerViewController.swift"
-            timestampString = "552288896.415938"
+            timestampString = "552362619.570832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "colorPickerDidChooseColor(_:color:)"
             landmarkType = "7">
          </BreakpointContent>

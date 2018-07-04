@@ -57,7 +57,7 @@ final class GradientCoordinator {
             guard let strongSelf = self else { return }
             strongSelf.gradients = gradients
             DispatchQueue.main.async {
-                let index = Int.random(in: 0 ..< gradients.count)
+                let index = Int.random(from: 0 ..< gradients.count)
                 strongSelf.content.startingIndex = index
                 strongSelf.content.gradientVCs = gradients.map(GradientDetailViewController.init)
                 
@@ -150,3 +150,10 @@ extension GradientCoordinator: GradientActionDispatching {
 }
 
 
+extension Int {
+    static func random(from range: Range<Int>) -> Int {
+        let lowerBound = range.lowerBound
+        let upperBound = range.upperBound
+        return lowerBound + Int(arc4random_uniform(UInt32(upperBound - lowerBound)))
+    }
+}

@@ -30,8 +30,9 @@ platform :ios do
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
+   # xcode_select("/Applications/Xcode-beta.app")
     # match(type: "appstore") # more information: https://codesigning.guide
-    gym(scheme: "ui_gradients_viewer") # Build your app - more options available
+    gym(scheme: "ui_gradients_viewer", export_xcargs: "-allowProvisioningUpdates") # Build your app - more options available
     pilot
 
     # sh "your_script.sh"
