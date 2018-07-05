@@ -9,8 +9,6 @@ final class GradientDrawerViewController: UIViewController {
     let pager = PagerView()
     let customize = CustomizeGradientView()
     let export = ExportView()
-    let light = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-    let dark = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     
     var gradients: [GradientColor] = [] {
         didSet {
@@ -37,10 +35,14 @@ final class GradientDrawerViewController: UIViewController {
         if gradient.colors.first?.color.isLight ?? false {
             UIView.animate(withDuration: 0.3) {
                 pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .dark)
+                self.customize.colorPicker.hexLabel.textColor = .white
+                self.header.indicator.backgroundColor = .white
             }
         } else {
             UIView.animate(withDuration: 0.3) {
                 pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .light)
+                self.customize.colorPicker.hexLabel.textColor = .black
+                self.header.indicator.backgroundColor = .darkGray
             }
         }
     }
@@ -102,7 +104,6 @@ final class GradientDrawerViewController: UIViewController {
 
     @objc func handleLongGesture(gesture: UILongPressGestureRecognizer) {
         switch(gesture.state) {
-            
         case .began:
             guard let selectedIndexPath = header.colorCollection.indexPathForItem(at: gesture.location(in: header.colorCollection)) else {
                 break
@@ -138,6 +139,16 @@ extension GradientDrawerViewController: PulleyDrawerViewControllerDelegate {
 }
 
 extension GradientDrawerViewController: ChromaColorPickerDelegate {
+    func colorDidChange(_ colorPicker: ChromaColorPicker, color: UIColor) {
+        guard
+            let selectedIndex = header.colorCollection.indexPathsForSelectedItems?.first?.row,
+            let gradient = gradient,
+            color != gradient.colors[selectedIndex].color else {
+                return
+        }
+        dispatch?.dispatch(.colorChange(identifier: gradient.colors[selectedIndex].identifier, newColor: color))
+    }
+    
     
     func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor) {
         guard

@@ -11,7 +11,7 @@ final class SegmentedView: UIView {
         }
     }
     
-    var tint: UIColor? {
+    var tint: UIColor = .white {
         didSet {
             segment.tintColor = tint
         }

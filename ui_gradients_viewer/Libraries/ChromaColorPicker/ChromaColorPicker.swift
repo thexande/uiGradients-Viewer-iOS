@@ -24,9 +24,10 @@
 
 import UIKit
 
-public protocol ChromaColorPickerDelegate {
+public protocol ChromaColorPickerDelegate: AnyObject {
     /* Called when the user taps the add button in the center */
     func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor)
+    func colorDidChange(_ colorPicker: ChromaColorPicker, color: UIColor)
 }
 
 open class ChromaColorPicker: UIControl {
@@ -45,7 +46,14 @@ open class ChromaColorPicker: UIControl {
         case grayscale
     }
     
-    open private(set) var currentColor = UIColor.red
+    open private(set) var currentColor = UIColor.red {
+        didSet {
+            if currentColor != oldValue {
+                delegate?.colorDidChange(self, color: currentColor)
+            }
+        }
+    }
+    
     open var supportsShadesOfGray: Bool = false {
         didSet {
             if supportsShadesOfGray {
@@ -56,7 +64,7 @@ open class ChromaColorPicker: UIControl {
             }
         }
     }
-    open var delegate: ChromaColorPickerDelegate?
+    open weak var delegate: ChromaColorPickerDelegate?
     open var currentAngle: Float = 0
     open private(set) var radius: CGFloat = 0
     open var stroke: CGFloat = 1
@@ -420,6 +428,7 @@ open class ChromaColorPicker: UIControl {
     
     func updateHexLabel(){
         hexLabel.text = "#" + currentColor.hexCode
+        delegate?.colorDidChange(self, color: currentColor)
     }
     
     func updateCurrentColor(_ color: UIColor){

@@ -121,6 +121,7 @@ final class GradientCoordinator {
         var colors = gradient.colors
         var color = colors.remove(at: index)
         color.color = newColor
+        color.hex = newColor.hex
         colors.insert(color, at: index)
         selectedGradient?.colors = colors
     }
@@ -146,14 +147,5 @@ extension GradientCoordinator: GradientActionDispatching {
         case let .colorChange(identifier, newColor):
             changeColor(identifier: identifier, newColor: newColor)
         }
-    }
-}
-
-
-extension Int {
-    static func random(from range: Range<Int>) -> Int {
-        let lowerBound = range.lowerBound
-        let upperBound = range.upperBound
-        return lowerBound + Int(arc4random_uniform(UInt32(upperBound - lowerBound)))
     }
 }

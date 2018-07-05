@@ -40,7 +40,7 @@ open class ChromaSliderTrackLayer: CALayer{
     }
 }
 
-public protocol ChromaShadeSliderDelegate {
+ public protocol ChromaShadeSliderDelegate: AnyObject {
     func shadeSliderChoseColor(_ slider: ChromaShadeSlider, color: UIColor)
 }
 
@@ -51,7 +51,7 @@ open class ChromaShadeSlider: UIControl {
     open let handleView = ChromaHandle()
     open var handleWidth: CGFloat{ return self.bounds.height }
     open var handleCenterX: CGFloat = 0.0
-    open var delegate: ChromaShadeSliderDelegate?
+    open weak var delegate: ChromaShadeSliderDelegate?
     
     open var primaryColor = UIColor.gray{
         didSet{

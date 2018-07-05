@@ -21,6 +21,13 @@ final class DrawerHeaderView: UIView {
         colorSection.items = gradient.colors
         colorCollection.reloadData()
         segmented.tintColor = gradient.colors.first?.color ?? .black
+        
+        guard
+            let selected = gradient.colors.first(where: { $0.isSelected }),
+            let index = gradient.colors.index(of: selected) else {
+                return
+        }
+        colorCollection.selectItem(at: IndexPath(row: index, section: 0), animated: true, scrollPosition: .top)
     }
     
     @objc func segmentChanged(_ segment: UISegmentedControl) {
@@ -50,7 +57,6 @@ final class DrawerHeaderView: UIView {
         
         segmented.selectedSegmentIndex = 0
         segmented.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
-        
         
         if let layout = colorCollection.collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal

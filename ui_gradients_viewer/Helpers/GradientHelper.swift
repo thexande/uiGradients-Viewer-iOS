@@ -7,6 +7,7 @@ struct GradientColor {
         var hex: String
         var color: UIColor
         let identifier: UUID
+        var isSelected: Bool
     }
     
     var title: String
@@ -29,10 +30,14 @@ class GradientHelper {
             let gradientStructs: [GradientColor] = gradientData.map({ (grad) -> GradientColor? in
                 guard let gradName = grad["name"] as? String, let colors = grad["colors"] as? [String] else { return nil }
                 
-                let colorDicts = colors.map({ (colorHexString) -> GradientColor.Color? in
+                var colorDicts = colors.map({ (colorHexString) -> GradientColor.Color? in
                     guard let color = UIColor(hexString: colorHexString) else { return nil }
-                    return GradientColor.Color(hex: colorHexString, color: color, identifier: UUID())
+                    return GradientColor.Color(hex: colorHexString, color: color, identifier: UUID(), isSelected: false)
                 }).compactMap({ $0 })
+                
+                // Select first gradient color
+                
+                colorDicts[0].isSelected = true
                 
                 return GradientColor(title: gradName, colors: colorDicts)
             }).compactMap({$0})
