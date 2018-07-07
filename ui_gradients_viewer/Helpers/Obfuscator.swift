@@ -5,13 +5,16 @@ class Obfuscator {
     // MARK: - Variables
     
     /// The salt used to obfuscate and reveal the string.
-    private var salt: String = ""
-    
+    private var salt: String    
     
     // MARK: - Initialization
     
     init() {
         self.salt = "\(String(describing: AppDelegate.self))\(String(describing: NSObject.self))"
+    }
+    
+    init(with salt: String) {
+        self.salt = salt
     }
     
     

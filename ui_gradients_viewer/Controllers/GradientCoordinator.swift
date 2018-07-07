@@ -10,6 +10,12 @@ enum GradientAction {
         case popular
         case export
     }
+    
+    enum Donation {
+        case btc
+        case eth
+        case ltc
+    }
         
     case selectedGradient(Int)
     case selectedGradientFromDrawer(Int)
@@ -21,9 +27,11 @@ enum GradientAction {
     case exportCurrentGradient
     case positionChanged(Float)
     case formatChanged(GradientColor.Format)
+    case exportDismiss
+    case donate(Donation)
 }
 
-protocol GradientActionDispatching: class {
+protocol GradientActionDispatching: AnyObject { 
     func dispatch(_ action: GradientAction)
 }
 
@@ -31,6 +39,7 @@ final class GradientCoordinator {
     let root: PulleyViewController?
     let content: RootPageViewController
     let drawer: GradientDrawerViewController
+    let exported = ExportedViewController()
     var gradients: [GradientColor] = []
     
     var selectedGradient: GradientColor? {
@@ -56,6 +65,7 @@ final class GradientCoordinator {
         
         self.content.dispatch = self
         self.drawer.dispatch = self
+        exported.dispatcher = self
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
             guard let strongSelf = self else { return }
@@ -77,7 +87,8 @@ final class GradientCoordinator {
     }
     
     private func saveImage(image: UIImage) {
-        root?.present(ExportedViewController(), animated: true, completion: nil)
+        exported.gradient = selectedGradient
+        root?.present(exported, animated: true, completion: nil)
         
 //
 //        PHPhotoLibrary.shared().performChanges({
@@ -149,6 +160,15 @@ final class GradientCoordinator {
     private func positionChanged(_ position: Float) {
         selectedGradient?.position = position
     }
+    
+    
+    private func handleDonate(_ donate: GradientAction.Donation) {
+        switch donate {
+        case .btc: return
+        case .eth: return
+        case .ltc: return
+        }
+    }
 }
 
 extension GradientCoordinator: GradientActionDispatching {
@@ -179,6 +199,10 @@ extension GradientCoordinator: GradientActionDispatching {
             positionChanged(newPosition)
         case let .formatChanged(format):
             changeFormat(format)
+        case .exportDismiss:
+            exported.dismiss(animated: true, completion: nil)
+        case let .donate(donation):
+            handleDonate(donation)
         }
     }
 }

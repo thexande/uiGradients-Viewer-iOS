@@ -56,7 +56,7 @@
         intensity = 0.5
         type = self.properties.type
         //        active = false
-        startConfetti()
+//        startConfetti()
     }
     
     public func startConfetti() {

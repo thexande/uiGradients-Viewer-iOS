@@ -17,6 +17,13 @@ final class IPhoneXView: UIView {
         }
     }
     
+    var frameColor: UIColor = .black {
+        didSet {
+            notch.backgroundColor = frameColor
+            border.layer.borderColor = frameColor.cgColor
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
