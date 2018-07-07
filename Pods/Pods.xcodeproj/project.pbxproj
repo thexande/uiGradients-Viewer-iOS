@@ -7,72 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0662FEB4E418BECE042850BDF3D80896 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 179D3C78551ABED56757E788AF60AE75 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		068E1D81BF6F2EB48E06E1E5988FE8D5 /* Anchorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 833843376FC47F8F6C8915B4CB90CB96 /* Anchorage-dummy.m */; };
-		0AC35AEA5DCFF25C7B45EC386FAAF9F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		0FF1D8C88F5D7BF5FE65A65F245DD8BB /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA951FF5CD872929DD8F6A3D63110A33 /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851FF2BFCFA02D976D8E55684A0880CF /* AnchorGroupProvider.swift */; };
-		1A207398B76554A825B117FE64DAB78C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		1C91A3F745BABD873AC4B1D6E9F0B664 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB4A596205974D8594D8CE12893E9B4 /* Haptic.swift */; };
-		24E977D27D09CD817FFA42D46A5739D5 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C221C95D2B71288ABEB7346923EFB8E7 /* TransitionOperation.swift */; };
-		2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C734E3A267BFE7FDBD62EC1D3E92EBB /* NSLayoutAnchor+MultiplierConstraints.swift */; };
-		2703921981420A21DC1B1890386A5E58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		0662FEB4E418BECE042850BDF3D80896 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A99616074EC2F118AA6180569029D4F8 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		068E1D81BF6F2EB48E06E1E5988FE8D5 /* Anchorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3692B9109A47B075603658A41E25456 /* Anchorage-dummy.m */; };
+		0717E17A1C1FCB074DB2C8AA15C0A7D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		0A7F42981BA9F011764B1BEA00E93943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		0FF1D8C88F5D7BF5FE65A65F245DD8BB /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C97305AED9C7D007235AB1980C862D3 /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A13BB0CB198BD59AA813C305CB1F7DA /* AnchorGroupProvider.swift */; };
+		1C91A3F745BABD873AC4B1D6E9F0B664 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFF84817102D70D68BACE2265953E8A /* Haptic.swift */; };
+		219D525C249450E6563FF2A7B43DD7B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		24E977D27D09CD817FFA42D46A5739D5 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901DBAAFE918C0D15F369995F3DFC51D /* TransitionOperation.swift */; };
+		2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC73CD61BA21092753C7A5EB447AD1B /* NSLayoutAnchor+MultiplierConstraints.swift */; };
 		27A1D57FC3CDC50578125270B49F7683 /* Pods-ui_gradients_viewerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED2EA8C5FB4E774D07D642EBD6762F /* Pods-ui_gradients_viewerUITests-dummy.m */; };
-		2AA5FD5854467E66F30BD713A494A2F6 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110ACBE2D0D8D8E7C895461B53876B60 /* UIView+Localization.swift */; };
-		2CC44A75550F2E222D5A73F16E002024 /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51A869365E69988BB804018AED0619 /* UIPageViewController+ScrollView.swift */; };
-		30353469736B477B9D83932208592D65 /* UIView+constrainToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A067E88958384CA4970DBC634791F8FC /* UIView+constrainToParent.swift */; };
-		3476B48C22B858C81207A5718E61D817 /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C81A91F7D8AE81E1008B13816B341F /* PageboyViewController+AutoScrolling.swift */; };
-		36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 546F6A76A6DF4DE12E211C9D725AC54C /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AA5FD5854467E66F30BD713A494A2F6 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EF3803201D4DF1299C703E5A6155C /* UIView+Localization.swift */; };
+		2CC44A75550F2E222D5A73F16E002024 /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC75B03E72DAA60B981E53554CB4956C /* UIPageViewController+ScrollView.swift */; };
+		30353469736B477B9D83932208592D65 /* UIView+constrainToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3534336A58DE98786950C2240A817FC8 /* UIView+constrainToParent.swift */; };
+		308765F26648DCBDE230CFA20D32D919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		3476B48C22B858C81207A5718E61D817 /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CDE6DE99A05755FC596504519B5D6F /* PageboyViewController+AutoScrolling.swift */; };
+		36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B589C15B50EE056A49FC0E7D5FB4A5BE /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36D7298BB0EEA1982F5B2978E9A554E3 /* Pods-ui_gradients_viewerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B040F4ADD91EF219DABD2D4C2967E7F /* Pods-ui_gradients_viewerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BEEF304DABB395FC2E8CFF0D4D0B97B /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 197809E823DBA49AA0A56A3B4805E6A0 /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C0B89FED1EA85923BC5B798CB48BAF1 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DD961D81A26F1612D61FEA6750B3AC /* PageboyViewController+Management.swift */; };
-		3EB5EF4E2E6887CABEF93D137C9FFFD0 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE682AA4B27C898727C861DC8C503FE9 /* PageboyViewController+Transitioning.swift */; };
+		3BEEF304DABB395FC2E8CFF0D4D0B97B /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA29C3377794FB6B43E1F0685B0C34F /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C0B89FED1EA85923BC5B798CB48BAF1 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382435BFD736DF4A176A1131B47819B /* PageboyViewController+Management.swift */; };
+		3CC0B964A0729B2232572B19B290635C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		3CC6AD85E0C9E7FE53ABD7907833CA29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		3EB5EF4E2E6887CABEF93D137C9FFFD0 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D578E56104EBF15FEEAAE5B67DAF9 /* PageboyViewController+Transitioning.swift */; };
+		42253A44954F38F17C9FBB786F83E76B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		4374111135C6E3366795E92193D1649A /* Pods-ui_gradients_viewerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D765C387F56EF78AE673AD1F12728052 /* Pods-ui_gradients_viewerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		478DBA27BBB46A13EEB7E7B199F3C2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		47F24EB38A73888770B7D205B3501121 /* PageboyViewController+NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A0A6B2AEB811CB1BCE51BC3A2306FE /* PageboyViewController+NavigationDirection.swift */; };
-		48D79B0DA7E2E045A6D430DBE004B86E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
-		495B25AB0D85F3D95C6672527E6EB4EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		4A2311131476689B7CD6CB4052A12A86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		538F8B4EA421F0CB2712A91C0A70CFF1 /* UIScrollView+ScrollActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490F59AB18B3BEC457B999ED24E2838 /* UIScrollView+ScrollActivity.swift */; };
-		548DE3CF3430B9EB2E0CB0C98C2A4E4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A19CA1902F62644ACC72269292E5AA4 /* GradientView.swift */; };
-		6929A18231635B7AC9E1C64F2C6A9729 /* Anchorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1962D69A2697F938EC67E61F3B8CE31 /* Anchorage.swift */; };
-		6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC505AF5355279D2B5AD2302864253A3 /* Compatability.swift */; };
-		729C9CD811C3FA0F23ED6AD50F608A79 /* IndexedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC7FA4367BD3FFC728824FD89C5D992 /* IndexedMap.swift */; };
-		775ADBEE76EF58D505A6EE4A4F19BC3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		7B9777DB10DA6A2E542F7F1755195848 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A46C12A89578EE6198D8B21DF1B4D7 /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DED17D3A56023E07444217C88BEAD53 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F7613485824ADC4E52F620872BA653 /* Haptica-dummy.m */; };
-		7E94E11C3CDFEBD635CF3B6C23D26792 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92696B6500652E0CC1240E06B65C4678 /* PulleyViewController.swift */; };
-		7F0D00D5431E82E36D6A6B166ABF25BC /* Pulley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C260FCDF835506A68BB8DA31DA8D1167 /* Pulley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82478D3B27E933A0F9BA8F1974F4B030 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6866DC0E0E73896232EA0BE8B5385777 /* SwiftHEXColors.swift */; };
-		82A5F56AA001461DBE3ECDA3A0AF7289 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14933A5EB8F7292B812BE8CF2F2A8AC2 /* PageboyViewController.swift */; };
-		87473951E979E704EF2CB2BB29DCE140 /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AF8811A96C88F26CFEDAA9888D2F7 /* PageboyViewControllerDataSource.swift */; };
-		875ABEE16409D5FC4892866C6640976A /* GradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C9BFEA8BDD5ED71E5DE63378470A6C /* GradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F73E8B25F780A6EF6CB7E5DADE1C75E /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D71A2614921388603A0A7D9435816B /* PageboyViewControllerDelegate.swift */; };
-		98776829D922F134242C78C983652155 /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF243D46686BA93024B704F73F66653 /* Hapticable.swift */; };
+		47F24EB38A73888770B7D205B3501121 /* PageboyViewController+NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1C6AB32C77874485257C17FF2EC2BB /* PageboyViewController+NavigationDirection.swift */; };
+		538F8B4EA421F0CB2712A91C0A70CFF1 /* UIScrollView+ScrollActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C68C9B5AB139D2FA89A8EFE8BD8F84B /* UIScrollView+ScrollActivity.swift */; };
+		55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490DB99CF2A8A3D85D343C8CC099292E /* GradientView.swift */; };
+		57793E6514815367189FA59D707095CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		6929A18231635B7AC9E1C64F2C6A9729 /* Anchorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B340485A34A8680043E866D1BEBC6E /* Anchorage.swift */; };
+		6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D06AFF3A9D8A494B5ACCFDF8D14141 /* Compatability.swift */; };
+		729C9CD811C3FA0F23ED6AD50F608A79 /* IndexedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170051F62E3AAC25D2F03D5CB1A67AEC /* IndexedMap.swift */; };
+		7B9777DB10DA6A2E542F7F1755195848 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 76D533E655E42B8EE7EBA6F90417B678 /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DED17D3A56023E07444217C88BEAD53 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 774E19D321EEF3C7CE0A22D9909A9710 /* Haptica-dummy.m */; };
+		7E94E11C3CDFEBD635CF3B6C23D26792 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A9437C7D1544E4E0192777303E6CCB /* PulleyViewController.swift */; };
+		7F0D00D5431E82E36D6A6B166ABF25BC /* Pulley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1BBEF2508DB8B5431EFB092E6DC08B1 /* Pulley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82478D3B27E933A0F9BA8F1974F4B030 /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6151551D01D807E82B62294D1BC5F710 /* SwiftHEXColors.swift */; };
+		82A5F56AA001461DBE3ECDA3A0AF7289 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4BA98CBB90251B536AA9A72265752E /* PageboyViewController.swift */; };
+		87473951E979E704EF2CB2BB29DCE140 /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C65B378DE3D24A74F85BBE8B6D416 /* PageboyViewControllerDataSource.swift */; };
+		875ABEE16409D5FC4892866C6640976A /* GradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 104A20666EDA06D6A14A9721A2A55588 /* GradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F73E8B25F780A6EF6CB7E5DADE1C75E /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AB532D26C78A89A78891C9234BE50C /* PageboyViewControllerDelegate.swift */; };
+		98776829D922F134242C78C983652155 /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469507389E894EC831D2AAE6C8956AC /* Hapticable.swift */; };
 		98A3F6707E7F279379601CEF4858B0FE /* Pods-ui_gradients_viewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 263F27F4EC7E9EE835B64898E06C1591 /* Pods-ui_gradients_viewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A104A79242521F963AF8D55F471BEAC7 /* Pods-ui_gradients_viewerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1625080B5AA8631B29DFCCE342B81 /* Pods-ui_gradients_viewerTests-dummy.m */; };
-		A1FE317B5294B3022521FDA8BF239D8D /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4A0F8FBAE7F8D502EE759B6D0830C5 /* WeakWrapper.swift */; };
-		A4E253C2E0079E8CDAA11B2244047A5B /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFDF4E063F71218FDD6516BC6EEE607 /* PageboyViewController+ScrollDetection.swift */; };
-		A6E6D292DC35CB585C376D7ED69DFAC0 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 152E039B91F08F5C0F8B469CF3CA55B5 /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA7C7392BBE83B12E8A201F6973AAA28 /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222AF374D2220F5C014211632C09C8 /* UIApplication+SafeShared.swift */; };
-		ABF8938ADF988166B2B42624F9CDB54A /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E726D957E436D19F4552C452122399 /* SwiftHEXColors-dummy.m */; };
-		ADDADFED4BFED4D0DB6A1504164E060D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
-		AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7E8278250DABE6225C4592E22BAC43 /* Priority.swift */; };
-		B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 218A8059EDB68D3A9BE1B3C65C6B1855 /* GradientView-dummy.m */; };
-		BD6935EBE023390EA81BE1488A39A084 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
-		BEC5D8235769E93D5473C447C43F3711 /* GradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = C223BD2333100D18512E99FEE6BD888B /* GradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC83476762904F134EA948859F99CC98 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1852D82AD10BBC1FFC152F3CFE98240 /* TransitionOperation+Action.swift */; };
-		D0A690E6429EC710D1EB4CD4956F1530 /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AA899AAA5A1F39EA3996EAF0B3308 /* UIViewController+PulleyViewController.swift */; };
-		D24C6F97FAD05CCF4032A1881C6B9DEE /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFC9878EE0887BFD025C871F4356383 /* Pageboy-dummy.m */; };
-		D403E7677A387460B960950A879CC74A /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1F28847194C4BDDCE20E6B2F285F5 /* UIView+AutoLayout.swift */; };
+		A1FE317B5294B3022521FDA8BF239D8D /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8BE8DC4EF6B7490C60FDBF24D54E08 /* WeakWrapper.swift */; };
+		A4E253C2E0079E8CDAA11B2244047A5B /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15D0640628FDA3C1325EE1F2050AE4D /* PageboyViewController+ScrollDetection.swift */; };
+		A6E6D292DC35CB585C376D7ED69DFAC0 /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 570EC57FF002032B2AB06EE5125DA2D8 /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7C7392BBE83B12E8A201F6973AAA28 /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1EA6D7A751195112AE4871F4819AD7 /* UIApplication+SafeShared.swift */; };
+		ABF8938ADF988166B2B42624F9CDB54A /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E69BA5C4FF43E3878283A4E92CC96B9 /* SwiftHEXColors-dummy.m */; };
+		AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7295FFACB4B74F322072ADB1FEF7CA /* Priority.swift */; };
+		B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B19A8EA7F290252A86C1F925708246 /* GradientView-dummy.m */; };
+		BA49C0621A4F06854E828A72DF2C9B58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		BEC5D8235769E93D5473C447C43F3711 /* GradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAD20E10C33BE22CB15353A17D99613 /* GradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CADE67AEBCA937B28E8FC50481F8D57C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		CC83476762904F134EA948859F99CC98 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E335EF97FB7A52CC7FA6D54C424AD6E /* TransitionOperation+Action.swift */; };
+		D0A690E6429EC710D1EB4CD4956F1530 /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAEDE78FEDAC9C6B5B3829E95A99DD7 /* UIViewController+PulleyViewController.swift */; };
+		D24C6F97FAD05CCF4032A1881C6B9DEE /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C526DD6858206BC43A6D4590A9274C4 /* Pageboy-dummy.m */; };
+		D403E7677A387460B960950A879CC74A /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CB72991A14799206C2BBFBF092C36 /* UIView+AutoLayout.swift */; };
 		D97744B8055321436CB1AC1AB7A25F87 /* Pods-ui_gradients_viewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981586E0C345D58B80F4343EFCB7BFD /* Pods-ui_gradients_viewer-dummy.m */; };
-		DAE3DBA6953095C8553685170EED58DF /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BEBF3ACA854DDA7072C9182933BC54 /* UIViewController+Pageboy.swift */; };
-		DB3E4F32D528144684865AA87AC38A55 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F2704964B39608AB75810FF77CE8FB /* PageboyAutoScroller.swift */; };
-		DCA04EBD90FF1B8C88C9B4F48E1C8665 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A386769D7823F7DE946DB8C3A7F5C2C1 /* PulleyPassthroughScrollView.swift */; };
-		E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25927F55B7028D80C0F2F1AE58F507A /* Internal.swift */; };
-		F8B93DFABDBFB9FD986AD46C2FE1BC9B /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CD11817F8C3D46AC81BE4EB83848CD /* Pulley-dummy.m */; };
-		FD0F221014DE5EECF6D902BCC95ECAF0 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA64882182A747287C2C01DFE6FF15 /* Associated.swift */; };
+		DAE3DBA6953095C8553685170EED58DF /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815D426DF8EB2CFDB9864C73E7A9F2FF /* UIViewController+Pageboy.swift */; };
+		DB3E4F32D528144684865AA87AC38A55 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5252F584DF58BF3C41FE133AAF316D /* PageboyAutoScroller.swift */; };
+		DCA04EBD90FF1B8C88C9B4F48E1C8665 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFD55E18EB4E3143D489A34D64B65C /* PulleyPassthroughScrollView.swift */; };
+		E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931265476CBF1A071D5FEA720A7014D3 /* Internal.swift */; };
+		E769252D7A98AC639251D1E43382D6C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		F8B93DFABDBFB9FD986AD46C2FE1BC9B /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95EF05E354C29510941BA720ED02BC /* Pulley-dummy.m */; };
+		FD0F221014DE5EECF6D902BCC95ECAF0 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD73663D9EB52F4A29FB79DEC895109 /* Associated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,120 +135,121 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BFD20B57F218F28D878114547C1A09F /* Pulley.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pulley.xcconfig; sourceTree = "<group>"; };
-		0C734E3A267BFE7FDBD62EC1D3E92EBB /* NSLayoutAnchor+MultiplierConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutAnchor+MultiplierConstraints.swift"; path = "Source/NSLayoutAnchor+MultiplierConstraints.swift"; sourceTree = "<group>"; };
-		110ACBE2D0D8D8E7C895461B53876B60 /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
-		11EA64882182A747287C2C01DFE6FF15 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
-		14933A5EB8F7292B812BE8CF2F2A8AC2 /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
-		152E039B91F08F5C0F8B469CF3CA55B5 /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
-		16C81A91F7D8AE81E1008B13816B341F /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
+		01A1664E0AFE9881EEF3BC11D4482688 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		0AD73663D9EB52F4A29FB79DEC895109 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
+		0C1EF3803201D4DF1299C703E5A6155C /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
+		104A20666EDA06D6A14A9721A2A55588 /* GradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-umbrella.h"; sourceTree = "<group>"; };
+		13A9437C7D1544E4E0192777303E6CCB /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
 		16ED2EA8C5FB4E774D07D642EBD6762F /* Pods-ui_gradients_viewerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ui_gradients_viewerUITests-dummy.m"; sourceTree = "<group>"; };
-		179D3C78551ABED56757E788AF60AE75 /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
-		196966917D4D516F8D6B9EE4A38A0538 /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
-		197809E823DBA49AA0A56A3B4805E6A0 /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
+		170051F62E3AAC25D2F03D5CB1A67AEC /* IndexedMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexedMap.swift; path = Sources/Pageboy/Utilities/DataStructures/IndexedMap.swift; sourceTree = "<group>"; };
+		1771EC99A4C08D2CEDB43B05469E3592 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D67584EADB7BDDA1C43453CBF451451 /* Pods-ui_gradients_viewerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerTests-resources.sh"; sourceTree = "<group>"; };
+		1FC73CD61BA21092753C7A5EB447AD1B /* NSLayoutAnchor+MultiplierConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutAnchor+MultiplierConstraints.swift"; path = "Source/NSLayoutAnchor+MultiplierConstraints.swift"; sourceTree = "<group>"; };
 		20E9044FA97490CED2E6BC89CEBE6BCE /* Pods_ui_gradients_viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewer.framework; path = "Pods-ui_gradients_viewer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		218A8059EDB68D3A9BE1B3C65C6B1855 /* GradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientView-dummy.m"; sourceTree = "<group>"; };
-		21A0A6B2AEB811CB1BCE51BC3A2306FE /* PageboyViewController+NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+NavigationDirection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+NavigationDirection.swift"; sourceTree = "<group>"; };
 		2562A5AA10A7D17F291B31BA3C9E6553 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHEXColors.framework; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2630DAC14AA9F6FE3FD01B6C39539442 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
 		263F27F4EC7E9EE835B64898E06C1591 /* Pods-ui_gradients_viewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ui_gradients_viewer-umbrella.h"; sourceTree = "<group>"; };
-		287EF7E36CB963A59ABA7BB58378355C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27EFBBFD45E662672FA9BE4F6D20FD57 /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
+		2B46B8574718AF68017FC43883A03BF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4BA98CBB90251B536AA9A72265752E /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
 		2C20996B3B2CB7EA3AC5F8C200342259 /* Pods-ui_gradients_viewerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ui_gradients_viewerTests.modulemap"; sourceTree = "<group>"; };
 		2F8EA9AB90FB0CE475B36AD4263B26B2 /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Anchorage.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3277B3589EA1A16960E1AFB759180612 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36A46C12A89578EE6198D8B21DF1B4D7 /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
-		39DD961D81A26F1612D61FEA6750B3AC /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
-		3AB4A596205974D8594D8CE12893E9B4 /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
+		3534336A58DE98786950C2240A817FC8 /* UIView+constrainToParent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+constrainToParent.swift"; path = "PulleyLib/UIView+constrainToParent.swift"; sourceTree = "<group>"; };
+		3B94AFAC429F0F47ACCCC29723CB30DF /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
+		3C99B516AEDCA85D91EF2AA5FB51E79F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0794CE66375E3BED0B8818E722E278 /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
 		3FC1625080B5AA8631B29DFCCE342B81 /* Pods-ui_gradients_viewerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ui_gradients_viewerTests-dummy.m"; sourceTree = "<group>"; };
-		415D02446BBCD305EF9F85344E234E08 /* Haptica.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.xcconfig; sourceTree = "<group>"; };
-		443F8E746D0DDEE112FD8316F09289B3 /* GradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-prefix.pch"; sourceTree = "<group>"; };
-		44BEBF3ACA854DDA7072C9182933BC54 /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/Extensions/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
 		46CF76BDDD06129C3B7151AF88838B23 /* Pods-ui_gradients_viewerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerUITests-resources.sh"; sourceTree = "<group>"; };
+		490DB99CF2A8A3D85D343C8CC099292E /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = GradientView/GradientView.swift; sourceTree = "<group>"; };
 		49AB6CE02C064B1AE986C311EE1C748E /* Pods_ui_gradients_viewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewerUITests.framework; path = "Pods-ui_gradients_viewerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		546F6A76A6DF4DE12E211C9D725AC54C /* Anchorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-umbrella.h"; sourceTree = "<group>"; };
-		55E726D957E436D19F4552C452122399 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
-		57C2575398F29C20ECA8AEA0DC0C6A6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57D71A2614921388603A0A7D9435816B /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
+		5032B645B9D54E25F029C9418B01C6C5 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
+		51B19A8EA7F290252A86C1F925708246 /* GradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientView-dummy.m"; sourceTree = "<group>"; };
+		52CD64C6B61743238F577A8130A1441E /* Haptica.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.xcconfig; sourceTree = "<group>"; };
+		570EC57FF002032B2AB06EE5125DA2D8 /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
+		58BD23E8DF9FB0F6D56D92CA3CB0C309 /* Pulley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-prefix.pch"; sourceTree = "<group>"; };
 		5981586E0C345D58B80F4343EFCB7BFD /* Pods-ui_gradients_viewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ui_gradients_viewer-dummy.m"; sourceTree = "<group>"; };
-		5BC1DFF0574FFCDAA91FDDBFEECC342C /* Pulley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pulley.modulemap; sourceTree = "<group>"; };
 		5D44C2C9406A11F747FB19BFEE299401 /* Pods-ui_gradients_viewer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewer-resources.sh"; sourceTree = "<group>"; };
 		5DB0E51CC74D154714D0F19A0FBA1BD8 /* Pods-ui_gradients_viewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ui_gradients_viewer-acknowledgements.plist"; sourceTree = "<group>"; };
 		60F94A3116B4BC38DBA0C90A6918E7F0 /* Pods-ui_gradients_viewerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ui_gradients_viewerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6151551D01D807E82B62294D1BC5F710 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
 		64C8F87D2D460C3620BD3FF0897148CD /* Pods-ui_gradients_viewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ui_gradients_viewer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		65BD65CE12E8C2F5F3282DC7D580AD9C /* Pods-ui_gradients_viewerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ui_gradients_viewerUITests.modulemap"; sourceTree = "<group>"; };
-		6866DC0E0E73896232EA0BE8B5385777 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
-		6B7B43CED3F6D40BEBD5D37B5D069051 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F2831251C4F5E9CB1141CACFAB3EC61 /* GradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientView.xcconfig; sourceTree = "<group>"; };
-		71F204EED17A957F2CD1B134E09B286A /* Pulley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-prefix.pch"; sourceTree = "<group>"; };
-		724AF8811A96C88F26CFEDAA9888D2F7 /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
+		67CDE6DE99A05755FC596504519B5D6F /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
+		6B4C65B378DE3D24A74F85BBE8B6D416 /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
+		6C526DD6858206BC43A6D4590A9274C4 /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
+		6E335EF97FB7A52CC7FA6D54C424AD6E /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Utilities/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
+		71BDAEDA8A84139761F9092FE4ECB38B /* Pulley.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pulley.xcconfig; sourceTree = "<group>"; };
+		7382435BFD736DF4A176A1131B47819B /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
+		7472F615213C171C8F0D936DF15FC181 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755D578E56104EBF15FEEAAE5B67DAF9 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
 		75B3D8A7760F55AD2337E59F1BEEF3BD /* Pods-ui_gradients_viewerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerTests-frameworks.sh"; sourceTree = "<group>"; };
-		75E1F28847194C4BDDCE20E6B2F285F5 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
-		7A5AA899AAA5A1F39EA3996EAF0B3308 /* UIViewController+PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PulleyViewController.swift"; path = "PulleyLib/UIViewController+PulleyViewController.swift"; sourceTree = "<group>"; };
-		7AFDF4E063F71218FDD6516BC6EEE607 /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
-		81FBB026AE4F74AAE9CC9EB53BCF457C /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
-		833843376FC47F8F6C8915B4CB90CB96 /* Anchorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Anchorage-dummy.m"; sourceTree = "<group>"; };
-		8490F59AB18B3BEC457B999ED24E2838 /* UIScrollView+ScrollActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ScrollActivity.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+ScrollActivity.swift"; sourceTree = "<group>"; };
-		851FF2BFCFA02D976D8E55684A0880CF /* AnchorGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorGroupProvider.swift; path = Source/AnchorGroupProvider.swift; sourceTree = "<group>"; };
-		875CC6176A9569E1B7CD500709D1D669 /* Anchorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-prefix.pch"; sourceTree = "<group>"; };
-		8A19CA1902F62644ACC72269292E5AA4 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = GradientView/GradientView.swift; sourceTree = "<group>"; };
-		8D51A869365E69988BB804018AED0619 /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
-		8D98433F023A6F23AFFE1A460F9D3647 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
-		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		92696B6500652E0CC1240E06B65C4678 /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
+		76D533E655E42B8EE7EBA6F90417B678 /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
+		774E19D321EEF3C7CE0A22D9909A9710 /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
+		7A13BB0CB198BD59AA813C305CB1F7DA /* AnchorGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorGroupProvider.swift; path = Source/AnchorGroupProvider.swift; sourceTree = "<group>"; };
+		7AAEDE78FEDAC9C6B5B3829E95A99DD7 /* UIViewController+PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PulleyViewController.swift"; path = "PulleyLib/UIViewController+PulleyViewController.swift"; sourceTree = "<group>"; };
+		7C97305AED9C7D007235AB1980C862D3 /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
+		815D426DF8EB2CFDB9864C73E7A9F2FF /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/Extensions/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
+		86B340485A34A8680043E866D1BEBC6E /* Anchorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchorage.swift; path = Source/Anchorage.swift; sourceTree = "<group>"; };
+		89AB532D26C78A89A78891C9234BE50C /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
+		8E5252F584DF58BF3C41FE133AAF316D /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/Components/PageboyAutoScroller.swift; sourceTree = "<group>"; };
+		9006B576D0E7CB969A3F859A2239E569 /* GradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-prefix.pch"; sourceTree = "<group>"; };
+		901DBAAFE918C0D15F369995F3DFC51D /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Utilities/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
+		931265476CBF1A071D5FEA720A7014D3 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Source/Internal.swift; sourceTree = "<group>"; };
 		9338C4F2CF574FA4632324B7AEDF6F8E /* Pods-ui_gradients_viewerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ui_gradients_viewerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		949D5B4A277B744CC8492B908DB83FAA /* Pageboy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.xcconfig; sourceTree = "<group>"; };
-		96C3ADB4FB6FDF8AA980A67BE43251DD /* Anchorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Anchorage.modulemap; sourceTree = "<group>"; };
-		98CF4D136095B797803F95E75014C965 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
+		97A264FB180837E90CC6BBFEC23C0785 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AAD20E10C33BE22CB15353A17D99613 /* GradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientView.h; path = GradientView/GradientView.h; sourceTree = "<group>"; };
 		9B040F4ADD91EF219DABD2D4C2967E7F /* Pods-ui_gradients_viewerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ui_gradients_viewerTests-umbrella.h"; sourceTree = "<group>"; };
+		9C21B157B6C1643B7875FCAA943DE56F /* GradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientView.modulemap; sourceTree = "<group>"; };
+		9C68C9B5AB139D2FA89A8EFE8BD8F84B /* UIScrollView+ScrollActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ScrollActivity.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+ScrollActivity.swift"; sourceTree = "<group>"; };
+		9E69BA5C4FF43E3878283A4E92CC96B9 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
 		9F48977F27C75E8AA086B4B36C0F6879 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A067E88958384CA4970DBC634791F8FC /* UIView+constrainToParent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+constrainToParent.swift"; path = "PulleyLib/UIView+constrainToParent.swift"; sourceTree = "<group>"; };
-		A1962D69A2697F938EC67E61F3B8CE31 /* Anchorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchorage.swift; path = Source/Anchorage.swift; sourceTree = "<group>"; };
-		A386769D7823F7DE946DB8C3A7F5C2C1 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyPassthroughScrollView.swift; path = PulleyLib/PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
-		A8F2704964B39608AB75810FF77CE8FB /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/Components/PageboyAutoScroller.swift; sourceTree = "<group>"; };
+		A0D06AFF3A9D8A494B5ACCFDF8D14141 /* Compatability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatability.swift; path = Source/Compatability.swift; sourceTree = "<group>"; };
 		A9586B6496D905F5E8060146CE74D5F9 /* Pods_ui_gradients_viewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewerTests.framework; path = "Pods-ui_gradients_viewerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC4A0F8FBAE7F8D502EE759B6D0830C5 /* WeakWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakWrapper.swift; path = Sources/Pageboy/Utilities/DataStructures/WeakWrapper.swift; sourceTree = "<group>"; };
+		A99616074EC2F118AA6180569029D4F8 /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
+		AA8BE8DC4EF6B7490C60FDBF24D54E08 /* WeakWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakWrapper.swift; path = Sources/Pageboy/Utilities/DataStructures/WeakWrapper.swift; sourceTree = "<group>"; };
+		AB1EA6D7A751195112AE4871F4819AD7 /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
+		ADFF84817102D70D68BACE2265953E8A /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
 		B1D8995D43AC1D66B3B43BDDADD851CA /* Pods-ui_gradients_viewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B7EED279975C747ED73E0E6E440841D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBFC9878EE0887BFD025C871F4356383 /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
-		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		BE682AA4B27C898727C861DC8C503FE9 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
+		B3692B9109A47B075603658A41E25456 /* Anchorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Anchorage-dummy.m"; sourceTree = "<group>"; };
+		B589C15B50EE056A49FC0E7D5FB4A5BE /* Anchorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-umbrella.h"; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B70B8F40CD4EE8A16742E5A32273673C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BADBEBC752CC35DFC7446818FD2F8EEE /* Anchorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Anchorage.modulemap; sourceTree = "<group>"; };
+		BC75B03E72DAA60B981E53554CB4956C /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
 		C009F9916706BB07F97026F11AEE1CE5 /* Pods-ui_gradients_viewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C079C0C568292B259CE4CB08DC37241D /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
-		C1852D82AD10BBC1FFC152F3CFE98240 /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Utilities/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
-		C221C95D2B71288ABEB7346923EFB8E7 /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Utilities/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
-		C223BD2333100D18512E99FEE6BD888B /* GradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientView.h; path = GradientView/GradientView.h; sourceTree = "<group>"; };
-		C260FCDF835506A68BB8DA31DA8D1167 /* Pulley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-umbrella.h"; sourceTree = "<group>"; };
+		C09CB72991A14799206C2BBFBF092C36 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		C15D0640628FDA3C1325EE1F2050AE4D /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
+		C182DEFF323712EC49320FFB8F9AE963 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
 		C3BD4353733148792F671F26D79C8C2D /* GradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GradientView.framework; path = GradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6DD01DC2010C4E613EC68D0F20FBBCE /* Pods-ui_gradients_viewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewer-frameworks.sh"; sourceTree = "<group>"; };
-		C747A9910B9D8198D3EF51B54D5D7112 /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		C7B1497C9B01ED4CA70C946F320BDC3F /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
 		C9899A88DAD2AF553651F9C08F12E058 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAC7FA4367BD3FFC728824FD89C5D992 /* IndexedMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexedMap.swift; path = Sources/Pageboy/Utilities/DataStructures/IndexedMap.swift; sourceTree = "<group>"; };
+		C9C6BEB9E786026E97517D5A93CB9B80 /* Pulley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pulley.modulemap; sourceTree = "<group>"; };
+		CAAFD55E18EB4E3143D489A34D64B65C /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyPassthroughScrollView.swift; path = PulleyLib/PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
+		CB95EF05E354C29510941BA720ED02BC /* Pulley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pulley-dummy.m"; sourceTree = "<group>"; };
 		CBF8A873DF45764D95055552924B91AF /* Pods-ui_gradients_viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewer.debug.xcconfig"; sourceTree = "<group>"; };
+		CD7A5E81DF32BD5A0869581C9ACE55DB /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
 		D27474DA7EEBDA96C9CA3099838EDC1C /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pageboy.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D78D7AC8247DCE4F63CE2B278C706F /* Pods-ui_gradients_viewerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ui_gradients_viewerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D4F7613485824ADC4E52F620872BA653 /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
 		D765C387F56EF78AE673AD1F12728052 /* Pods-ui_gradients_viewerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ui_gradients_viewerUITests-umbrella.h"; sourceTree = "<group>"; };
+		D8312F29B3F29EB29225CA772EE79AAC /* Anchorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-prefix.pch"; sourceTree = "<group>"; };
 		D848ED338CC487E60E8643C192DD2E04 /* Pods-ui_gradients_viewerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerUITests-frameworks.sh"; sourceTree = "<group>"; };
-		DA951FF5CD872929DD8F6A3D63110A33 /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
-		DC505AF5355279D2B5AD2302864253A3 /* Compatability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatability.swift; path = Source/Compatability.swift; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DC9C0198796231526AC8EA1EF38829D5 /* Pulley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pulley.framework; path = Pulley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDBE5A7B077D20A220DB5A4F121023E /* Pods-ui_gradients_viewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ui_gradients_viewer.modulemap"; sourceTree = "<group>"; };
-		DF7E8278250DABE6225C4592E22BAC43 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Source/Priority.swift; sourceTree = "<group>"; };
 		DF91293B87BD0A99601313521B6571D8 /* Pods-ui_gradients_viewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerTests.release.xcconfig"; sourceTree = "<group>"; };
-		E08C80D056A058685DFF4D4A7237336A /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
-		E4C9BFEA8BDD5ED71E5DE63378470A6C /* GradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-umbrella.h"; sourceTree = "<group>"; };
+		E1BBEF2508DB8B5431EFB092E6DC08B1 /* Pulley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-umbrella.h"; sourceTree = "<group>"; };
 		E50AF67A7D68280FAE5D5D245B3307C9 /* Haptica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haptica.framework; path = Haptica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61BE8F8144FEBE3CE341EA2C9BB60AF /* Pods-ui_gradients_viewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E6CD11817F8C3D46AC81BE4EB83848CD /* Pulley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pulley-dummy.m"; sourceTree = "<group>"; };
-		EA069949DA9734C06A7C72A05A399106 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE222AF374D2220F5C014211632C09C8 /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
-		EFF243D46686BA93024B704F73F66653 /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
-		F25927F55B7028D80C0F2F1AE58F507A /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Source/Internal.swift; sourceTree = "<group>"; };
-		F51E22B0D5F89A0B126AB91866B0FDB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1C6AB32C77874485257C17FF2EC2BB /* PageboyViewController+NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+NavigationDirection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+NavigationDirection.swift"; sourceTree = "<group>"; };
+		EE2D9313EB0D324182119565149E8965 /* Pageboy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.xcconfig; sourceTree = "<group>"; };
+		EF7295FFACB4B74F322072ADB1FEF7CA /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Source/Priority.swift; sourceTree = "<group>"; };
+		F469507389E894EC831D2AAE6C8956AC /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
 		F71A968EAFC5A69A112D3CE62EBF3D16 /* Pods-ui_gradients_viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewer.release.xcconfig"; sourceTree = "<group>"; };
-		F76E5DD7AE42AE64727BF851B907BE7B /* GradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientView.modulemap; sourceTree = "<group>"; };
+		F7A10ABEB9C05A6EF692E4095B78095E /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		FCC501F00B492A0D91D916490978F99A /* GradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientView.xcconfig; sourceTree = "<group>"; };
+		FDA29C3377794FB6B43E1F0685B0C34F /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
 		FFA1614315C396E9441D4C58C0EDA7A8 /* Pods-ui_gradients_viewerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ui_gradients_viewerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,7 +258,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495B25AB0D85F3D95C6672527E6EB4EA /* Foundation.framework in Frameworks */,
+				CADE67AEBCA937B28E8FC50481F8D57C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +266,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				775ADBEE76EF58D505A6EE4A4F19BC3D /* Foundation.framework in Frameworks */,
+				BA49C0621A4F06854E828A72DF2C9B58 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +274,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478DBA27BBB46A13EEB7E7B199F3C2B1 /* Foundation.framework in Frameworks */,
+				3CC6AD85E0C9E7FE53ABD7907833CA29 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +282,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2703921981420A21DC1B1890386A5E58 /* Foundation.framework in Frameworks */,
+				3CC0B964A0729B2232572B19B290635C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +290,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A2311131476689B7CD6CB4052A12A86 /* Foundation.framework in Frameworks */,
-				48D79B0DA7E2E045A6D430DBE004B86E /* UIKit.framework in Frameworks */,
+				0A7F42981BA9F011764B1BEA00E93943 /* Foundation.framework in Frameworks */,
+				42253A44954F38F17C9FBB786F83E76B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				548DE3CF3430B9EB2E0CB0C98C2A4E4B /* Foundation.framework in Frameworks */,
+				57793E6514815367189FA59D707095CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +307,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC35AEA5DCFF25C7B45EC386FAAF9F2 /* Foundation.framework in Frameworks */,
-				BD6935EBE023390EA81BE1488A39A084 /* UIKit.framework in Frameworks */,
+				219D525C249450E6563FF2A7B43DD7B6 /* Foundation.framework in Frameworks */,
+				0717E17A1C1FCB074DB2C8AA15C0A7D5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +316,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A207398B76554A825B117FE64DAB78C /* Foundation.framework in Frameworks */,
+				E769252D7A98AC639251D1E43382D6C8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,74 +324,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADDADFED4BFED4D0DB6A1504164E060D /* Foundation.framework in Frameworks */,
+				308765F26648DCBDE230CFA20D32D919 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08B42255F90CBCC6774A40DC20CF5AD9 /* SwiftHEXColors */ = {
+		036A2D9C6C3D55B3A497CBB77B5C1B8E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				152E039B91F08F5C0F8B469CF3CA55B5 /* SwiftHEXColors.h */,
-				6866DC0E0E73896232EA0BE8B5385777 /* SwiftHEXColors.swift */,
-				CA2CFEE2D29D6676517A7B7F9BA87CCE /* Support Files */,
-			);
-			name = SwiftHEXColors;
-			path = SwiftHEXColors;
-			sourceTree = "<group>";
-		};
-		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
-				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		1217AA4FE984C9CDB317E8509C7493FE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EA069949DA9734C06A7C72A05A399106 /* Info.plist */,
-				81FBB026AE4F74AAE9CC9EB53BCF457C /* Pageboy.modulemap */,
-				949D5B4A277B744CC8492B908DB83FAA /* Pageboy.xcconfig */,
-				BBFC9878EE0887BFD025C871F4356383 /* Pageboy-dummy.m */,
-				8D98433F023A6F23AFFE1A460F9D3647 /* Pageboy-prefix.pch */,
-				197809E823DBA49AA0A56A3B4805E6A0 /* Pageboy-umbrella.h */,
+				BADBEBC752CC35DFC7446818FD2F8EEE /* Anchorage.modulemap */,
+				3F0794CE66375E3BED0B8818E722E278 /* Anchorage.xcconfig */,
+				B3692B9109A47B075603658A41E25456 /* Anchorage-dummy.m */,
+				D8312F29B3F29EB29225CA772EE79AAC /* Anchorage-prefix.pch */,
+				B589C15B50EE056A49FC0E7D5FB4A5BE /* Anchorage-umbrella.h */,
+				1771EC99A4C08D2CEDB43B05469E3592 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pageboy";
+			path = "../Target Support Files/Anchorage";
 			sourceTree = "<group>";
 		};
-		1A3BFB628032B9141FBA4D7240E8D806 /* Pageboy */ = {
+		0A761827A8F927414AD5AB0961C068C8 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				CAC7FA4367BD3FFC728824FD89C5D992 /* IndexedMap.swift */,
-				36A46C12A89578EE6198D8B21DF1B4D7 /* Pageboy.h */,
-				A8F2704964B39608AB75810FF77CE8FB /* PageboyAutoScroller.swift */,
-				14933A5EB8F7292B812BE8CF2F2A8AC2 /* PageboyViewController.swift */,
-				16C81A91F7D8AE81E1008B13816B341F /* PageboyViewController+AutoScrolling.swift */,
-				39DD961D81A26F1612D61FEA6750B3AC /* PageboyViewController+Management.swift */,
-				21A0A6B2AEB811CB1BCE51BC3A2306FE /* PageboyViewController+NavigationDirection.swift */,
-				7AFDF4E063F71218FDD6516BC6EEE607 /* PageboyViewController+ScrollDetection.swift */,
-				BE682AA4B27C898727C861DC8C503FE9 /* PageboyViewController+Transitioning.swift */,
-				724AF8811A96C88F26CFEDAA9888D2F7 /* PageboyViewControllerDataSource.swift */,
-				57D71A2614921388603A0A7D9435816B /* PageboyViewControllerDelegate.swift */,
-				C221C95D2B71288ABEB7346923EFB8E7 /* TransitionOperation.swift */,
-				C1852D82AD10BBC1FFC152F3CFE98240 /* TransitionOperation+Action.swift */,
-				EE222AF374D2220F5C014211632C09C8 /* UIApplication+SafeShared.swift */,
-				8D51A869365E69988BB804018AED0619 /* UIPageViewController+ScrollView.swift */,
-				8490F59AB18B3BEC457B999ED24E2838 /* UIScrollView+ScrollActivity.swift */,
-				75E1F28847194C4BDDCE20E6B2F285F5 /* UIView+AutoLayout.swift */,
-				110ACBE2D0D8D8E7C895461B53876B60 /* UIView+Localization.swift */,
-				44BEBF3ACA854DDA7072C9182933BC54 /* UIViewController+Pageboy.swift */,
-				AC4A0F8FBAE7F8D502EE759B6D0830C5 /* WeakWrapper.swift */,
-				1217AA4FE984C9CDB317E8509C7493FE /* Support Files */,
+				9136305F40E0B45782C5DB0C713E3BDC /* Frameworks */,
 			);
-			name = Pageboy;
-			path = Pageboy;
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		0DAC564A47B0572E98244F87ADF6A181 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C21B157B6C1643B7875FCAA943DE56F /* GradientView.modulemap */,
+				FCC501F00B492A0D91D916490978F99A /* GradientView.xcconfig */,
+				51B19A8EA7F290252A86C1F925708246 /* GradientView-dummy.m */,
+				9006B576D0E7CB969A3F859A2239E569 /* GradientView-prefix.pch */,
+				104A20666EDA06D6A14A9721A2A55588 /* GradientView-umbrella.h */,
+				3C99B516AEDCA85D91EF2AA5FB51E79F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GradientView";
 			sourceTree = "<group>";
 		};
 		2968F2B0A7DBEDC673268C0FD58C8B1E /* Targets Support Files */ = {
@@ -421,34 +396,6 @@
 			path = "Target Support Files/Pods-ui_gradients_viewerUITests";
 			sourceTree = "<group>";
 		};
-		35BA1B6F25A21DC4A1A48D8EF519E78F /* Pulley */ = {
-			isa = PBXGroup;
-			children = (
-				A386769D7823F7DE946DB8C3A7F5C2C1 /* PulleyPassthroughScrollView.swift */,
-				92696B6500652E0CC1240E06B65C4678 /* PulleyViewController.swift */,
-				A067E88958384CA4970DBC634791F8FC /* UIView+constrainToParent.swift */,
-				7A5AA899AAA5A1F39EA3996EAF0B3308 /* UIViewController+PulleyViewController.swift */,
-				8E7673241B07E7645ECE8525316C04F2 /* Support Files */,
-			);
-			name = Pulley;
-			path = Pulley;
-			sourceTree = "<group>";
-		};
-		37A48E622B9F85ABE44469688D8001C1 /* Anchorage */ = {
-			isa = PBXGroup;
-			children = (
-				A1962D69A2697F938EC67E61F3B8CE31 /* Anchorage.swift */,
-				851FF2BFCFA02D976D8E55684A0880CF /* AnchorGroupProvider.swift */,
-				DC505AF5355279D2B5AD2302864253A3 /* Compatability.swift */,
-				F25927F55B7028D80C0F2F1AE58F507A /* Internal.swift */,
-				0C734E3A267BFE7FDBD62EC1D3E92EBB /* NSLayoutAnchor+MultiplierConstraints.swift */,
-				DF7E8278250DABE6225C4592E22BAC43 /* Priority.swift */,
-				F52809A2D1AE0F8198FC226C8E8D076F /* Support Files */,
-			);
-			name = Anchorage;
-			path = Anchorage;
-			sourceTree = "<group>";
-		};
 		393A8D8404EC6CFDE3E0F411DCF16C3B /* Pods-ui_gradients_viewer */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,37 +417,82 @@
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4859A37633C9D80EAD34EF2943157F78 /* Support Files */ = {
+		4371759A72D6836E232039355AD11FFA /* SwiftHEXColors */ = {
 			isa = PBXGroup;
 			children = (
-				F76E5DD7AE42AE64727BF851B907BE7B /* GradientView.modulemap */,
-				6F2831251C4F5E9CB1141CACFAB3EC61 /* GradientView.xcconfig */,
-				218A8059EDB68D3A9BE1B3C65C6B1855 /* GradientView-dummy.m */,
-				443F8E746D0DDEE112FD8316F09289B3 /* GradientView-prefix.pch */,
-				E4C9BFEA8BDD5ED71E5DE63378470A6C /* GradientView-umbrella.h */,
-				287EF7E36CB963A59ABA7BB58378355C /* Info.plist */,
+				570EC57FF002032B2AB06EE5125DA2D8 /* SwiftHEXColors.h */,
+				6151551D01D807E82B62294D1BC5F710 /* SwiftHEXColors.swift */,
+				EA8F8856D6DD1689DF990CCDAAC81C9B /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GradientView";
+			name = SwiftHEXColors;
+			path = SwiftHEXColors;
 			sourceTree = "<group>";
 		};
-		639F55D5669E56B62AF5AAEC179F15E0 /* Support Files */ = {
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E08C80D056A058685DFF4D4A7237336A /* Haptica.modulemap */,
-				415D02446BBCD305EF9F85344E234E08 /* Haptica.xcconfig */,
-				D4F7613485824ADC4E52F620872BA653 /* Haptica-dummy.m */,
-				196966917D4D516F8D6B9EE4A38A0538 /* Haptica-prefix.pch */,
-				DA951FF5CD872929DD8F6A3D63110A33 /* Haptica-umbrella.h */,
-				F51E22B0D5F89A0B126AB91866B0FDB6 /* Info.plist */,
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Haptica";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46FED36445B78C3F1EAA8DAB0BB277B7 /* Pulley */ = {
+			isa = PBXGroup;
+			children = (
+				CAAFD55E18EB4E3143D489A34D64B65C /* PulleyPassthroughScrollView.swift */,
+				13A9437C7D1544E4E0192777303E6CCB /* PulleyViewController.swift */,
+				3534336A58DE98786950C2240A817FC8 /* UIView+constrainToParent.swift */,
+				7AAEDE78FEDAC9C6B5B3829E95A99DD7 /* UIViewController+PulleyViewController.swift */,
+				FEF0619A0902D56AB964A32B42EC5A34 /* Support Files */,
+			);
+			name = Pulley;
+			path = Pulley;
+			sourceTree = "<group>";
+		};
+		475AC12B7D196A2576211B7097CB1B26 /* Pageboy */ = {
+			isa = PBXGroup;
+			children = (
+				170051F62E3AAC25D2F03D5CB1A67AEC /* IndexedMap.swift */,
+				76D533E655E42B8EE7EBA6F90417B678 /* Pageboy.h */,
+				8E5252F584DF58BF3C41FE133AAF316D /* PageboyAutoScroller.swift */,
+				2B4BA98CBB90251B536AA9A72265752E /* PageboyViewController.swift */,
+				67CDE6DE99A05755FC596504519B5D6F /* PageboyViewController+AutoScrolling.swift */,
+				7382435BFD736DF4A176A1131B47819B /* PageboyViewController+Management.swift */,
+				EA1C6AB32C77874485257C17FF2EC2BB /* PageboyViewController+NavigationDirection.swift */,
+				C15D0640628FDA3C1325EE1F2050AE4D /* PageboyViewController+ScrollDetection.swift */,
+				755D578E56104EBF15FEEAAE5B67DAF9 /* PageboyViewController+Transitioning.swift */,
+				6B4C65B378DE3D24A74F85BBE8B6D416 /* PageboyViewControllerDataSource.swift */,
+				89AB532D26C78A89A78891C9234BE50C /* PageboyViewControllerDelegate.swift */,
+				901DBAAFE918C0D15F369995F3DFC51D /* TransitionOperation.swift */,
+				6E335EF97FB7A52CC7FA6D54C424AD6E /* TransitionOperation+Action.swift */,
+				AB1EA6D7A751195112AE4871F4819AD7 /* UIApplication+SafeShared.swift */,
+				BC75B03E72DAA60B981E53554CB4956C /* UIPageViewController+ScrollView.swift */,
+				9C68C9B5AB139D2FA89A8EFE8BD8F84B /* UIScrollView+ScrollActivity.swift */,
+				C09CB72991A14799206C2BBFBF092C36 /* UIView+AutoLayout.swift */,
+				0C1EF3803201D4DF1299C703E5A6155C /* UIView+Localization.swift */,
+				815D426DF8EB2CFDB9864C73E7A9F2FF /* UIViewController+Pageboy.swift */,
+				AA8BE8DC4EF6B7490C60FDBF24D54E08 /* WeakWrapper.swift */,
+				774B4DF6A515CABF986DC9A8A1F69D3F /* Support Files */,
+			);
+			name = Pageboy;
+			path = Pageboy;
+			sourceTree = "<group>";
+		};
+		480B50289A23974CF3DFA690F0E7D436 /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				9AAD20E10C33BE22CB15353A17D99613 /* GradientView.h */,
+				490DB99CF2A8A3D85D343C8CC099292E /* GradientView.swift */,
+				0DAC564A47B0572E98244F87ADF6A181 /* Support Files */,
+			);
+			name = GradientView;
+			path = GradientView;
 			sourceTree = "<group>";
 		};
 		70BC210514B516602BCB26D881213C90 /* Pods-ui_gradients_viewerTests */ = {
@@ -537,93 +529,120 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		774B4DF6A515CABF986DC9A8A1F69D3F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B70B8F40CD4EE8A16742E5A32273673C /* Info.plist */,
+				CD7A5E81DF32BD5A0869581C9ACE55DB /* Pageboy.modulemap */,
+				EE2D9313EB0D324182119565149E8965 /* Pageboy.xcconfig */,
+				6C526DD6858206BC43A6D4590A9274C4 /* Pageboy-dummy.m */,
+				C182DEFF323712EC49320FFB8F9AE963 /* Pageboy-prefix.pch */,
+				FDA29C3377794FB6B43E1F0685B0C34F /* Pageboy-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pageboy";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				C7A00B6AB9CB513BAA37752FC0EFB84E /* Pods */,
+				FEBC65617F1DD3F2430DD0B814D5793E /* Pods */,
 				7272691A43FD931CD992052BE8B88952 /* Products */,
 				2968F2B0A7DBEDC673268C0FD58C8B1E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8E7673241B07E7645ECE8525316C04F2 /* Support Files */ = {
+		9136305F40E0B45782C5DB0C713E3BDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7EED279975C747ED73E0E6E440841D5 /* Info.plist */,
-				5BC1DFF0574FFCDAA91FDDBFEECC342C /* Pulley.modulemap */,
-				0BFD20B57F218F28D878114547C1A09F /* Pulley.xcconfig */,
-				E6CD11817F8C3D46AC81BE4EB83848CD /* Pulley-dummy.m */,
-				71F204EED17A957F2CD1B134E09B286A /* Pulley-prefix.pch */,
-				C260FCDF835506A68BB8DA31DA8D1167 /* Pulley-umbrella.h */,
+				F7A10ABEB9C05A6EF692E4095B78095E /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA4B7B710F3FE3BD438A62F22F13874C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27EFBBFD45E662672FA9BE4F6D20FD57 /* Haptica.modulemap */,
+				52CD64C6B61743238F577A8130A1441E /* Haptica.xcconfig */,
+				774E19D321EEF3C7CE0A22D9909A9710 /* Haptica-dummy.m */,
+				3B94AFAC429F0F47ACCCC29723CB30DF /* Haptica-prefix.pch */,
+				7C97305AED9C7D007235AB1980C862D3 /* Haptica-umbrella.h */,
+				2B46B8574718AF68017FC43883A03BF5 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pulley";
+			path = "../Target Support Files/Haptica";
 			sourceTree = "<group>";
 		};
-		BD1BFE3D2D723531BF3A20B2BA5F5FB8 /* GradientView */ = {
+		EA8F8856D6DD1689DF990CCDAAC81C9B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C223BD2333100D18512E99FEE6BD888B /* GradientView.h */,
-				8A19CA1902F62644ACC72269292E5AA4 /* GradientView.swift */,
-				4859A37633C9D80EAD34EF2943157F78 /* Support Files */,
-			);
-			name = GradientView;
-			path = GradientView;
-			sourceTree = "<group>";
-		};
-		C7A00B6AB9CB513BAA37752FC0EFB84E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				37A48E622B9F85ABE44469688D8001C1 /* Anchorage */,
-				BD1BFE3D2D723531BF3A20B2BA5F5FB8 /* GradientView */,
-				CFEB1CFF8B30BAE59DCD81A86CF334B1 /* Haptica */,
-				1A3BFB628032B9141FBA4D7240E8D806 /* Pageboy */,
-				35BA1B6F25A21DC4A1A48D8EF519E78F /* Pulley */,
-				08B42255F90CBCC6774A40DC20CF5AD9 /* SwiftHEXColors */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CA2CFEE2D29D6676517A7B7F9BA87CCE /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6B7B43CED3F6D40BEBD5D37B5D069051 /* Info.plist */,
-				98CF4D136095B797803F95E75014C965 /* SwiftHEXColors.modulemap */,
-				C747A9910B9D8198D3EF51B54D5D7112 /* SwiftHEXColors.xcconfig */,
-				55E726D957E436D19F4552C452122399 /* SwiftHEXColors-dummy.m */,
-				2630DAC14AA9F6FE3FD01B6C39539442 /* SwiftHEXColors-prefix.pch */,
-				179D3C78551ABED56757E788AF60AE75 /* SwiftHEXColors-umbrella.h */,
+				7472F615213C171C8F0D936DF15FC181 /* Info.plist */,
+				5032B645B9D54E25F029C9418B01C6C5 /* SwiftHEXColors.modulemap */,
+				01A1664E0AFE9881EEF3BC11D4482688 /* SwiftHEXColors.xcconfig */,
+				9E69BA5C4FF43E3878283A4E92CC96B9 /* SwiftHEXColors-dummy.m */,
+				C7B1497C9B01ED4CA70C946F320BDC3F /* SwiftHEXColors-prefix.pch */,
+				A99616074EC2F118AA6180569029D4F8 /* SwiftHEXColors-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwiftHEXColors";
 			sourceTree = "<group>";
 		};
-		CFEB1CFF8B30BAE59DCD81A86CF334B1 /* Haptica */ = {
+		ED28DFE371C91B8A46A6A43F1741EA7E /* Anchorage */ = {
 			isa = PBXGroup;
 			children = (
-				11EA64882182A747287C2C01DFE6FF15 /* Associated.swift */,
-				3AB4A596205974D8594D8CE12893E9B4 /* Haptic.swift */,
-				EFF243D46686BA93024B704F73F66653 /* Hapticable.swift */,
-				639F55D5669E56B62AF5AAEC179F15E0 /* Support Files */,
+				86B340485A34A8680043E866D1BEBC6E /* Anchorage.swift */,
+				7A13BB0CB198BD59AA813C305CB1F7DA /* AnchorGroupProvider.swift */,
+				A0D06AFF3A9D8A494B5ACCFDF8D14141 /* Compatability.swift */,
+				931265476CBF1A071D5FEA720A7014D3 /* Internal.swift */,
+				1FC73CD61BA21092753C7A5EB447AD1B /* NSLayoutAnchor+MultiplierConstraints.swift */,
+				EF7295FFACB4B74F322072ADB1FEF7CA /* Priority.swift */,
+				036A2D9C6C3D55B3A497CBB77B5C1B8E /* Support Files */,
+			);
+			name = Anchorage;
+			path = Anchorage;
+			sourceTree = "<group>";
+		};
+		FCA3F135A7BAE62F87DC69B686DDCAE8 /* Haptica */ = {
+			isa = PBXGroup;
+			children = (
+				0AD73663D9EB52F4A29FB79DEC895109 /* Associated.swift */,
+				ADFF84817102D70D68BACE2265953E8A /* Haptic.swift */,
+				F469507389E894EC831D2AAE6C8956AC /* Hapticable.swift */,
+				CA4B7B710F3FE3BD438A62F22F13874C /* Support Files */,
 			);
 			name = Haptica;
 			path = Haptica;
 			sourceTree = "<group>";
 		};
-		F52809A2D1AE0F8198FC226C8E8D076F /* Support Files */ = {
+		FEBC65617F1DD3F2430DD0B814D5793E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				96C3ADB4FB6FDF8AA980A67BE43251DD /* Anchorage.modulemap */,
-				C079C0C568292B259CE4CB08DC37241D /* Anchorage.xcconfig */,
-				833843376FC47F8F6C8915B4CB90CB96 /* Anchorage-dummy.m */,
-				875CC6176A9569E1B7CD500709D1D669 /* Anchorage-prefix.pch */,
-				546F6A76A6DF4DE12E211C9D725AC54C /* Anchorage-umbrella.h */,
-				57C2575398F29C20ECA8AEA0DC0C6A6E /* Info.plist */,
+				ED28DFE371C91B8A46A6A43F1741EA7E /* Anchorage */,
+				0A761827A8F927414AD5AB0961C068C8 /* Google-Mobile-Ads-SDK */,
+				480B50289A23974CF3DFA690F0E7D436 /* GradientView */,
+				FCA3F135A7BAE62F87DC69B686DDCAE8 /* Haptica */,
+				475AC12B7D196A2576211B7097CB1B26 /* Pageboy */,
+				46FED36445B78C3F1EAA8DAB0BB277B7 /* Pulley */,
+				4371759A72D6836E232039355AD11FFA /* SwiftHEXColors */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FEF0619A0902D56AB964A32B42EC5A34 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97A264FB180837E90CC6BBFEC23C0785 /* Info.plist */,
+				C9C6BEB9E786026E97517D5A93CB9B80 /* Pulley.modulemap */,
+				71BDAEDA8A84139761F9092FE4ECB38B /* Pulley.xcconfig */,
+				CB95EF05E354C29510941BA720ED02BC /* Pulley-dummy.m */,
+				58BD23E8DF9FB0F6D56D92CA3CB0C309 /* Pulley-prefix.pch */,
+				E1BBEF2508DB8B5431EFB092E6DC08B1 /* Pulley-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Anchorage";
+			path = "../Target Support Files/Pulley";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1128,7 +1147,7 @@
 		};
 		06F5EFB0325FB72BB012457FC09F41A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BFD20B57F218F28D878114547C1A09F /* Pulley.xcconfig */;
+			baseConfigurationReference = 71BDAEDA8A84139761F9092FE4ECB38B /* Pulley.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1160,7 +1179,7 @@
 		};
 		232E3C25C69DE9FF9C41401B3456A9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 415D02446BBCD305EF9F85344E234E08 /* Haptica.xcconfig */;
+			baseConfigurationReference = 52CD64C6B61743238F577A8130A1441E /* Haptica.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1192,7 +1211,7 @@
 		};
 		36E48DB52EAF5ACEA7B454EE78B9D84C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F2831251C4F5E9CB1141CACFAB3EC61 /* GradientView.xcconfig */;
+			baseConfigurationReference = FCC501F00B492A0D91D916490978F99A /* GradientView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1260,7 +1279,7 @@
 		};
 		5CA6814BB3D95332AE24E77284C18CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C747A9910B9D8198D3EF51B54D5D7112 /* SwiftHEXColors.xcconfig */;
+			baseConfigurationReference = 01A1664E0AFE9881EEF3BC11D4482688 /* SwiftHEXColors.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1387,7 +1406,7 @@
 		};
 		78C906EDC7AD5B485FB76F861F78CD19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 949D5B4A277B744CC8492B908DB83FAA /* Pageboy.xcconfig */;
+			baseConfigurationReference = EE2D9313EB0D324182119565149E8965 /* Pageboy.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1419,7 +1438,7 @@
 		};
 		88A059E7FD4CE0E690F26DA5B6F455A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 949D5B4A277B744CC8492B908DB83FAA /* Pageboy.xcconfig */;
+			baseConfigurationReference = EE2D9313EB0D324182119565149E8965 /* Pageboy.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1452,7 +1471,7 @@
 		};
 		9F488AB1F5E846AB581061E7565A33E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C079C0C568292B259CE4CB08DC37241D /* Anchorage.xcconfig */;
+			baseConfigurationReference = 3F0794CE66375E3BED0B8818E722E278 /* Anchorage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1484,7 +1503,7 @@
 		};
 		A0BE8C825F1BE4046BB8159C2EAA1C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C747A9910B9D8198D3EF51B54D5D7112 /* SwiftHEXColors.xcconfig */;
+			baseConfigurationReference = 01A1664E0AFE9881EEF3BC11D4482688 /* SwiftHEXColors.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1551,7 +1570,7 @@
 		};
 		ABF5AD90D3A2F737AEE9700DD99B8034 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C079C0C568292B259CE4CB08DC37241D /* Anchorage.xcconfig */;
+			baseConfigurationReference = 3F0794CE66375E3BED0B8818E722E278 /* Anchorage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1619,7 +1638,7 @@
 		};
 		BF045874C4CB2A3C9260077328ED454C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BFD20B57F218F28D878114547C1A09F /* Pulley.xcconfig */;
+			baseConfigurationReference = 71BDAEDA8A84139761F9092FE4ECB38B /* Pulley.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1652,7 +1671,7 @@
 		};
 		C23D7D4570691D2386A9FA13C7E85951 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 415D02446BBCD305EF9F85344E234E08 /* Haptica.xcconfig */;
+			baseConfigurationReference = 52CD64C6B61743238F577A8130A1441E /* Haptica.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1753,7 +1772,7 @@
 		};
 		FC85895989743EDCFFEBC3DFF0BF18DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F2831251C4F5E9CB1141CACFAB3EC61 /* GradientView.xcconfig */;
+			baseConfigurationReference = FCC501F00B492A0D91D916490978F99A /* GradientView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

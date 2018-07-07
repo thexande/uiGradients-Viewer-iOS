@@ -1,5 +1,6 @@
 PODS:
   - Anchorage (4.2.2)
+  - Google-Mobile-Ads-SDK (7.31.0)
   - GradientView (2.3.3)
   - Haptica (2.0.2)
   - Pageboy (2.5.1)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Anchorage
+  - Google-Mobile-Ads-SDK
   - GradientView
   - Haptica
   - Pageboy
@@ -17,6 +19,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Anchorage
+    - Google-Mobile-Ads-SDK
     - GradientView
     - Haptica
     - Pageboy
@@ -25,12 +28,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Anchorage: cba8707ea6475f604e04047882ba47c07e4b2ac1
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   GradientView: b044fa46c24062ee245a07a4e8bea4c5c4d63de0
   Haptica: fdf2cb787b131795b9f51f4e79db84f4389c5bdd
   Pageboy: f0295ea949f0b0123a1b486fd347ea892d0078e0
   Pulley: d3d144a0323b65b8aa1dd601d515d08481103034
   SwiftHEXColors: 9681e756dc78a99ae97f277165b3f5e33b087553
 
-PODFILE CHECKSUM: c696cd529b3c95f668f9be8abe5d18cb30e74a7e
+PODFILE CHECKSUM: ee6724be798aacef8a0962aee8e73e4085b842e9
 
 COCOAPODS: 1.5.3

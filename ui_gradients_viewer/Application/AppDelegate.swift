@@ -8,6 +8,7 @@
 
 import UIKit
 import Pulley
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = coordinator.root
         window?.makeKeyAndVisible()
-        
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-1145490800826705~4739260361")
         return true
     }
 
