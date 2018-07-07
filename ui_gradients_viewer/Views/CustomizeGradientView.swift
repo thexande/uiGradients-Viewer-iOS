@@ -3,7 +3,7 @@ import Anchorage
 
 final class CustomizeGradientView: UIView {
     weak var dispatch: GradientActionDispatching?
-    let slider = Slider()
+    let position = Slider()
     let radius = Slider()
     let gradientSegmented = SegmentedView()
     let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
@@ -17,18 +17,21 @@ final class CustomizeGradientView: UIView {
     }
     
     func setGradient(_ gradient: GradientColor) {
-        colorPicker.adjustToColor(gradient.colors.first?.color ?? .black)
-        slider.tint = gradient.colors.first?.color ?? .black
+        position.tint = gradient.colors.first?.color ?? .black
         gradientSegmented.tint = gradient.colors.first?.color ?? .black
         radius.tint = gradient.colors.first?.color ?? .black
+        
+        if let first = gradient.colors.first?.color, first != colorPicker.currentColor {
+            colorPicker.adjustToColor(first)
+        }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         gradientSegmented.title = "type".capitalized
-        slider.title = "position".capitalized
+        position.title = "position".capitalized
         radius.title = "radius".capitalized        
-        let stack = UIStackView(arrangedSubviews: [slider, gradientSegmented, radius])
+        let stack = UIStackView(arrangedSubviews: [position, gradientSegmented, radius])
         stack.spacing = 18
         stack.axis = .vertical
         addSubview(stack)
@@ -40,6 +43,7 @@ final class CustomizeGradientView: UIView {
         colorPicker.centerXAnchor == centerXAnchor
         colorPicker.topAnchor == stack.bottomAnchor + 18
         colorPicker.bottomAnchor <= bottomAnchor ~ .low
+//        colorPicker.shadeSlider.isHidden = true
     }
     
     required init?(coder aDecoder: NSCoder) {

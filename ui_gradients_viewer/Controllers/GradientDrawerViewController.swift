@@ -36,12 +36,14 @@ final class GradientDrawerViewController: UIViewController {
             UIView.animate(withDuration: 0.3) {
                 pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .dark)
                 self.customize.colorPicker.hexLabel.textColor = .white
+                self.customize.radius.titleLabel.textColor = .white
                 self.header.indicator.backgroundColor = .white
             }
         } else {
             UIView.animate(withDuration: 0.3) {
                 pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .light)
                 self.customize.colorPicker.hexLabel.textColor = .black
+                self.customize.radius.titleLabel.textColor = .darkGray
                 self.header.indicator.backgroundColor = .darkGray
             }
         }

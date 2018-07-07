@@ -3,6 +3,12 @@ import SwiftHEXColors
 import GradientView
 
 struct GradientColor {
+    enum Format {
+        case horizontal
+        case vertical
+        case radial
+    }
+    
     struct Color: Equatable {
         var hex: String
         var color: UIColor

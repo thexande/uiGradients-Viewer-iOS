@@ -10,7 +10,7 @@ enum GradientAction {
         case popular
         case export
     }
-    
+        
     case selectedGradient(Int)
     case selectedGradientFromDrawer(Int)
     case saveGradient(UIImage)
@@ -107,7 +107,6 @@ final class GradientCoordinator {
         case .popular: drawer.pager.collection.scrollToItem(at: IndexPath(row: 1, section: 0), at: .centeredHorizontally, animated: true)
         }
     }
-    
     
     private func changeColor(identifier: UUID, newColor: UIColor?) {
         guard
