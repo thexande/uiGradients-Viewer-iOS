@@ -2,7 +2,7 @@ import Foundation
 import SwiftHEXColors
 import GradientView
 
-struct GradientColor {
+struct GradientColor: Equatable {
     enum Format {
         case horizontal
         case vertical
@@ -18,6 +18,8 @@ struct GradientColor {
     
     var title: String
     var colors: [Color]
+    var format: Format
+    var position: Float
 }
 
 class GradientHelper {
@@ -45,7 +47,7 @@ class GradientHelper {
                 
                 colorDicts[0].isSelected = true
                 
-                return GradientColor(title: gradName, colors: colorDicts)
+                return GradientColor(title: gradName, colors: colorDicts, format: .vertical, position: 0.5)
             }).compactMap({$0})
             
             completion(gradientStructs)

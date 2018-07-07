@@ -17,6 +17,8 @@ enum GradientAction {
     case drawerContextChange(DrawerContext)
     case colorIndexChange(startingIndex: Int, endingIndex: Int)
     case colorChange(identifier: UUID, newColor: UIColor?)
+    case gradientFormatDidChange(GradientColor.Format)
+    case exportCurrentGradient
 }
 
 protocol GradientActionDispatching: class {
@@ -124,6 +126,20 @@ final class GradientCoordinator {
         colors.insert(color, at: index)
         selectedGradient?.colors = colors
     }
+    
+    private func changeFormat(_ format: GradientColor.Format) {
+        
+    }
+    
+    private func exportCurrentGradient() {
+        guard
+            let selected = gradients.first(where: { $0.title == selectedGradient?.title }),
+            let index = gradients.index(of: selected) else {
+                return
+        }
+        
+        content.gradientVCs[index].produceBackgroundSnapshot()
+    }
 }
 
 extension GradientCoordinator: GradientActionDispatching {
@@ -145,6 +161,9 @@ extension GradientCoordinator: GradientActionDispatching {
             }
         case let .colorChange(identifier, newColor):
             changeColor(identifier: identifier, newColor: newColor)
+        case let .gradientFormatDidChange(format):
+            changeFormat(format)
+        case .exportCurrentGradient: exportCurrentGradient()
         }
     }
 }

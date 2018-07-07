@@ -13,6 +13,7 @@ target 'ui_gradients_viewer' do
     pod 'Anchorage'
 #    pod 'ChromaColorPicker'
     pod 'Haptica'
+    pod 'Google-Mobile-Ads-SDK'
     
   target 'ui_gradients_viewerTests' do
     inherit! :search_paths

@@ -3,7 +3,7 @@ import Anchorage
 
 final class SegmentedView: UIView {
     let titleLabel = UILabel()
-    let segment = UISegmentedControl(items: ["Horizontal", "Vertical", "Radial"])
+    let segment = UISegmentedControl(items: ["Vertical", "Horizontal"])
     
     var title: String? {
         didSet {

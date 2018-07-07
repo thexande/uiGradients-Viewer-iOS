@@ -50,6 +50,6 @@ final class ExportView: UIView {
     }
     
     @objc private func didTapExport() {
-        
+        dispatch?.dispatch(.exportCurrentGradient)
     }
 }

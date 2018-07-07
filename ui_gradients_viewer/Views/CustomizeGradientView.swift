@@ -5,7 +5,7 @@ final class CustomizeGradientView: UIView {
     weak var dispatch: GradientActionDispatching?
     let position = Slider()
     let radius = Slider()
-    let gradientSegmented = SegmentedView()
+    let typeSegmented = SegmentedView()
     let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
     
     var gradient: GradientColor? {
@@ -18,8 +18,15 @@ final class CustomizeGradientView: UIView {
     
     func setGradient(_ gradient: GradientColor) {
         position.tint = gradient.colors.first?.color ?? .black
-        gradientSegmented.tint = gradient.colors.first?.color ?? .black
+        typeSegmented.tint = gradient.colors.first?.color ?? .black
         radius.tint = gradient.colors.first?.color ?? .black
+        position.slider.setValue(gradient.position, animated: true)
+        
+        switch gradient.format {
+        case .horizontal: typeSegmented.segment.selectedSegmentIndex = 1
+        case .vertical: typeSegmented.segment.selectedSegmentIndex = 0
+        default: return
+        }
         
         if let first = gradient.colors.first?.color, first != colorPicker.currentColor {
             colorPicker.adjustToColor(first)
@@ -28,10 +35,10 @@ final class CustomizeGradientView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        gradientSegmented.title = "type".capitalized
+        typeSegmented.title = "type".capitalized
         position.title = "position".capitalized
         radius.title = "radius".capitalized        
-        let stack = UIStackView(arrangedSubviews: [position, gradientSegmented, radius])
+        let stack = UIStackView(arrangedSubviews: [position, typeSegmented])
         stack.spacing = 18
         stack.axis = .vertical
         addSubview(stack)
@@ -43,10 +50,18 @@ final class CustomizeGradientView: UIView {
         colorPicker.centerXAnchor == centerXAnchor
         colorPicker.topAnchor == stack.bottomAnchor + 18
         colorPicker.bottomAnchor <= bottomAnchor ~ .low
-//        colorPicker.shadeSlider.isHidden = true
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func gradientFormatDidChange(_ segmented: UISegmentedControl?) {
+        switch segmented?.selectedSegmentIndex ?? 0 {
+        case 0: dispatch?.dispatch(.gradientFormatDidChange(.horizontal))
+        case 1: dispatch?.dispatch(.gradientFormatDidChange(.vertical))
+        case 2: dispatch?.dispatch(.gradientFormatDidChange(.radial))
+        default: return
+        }
     }
 }

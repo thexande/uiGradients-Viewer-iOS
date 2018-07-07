@@ -3,6 +3,8 @@ import Anchorage
 import Pulley
 import GradientView
 
+
+
 final class GradientDrawerViewController: UIViewController {
     let cardView = GradientCardView()
     let header = DrawerHeaderView()
@@ -37,13 +39,17 @@ final class GradientDrawerViewController: UIViewController {
                 pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .dark)
                 self.customize.colorPicker.hexLabel.textColor = .white
                 self.customize.radius.titleLabel.textColor = .white
+                self.customize.typeSegmented.titleLabel.textColor = .white
+                self.customize.position.titleLabel.textColor = .white
                 self.header.indicator.backgroundColor = .white
             }
         } else {
             UIView.animate(withDuration: 0.3) {
                 pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .light)
                 self.customize.colorPicker.hexLabel.textColor = .black
-                self.customize.radius.titleLabel.textColor = .darkGray
+                self.customize.radius.titleLabel.textColor = .black
+                self.customize.typeSegmented.titleLabel.textColor = .black
+                self.customize.position.titleLabel.textColor = .black
                 self.header.indicator.backgroundColor = .darkGray
             }
         }
@@ -136,7 +142,7 @@ extension GradientDrawerViewController: PulleyDrawerViewControllerDelegate {
     }
     
     func partialRevealDrawerHeight(bottomSafeArea: CGFloat) -> CGFloat {
-        return 310 + bottomSafeArea
+        return 260 + bottomSafeArea
     }
 }
 

@@ -76,12 +76,10 @@ class GradientDetailViewController: UIViewController {
         
         
         titleLabel.topAnchor == view.safeAreaLayoutGuide.topAnchor + 12
-        
-        save.addAction { [weak self] in
-            if let gradientView = self?.gradientView {
-                self?.dispatch?.dispatch(.saveGradient(gradientView.getSnapshotImage()))
-            }
-        }
+    }
+    
+    func produceBackgroundSnapshot() {
+        dispatch?.dispatch(.saveGradient(gradientView.getSnapshotImage()))
     }
     
     @objc func pressedBack() {
