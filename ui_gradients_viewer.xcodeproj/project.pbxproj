@@ -41,6 +41,8 @@
 		B0D933FA20E4849600EFB802 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F920E4849600EFB802 /* ExportView.swift */; };
 		B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933FB20E4856600EFB802 /* GradientCardView.swift */; };
 		B0D933FE20E4925200EFB802 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933FD20E4925200EFB802 /* UIColor.swift */; };
+		B0F7886120F0960900A167CC /* ExportedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7886020F0960900A167CC /* ExportedViewController.swift */; };
+		B0F7886320F0963B00A167CC /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7886220F0963B00A167CC /* SAConfettiView.swift */; };
 		B0F93BC020D600F6007FCD5F /* GradientCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */; };
 		B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */; };
 		B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */; };
@@ -110,6 +112,8 @@
 		B0D933F920E4849600EFB802 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		B0D933FB20E4856600EFB802 /* GradientCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardView.swift; sourceTree = "<group>"; };
 		B0D933FD20E4925200EFB802 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		B0F7886020F0960900A167CC /* ExportedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportedViewController.swift; sourceTree = "<group>"; };
+		B0F7886220F0963B00A167CC /* SAConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
 		B0F93BBF20D600F6007FCD5F /* GradientCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCoordinator.swift; sourceTree = "<group>"; };
 		B0F93BC120D6189D007FCD5F /* ClosureProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureProxy.swift; sourceTree = "<group>"; };
 		B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSectionController.swift; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 				B0D933F420E4841700EFB802 /* IphoneXView.swift */,
 				B0D933F920E4849600EFB802 /* ExportView.swift */,
 				B0D933FB20E4856600EFB802 /* GradientCardView.swift */,
+				B0F7886220F0963B00A167CC /* SAConfettiView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				B0F93BC320D6EBD0007FCD5F /* CollectionSectionController.swift */,
 				B0F93BC520D6ECF3007FCD5F /* GradientCardSectionController.swift */,
 				B0BA30C220D7122600FD8B1D /* ColorPickerCollectionSectionController.swift */,
+				B0F7886020F0960900A167CC /* ExportedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -548,6 +554,7 @@
 				B02EF87020EB378F001BE24A /* ColorModeToggleButton.swift in Sources */,
 				B00186C91F54F33B0027FB3A /* GradientDrawerViewController.swift in Sources */,
 				B0F93BC620D6ECF3007FCD5F /* GradientCardSectionController.swift in Sources */,
+				B0F7886320F0963B00A167CC /* SAConfettiView.swift in Sources */,
 				B00186C71F53C8550027FB3A /* GradientHelper.swift in Sources */,
 				B0B7C0371F5533EC007BE6DF /* RootTableViewController.swift in Sources */,
 				B0D933F520E4841700EFB802 /* IphoneXView.swift in Sources */,
@@ -555,6 +562,7 @@
 				B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */,
 				B065751520EC7D44008E2861 /* Int.swift in Sources */,
 				B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */,
+				B0F7886120F0960900A167CC /* ExportedViewController.swift in Sources */,
 				B02EF87320EB378F001BE24A /* ChromaAddButton.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 				B02EF86E20EB378F001BE24A /* UIColor+Utilities.swift in Sources */,
