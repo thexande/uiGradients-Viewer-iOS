@@ -50,6 +50,8 @@ final class CustomizeGradientView: UIView {
         colorPicker.centerXAnchor == centerXAnchor
         colorPicker.topAnchor == stack.bottomAnchor + 18
         colorPicker.bottomAnchor <= bottomAnchor ~ .low
+        
+        position.slider.addTarget(self, action: #selector(gradientPositionDidChange(_:)), for: .valueChanged)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -62,6 +64,12 @@ final class CustomizeGradientView: UIView {
         case 1: dispatch?.dispatch(.gradientFormatDidChange(.vertical))
         case 2: dispatch?.dispatch(.gradientFormatDidChange(.radial))
         default: return
+        }
+    }
+    
+    @objc private func gradientPositionDidChange(_ position: UISlider?) {
+        if let value = position?.value {
+            dispatch?.dispatch(.positionChanged(value))
         }
     }
 }

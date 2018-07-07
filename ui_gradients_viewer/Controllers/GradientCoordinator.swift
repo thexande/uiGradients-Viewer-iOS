@@ -19,6 +19,8 @@ enum GradientAction {
     case colorChange(identifier: UUID, newColor: UIColor?)
     case gradientFormatDidChange(GradientColor.Format)
     case exportCurrentGradient
+    case positionChanged(Float)
+    case formatChanged(GradientColor.Format)
 }
 
 protocol GradientActionDispatching: class {
@@ -128,7 +130,7 @@ final class GradientCoordinator {
     }
     
     private func changeFormat(_ format: GradientColor.Format) {
-        
+        selectedGradient?.format = format
     }
     
     private func exportCurrentGradient() {
@@ -140,6 +142,10 @@ final class GradientCoordinator {
         
         content.gradientVCs[index].produceBackgroundSnapshot()
     }
+    
+    private func positionChanged(_ position: Float) {
+        selectedGradient?.position = position
+    }
 }
 
 extension GradientCoordinator: GradientActionDispatching {
@@ -149,9 +155,10 @@ extension GradientCoordinator: GradientActionDispatching {
             selectedGradient = gradients[index]
         case .selectedGradientFromDrawer(let index):
             content.scrollToPage(.at(index: index), animated: true)
-        case .saveGradient(let image): saveImage(image: image)
-        case .drawerContextChange(let context): drawerContextDidChange(context)
-        
+        case .saveGradient(let image):
+            saveImage(image: image)
+        case .drawerContextChange(let context):
+            drawerContextDidChange(context)
         case .colorIndexChange(let startingIndex, let endingIndex):
             if let gradient = selectedGradient {
                 var colors = gradient.colors
@@ -163,7 +170,12 @@ extension GradientCoordinator: GradientActionDispatching {
             changeColor(identifier: identifier, newColor: newColor)
         case let .gradientFormatDidChange(format):
             changeFormat(format)
-        case .exportCurrentGradient: exportCurrentGradient()
+        case .exportCurrentGradient:
+            exportCurrentGradient()
+        case let .positionChanged(newPosition):
+            positionChanged(newPosition)
+        case let .formatChanged(format):
+            changeFormat(format)
         }
     }
 }

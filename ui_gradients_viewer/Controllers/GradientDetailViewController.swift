@@ -101,6 +101,7 @@ class GradientDetailViewController: UIViewController {
         }).compactMap({ $0 }).map({ $0.uppercased() }).joined(separator: ", ")
         setNeedsStatusBarAppearanceUpdate()
         
+        gradientView.locations = [CGFloat(gradient.position)]
         
         [titleLabel, subTitleLabel].forEach { label in
             label.textColor = ((gradient.colors.first?.color.isLight ?? false) ? .black : .white)
