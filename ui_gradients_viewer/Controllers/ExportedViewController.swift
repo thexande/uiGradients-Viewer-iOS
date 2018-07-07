@@ -3,6 +3,7 @@ import Anchorage
 import GradientView
 
 final class DonateView: UIView {
+    weak var dispatcher: GradientActionDispatching?
     let btc = UIButton()
     let eth = UIButton()
     let ltc = UIButton()
@@ -13,11 +14,22 @@ final class DonateView: UIView {
         btc.setImage(UIImage(named: "btc"), for: .normal)
         btc.contentMode = .scaleAspectFit
         
+        btc.addAction { [weak self] in
+            self?.dispatcher?.dispatch(.donate(.btc))
+        }
+        
         eth.setImage(UIImage(named: "eth"), for: .normal)
         eth.contentMode = .scaleAspectFit
         
+        eth.addAction { [weak self] in
+            self?.dispatcher?.dispatch(.donate(.eth))
+        }
+        
         ltc.setImage(UIImage(named: "litecoin"), for: .normal)
         ltc.contentMode = .scaleAspectFit
+        ltc.addAction { [weak self] in
+            self?.dispatcher?.dispatch(.donate(.ltc))
+        }
         
         [btc, eth, ltc].forEach { button in
             let container = UIView()

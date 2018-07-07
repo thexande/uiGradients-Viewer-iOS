@@ -37,6 +37,7 @@
 		B0BA30CD20D7234E00FD8B1D /* CustomizeGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CC20D7234E00FD8B1D /* CustomizeGradientView.swift */; };
 		B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CE20D7237B00FD8B1D /* PagerView.swift */; };
 		B0C2D3C720F12E32005DF50E /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C2D3C620F12E32005DF50E /* Obfuscator.swift */; };
+		B0C2D3C920F16B94005DF50E /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C2D3C820F16B94005DF50E /* DonateViewController.swift */; };
 		B0D933F520E4841700EFB802 /* IphoneXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F420E4841700EFB802 /* IphoneXView.swift */; };
 		B0D933F820E4845E00EFB802 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F720E4845E00EFB802 /* UIView.swift */; };
 		B0D933FA20E4849600EFB802 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F920E4849600EFB802 /* ExportView.swift */; };
@@ -109,6 +110,7 @@
 		B0BA30CC20D7234E00FD8B1D /* CustomizeGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGradientView.swift; sourceTree = "<group>"; };
 		B0BA30CE20D7237B00FD8B1D /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		B0C2D3C620F12E32005DF50E /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
+		B0C2D3C820F16B94005DF50E /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
 		B0D933F420E4841700EFB802 /* IphoneXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneXView.swift; sourceTree = "<group>"; };
 		B0D933F720E4845E00EFB802 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B0D933F920E4849600EFB802 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				B0F93BC520D6ECF3007FCD5F /* GradientCardSectionController.swift */,
 				B0BA30C220D7122600FD8B1D /* ColorPickerCollectionSectionController.swift */,
 				B0F7886020F0960900A167CC /* ExportedViewController.swift */,
+				B0C2D3C820F16B94005DF50E /* DonateViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				"${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework",
 				"${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework",
 				"${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -515,6 +519,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Haptica.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pageboy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulley.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHEXColors.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +571,7 @@
 				B065751520EC7D44008E2861 /* Int.swift in Sources */,
 				B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */,
 				B0F7886120F0960900A167CC /* ExportedViewController.swift in Sources */,
+				B0C2D3C920F16B94005DF50E /* DonateViewController.swift in Sources */,
 				B02EF87320EB378F001BE24A /* ChromaAddButton.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 				B02EF86E20EB378F001BE24A /* UIColor+Utilities.swift in Sources */,

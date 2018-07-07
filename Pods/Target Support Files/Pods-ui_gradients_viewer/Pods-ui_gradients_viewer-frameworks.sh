@@ -148,6 +148,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -156,6 +157,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Haptica/Haptica.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftHEXColors/SwiftHEXColors.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

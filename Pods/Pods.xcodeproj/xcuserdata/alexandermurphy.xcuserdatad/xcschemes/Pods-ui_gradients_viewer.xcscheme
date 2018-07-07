@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24129751C247506431040EFD13D2DBD2"
+               BlueprintIdentifier = "6BB54457504F06D3255DB32A0F179547"
                BuildableName = "Pods_ui_gradients_viewer.framework"
                BlueprintName = "Pods-ui_gradients_viewer"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24129751C247506431040EFD13D2DBD2"
+            BlueprintIdentifier = "6BB54457504F06D3255DB32A0F179547"
             BuildableName = "Pods_ui_gradients_viewer.framework"
             BlueprintName = "Pods-ui_gradients_viewer"
             ReferencedContainer = "container:Pods.xcodeproj">

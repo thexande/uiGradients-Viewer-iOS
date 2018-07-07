@@ -14,6 +14,9 @@ target 'ui_gradients_viewer' do
 #    pod 'ChromaColorPicker'
     pod 'Haptica'
     pod 'Google-Mobile-Ads-SDK'
+    pod 'QRCode'
+    pod 'Fabric'
+    pod 'Crashlytics'
     
   target 'ui_gradients_viewerTests' do
     inherit! :search_paths

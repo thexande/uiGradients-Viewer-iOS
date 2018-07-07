@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3C61877F9A2B2861CB0BBEDB15F7C34"
-               BlueprintName = "Pulley"
+               BlueprintIdentifier = "D7629D5146B05DE2E5E7CBD4B002CC9B"
+               BlueprintName = "QRCode"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pulley.framework">
+               BuildableName = "QRCode.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

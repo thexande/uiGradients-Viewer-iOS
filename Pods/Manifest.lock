@@ -5,6 +5,7 @@ PODS:
   - Haptica (2.0.2)
   - Pageboy (2.5.1)
   - Pulley (2.4.2)
+  - QRCode (2.0)
   - SwiftHEXColors (1.1.1)
 
 DEPENDENCIES:
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - Haptica
   - Pageboy
   - Pulley
+  - QRCode
   - SwiftHEXColors
 
 SPEC REPOS:
@@ -24,6 +26,7 @@ SPEC REPOS:
     - Haptica
     - Pageboy
     - Pulley
+    - QRCode
     - SwiftHEXColors
 
 SPEC CHECKSUMS:
@@ -33,8 +36,9 @@ SPEC CHECKSUMS:
   Haptica: fdf2cb787b131795b9f51f4e79db84f4389c5bdd
   Pageboy: f0295ea949f0b0123a1b486fd347ea892d0078e0
   Pulley: d3d144a0323b65b8aa1dd601d515d08481103034
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
   SwiftHEXColors: 9681e756dc78a99ae97f277165b3f5e33b087553
 
-PODFILE CHECKSUM: ee6724be798aacef8a0962aee8e73e4085b842e9
+PODFILE CHECKSUM: b9644128e2fdc399c79b45a450e63e9b7cd5a9cb
 
 COCOAPODS: 1.5.3
