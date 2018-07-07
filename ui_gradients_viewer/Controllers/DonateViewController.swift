@@ -3,12 +3,24 @@ import Anchorage
 import QRCode
 
 final class QRDispalyViewController: UIViewController {
+    weak var dispatcher: GradientActionDispatching?
     let image = UIImageView()
     
-    public var address: String = "" {
+    var currency: GradientAction.Currency? {
         didSet {
-            let qrCode = QRCode(address)
-            image.image = qrCode?.image
+            if let currency = currency {
+                address = currency.address
+                title = "Donate \(currency.title)"
+            }
+        }
+    }
+    
+    public var address: String? {
+        didSet {
+            if let address = address {
+                let qrCode = QRCode(address)
+                image.image = qrCode?.image
+            }
         }
     }
     

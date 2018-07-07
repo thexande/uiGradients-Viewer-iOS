@@ -15,20 +15,21 @@ final class DonateView: UIView {
         btc.contentMode = .scaleAspectFit
         
         btc.addAction { [weak self] in
-            self?.dispatcher?.dispatch(.donate(.btc))
+            self?.dispatcher?.dispatch(.presentDonationOptions(.btc))
         }
         
         eth.setImage(UIImage(named: "eth"), for: .normal)
         eth.contentMode = .scaleAspectFit
         
         eth.addAction { [weak self] in
-            self?.dispatcher?.dispatch(.donate(.eth))
+            self?.dispatcher?.dispatch(.presentDonationOptions(.eth))
         }
         
         ltc.setImage(UIImage(named: "litecoin"), for: .normal)
         ltc.contentMode = .scaleAspectFit
+        
         ltc.addAction { [weak self] in
-            self?.dispatcher?.dispatch(.donate(.ltc))
+            self?.dispatcher?.dispatch(.presentDonationOptions(.ltc))
         }
         
         [btc, eth, ltc].forEach { button in
@@ -53,7 +54,6 @@ final class DonateView: UIView {
 }
 
 final class ExportedViewController: UIViewController {
-    weak var dispatcher: GradientActionDispatching?
      let confettiView = SAConfettiView(properties: ConfettiCardProperties(colorsNodes: true, colors: ConfettiCardProperties.defaultColors, type: .confetti))
     let iphone = IPhoneXView()
     let party = UILabel()
@@ -73,8 +73,15 @@ final class ExportedViewController: UIViewController {
         return .lightContent
     }
     
+    weak var dispatcher: GradientActionDispatching? {
+        didSet {
+            donate.dispatcher = dispatcher
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        modalPresentationStyle = .overCurrentContext
         view.backgroundColor = .black
         view.clipsToBounds = true
         view.addSubview(confettiView)

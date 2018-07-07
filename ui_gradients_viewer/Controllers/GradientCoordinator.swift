@@ -12,9 +12,26 @@ enum GradientAction {
     }
     
     enum Donation {
+        case qr(Currency)
+        case copyAddress(Currency)
+    }
+    
+    enum Currency {
         case btc
         case eth
         case ltc
+        
+        var title: String {
+            switch self {
+            case .btc: return "Bitcoin"
+            case .eth: return "Ethereum"
+            case .ltc: return "Litecoin"
+            }
+        }
+        
+        var address: String {
+            return "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX"
+        }
     }
         
     case selectedGradient(Int)
@@ -28,7 +45,9 @@ enum GradientAction {
     case positionChanged(Float)
     case formatChanged(GradientColor.Format)
     case exportDismiss
+    case donateDismiss
     case donate(Donation)
+    case presentDonationOptions(Currency)
 }
 
 protocol GradientActionDispatching: AnyObject { 
@@ -40,6 +59,8 @@ final class GradientCoordinator {
     let content: RootPageViewController
     let drawer: GradientDrawerViewController
     let exported = ExportedViewController()
+    let donate = QRDispalyViewController()
+    
     var gradients: [GradientColor] = []
     
     var selectedGradient: GradientColor? {
@@ -66,6 +87,8 @@ final class GradientCoordinator {
         self.content.dispatch = self
         self.drawer.dispatch = self
         exported.dispatcher = self
+        donate.dispatcher = self
+
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
             guard let strongSelf = self else { return }
@@ -162,12 +185,9 @@ final class GradientCoordinator {
     }
     
     
-    private func handleDonate(_ donate: GradientAction.Donation) {
-        switch donate {
-        case .btc: return
-        case .eth: return
-        case .ltc: return
-        }
+    private func handleCurrency(_ currency: GradientAction.Currency) {
+        let alert = makeDonateActionSheet(for: currency)
+        exported.present(alert, animated: true, completion: nil)
     }
 }
 
@@ -202,7 +222,45 @@ extension GradientCoordinator: GradientActionDispatching {
         case .exportDismiss:
             exported.dismiss(animated: true, completion: nil)
         case let .donate(donation):
-            handleDonate(donation)
+            handleDonation(donation)
+        case .donateDismiss:
+            donate.dismiss(animated: true, completion: nil)
+        case let .presentDonationOptions(currency):
+            handleCurrency(currency)
+            
         }
+    }
+    
+    private func handleDonation(_ donation: GradientAction.Donation) {
+        switch donation {
+        case let .copyAddress(currency):
+            donate.currency = currency
+            exported.present(UINavigationController(rootViewController: donate), animated: true, completion: nil)
+        case let .qr(currency):
+            donate.currency = currency
+            exported.present(UINavigationController(rootViewController: donate), animated: true, completion: nil)
+        }
+    }
+    
+    private func makeDonateActionSheet(for currency: GradientAction.Currency) -> UIAlertController {
+        let alert = UIAlertController(title: "Thanks for wanting to help!",
+                                      message: "You can either copy my \(currency.title) wallet address, or scan a QR Code.",
+                                      preferredStyle: .actionSheet)
+        
+        let copyAction = UIAlertAction(title: "Copy \(currency.title) address", style: .default) { [weak self] _ in
+            self?.dispatch(.donate(.copyAddress(currency)))
+        }
+        
+        let qrAction = UIAlertAction(title: "Display \(currency.title) wallet QR code", style: .default) { [weak self] _ in
+            self?.dispatch(.donate(.qr(currency)))
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
+        [copyAction, qrAction, cancelAction].forEach { action in
+            alert.addAction(action)
+        }
+        
+        return alert
     }
 }
