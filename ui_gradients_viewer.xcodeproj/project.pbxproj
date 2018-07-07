@@ -36,6 +36,7 @@
 		B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */; };
 		B0BA30CD20D7234E00FD8B1D /* CustomizeGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CC20D7234E00FD8B1D /* CustomizeGradientView.swift */; };
 		B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA30CE20D7237B00FD8B1D /* PagerView.swift */; };
+		B0C2D3C720F12E32005DF50E /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C2D3C620F12E32005DF50E /* Obfuscator.swift */; };
 		B0D933F520E4841700EFB802 /* IphoneXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F420E4841700EFB802 /* IphoneXView.swift */; };
 		B0D933F820E4845E00EFB802 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F720E4845E00EFB802 /* UIView.swift */; };
 		B0D933FA20E4849600EFB802 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F920E4849600EFB802 /* ExportView.swift */; };
@@ -107,6 +108,7 @@
 		B0BA30CA20D714E100FD8B1D /* DrawerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerHeaderView.swift; sourceTree = "<group>"; };
 		B0BA30CC20D7234E00FD8B1D /* CustomizeGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeGradientView.swift; sourceTree = "<group>"; };
 		B0BA30CE20D7237B00FD8B1D /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
+		B0C2D3C620F12E32005DF50E /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 		B0D933F420E4841700EFB802 /* IphoneXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneXView.swift; sourceTree = "<group>"; };
 		B0D933F720E4845E00EFB802 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B0D933F920E4849600EFB802 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				B00186C61F53C8550027FB3A /* GradientHelper.swift */,
+				B0C2D3C620F12E32005DF50E /* Obfuscator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				B0BA30C120D7025200FD8B1D /* ColorPickerCollectionCell.swift in Sources */,
 				B0F93BC020D600F6007FCD5F /* GradientCoordinator.swift in Sources */,
 				B0B7C0351F5533BB007BE6DF /* GradientDetailViewController.swift in Sources */,
+				B0C2D3C720F12E32005DF50E /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,14 @@ import UIKit
 import Pulley
 import GoogleMobileAds
 
+
+
+struct ObfuscatedConstants {
+    static let googleAppPubId: [UInt8] = [34, 17, 93, 37, 21, 28, 72, 23, 20, 22, 72, 127, 98, 123, 87, 94, 92, 83, 76, 113, 64, 72, 118, 83, 91, 85, 82, 31, 64, 82, 125, 106, 125, 84, 90, 86, 85, 69]
+    static let exportBannerId: [UInt8] = [34, 17, 93, 37, 21, 28, 72, 23, 20, 22, 72, 127, 98, 123, 87, 94, 92, 83, 76, 113, 64, 72, 118, 83, 91, 85, 82, 78, 67, 85, 125, 100, 121, 91, 95, 83, 82, 71]
+}
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -20,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = coordinator.root
         window?.makeKeyAndVisible()
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-1145490800826705~4739260361")
+        GADMobileAds.configure(withApplicationID: Obfuscator().reveal(key: ObfuscatedConstants.googleAppPubId))
         return true
     }
 

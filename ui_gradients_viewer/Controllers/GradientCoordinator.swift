@@ -77,31 +77,34 @@ final class GradientCoordinator {
     }
     
     private func saveImage(image: UIImage) {
-        PHPhotoLibrary.shared().performChanges({
-            PHAssetChangeRequest.creationRequestForAsset(from: image)
-        }, completionHandler: { success, error in
-            if success {
-                // Saved successfully!
-                let successAlert = UIAlertController(title: "Save Successful", message: "save_to_camera_roll_dialog_success_message", preferredStyle: .alert)
-                successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                DispatchQueue.main.async { [weak self] in
-                    guard let strongSelf = self else { return }
-                    strongSelf.root?.present(successAlert, animated: true, completion: nil)
-                }
-            }
-            else if let error = error {
-                // Save photo failed with error
-                let successAlert = UIAlertController(title: "Save Unsuccessful", message: String(format: "save_to_camera_roll_dialog_unsuccess_message", error.localizedDescription), preferredStyle: .alert)
-                successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                DispatchQueue.main.async { [weak self] in
-                    guard let strongSelf = self else { return }
-                    strongSelf.root?.present(successAlert, animated: true, completion: nil)
-                }
-            }
-            else {
-                // Save photo failed with no error
-            }
-        })
+        root?.present(ExportedViewController(), animated: true, completion: nil)
+        
+//
+//        PHPhotoLibrary.shared().performChanges({
+//            PHAssetChangeRequest.creationRequestForAsset(from: image)
+//        }, completionHandler: { success, error in
+//            if success {
+//                // Saved successfully!
+//                let successAlert = UIAlertController(title: "Save Successful", message: "save_to_camera_roll_dialog_success_message", preferredStyle: .alert)
+//                successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                DispatchQueue.main.async { [weak self] in
+//                    guard let strongSelf = self else { return }
+//                    strongSelf.root?.present(ExportedViewController(), animated: true, completion: nil)
+//                }
+//            }
+//            else if let error = error {
+//                // Save photo failed with error
+//                let successAlert = UIAlertController(title: "Save Unsuccessful", message: String(format: "save_to_camera_roll_dialog_unsuccess_message", error.localizedDescription), preferredStyle: .alert)
+//                successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                DispatchQueue.main.async { [weak self] in
+//                    guard let strongSelf = self else { return }
+//                    strongSelf.root?.present(successAlert, animated: true, completion: nil)
+//                }
+//            }
+//            else {
+//                // Save photo failed with no error
+//            }
+//        })
     }
     
     private func drawerContextDidChange(_ context: GradientAction.DrawerContext) {

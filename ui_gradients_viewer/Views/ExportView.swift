@@ -1,11 +1,13 @@
 import UIKit
 import Anchorage
 import GradientView
+import GoogleMobileAds
 
 final class ExportView: UIView {
     let iphone = IPhoneXView()
     let export = UIButton()
     let buttonGradient = GradientView()
+    let banner = GADBannerView(adSize: kGADAdSizeLargeBanner)
     weak var dispatch: GradientActionDispatching?
     
     var gradient: GradientColor? {
@@ -20,6 +22,7 @@ final class ExportView: UIView {
         
         addSubview(iphone)
         addSubview(export)
+        addSubview(banner)
         export.addSubview(buttonGradient)
         
         iphone.applyShadow()
@@ -27,13 +30,16 @@ final class ExportView: UIView {
         iphone.topAnchor == export.bottomAnchor + 36
         iphone.bottomAnchor == bottomAnchor + 40
         
+        banner.topAnchor == topAnchor + 6
+        banner.centerXAnchor == centerXAnchor
+        
         export.layer.cornerRadius = 8
         export.applyShadow()
         export.titleLabel?.textColor = .white
         export.backgroundColor = .black
         export.horizontalAnchors == horizontalAnchors + 36
         export.heightAnchor == 36
-        export.topAnchor == topAnchor + 18
+        export.topAnchor == banner.bottomAnchor + 18
         export.setTitle("Export", for: .normal)
         export.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         
