@@ -1,5 +1,6 @@
 import UIKit
 import GoogleMobileAds
+import Anchorage
 
 final class GradientCardSectionController: NSObject, CollectionSectionController {
     var gradients: [GradientColor] = []
@@ -39,21 +40,42 @@ final class GradientCardSectionController: NSObject, CollectionSectionController
 }
 
 final class AdSectionController: NSObject, CollectionSectionController {
+    let parent: UIViewController
+    
+    init(parent: UIViewController) {
+        self.parent = parent
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: UICollectionViewCell.self), for: indexPath)
-        cell.backgroundColor = .green
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: AdMobCollectionCell.self), for: indexPath) as? AdMobCollectionCell else {
+            return UICollectionViewCell()
+        }
+        
+        let vc = AdMobCellViewController()
+        parent.addChildViewController(vc)
+        cell.contentView.addSubview(vc.view)
+        vc.didMove(toParentViewController: parent)
+        vc.view.edgeAnchors == cell.contentView.edgeAnchors
+        cell.adViewController = vc
+        vc.refreshAd() 
+        
         return cell
     }
     
     static func registerReusableTypes(collectionView: UICollectionView) {
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: String(describing: UICollectionViewCell.self))
+        collectionView.register(AdMobCollectionCell.self, forCellWithReuseIdentifier: String(describing: AdMobCollectionCell.self))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 100)
+        return CGSize(width: collectionView.frame.width, height: 300)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: AdMobCollectionCell.self), for: indexPath) as? AdMobCollectionCell else { return }
+       cell.adViewController?.refreshAd()
     }
 }

@@ -8,28 +8,45 @@ final class GradientCardViewController: UIViewController {
     var adLoader: GADAdLoader?
     var nativeAds: [GADUnifiedNativeAd] = []
     var sections: [CollectionSectionController] = []
+    var numAdsToLoad = 0
     
     var gradients: [GradientColor] = [] {
         didSet {
-//            configureSections()
+//            numAdsToLoad = gradients.chunks(6).count
+//            let options = GADMultipleAdsAdLoaderOptions()
+//            options.numberOfAds = numAdsToLoad
+//
+//            // Prepare the ad loader and start loading ads.
+//            let export = Obfuscator().reveal(key: ObfuscatedConstants.exportBannerId)
+//            let test = "ca-app-pub-3940256099942544/8407707713"
+//            adLoader = GADAdLoader(adUnitID: test,
+//                                   rootViewController: self,
+//                                   adTypes: [.unifiedNative],
+//                                   options: [options])
+//            adLoader?.delegate = self
+//
+//            adLoader?.load(GADRequest())
+            configureSections()
         }
     }
-
-    /// The number of native ads to load (between 1 and 5 for this example).
-    let numAdsToLoad = 5
     
     private func configureSections() {
-        let gradientChunks: [[GradientColor]] = gradients.chunks(6)
+        let gradientChunks: [[GradientColor]] = gradients.chunks(12)
         
         let sections: [CollectionSectionController] = gradientChunks.flatMap { gradientChunk -> [CollectionSectionController] in
             let cardSection = GradientCardSectionController()
             cardSection.gradients = gradientChunk
             
-            return [cardSection, AdSectionController()]
+            let adSection = AdSectionController(parent: self)
+            
+            return [cardSection, adSection]
         }
         
         self.sections = sections
-        gradientCardCollectionView.reloadData()
+        
+        DispatchQueue.main.async {
+            self.gradientCardCollectionView.reloadData()
+        }
     }
     
     
@@ -43,24 +60,21 @@ final class GradientCardViewController: UIViewController {
         gradientCardCollectionView.backgroundColor = .clear
         view.addSubview(gradientCardCollectionView)
         gradientCardCollectionView.edgeAnchors == edgeAnchors
-        
-        
-        
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
-        let options = GADMultipleAdsAdLoaderOptions()
-        options.numberOfAds = numAdsToLoad
-        
-        // Prepare the ad loader and start loading ads.
-        adLoader = GADAdLoader(adUnitID: "ca-app-pub-3940256099942544/8407707713",
-                               rootViewController: self,
-                               adTypes: [.unifiedNative],
-                               options: [options])
-        adLoader?.delegate = self
-        adLoader?.load(GADRequest())
+//
+//        let options = GADMultipleAdsAdLoaderOptions()
+//        options.numberOfAds = numAdsToLoad
+//
+//        // Prepare the ad loader and start loading ads.
+//        adLoader = GADAdLoader(adUnitID: "ca-app-pub-3940256099942544/8407707713",
+//                               rootViewController: self,
+//                               adTypes: [.unifiedNative],
+//                               options: [options])
+//        adLoader?.delegate = self
+//        adLoader?.load(GADRequest())
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -72,12 +86,12 @@ extension GradientCardViewController: GADAdLoaderDelegate, GADUnifiedNativeAdLoa
     func adLoader(_ adLoader: GADAdLoader,
                   didFailToReceiveAdWithError error: GADRequestError) {
         print("\(adLoader) failed with error: \(error.localizedDescription)")
-        
+
     }
-    
+
     func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADUnifiedNativeAd) {
         print("Received native ad: \(nativeAd)")
-        
+
         // Add the native ad to the list of native ads.
         nativeAds.append(nativeAd)
     }
@@ -108,6 +122,10 @@ extension GradientCardViewController: UICollectionViewDelegateFlowLayout, UIColl
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return sections[section].collectionView?(collectionView, layout: collectionViewLayout, insetForSectionAt: section) ?? .zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        sections[indexPath.section].collectionView?(collectionView, willDisplay: cell, forItemAt: indexPath)
     }
 }
 

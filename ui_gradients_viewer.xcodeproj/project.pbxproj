@@ -19,6 +19,8 @@
 		B02EF87220EB378F001BE24A /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86B20EB378F001BE24A /* ChromaHandle.swift */; };
 		B02EF87320EB378F001BE24A /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EF86C20EB378F001BE24A /* ChromaAddButton.swift */; };
 		B03FBB9A20F1A12100A37CEA /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBB9920F1A12100A37CEA /* DonateView.swift */; };
+		B03FBB9C20F1EC3300A37CEA /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03FBB9B20F1EC3300A37CEA /* UnifiedNativeAdView.xib */; };
+		B03FBB9E20F1F37100A37CEA /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBB9D20F1F37100A37CEA /* CollectionCell.swift */; };
 		B065751520EC7D44008E2861 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065751420EC7D44008E2861 /* Int.swift */; };
 		B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */; };
 		B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */; };
@@ -42,7 +44,7 @@
 		B0D933F520E4841700EFB802 /* IphoneXView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F420E4841700EFB802 /* IphoneXView.swift */; };
 		B0D933F820E4845E00EFB802 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F720E4845E00EFB802 /* UIView.swift */; };
 		B0D933FA20E4849600EFB802 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933F920E4849600EFB802 /* ExportView.swift */; };
-		B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933FB20E4856600EFB802 /* GradientCardView.swift */; };
+		B0D933FC20E4856600EFB802 /* GradientCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933FB20E4856600EFB802 /* GradientCardViewController.swift */; };
 		B0D933FE20E4925200EFB802 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D933FD20E4925200EFB802 /* UIColor.swift */; };
 		B0F7886120F0960900A167CC /* ExportedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7886020F0960900A167CC /* ExportedViewController.swift */; };
 		B0F7886320F0963B00A167CC /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F7886220F0963B00A167CC /* SAConfettiView.swift */; };
@@ -87,6 +89,8 @@
 		B02EF86B20EB378F001BE24A /* ChromaHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaHandle.swift; sourceTree = "<group>"; };
 		B02EF86C20EB378F001BE24A /* ChromaAddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaAddButton.swift; sourceTree = "<group>"; };
 		B03FBB9920F1A12100A37CEA /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
+		B03FBB9B20F1EC3300A37CEA /* UnifiedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdView.xib; sourceTree = "<group>"; };
+		B03FBB9D20F1F37100A37CEA /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		B065751420EC7D44008E2861 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		B0A461171F53B65C0075B9F6 /* ui_gradients_viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_gradients_viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +120,7 @@
 		B0D933F420E4841700EFB802 /* IphoneXView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneXView.swift; sourceTree = "<group>"; };
 		B0D933F720E4845E00EFB802 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		B0D933F920E4849600EFB802 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
-		B0D933FB20E4856600EFB802 /* GradientCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardView.swift; sourceTree = "<group>"; };
+		B0D933FB20E4856600EFB802 /* GradientCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCardViewController.swift; sourceTree = "<group>"; };
 		B0D933FD20E4925200EFB802 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		B0F7886020F0960900A167CC /* ExportedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportedViewController.swift; sourceTree = "<group>"; };
 		B0F7886220F0963B00A167CC /* SAConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 		B0B7C0301F553375007BE6DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B03FBB9B20F1EC3300A37CEA /* UnifiedNativeAdView.xib */,
 				B0B7C0321F55339E007BE6DF /* GradientTableCell.swift */,
 				B0F93BC720D6ED34007FCD5F /* GradientCollectionCell.swift */,
 				B0BA30C020D7025200FD8B1D /* ColorPickerCollectionCell.swift */,
@@ -280,9 +285,10 @@
 				B0BA30CE20D7237B00FD8B1D /* PagerView.swift */,
 				B0D933F420E4841700EFB802 /* IphoneXView.swift */,
 				B0D933F920E4849600EFB802 /* ExportView.swift */,
-				B0D933FB20E4856600EFB802 /* GradientCardView.swift */,
+				B0D933FB20E4856600EFB802 /* GradientCardViewController.swift */,
 				B0F7886220F0963B00A167CC /* SAConfettiView.swift */,
 				B03FBB9920F1A12100A37CEA /* DonateView.swift */,
+				B03FBB9D20F1F37100A37CEA /* CollectionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -443,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A461251F53B65C0075B9F6 /* LaunchScreen.storyboard in Resources */,
+				B03FBB9C20F1EC3300A37CEA /* UnifiedNativeAdView.xib in Resources */,
 				B0A461221F53B65C0075B9F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,12 +579,13 @@
 				B0BA30CB20D714E100FD8B1D /* DrawerHeaderView.swift in Sources */,
 				B0BA30CF20D7237B00FD8B1D /* PagerView.swift in Sources */,
 				B065751520EC7D44008E2861 /* Int.swift in Sources */,
-				B0D933FC20E4856600EFB802 /* GradientCardView.swift in Sources */,
+				B0D933FC20E4856600EFB802 /* GradientCardViewController.swift in Sources */,
 				B0F7886120F0960900A167CC /* ExportedViewController.swift in Sources */,
 				B0C2D3C920F16B94005DF50E /* DonateViewController.swift in Sources */,
 				B02EF87320EB378F001BE24A /* ChromaAddButton.swift in Sources */,
 				B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */,
 				B02EF86E20EB378F001BE24A /* UIColor+Utilities.swift in Sources */,
+				B03FBB9E20F1F37100A37CEA /* CollectionCell.swift in Sources */,
 				B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */,
 				B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */,
 				B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */,
