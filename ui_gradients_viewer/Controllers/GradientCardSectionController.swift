@@ -5,7 +5,7 @@ final class GradientCardSectionController: NSObject, CollectionSectionController
     var gradients: [GradientColor] = []
     weak var dispatch: GradientActionDispatching?
     
-    func registerReusableTypes(collectionView: UICollectionView) {
+    static func registerReusableTypes(collectionView: UICollectionView) {
         collectionView.register(GradientCollectionCell.self, forCellWithReuseIdentifier: String(describing: GradientCollectionCell.self))
     }
     
@@ -37,7 +37,23 @@ final class GradientCardSectionController: NSObject, CollectionSectionController
         dispatch?.dispatch(.selectedGradientFromDrawer(indexPath.row))
     }
 }
-//
-//final class AdSectionController: NSObject, CollectionSectionController {
-//    
-//}
+
+final class AdSectionController: NSObject, CollectionSectionController {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: UICollectionViewCell.self), for: indexPath)
+        cell.backgroundColor = .green
+        return cell
+    }
+    
+    static func registerReusableTypes(collectionView: UICollectionView) {
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: String(describing: UICollectionViewCell.self))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: 100)
+    }
+}

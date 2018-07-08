@@ -52,7 +52,7 @@ final class DrawerHeaderView: UIView {
         colorCollection.delegate = colorSection
         colorCollection.dataSource = colorSection
         colorCollection.backgroundColor = .clear
-        colorSection.registerReusableTypes(collectionView: colorCollection)
+        ColorPickerCollectionSectionController.registerReusableTypes(collectionView: colorCollection)
         controlStack.edgeAnchors == edgeAnchors + UIEdgeInsets(top: 18, left: 18, bottom: 6, right: 18)
         
         segmented.selectedSegmentIndex = 0

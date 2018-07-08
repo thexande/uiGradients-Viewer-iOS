@@ -50,7 +50,6 @@ final class CustomizeGradientView: UIView {
         colorPicker.topAnchor == stack.bottomAnchor
         colorPicker.horizontalAnchors == horizontalAnchors + 36
         colorPicker.heightAnchor == colorPicker.widthAnchor
-//        colorPicker.bottomAnchor <= bottomAnchor ~ .low
         
         position.slider.addTarget(self, action: #selector(gradientPositionDidChange(_:)), for: .valueChanged)
     }

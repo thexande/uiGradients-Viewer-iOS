@@ -4,7 +4,7 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
     var items: [GradientColor.Color] = []
     weak var dispatcher: GradientActionDispatching?
     
-    func registerReusableTypes(collectionView: UICollectionView) {
+    static func registerReusableTypes(collectionView: UICollectionView) {
         collectionView.register(ColorPickerCollectionCell.self,
                                 forCellWithReuseIdentifier: String(describing: ColorPickerCollectionCell.self))
     }

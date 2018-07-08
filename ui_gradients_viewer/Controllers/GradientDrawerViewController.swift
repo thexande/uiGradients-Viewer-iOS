@@ -13,8 +13,7 @@ final class GradientDrawerViewController: UIViewController {
     
     var gradients: [GradientColor] = [] {
         didSet {
-            cardView.cardSection.gradients = gradients
-            
+            cardView.gradients = gradients
         }
     }
     
