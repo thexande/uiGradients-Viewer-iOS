@@ -3,7 +3,7 @@ import Anchorage
 import GoogleMobileAds
 
 final class AdMobCollectionCell: UICollectionViewCell {
-    var adViewController: AdMobCellViewController?
+    var adViewController: BannerAdViewController?
 }
 
 final class AdMobCellViewController: UIViewController {

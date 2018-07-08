@@ -55,14 +55,12 @@ final class AdSectionController: NSObject, CollectionSectionController {
             return UICollectionViewCell()
         }
         
-        let vc = AdMobCellViewController()
+        let vc = BannerAdViewController()
         parent.addChildViewController(vc)
         cell.contentView.addSubview(vc.view)
         vc.didMove(toParentViewController: parent)
         vc.view.edgeAnchors == cell.contentView.edgeAnchors
         cell.adViewController = vc
-        vc.refreshAd() 
-        
         return cell
     }
     
@@ -71,11 +69,14 @@ final class AdSectionController: NSObject, CollectionSectionController {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 300)
+        return CGSize(width: collectionView.frame.width, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: AdMobCollectionCell.self), for: indexPath) as? AdMobCollectionCell else { return }
-       cell.adViewController?.refreshAd()
+        guard
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: AdMobCollectionCell.self), for: indexPath) as? AdMobCollectionCell else {
+                return
+        }
+//       cell.adViewController?.banner.load(GADRequest())
     }
 }
