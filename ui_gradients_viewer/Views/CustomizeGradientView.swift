@@ -6,7 +6,7 @@ final class CustomizeGradientView: UIView {
     let position = Slider()
     let radius = Slider()
     let typeSegmented = SegmentedView()
-    let colorPicker = ChromaColorPicker(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+    let colorPicker = ChromaColorPicker()
     
     var gradient: GradientColor? {
         didSet {
@@ -39,17 +39,18 @@ final class CustomizeGradientView: UIView {
         position.title = "position".capitalized
         radius.title = "radius".capitalized        
         let stack = UIStackView(arrangedSubviews: [position, typeSegmented])
-        stack.spacing = 18
+        stack.spacing = 12
         stack.axis = .vertical
         addSubview(stack)
         stack.horizontalAnchors == horizontalAnchors + 18
-        stack.topAnchor == topAnchor + 18
+        stack.topAnchor == topAnchor + 12
         addSubview(colorPicker)
         colorPicker.stroke = 10
-        colorPicker.sizeAnchors == CGSize(width: 300, height: 300)
         colorPicker.centerXAnchor == centerXAnchor
-        colorPicker.topAnchor == stack.bottomAnchor + 18
-        colorPicker.bottomAnchor <= bottomAnchor ~ .low
+        colorPicker.topAnchor == stack.bottomAnchor
+        colorPicker.horizontalAnchors == horizontalAnchors + 36
+        colorPicker.heightAnchor == colorPicker.widthAnchor
+//        colorPicker.bottomAnchor <= bottomAnchor ~ .low
         
         position.slider.addTarget(self, action: #selector(gradientPositionDidChange(_:)), for: .valueChanged)
     }

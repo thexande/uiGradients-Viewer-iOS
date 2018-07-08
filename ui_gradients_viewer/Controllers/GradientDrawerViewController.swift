@@ -73,8 +73,8 @@ final class GradientDrawerViewController: UIViewController {
         pager.pagerDelegate = self
         pager.collection.reloadData()
         
-        export.banner.adUnitID = "ca-app-pub-3940256099942544/2934735716" // test
-        // Obfuscator().reveal(key: ObfuscatedConstants.exportBannerId)
+//        export.banner.adUnitID = "ca-app-pub-3940256099942544/2934735716" // test
+         export.banner.adUnitID = Obfuscator().reveal(key: ObfuscatedConstants.exportBannerId)
         
         export.banner.rootViewController = self
         
@@ -86,6 +86,7 @@ final class GradientDrawerViewController: UIViewController {
         pulleyViewController?.topInset = 100
         
         let stack = UIStackView(arrangedSubviews: [header, pager])
+        stack.spacing = 0
         stack.axis = .vertical
         view.addSubview(stack)
         view.backgroundColor = .clear

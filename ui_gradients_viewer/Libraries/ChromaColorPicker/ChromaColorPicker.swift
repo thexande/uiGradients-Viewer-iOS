@@ -45,6 +45,11 @@ open class ChromaColorPicker: UIControl {
         case rainbow
         case grayscale
     }
+   
+    open override func layoutSubviews() {
+        super.layoutSubviews()
+        layout()
+    }
     
     open private(set) var currentColor = UIColor.red {
         didSet {

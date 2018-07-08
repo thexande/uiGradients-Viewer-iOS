@@ -244,14 +244,14 @@ extension GradientCoordinator: GradientActionDispatching {
     
     private func makeDonateActionSheet(for currency: GradientAction.Currency) -> UIAlertController {
         let alert = UIAlertController(title: "Thanks for wanting to help!",
-                                      message: "You can either copy my \(currency.title) wallet address, or scan a QR Code.",
+                                      message: "You can either copy my \(currency.title) wallet address, or scan my wallet's QR Code.",
                                       preferredStyle: .actionSheet)
         
-        let copyAction = UIAlertAction(title: "Copy \(currency.title) address", style: .default) { [weak self] _ in
+        let copyAction = UIAlertAction(title: "Copy my \(currency.title) address", style: .default) { [weak self] _ in
             self?.dispatch(.donate(.copyAddress(currency)))
         }
         
-        let qrAction = UIAlertAction(title: "Display \(currency.title) wallet QR code", style: .default) { [weak self] _ in
+        let qrAction = UIAlertAction(title: "Display my \(currency.title) wallet QR code", style: .default) { [weak self] _ in
             self?.dispatch(.donate(.qr(currency)))
         }
         

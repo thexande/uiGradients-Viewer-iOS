@@ -2,57 +2,6 @@ import UIKit
 import Anchorage
 import GradientView
 
-final class DonateView: UIView {
-    weak var dispatcher: GradientActionDispatching?
-    let btc = UIButton()
-    let eth = UIButton()
-    let ltc = UIButton()
-    let stack = UIStackView()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        btc.setImage(UIImage(named: "btc"), for: .normal)
-        btc.contentMode = .scaleAspectFit
-        
-        btc.addAction { [weak self] in
-            self?.dispatcher?.dispatch(.presentDonationOptions(.btc))
-        }
-        
-        eth.setImage(UIImage(named: "eth"), for: .normal)
-        eth.contentMode = .scaleAspectFit
-        
-        eth.addAction { [weak self] in
-            self?.dispatcher?.dispatch(.presentDonationOptions(.eth))
-        }
-        
-        ltc.setImage(UIImage(named: "litecoin"), for: .normal)
-        ltc.contentMode = .scaleAspectFit
-        
-        ltc.addAction { [weak self] in
-            self?.dispatcher?.dispatch(.presentDonationOptions(.ltc))
-        }
-        
-        [btc, eth, ltc].forEach { button in
-            let container = UIView()
-            container.backgroundColor = .lightGray
-            container.layer.cornerRadius = 8
-            container.addSubview(button)
-            button.edgeAnchors == container.edgeAnchors + UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-            container.widthAnchor == container.heightAnchor
-            stack.addArrangedSubview(container)
-        }
-        
-        stack.spacing = 12
-        stack.distribution = .fillEqually
-        addSubview(stack)
-        stack.edgeAnchors == edgeAnchors
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
 final class ExportedViewController: UIViewController {
      let confettiView = SAConfettiView(properties: ConfettiCardProperties(colorsNodes: true, colors: ConfettiCardProperties.defaultColors, type: .confetti))
     let iphone = IPhoneXView()
@@ -61,11 +10,18 @@ final class ExportedViewController: UIViewController {
     let woot = UILabel()
     let donate = DonateView()
     let buttonGradient = GradientView()
+    let buttonTitle = UILabel()
     
     var gradient: GradientColor? {
         didSet {
             iphone.gradient = gradient
-            buttonGradient.colors = gradient?.colors.map { $0.color } ?? []
+            let colors = gradient?.colors.map { $0.color } ?? []
+            buttonGradient.colors = colors
+            if colors.first?.isLight ?? false {
+                buttonTitle.textColor = .black
+            } else {
+                buttonTitle.textColor = .white
+            }
         }
     }
     
@@ -117,7 +73,6 @@ final class ExportedViewController: UIViewController {
         
         party.text = "🎉"
         party.font = UIFont.systemFont(ofSize: 60)
-        party.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
         party.topAnchor == view.safeAreaLayoutGuide.topAnchor + 12
         party.centerXAnchor == view.centerXAnchor
         
@@ -130,14 +85,20 @@ final class ExportedViewController: UIViewController {
         buttonGradient.direction = .horizontal
         buttonGradient.layer.cornerRadius = 8
         buttonGradient.clipsToBounds = true
-        buttonGradient.heightAnchor == 42
         buttonGradient.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapExport)))
         buttonGradient.layer.shadowRadius = 4
         buttonGradient.layer.shadowColor = UIColor.white.cgColor
         buttonGradient.layer.shadowOffset = CGSize(width: 0, height: 2)
         buttonGradient.layer.shadowOpacity = 0.3
+        buttonGradient.addSubview(buttonTitle)
+        buttonTitle.edgeAnchors == buttonGradient.edgeAnchors + UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
+        buttonTitle.centerYAnchor == buttonGradient.centerYAnchor
+        buttonTitle.text = "No thanks, just let me have the background for free."
+        buttonTitle.textColor = .white
+        buttonTitle.numberOfLines = 0
+        buttonTitle.textAlignment = .center
         
-        
+        confettiView.startConfetti()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -149,12 +110,7 @@ final class ExportedViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        confettiView.startConfetti()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        confettiView.stopConfetti()
+        party.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
     }
     
     @objc private func didTapExport() {

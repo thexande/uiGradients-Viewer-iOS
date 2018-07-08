@@ -43,7 +43,7 @@ final class DrawerHeaderView: UIView {
         super.init(frame: frame)
         
         let controlStack = UIStackView(arrangedSubviews: [colorCollection, segmented])
-        controlStack.spacing = 36
+        controlStack.spacing = 18
         controlStack.axis = .vertical
         addSubview(controlStack)
         
@@ -53,7 +53,7 @@ final class DrawerHeaderView: UIView {
         colorCollection.dataSource = colorSection
         colorCollection.backgroundColor = .clear
         colorSection.registerReusableTypes(collectionView: colorCollection)
-        controlStack.edgeAnchors == edgeAnchors + UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
+        controlStack.edgeAnchors == edgeAnchors + UIEdgeInsets(top: 18, left: 18, bottom: 6, right: 18)
         
         segmented.selectedSegmentIndex = 0
         segmented.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
