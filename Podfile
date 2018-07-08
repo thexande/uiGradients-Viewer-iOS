@@ -17,6 +17,7 @@ target 'ui_gradients_viewer' do
     pod 'QRCode'
     pod 'Fabric'
     pod 'Crashlytics'
+    pod 'DeviceKit'
     
   target 'ui_gradients_viewerTests' do
     inherit! :search_paths

@@ -43,7 +43,7 @@ final class DrawerHeaderView: UIView {
         super.init(frame: frame)
         
         let controlStack = UIStackView(arrangedSubviews: [colorCollection, segmented])
-        controlStack.spacing = 18
+        controlStack.spacing = 52
         controlStack.axis = .vertical
         addSubview(controlStack)
         

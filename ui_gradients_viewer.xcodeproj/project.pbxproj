@@ -21,6 +21,8 @@
 		B03FBB9A20F1A12100A37CEA /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBB9920F1A12100A37CEA /* DonateView.swift */; };
 		B03FBB9C20F1EC3300A37CEA /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03FBB9B20F1EC3300A37CEA /* UnifiedNativeAdView.xib */; };
 		B03FBB9E20F1F37100A37CEA /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBB9D20F1F37100A37CEA /* CollectionCell.swift */; };
+		B03FBBA020F27DF800A37CEA /* AdSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBB9F20F27DF800A37CEA /* AdSectionController.swift */; };
+		B03FBBA220F27E3300A37CEA /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBBA120F27E3300A37CEA /* BannerAdViewController.swift */; };
 		B065751520EC7D44008E2861 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065751420EC7D44008E2861 /* Int.swift */; };
 		B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */; };
 		B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */; };
@@ -91,6 +93,8 @@
 		B03FBB9920F1A12100A37CEA /* DonateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateView.swift; sourceTree = "<group>"; };
 		B03FBB9B20F1EC3300A37CEA /* UnifiedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdView.xib; sourceTree = "<group>"; };
 		B03FBB9D20F1F37100A37CEA /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		B03FBB9F20F27DF800A37CEA /* AdSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdSectionController.swift; sourceTree = "<group>"; };
+		B03FBBA120F27E3300A37CEA /* BannerAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdViewController.swift; sourceTree = "<group>"; };
 		B065751420EC7D44008E2861 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		B0A461171F53B65C0075B9F6 /* ui_gradients_viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_gradients_viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 				B0BA30C220D7122600FD8B1D /* ColorPickerCollectionSectionController.swift */,
 				B0F7886020F0960900A167CC /* ExportedViewController.swift */,
 				B0C2D3C820F16B94005DF50E /* DonateViewController.swift */,
+				B03FBB9F20F27DF800A37CEA /* AdSectionController.swift */,
+				B03FBBA120F27E3300A37CEA /* BannerAdViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -563,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */,
+				B03FBBA220F27E3300A37CEA /* BannerAdViewController.swift in Sources */,
 				B0D933FA20E4849600EFB802 /* ExportView.swift in Sources */,
 				B0F93BC820D6ED34007FCD5F /* GradientCollectionCell.swift in Sources */,
 				B0D933F820E4845E00EFB802 /* UIView.swift in Sources */,
@@ -588,6 +595,7 @@
 				B03FBB9E20F1F37100A37CEA /* CollectionCell.swift in Sources */,
 				B0F93BC420D6EBD0007FCD5F /* CollectionSectionController.swift in Sources */,
 				B0BA30C720D714A400FD8B1D /* SwitchView.swift in Sources */,
+				B03FBBA020F27DF800A37CEA /* AdSectionController.swift in Sources */,
 				B0F93BC220D6189D007FCD5F /* ClosureProxy.swift in Sources */,
 				B0BA30C320D7122600FD8B1D /* ColorPickerCollectionSectionController.swift in Sources */,
 				B0BA30C920D714BF00FD8B1D /* SliderView.swift in Sources */,
