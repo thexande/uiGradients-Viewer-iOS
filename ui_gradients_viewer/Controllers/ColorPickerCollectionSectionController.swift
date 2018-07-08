@@ -53,7 +53,7 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
     
     func collectionView(_ collectionView: UICollectionView,
                         canMoveItemAt indexPath: IndexPath) -> Bool {
-        return true
+        return false
     }
     
     
@@ -64,5 +64,10 @@ final class ColorPickerCollectionSectionController: NSObject, CollectionSectionC
         print("Ending Index: \(destinationIndexPath.item)")
         dispatcher?.dispatch(.colorIndexChange(startingIndex: sourceIndexPath.item,
                                                endingIndex: destinationIndexPath.item))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        didSelectItemAt indexPath: IndexPath) {
+        dispatcher?.dispatch(.gradientColorSelected(items[indexPath.item].identifier))
     }
 }

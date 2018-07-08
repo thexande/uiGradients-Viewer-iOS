@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Views/CustomizeGradientView.swift"
-            timestampString = "552771096.508516"
+            timestampString = "552771870.668542"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Controllers/GradientCardSectionController.swift"
-            timestampString = "552771096.508859"
+            timestampString = "552771870.668851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "collectionView(_:layout:minimumInteritemSpacingForSectionAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,11 +42,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "552771096.509541"
+            timestampString = "552771870.669066"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "dispatch(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
+            timestampString = "552771870.6701"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "dispatch(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
+            timestampString = "552771870.670579"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
             landmarkName = "dispatch(_:)"
             landmarkType = "7">
          </BreakpointContent>

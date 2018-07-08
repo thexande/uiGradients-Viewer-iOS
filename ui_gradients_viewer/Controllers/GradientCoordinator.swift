@@ -48,6 +48,7 @@ enum GradientAction {
     case donateDismiss
     case donate(Donation)
     case presentDonationOptions(Currency)
+    case gradientColorSelected(UUID)
 }
 
 protocol GradientActionDispatching: AnyObject { 
@@ -228,7 +229,19 @@ extension GradientCoordinator: GradientActionDispatching {
             donate.dismiss(animated: true, completion: nil)
         case let .presentDonationOptions(currency):
             handleCurrency(currency)
+        case let .gradientColorSelected(identifier):
+            guard
+                let color = selectedGradient?.colors.first(where: { $0.identifier == identifier }),
+                let index = selectedGradient?.colors.index(of: color),
+                let count = selectedGradient?.colors.count else {
+                    return
+            }
             
+            for index in 0..<count {
+                selectedGradient?.colors[index].isSelected = false
+            }
+            
+            selectedGradient?.colors[index].isSelected = true
         }
     }
     
