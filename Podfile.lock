@@ -2,6 +2,7 @@ PODS:
   - Anchorage (4.2.4)
   - Crashlytics (3.10.3):
     - Fabric (~> 1.7.8)
+  - DeviceKit (1.7.0)
   - Fabric (1.7.8)
   - Google-Mobile-Ads-SDK (7.31.0)
   - GradientView (2.3.3)
@@ -14,6 +15,7 @@ PODS:
 DEPENDENCIES:
   - Anchorage
   - Crashlytics
+  - DeviceKit
   - Fabric
   - Google-Mobile-Ads-SDK
   - GradientView
@@ -27,6 +29,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Anchorage
     - Crashlytics
+    - DeviceKit
     - Fabric
     - Google-Mobile-Ads-SDK
     - GradientView
@@ -39,6 +42,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Anchorage: f855157310859280c706cc0b9c9281c21702f515
   Crashlytics: 2aea305161a2122492698c75af27f2b98aa49a25
+  DeviceKit: 6a5bdeb103c03757bb94aef1ccb01e08bc8ef4ee
   Fabric: fba4684a95df789565b0b27fc5b6e68f1755af32
   Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   GradientView: b044fa46c24062ee245a07a4e8bea4c5c4d63de0
@@ -48,6 +52,6 @@ SPEC CHECKSUMS:
   QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
   SwiftHEXColors: 9681e756dc78a99ae97f277165b3f5e33b087553
 
-PODFILE CHECKSUM: 7feba2fc42e7109888844b7d81528952902b939f
+PODFILE CHECKSUM: f1812d684f443e02860e94e8d4ee8534ac769184
 
 COCOAPODS: 1.5.3
