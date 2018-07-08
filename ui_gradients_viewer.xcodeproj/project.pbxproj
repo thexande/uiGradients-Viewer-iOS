@@ -24,6 +24,7 @@
 		B03FBBA020F27DF800A37CEA /* AdSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBB9F20F27DF800A37CEA /* AdSectionController.swift */; };
 		B03FBBA220F27E3300A37CEA /* BannerAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBBA120F27E3300A37CEA /* BannerAdViewController.swift */; };
 		B03FBBA620F2870E00A37CEA /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBBA520F2870D00A37CEA /* UIAlertController.swift */; };
+		B03FBBA820F292A000A37CEA /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03FBBA720F292A000A37CEA /* Array.swift */; };
 		B065751520EC7D44008E2861 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = B065751420EC7D44008E2861 /* Int.swift */; };
 		B0A4611B1F53B65C0075B9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */; };
 		B0A4611D1F53B65C0075B9F6 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A4611C1F53B65C0075B9F6 /* RootPageViewController.swift */; };
@@ -97,6 +98,7 @@
 		B03FBB9F20F27DF800A37CEA /* AdSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdSectionController.swift; sourceTree = "<group>"; };
 		B03FBBA120F27E3300A37CEA /* BannerAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdViewController.swift; sourceTree = "<group>"; };
 		B03FBBA520F2870D00A37CEA /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		B03FBBA720F292A000A37CEA /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		B065751420EC7D44008E2861 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		B0A461171F53B65C0075B9F6 /* ui_gradients_viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ui_gradients_viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A4611A1F53B65C0075B9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 				B0D933F720E4845E00EFB802 /* UIView.swift */,
 				B0D933FD20E4925200EFB802 /* UIColor.swift */,
 				B065751420EC7D44008E2861 /* Int.swift */,
+				B03FBBA720F292A000A37CEA /* Array.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				B02EF87220EB378F001BE24A /* ChromaHandle.swift in Sources */,
 				B02EF86F20EB378F001BE24A /* ChromaColorPicker.swift in Sources */,
 				B02EF87020EB378F001BE24A /* ColorModeToggleButton.swift in Sources */,
+				B03FBBA820F292A000A37CEA /* Array.swift in Sources */,
 				B00186C91F54F33B0027FB3A /* GradientDrawerViewController.swift in Sources */,
 				B0F93BC620D6ECF3007FCD5F /* GradientCardSectionController.swift in Sources */,
 				B0F7886320F0963B00A167CC /* SAConfettiView.swift in Sources */,
