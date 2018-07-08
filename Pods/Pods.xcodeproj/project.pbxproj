@@ -7,83 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		022F35665864765D4DB0B50908B902D3 /* Pods-ui_gradients_viewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981586E0C345D58B80F4343EFCB7BFD /* Pods-ui_gradients_viewer-dummy.m */; };
-		068E1D81BF6F2EB48E06E1E5988FE8D5 /* Anchorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F14EA0140779EBC1726297DCD4A64A57 /* Anchorage-dummy.m */; };
-		0788F382EE16F478BED9DE277EDCAF8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		05A0B59FA58EFC91F63003399623D50A /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CDFBDA44E546D0BD07F3DA7A9290900 /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		068E1D81BF6F2EB48E06E1E5988FE8D5 /* Anchorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8132819F91E92F4F0F1818CE83A1107 /* Anchorage-dummy.m */; };
 		0A7F42981BA9F011764B1BEA00E93943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		0C6A3982F5113383203BBD20D023B852 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E880E653955ED3D64902CDAE030E7 /* CIImageExtension.swift */; };
-		0FF1D8C88F5D7BF5FE65A65F245DD8BB /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54866DE7F0AEE28B7B9DF8A4EE9C4EC1 /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DF44F8D45F3621DD294783D48A9D87 /* AnchorGroupProvider.swift */; };
-		10C7194F0860F07FAD29BB41D25AE037 /* Pods-ui_gradients_viewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 263F27F4EC7E9EE835B64898E06C1591 /* Pods-ui_gradients_viewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		124FD37406F301D19984CA205421F1C3 /* DeviceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DDD81B99E5402394E0A5BE0E0EEC16 /* DeviceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1661F93BC57FE6A8BC358BDBCF74091F /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F19B6BB3D3DC2C4D98EBD887E08DEA8D /* SwiftHEXColors-dummy.m */; };
-		198359723082878A537BFA997A3F9ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		1C91A3F745BABD873AC4B1D6E9F0B664 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB991B1C70B6921686E57D96D4F55DF /* Haptic.swift */; };
-		24E977D27D09CD817FFA42D46A5739D5 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CF13D4454465EC9C3EC12FE74D0E80 /* TransitionOperation.swift */; };
-		2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A05B080D8FEE7AAF915879C4186CA9 /* NSLayoutAnchor+MultiplierConstraints.swift */; };
+		0FF1D8C88F5D7BF5FE65A65F245DD8BB /* Haptica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B118B5596F0A4982F41349B78C5E7BAA /* Haptica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136558CA05F8E40E7A2125A556BFC796 /* AnchorGroupProvider.swift */; };
+		1C91A3F745BABD873AC4B1D6E9F0B664 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0562BFD523594DDBA073C3801A5C4074 /* Haptic.swift */; };
+		24E977D27D09CD817FFA42D46A5739D5 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7398A0F03303F7D02E7D326B83217656 /* TransitionOperation.swift */; };
+		2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE806E5AAA9015213E009A713DF337F /* NSLayoutAnchor+MultiplierConstraints.swift */; };
 		27A1D57FC3CDC50578125270B49F7683 /* Pods-ui_gradients_viewerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED2EA8C5FB4E774D07D642EBD6762F /* Pods-ui_gradients_viewerUITests-dummy.m */; };
-		2AA5FD5854467E66F30BD713A494A2F6 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBD86FF55EEC61547853617D289528 /* UIView+Localization.swift */; };
-		2CC44A75550F2E222D5A73F16E002024 /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6357BA64E6BD23EE8331248107BAADD8 /* UIPageViewController+ScrollView.swift */; };
+		2AA5FD5854467E66F30BD713A494A2F6 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBBE208BC4AB5AF0B286EA67284FAA /* UIView+Localization.swift */; };
+		2CC44A75550F2E222D5A73F16E002024 /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB8E81B4DDD857D38B0AA9CA4696BB2 /* UIPageViewController+ScrollView.swift */; };
 		308765F26648DCBDE230CFA20D32D919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3476B48C22B858C81207A5718E61D817 /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8985FDE1685DCCFDDA365A4E12E015 /* PageboyViewController+AutoScrolling.swift */; };
-		36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B13BCDFEC90BC378F9D27CD4B76B82D0 /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3476B48C22B858C81207A5718E61D817 /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDE7932317DD132914067F131B15072 /* PageboyViewController+AutoScrolling.swift */; };
+		36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F9B0C398437DB8DEBA3B36D913BE50 /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36D7298BB0EEA1982F5B2978E9A554E3 /* Pods-ui_gradients_viewerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B040F4ADD91EF219DABD2D4C2967E7F /* Pods-ui_gradients_viewerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BEEF304DABB395FC2E8CFF0D4D0B97B /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C25A4E48A40A01A9FC3B04F6CAD696A /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C0B89FED1EA85923BC5B798CB48BAF1 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A0A942106EF79A9FCE577BB955AECE /* PageboyViewController+Management.swift */; };
+		3BEEF304DABB395FC2E8CFF0D4D0B97B /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C70B62E5114D567832663977F548A96 /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C0B89FED1EA85923BC5B798CB48BAF1 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E7C3646B8B797EDB95413B41AB078 /* PageboyViewController+Management.swift */; };
+		3C0FDDFA65FF0ECB1D2C234B759894FE /* QRCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94AD07B5ACB0D68C4F2C92CFB899F648 /* QRCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CC0B964A0729B2232572B19B290635C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		3EB5EF4E2E6887CABEF93D137C9FFFD0 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDDC97A003FA00C658564694E747F9C /* PageboyViewController+Transitioning.swift */; };
-		408E303F4C8981EEAA92885CFDAABE0F /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BB2F565C294B5601E23E52F02F8449 /* SwiftHEXColors.swift */; };
+		3EB5EF4E2E6887CABEF93D137C9FFFD0 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A482505065A86FFBC55C35CE8444E6 /* PageboyViewController+Transitioning.swift */; };
 		42253A44954F38F17C9FBB786F83E76B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		4374111135C6E3366795E92193D1649A /* Pods-ui_gradients_viewerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D765C387F56EF78AE673AD1F12728052 /* Pods-ui_gradients_viewerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44AF0D2696106FA236CE85520D7BE55F /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D67F4FAFFA98BCD6F20B286083D82D /* QRCode.swift */; };
-		47F24EB38A73888770B7D205B3501121 /* PageboyViewController+NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A816B70951A24B57D664B6D48FE608 /* PageboyViewController+NavigationDirection.swift */; };
-		49327C10264D99405767F9EEF36D6835 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4761F7A10BD8A9A2839091273645CD4C /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EAE02F5158DC1D5CE08FF3E3A18B248 /* UIView+constrainToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD22DED9071A0AEA80BFB631F1ED63 /* UIView+constrainToParent.swift */; };
-		538F8B4EA421F0CB2712A91C0A70CFF1 /* UIScrollView+ScrollActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09015D444FDA76B5D8F5CADB1183720C /* UIScrollView+ScrollActivity.swift */; };
-		55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E42D6BEB220B217B141BFC17126CFB /* GradientView.swift */; };
+		47F24EB38A73888770B7D205B3501121 /* PageboyViewController+NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76EE6C2988CA7C0C093756632C9E69 /* PageboyViewController+NavigationDirection.swift */; };
+		4C4C384F9E2A8B5814EE680DCE871FF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		4FB82B0E33283BBD4C92B8FF14033023 /* Pulley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF6E0ADBB8EFE572F33D9B891818B80B /* Pulley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5080A0A91C98E5C857646D13EE19F4DB /* Pods-ui_gradients_viewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 263F27F4EC7E9EE835B64898E06C1591 /* Pods-ui_gradients_viewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		538F8B4EA421F0CB2712A91C0A70CFF1 /* UIScrollView+ScrollActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663B329851FAB19F14F62C93350D295 /* UIScrollView+ScrollActivity.swift */; };
+		550909BA8D3B7F879DA19AD82A44D965 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A153BCBD3F5C5659F685882BDCC984 /* CIImageExtension.swift */; };
+		55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD136AE6BAF46E177FFB13C8D91EA8B /* GradientView.swift */; };
 		57793E6514815367189FA59D707095CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		6929A18231635B7AC9E1C64F2C6A9729 /* Anchorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725576E24A93E5E5F45D4CEC520EDDB /* Anchorage.swift */; };
-		69E72DA7E5161D92B05DAB2356CD8B2F /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B11DADFB80357850BA05AE6EAF1161 /* CIColorExtension.swift */; };
-		6C22DCAE76E6D62A2801BE6C15469A28 /* DeviceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4CE767B0F67627647FA9614DAAB69C /* DeviceKit-dummy.m */; };
-		6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764850824F396E87073D7F91C32EB7BF /* Compatability.swift */; };
-		729C9CD811C3FA0F23ED6AD50F608A79 /* IndexedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD55A955D50A5950DC380AADAA1280C9 /* IndexedMap.swift */; };
-		741EC81D38216F493EC4B0D8D24AFA6F /* SwiftHEXColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 19C9727E34EA6137786DC2CAC6AB40CF /* SwiftHEXColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B9777DB10DA6A2E542F7F1755195848 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B0FD59429C52E4390EA4B245B4686D /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7DED17D3A56023E07444217C88BEAD53 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D97D952FE11472CF81FE7FE401059A /* Haptica-dummy.m */; };
-		7E7E7E05DB1BE16317F189A9FFDE33EC /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0805B681DA61D4357F02055AD95EEE2 /* UIViewController+PulleyViewController.swift */; };
-		82A5F56AA001461DBE3ECDA3A0AF7289 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C98C74C596C7435E11FE8A97382CAE5 /* PageboyViewController.swift */; };
-		87473951E979E704EF2CB2BB29DCE140 /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D6E4054569051EEA15408D8981B379 /* PageboyViewControllerDataSource.swift */; };
-		875ABEE16409D5FC4892866C6640976A /* GradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C069E2924FE64836DCB83C7C431FE86 /* GradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		891036DA4486DC72831B080272753E43 /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B71141AB077983CF25F795978B5876 /* Pulley-dummy.m */; };
-		8F73E8B25F780A6EF6CB7E5DADE1C75E /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C3A3046068139349F69EB0AA52126 /* PageboyViewControllerDelegate.swift */; };
-		928DADC4C9ACF03D444AA30EB39F19FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		9484B53CB52F5EED66A733F1C2B503EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		98776829D922F134242C78C983652155 /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1795E2949D6876D345BC80516EC9102D /* Hapticable.swift */; };
+		6929A18231635B7AC9E1C64F2C6A9729 /* Anchorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE42BE38000BA42155A3165E229804A1 /* Anchorage.swift */; };
+		6A4072E89B665CB5B311406693E47F98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC40A678E0D3D601A7F60BA76FD3C992 /* Compatability.swift */; };
+		729C9CD811C3FA0F23ED6AD50F608A79 /* IndexedMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC1B15F41E02DB8505A5DB604502843 /* IndexedMap.swift */; };
+		79E1AD0A56128F45BC312E56E447073D /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F0DF2FD7939729F31E645489AEDB3 /* UIImageViewExtension.swift */; };
+		7A6B9C0292004282642B801D2B18CF17 /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 118570E8D41DF2EBC07BB3FBA6DF13DF /* Pulley-dummy.m */; };
+		7B9777DB10DA6A2E542F7F1755195848 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = 74170F66D002B66A8E09F46A8C7D8800 /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DED17D3A56023E07444217C88BEAD53 /* Haptica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 988E9566D226FA44E12503CE313533EE /* Haptica-dummy.m */; };
+		7FBFF1BB2AE6A7598F882262481E3615 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		81C8A3C4810048C350F214805ED21F22 /* Pods-ui_gradients_viewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5981586E0C345D58B80F4343EFCB7BFD /* Pods-ui_gradients_viewer-dummy.m */; };
+		82A5F56AA001461DBE3ECDA3A0AF7289 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CF6A6FF24CA39E66F1A8BB6BBD3363 /* PageboyViewController.swift */; };
+		87473951E979E704EF2CB2BB29DCE140 /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115CD762BC3D0F5437024393064D609F /* PageboyViewControllerDataSource.swift */; };
+		875ABEE16409D5FC4892866C6640976A /* GradientView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80764510CB4474D8137DF432CF76D207 /* GradientView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8928C36950D8A7B353417BC6AA45C093 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		8934853DB8EB7C861A609BEAA8A3F456 /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB9842BB7C5037B1A321A3039253A46 /* PulleyPassthroughScrollView.swift */; };
+		89850F6BF5C07F6260BD31027EC9F2CC /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C10C6B1AE8454A19A593DC1CDF8851F /* QRCode.swift */; };
+		8A95B6FABA87100A86B678B63F00CF4D /* SwiftHEXColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86A3114E2D1228F8EC62AD0D08A0923 /* SwiftHEXColors.swift */; };
+		8F73E8B25F780A6EF6CB7E5DADE1C75E /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E426C7E9B14E3275771939550A0A312 /* PageboyViewControllerDelegate.swift */; };
+		928AD4536EAB633BFA686BE673C77976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		98776829D922F134242C78C983652155 /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C0960268BA139DB5E8390B4571DFB5 /* Hapticable.swift */; };
+		9D6209C5E19CAFC120EAEC608A5A05AB /* UIViewController+PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210478D3C8671AC313B3F8707AD0342E /* UIViewController+PulleyViewController.swift */; };
 		A104A79242521F963AF8D55F471BEAC7 /* Pods-ui_gradients_viewerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1625080B5AA8631B29DFCCE342B81 /* Pods-ui_gradients_viewerTests-dummy.m */; };
-		A1FE317B5294B3022521FDA8BF239D8D /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D03660FA74733E5A15B35D2E43C102E /* WeakWrapper.swift */; };
-		A4E253C2E0079E8CDAA11B2244047A5B /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27683276B4994397720427AEB6733E70 /* PageboyViewController+ScrollDetection.swift */; };
-		AA7C7392BBE83B12E8A201F6973AAA28 /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6682B46256680E2ED04565D740CD91BF /* UIApplication+SafeShared.swift */; };
-		AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A75D1E85324122554E4D83D28AC576 /* Priority.swift */; };
-		B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 095B25E0D6288E344AE2F849C1A1B70F /* GradientView-dummy.m */; };
-		B71720CC6ADB22089359A6ABCDDA733B /* QRCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E6030C07A0825D9D65A3BDC7DBA018 /* QRCode-dummy.m */; };
-		B8A08FFF53651375B880997FD0229419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A1FE317B5294B3022521FDA8BF239D8D /* WeakWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A74E2F6E5E7F6AFC25F408459ED080 /* WeakWrapper.swift */; };
+		A4E253C2E0079E8CDAA11B2244047A5B /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA19E3CB9310DA02785FC4E2FD82F8F /* PageboyViewController+ScrollDetection.swift */; };
+		AA7C7392BBE83B12E8A201F6973AAA28 /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DD7FFBBBFDCDE6B2F4F90079AA21F0 /* UIApplication+SafeShared.swift */; };
+		AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285FE9119BEA54160F3721B1A718A2E2 /* Priority.swift */; };
+		B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD10B2EC014310155823C83F8E767B59 /* GradientView-dummy.m */; };
 		BA49C0621A4F06854E828A72DF2C9B58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		BEC5D8235769E93D5473C447C43F3711 /* GradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E18C9473E81DC0DDD9F337D3D812F77 /* GradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0EFEC95B9DAA56CA5AE710C437CF44A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		BEC5D8235769E93D5473C447C43F3711 /* GradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D47D4091D75154B395A641A5106316 /* GradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0154E699E2BCA013556AD8FE5E890AE /* UIView+constrainToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F4ED9AA6131FAA3C396881EEBFA8A /* UIView+constrainToParent.swift */; };
+		C335A5B52898567C14EDEDCB3316403F /* SwiftHEXColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D29681B021B8F33BE99B369C2400161 /* SwiftHEXColors-dummy.m */; };
 		CADE67AEBCA937B28E8FC50481F8D57C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		CC83476762904F134EA948859F99CC98 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAF83A2A2F7C746A67FD9040B8DADE0 /* TransitionOperation+Action.swift */; };
-		CDB1568DFF3443E0AFF5686B89FD0D38 /* Device.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1990F92044DDD0CADD879FAA5FE4214A /* Device.generated.swift */; };
-		D24C6F97FAD05CCF4032A1881C6B9DEE /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7451FCD478203BA207DAE6D9FA5657BF /* Pageboy-dummy.m */; };
-		D403E7677A387460B960950A879CC74A /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FC5C21CC9DF5590D64701BE47E8FB /* UIView+AutoLayout.swift */; };
-		D98B3DAE995E462E7FB80101F1396B4E /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4F6C2B8037FED09BF5F979BEB0F3 /* PulleyViewController.swift */; };
-		DAE3DBA6953095C8553685170EED58DF /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4073917ADF61DF899FB00A7DE8BFC06 /* UIViewController+Pageboy.swift */; };
-		DB3E4F32D528144684865AA87AC38A55 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195A82E51C9A6FEDF4FCFAA2CEAF8DC /* PageboyAutoScroller.swift */; };
-		DDC7CD1F076F3E3CE0A9E0C889EC3717 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C22CE56E6256BE389FD932A64182FB9 /* UIImageViewExtension.swift */; };
-		E02BE08776A961160339C0455D0F3C96 /* Pulley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B41120BD808E684672FD88BCEACC25A0 /* Pulley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4102A3F4838178C8EA5832AF883D39E9 /* Internal.swift */; };
-		F84F76CB3B47CEF62ADB49D07AF5004C /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59F1EAD834DBAAFA3A3CECE8E03912 /* PulleyPassthroughScrollView.swift */; };
-		FD0F221014DE5EECF6D902BCC95ECAF0 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9613AF911637B9D5AC8055523A00D3DF /* Associated.swift */; };
-		FEE4F8047C845A08E4C91B3F04FDE30F /* QRCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7989FBAE9A093E47CDB3B3856FA199FE /* QRCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB81825F4F8B2F138AFA8CB0E4A2EE33 /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD64F655E661B2718EE04455F43E500 /* CIColorExtension.swift */; };
+		CC83476762904F134EA948859F99CC98 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DA39B38169B6ECCCAC8B5B545E42A9 /* TransitionOperation+Action.swift */; };
+		CE25AB8AE74BD09A7D91650E956F4554 /* SwiftHEXColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 149E65E006B44DC2564E0C38C5C12890 /* SwiftHEXColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D24C6F97FAD05CCF4032A1881C6B9DEE /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED14E3B6CC84BF07BD6FF5E6D8DFB217 /* Pageboy-dummy.m */; };
+		D403E7677A387460B960950A879CC74A /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C0993271CC0E0CD9350763A128660 /* UIView+AutoLayout.swift */; };
+		DAE3DBA6953095C8553685170EED58DF /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E008542A2A65D436F6BD789B9ED0ED /* UIViewController+Pageboy.swift */; };
+		DB3E4F32D528144684865AA87AC38A55 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72841EDD0F1C00039F447F0F59BA7B73 /* PageboyAutoScroller.swift */; };
+		E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF6D9E36F91AE45771A8181ACF338A /* Internal.swift */; };
+		E3F834CEBC70C52C30D3C0D41C368691 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E38F85A3B509AFF60091D5A9B57478 /* PulleyViewController.swift */; };
+		FD0F221014DE5EECF6D902BCC95ECAF0 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252FDEFF636304B4E2D11EBE5636B247 /* Associated.swift */; };
+		FF3B03C3EF365AF7A9F9AEEAA47B4443 /* QRCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E814F48AD13313C4FF95E344DFD2CC /* QRCode-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,229 +87,214 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0727DA2826BD053E527E6E7FBE96E3DF;
+			remoteGlobalIDString = 6BB54457504F06D3255DB32A0F179547;
 			remoteInfo = "Pods-ui_gradients_viewer";
 		};
 		1F4BDFD068B71DBEE51EFDEBE1544BD4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0727DA2826BD053E527E6E7FBE96E3DF;
+			remoteGlobalIDString = 6BB54457504F06D3255DB32A0F179547;
 			remoteInfo = "Pods-ui_gradients_viewer";
 		};
-		3D83E3A3AE21859269130BD480FCD9A1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B74671AC4AD442223B677430EE6BBBF5;
-			remoteInfo = DeviceKit;
-		};
-		60AFBA441C9FB255049DCD2E67719E0C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4BF00F9E712E93DA7B03ACF46198775B;
-			remoteInfo = GradientView;
-		};
-		72FD7099D74BA0BDCFE69669F4596B48 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A50EC946DE916CC72D75E87E631B52B0;
-			remoteInfo = Pulley;
-		};
-		7BBC6E4182E7E9BBB32889BDA439B203 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D33ED2F94F2B1C51F0A30D022A0088EB;
-			remoteInfo = QRCode;
-		};
-		92ABA61BE198569E1A0693904FD2FDE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7FC78838C59FAD9F4CBE74C3850F89AF;
-			remoteInfo = Pageboy;
-		};
-		9E8C006E51CCC5759BB48AADB48DFDB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6359C82069858A14001CAA27204A141;
-			remoteInfo = SwiftHEXColors;
-		};
-		A3356706385008F02FF11F7D0592AB73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E121B7515710262E2739C9A7F066EFF;
-			remoteInfo = Haptica;
-		};
-		FE1F7CFE977B3143788F2B63BDCBDA19 /* PBXContainerItemProxy */ = {
+		43B01C3904D0993E1A789507AD983180 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EDFADDD27E9AE133283F4BFCC355134F;
 			remoteInfo = Anchorage;
 		};
+		44E9D2149EC1F6B9AE416117A041266A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C98F0DE7C6681E88C9016B5DAD35663;
+			remoteInfo = SwiftHEXColors;
+		};
+		8E60B6C9D7C3E0954A4F4CB6B6D50DC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BF00F9E712E93DA7B03ACF46198775B;
+			remoteInfo = GradientView;
+		};
+		984F3CB9A0F84F147DA43449D25FDC28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FC78838C59FAD9F4CBE74C3850F89AF;
+			remoteInfo = Pageboy;
+		};
+		CA761392B7635CC1AB5DFE8DF0243D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E121B7515710262E2739C9A7F066EFF;
+			remoteInfo = Haptica;
+		};
+		D0CF0200CC6E7EE4D39AD52624C6E5A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3C61877F9A2B2861CB0BBEDB15F7C34;
+			remoteInfo = Pulley;
+		};
+		D2F8CE78DB28607EEC5FB7A52FD9AAE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7629D5146B05DE2E5E7CBD4B002CC9B;
+			remoteInfo = QRCode;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03004B41986FD4A0FED43AF39511CC24 /* DeviceKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceKit.xcconfig; sourceTree = "<group>"; };
-		042C8F9CF78089E2CDAB7965A45FA2EE /* GradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GradientView.framework; path = GradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		049D587F7315A365AD8B845150B73F55 /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
-		0674A168CC1E9DA12412C57BB6038210 /* Pulley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-prefix.pch"; sourceTree = "<group>"; };
-		0692CB97DCFF3DFC5FCA3B56F5273CDD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08B4192A3AA3B12B809E6A961BCB05B5 /* Anchorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-prefix.pch"; sourceTree = "<group>"; };
-		09015D444FDA76B5D8F5CADB1183720C /* UIScrollView+ScrollActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ScrollActivity.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+ScrollActivity.swift"; sourceTree = "<group>"; };
-		095B25E0D6288E344AE2F849C1A1B70F /* GradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientView-dummy.m"; sourceTree = "<group>"; };
-		09D6E4054569051EEA15408D8981B379 /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
-		0AAF83A2A2F7C746A67FD9040B8DADE0 /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Utilities/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
-		0AD9D6B6FC4390AE63BFE934D6715AB7 /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
-		0B239583FB1A0A1996882D01FC954FB0 /* Pods_ui_gradients_viewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewerTests.framework; path = "Pods-ui_gradients_viewerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C16648C378A311C49B024823415A40E /* GradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-prefix.pch"; sourceTree = "<group>"; };
-		0C25A4E48A40A01A9FC3B04F6CAD696A /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
-		0D52DC13C30953D4E2342E98FFEC2258 /* Pulley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pulley.modulemap; sourceTree = "<group>"; };
-		0E59F1EAD834DBAAFA3A3CECE8E03912 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyPassthroughScrollView.swift; path = PulleyLib/PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
-		11FED3C39B959B8F76DAF06A0A6EBBCF /* QRCode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-prefix.pch"; sourceTree = "<group>"; };
-		14E6030C07A0825D9D65A3BDC7DBA018 /* QRCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCode-dummy.m"; sourceTree = "<group>"; };
+		01B9A7E16E338F3C014A6984198A17E7 /* Pods_ui_gradients_viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewer.framework; path = "Pods-ui_gradients_viewer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0562BFD523594DDBA073C3801A5C4074 /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
+		05BF5280F72A8D59B339E91E504DF25A /* QRCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCode.xcconfig; sourceTree = "<group>"; };
+		0909F27F8BD2D65662264C8CAAFA6F3D /* Haptica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Haptica.modulemap; sourceTree = "<group>"; };
+		0C20B887A2784B87CAA81D7A3189D885 /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
+		0C70B62E5114D567832663977F548A96 /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
+		0C845F477B026E0B8909E379EBA8AB1E /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
+		0CDFBDA44E546D0BD07F3DA7A9290900 /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
+		0FA303E020F617B36B24DE15F4212EDC /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCode.framework; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10261D44924D4D5943049A529412C11A /* Haptica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haptica.framework; path = Haptica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		115CD762BC3D0F5437024393064D609F /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
+		118570E8D41DF2EBC07BB3FBA6DF13DF /* Pulley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pulley-dummy.m"; sourceTree = "<group>"; };
+		136558CA05F8E40E7A2125A556BFC796 /* AnchorGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorGroupProvider.swift; path = Source/AnchorGroupProvider.swift; sourceTree = "<group>"; };
+		149E65E006B44DC2564E0C38C5C12890 /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
 		16ED2EA8C5FB4E774D07D642EBD6762F /* Pods-ui_gradients_viewerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ui_gradients_viewerUITests-dummy.m"; sourceTree = "<group>"; };
-		1795E2949D6876D345BC80516EC9102D /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
-		1990F92044DDD0CADD879FAA5FE4214A /* Device.generated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.generated.swift; path = Source/Device.generated.swift; sourceTree = "<group>"; };
-		19C9727E34EA6137786DC2CAC6AB40CF /* SwiftHEXColors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftHEXColors.h; path = Sources/SwiftHEXColors.h; sourceTree = "<group>"; };
-		1B4F684E817394CF13B1E0CE0F1EE2C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C5C3A3046068139349F69EB0AA52126 /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
+		1891C0A6AA8C7ADF512B5CF5D3078249 /* GradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientView.modulemap; sourceTree = "<group>"; };
+		1942EDBB72B00F5BC0A792212DDD4A0E /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pageboy.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C0960268BA139DB5E8390B4571DFB5 /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hapticable.swift; path = Sources/Hapticable.swift; sourceTree = "<group>"; };
+		1A3B675D7E4566A52BF695FBDF4C7A91 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		1A4DA345534DFE2812B229FAF6E93B11 /* Pulley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-prefix.pch"; sourceTree = "<group>"; };
+		1C10C6B1AE8454A19A593DC1CDF8851F /* QRCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = QRCode/QRCode.swift; sourceTree = "<group>"; };
+		1C9CFA043D0EC7EBD83CDBB193DFEAA5 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		1D29681B021B8F33BE99B369C2400161 /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
 		1D67584EADB7BDDA1C43453CBF451451 /* Pods-ui_gradients_viewerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerTests-resources.sh"; sourceTree = "<group>"; };
-		1EF0F61FD35A7C4237B20B718DDDF830 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21B0FD59429C52E4390EA4B245B4686D /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
-		24B11DADFB80357850BA05AE6EAF1161 /* CIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = QRCode/CIColorExtension.swift; sourceTree = "<group>"; };
+		210478D3C8671AC313B3F8707AD0342E /* UIViewController+PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PulleyViewController.swift"; path = "PulleyLib/UIViewController+PulleyViewController.swift"; sourceTree = "<group>"; };
+		21C7148B1258EA205A331E87C423D3A1 /* GradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientView.xcconfig; sourceTree = "<group>"; };
+		252FDEFF636304B4E2D11EBE5636B247 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
 		263F27F4EC7E9EE835B64898E06C1591 /* Pods-ui_gradients_viewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ui_gradients_viewer-umbrella.h"; sourceTree = "<group>"; };
-		27683276B4994397720427AEB6733E70 /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
-		2A8A4888379F3EE7A937C2EEEF9D53DA /* GradientView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GradientView.modulemap; sourceTree = "<group>"; };
+		285FE9119BEA54160F3721B1A718A2E2 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Source/Priority.swift; sourceTree = "<group>"; };
+		2905F429EDBB8B697B7330C237AAFFE6 /* Pods_ui_gradients_viewerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewerTests.framework; path = "Pods-ui_gradients_viewerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C20996B3B2CB7EA3AC5F8C200342259 /* Pods-ui_gradients_viewerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ui_gradients_viewerTests.modulemap"; sourceTree = "<group>"; };
-		2D187C41049D9242BB1BD96C06720C52 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
+		2E5A6E73EF1A03486BDDB4DDBABFB848 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F8226D2EE101A29DF4EE147EC4ADC7F /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		2F96EBBB3B413736FB4770B39E1ACF21 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		3277B3589EA1A16960E1AFB759180612 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3725576E24A93E5E5F45D4CEC520EDDB /* Anchorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchorage.swift; path = Source/Anchorage.swift; sourceTree = "<group>"; };
-		37F255FB50619104C38B823809D388F8 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
-		3880E0F468120BA3567C9D905C75EE0F /* Haptica.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.xcconfig; sourceTree = "<group>"; };
-		3C069E2924FE64836DCB83C7C431FE86 /* GradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-umbrella.h"; sourceTree = "<group>"; };
-		3C4CE767B0F67627647FA9614DAAB69C /* DeviceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceKit-dummy.m"; sourceTree = "<group>"; };
-		3E18C9473E81DC0DDD9F337D3D812F77 /* GradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientView.h; path = GradientView/GradientView.h; sourceTree = "<group>"; };
+		39629611610F96DA4E07C09E924135C4 /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
+		3E426C7E9B14E3275771939550A0A312 /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
 		3FC1625080B5AA8631B29DFCCE342B81 /* Pods-ui_gradients_viewerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ui_gradients_viewerTests-dummy.m"; sourceTree = "<group>"; };
-		4102A3F4838178C8EA5832AF883D39E9 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Source/Internal.swift; sourceTree = "<group>"; };
-		43A75D1E85324122554E4D83D28AC576 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Source/Priority.swift; sourceTree = "<group>"; };
-		456E880E653955ED3D64902CDAE030E7 /* CIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = QRCode/CIImageExtension.swift; sourceTree = "<group>"; };
+		41FDB642F01E441ED3DD13C831EDE425 /* GradientView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-prefix.pch"; sourceTree = "<group>"; };
+		42EF9E80FDD6585166D4ABB351CA309A /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Anchorage.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D44675155E1D0537A34A5E298E5704 /* Haptica.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptica.xcconfig; sourceTree = "<group>"; };
+		461E7C3646B8B797EDB95413B41AB078 /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
 		46CF76BDDD06129C3B7151AF88838B23 /* Pods-ui_gradients_viewerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerUITests-resources.sh"; sourceTree = "<group>"; };
-		4761F7A10BD8A9A2839091273645CD4C /* SwiftHEXColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-umbrella.h"; sourceTree = "<group>"; };
-		49FD22DED9071A0AEA80BFB631F1ED63 /* UIView+constrainToParent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+constrainToParent.swift"; path = "PulleyLib/UIView+constrainToParent.swift"; sourceTree = "<group>"; };
-		4BA038FE52C8FCB3F845866E4EBF09AF /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		4BEB411B598AD26B5616FE40F4182E79 /* Haptica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haptica.framework; path = Haptica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D03660FA74733E5A15B35D2E43C102E /* WeakWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakWrapper.swift; path = Sources/Pageboy/Utilities/DataStructures/WeakWrapper.swift; sourceTree = "<group>"; };
-		4FC6A6799A462B96F62CE39BD4738980 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
-		520B6C9BAE8CB07F0C6BA3F09EDC639B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54866DE7F0AEE28B7B9DF8A4EE9C4EC1 /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
-		56E42D6BEB220B217B141BFC17126CFB /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = GradientView/GradientView.swift; sourceTree = "<group>"; };
+		4A55BD095DB200B5117974440420AA7F /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		4A9D27DF0088CB0916383738D4927E87 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		4AE806E5AAA9015213E009A713DF337F /* NSLayoutAnchor+MultiplierConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutAnchor+MultiplierConstraints.swift"; path = "Source/NSLayoutAnchor+MultiplierConstraints.swift"; sourceTree = "<group>"; };
+		4DD64F655E661B2718EE04455F43E500 /* CIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = QRCode/CIColorExtension.swift; sourceTree = "<group>"; };
+		4E88478F4F2A0000623E181EE9DEEDC7 /* Haptica-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-prefix.pch"; sourceTree = "<group>"; };
+		5492463633F8C12180C4B725FCD5F98C /* Pods_ui_gradients_viewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewerUITests.framework; path = "Pods-ui_gradients_viewerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FBBE208BC4AB5AF0B286EA67284FAA /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
+		5663B329851FAB19F14F62C93350D295 /* UIScrollView+ScrollActivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ScrollActivity.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+ScrollActivity.swift"; sourceTree = "<group>"; };
+		56FCFB31104A51A8EAB240749CB602F9 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		583B78E57CB0B7F0EB99EC6D05DA2358 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E008542A2A65D436F6BD789B9ED0ED /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/Extensions/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
 		5981586E0C345D58B80F4343EFCB7BFD /* Pods-ui_gradients_viewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ui_gradients_viewer-dummy.m"; sourceTree = "<group>"; };
-		5A20AA51D1AC8C721C071155112462B4 /* Pageboy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.xcconfig; sourceTree = "<group>"; };
-		5C98C74C596C7435E11FE8A97382CAE5 /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
 		5D44C2C9406A11F747FB19BFEE299401 /* Pods-ui_gradients_viewer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewer-resources.sh"; sourceTree = "<group>"; };
 		5DB0E51CC74D154714D0F19A0FBA1BD8 /* Pods-ui_gradients_viewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ui_gradients_viewer-acknowledgements.plist"; sourceTree = "<group>"; };
-		5DDDC97A003FA00C658564694E747F9C /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
+		5FA7F6828C8AE105F25D5B66E3401349 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60F94A3116B4BC38DBA0C90A6918E7F0 /* Pods-ui_gradients_viewerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ui_gradients_viewerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6138BB1BD1E8681CF63CDDEB04FF4D2D /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
-		6357BA64E6BD23EE8331248107BAADD8 /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
-		63CBD86FF55EEC61547853617D289528 /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
+		628BD7D49DA3C45E094DD01A8BA72039 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		6309E5B354EF3A4612CEBCC757908007 /* Pulley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pulley.modulemap; sourceTree = "<group>"; };
 		64C8F87D2D460C3620BD3FF0897148CD /* Pods-ui_gradients_viewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ui_gradients_viewer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		65BD65CE12E8C2F5F3282DC7D580AD9C /* Pods-ui_gradients_viewerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ui_gradients_viewerUITests.modulemap"; sourceTree = "<group>"; };
-		6682B46256680E2ED04565D740CD91BF /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
-		6D07F007F341DBC316D4B14AFD58904C /* Anchorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Anchorage.modulemap; sourceTree = "<group>"; };
-		6D5436A974EE6F4E167D1D13399258BE /* Pulley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pulley.framework; path = Pulley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FC3088706FEB0FAF00FB2CF02D94F5B /* DeviceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DeviceKit.modulemap; sourceTree = "<group>"; };
-		7451FCD478203BA207DAE6D9FA5657BF /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
+		65E814F48AD13313C4FF95E344DFD2CC /* QRCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCode-dummy.m"; sourceTree = "<group>"; };
+		67A482505065A86FFBC55C35CE8444E6 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
+		6E5F55532C413297229A804AB338CB18 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHEXColors.framework; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718B2522E41D80B1C99424B87A83DB45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72841EDD0F1C00039F447F0F59BA7B73 /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/Components/PageboyAutoScroller.swift; sourceTree = "<group>"; };
+		734624AA1E5EEF2426305B38AB693B98 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		7398A0F03303F7D02E7D326B83217656 /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Utilities/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
+		74170F66D002B66A8E09F46A8C7D8800 /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
 		75B3D8A7760F55AD2337E59F1BEEF3BD /* Pods-ui_gradients_viewerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerTests-frameworks.sh"; sourceTree = "<group>"; };
-		764850824F396E87073D7F91C32EB7BF /* Compatability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatability.swift; path = Source/Compatability.swift; sourceTree = "<group>"; };
-		77950B0971AC57A6B68F3F887A761C25 /* QRCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QRCode.modulemap; sourceTree = "<group>"; };
-		7989FBAE9A093E47CDB3B3856FA199FE /* QRCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-umbrella.h"; sourceTree = "<group>"; };
-		8135929614B8806FA05D4EC40A3B0337 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
-		88BC38FA386B8B91304A48B896BDC54E /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCode.framework; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88E71A3249AF1655065B6FA102B0F58E /* DeviceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-prefix.pch"; sourceTree = "<group>"; };
+		773ACBF7D04D02587B44A8E66A579347 /* GradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GradientView.framework; path = GradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A153BCBD3F5C5659F685882BDCC984 /* CIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = QRCode/CIImageExtension.swift; sourceTree = "<group>"; };
+		7A30FB3E45E74CA6D2C9E6F7315CF382 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
+		7FDE2810FCD0272798700564D6A8CA7E /* Pulley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pulley.framework; path = Pulley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80764510CB4474D8137DF432CF76D207 /* GradientView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GradientView-umbrella.h"; sourceTree = "<group>"; };
+		85BD8454EBCAF49A28F65FF1668DD2D7 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
+		86178FDE21A33309D70AE198961971FF /* Pulley.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pulley.xcconfig; sourceTree = "<group>"; };
+		89EDFCC9A4E6A847E68FC864A08008CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E45D52E8581299C4969F8E4867F30F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91DD7FFBBBFDCDE6B2F4F90079AA21F0 /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
 		9338C4F2CF574FA4632324B7AEDF6F8E /* Pods-ui_gradients_viewerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ui_gradients_viewerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9613AF911637B9D5AC8055523A00D3DF /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = Sources/Associated.swift; sourceTree = "<group>"; };
-		98A05B080D8FEE7AAF915879C4186CA9 /* NSLayoutAnchor+MultiplierConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutAnchor+MultiplierConstraints.swift"; path = "Source/NSLayoutAnchor+MultiplierConstraints.swift"; sourceTree = "<group>"; };
-		9A6087F88F0F88EC53F0174127FD8AEF /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		94AD07B5ACB0D68C4F2C92CFB899F648 /* QRCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-umbrella.h"; sourceTree = "<group>"; };
+		95DA39B38169B6ECCCAC8B5B545E42A9 /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Utilities/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
+		988E9566D226FA44E12503CE313533EE /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
 		9B040F4ADD91EF219DABD2D4C2967E7F /* Pods-ui_gradients_viewerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ui_gradients_viewerTests-umbrella.h"; sourceTree = "<group>"; };
-		9C22CE56E6256BE389FD932A64182FB9 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = QRCode/UIImageViewExtension.swift; sourceTree = "<group>"; };
-		9D0C0304C080CBE4FA5805B753824635 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		9F48977F27C75E8AA086B4B36C0F6879 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A686BDC5BF4BED38A711988FC570DA0C /* SwiftHEXColors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftHEXColors.xcconfig; sourceTree = "<group>"; };
-		AD55A955D50A5950DC380AADAA1280C9 /* IndexedMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexedMap.swift; path = Sources/Pageboy/Utilities/DataStructures/IndexedMap.swift; sourceTree = "<group>"; };
-		B0BA4F6C2B8037FED09BF5F979BEB0F3 /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
-		B0FA7347F1D40C757F8B9E3792561667 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DeviceKit.framework; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B13BCDFEC90BC378F9D27CD4B76B82D0 /* Anchorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-umbrella.h"; sourceTree = "<group>"; };
+		A0E38F85A3B509AFF60091D5A9B57478 /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
+		A86A3114E2D1228F8EC62AD0D08A0923 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
+		ABDE7932317DD132914067F131B15072 /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
+		AC40A678E0D3D601A7F60BA76FD3C992 /* Compatability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatability.swift; path = Source/Compatability.swift; sourceTree = "<group>"; };
+		AD10B2EC014310155823C83F8E767B59 /* GradientView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GradientView-dummy.m"; sourceTree = "<group>"; };
+		AEC1B15F41E02DB8505A5DB604502843 /* IndexedMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexedMap.swift; path = Sources/Pageboy/Utilities/DataStructures/IndexedMap.swift; sourceTree = "<group>"; };
+		B118B5596F0A4982F41349B78C5E7BAA /* Haptica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptica-umbrella.h"; sourceTree = "<group>"; };
+		B1D47D4091D75154B395A641A5106316 /* GradientView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GradientView.h; path = GradientView/GradientView.h; sourceTree = "<group>"; };
 		B1D8995D43AC1D66B3B43BDDADD851CA /* Pods-ui_gradients_viewerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B41120BD808E684672FD88BCEACC25A0 /* Pulley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-umbrella.h"; sourceTree = "<group>"; };
-		B49A6DDACB65EFB1661D212F980F0FDB /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		B2CF6A6FF24CA39E66F1A8BB6BBD3363 /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
+		B2DD00F95B44D50382EE0187904B6DFF /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B6D8E41C95DA57ECD14F97E4478B4193 /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
-		B72CD3430A1A01125B44BF5564D850DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA04F2BA859ABB084AF6F5786D8305A9 /* Pods_ui_gradients_viewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewer.framework; path = "Pods-ui_gradients_viewer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE4BCD979C7A28E9E60D932C6BE2AB85 /* SwiftHEXColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftHEXColors.modulemap; sourceTree = "<group>"; };
-		BFDA359A5B13D0F57ACF1628F5F966F1 /* Pods_ui_gradients_viewerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ui_gradients_viewerUITests.framework; path = "Pods-ui_gradients_viewerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8A74E2F6E5E7F6AFC25F408459ED080 /* WeakWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakWrapper.swift; path = Sources/Pageboy/Utilities/DataStructures/WeakWrapper.swift; sourceTree = "<group>"; };
+		B8B8DB25DE82EDC3DD2CE9F48CFFD9EE /* QRCode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-prefix.pch"; sourceTree = "<group>"; };
+		BC76EE6C2988CA7C0C093756632C9E69 /* PageboyViewController+NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+NavigationDirection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+NavigationDirection.swift"; sourceTree = "<group>"; };
+		BD7C0993271CC0E0CD9350763A128660 /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		BE42BE38000BA42155A3165E229804A1 /* Anchorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchorage.swift; path = Source/Anchorage.swift; sourceTree = "<group>"; };
+		BF6E0ADBB8EFE572F33D9B891818B80B /* Pulley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-umbrella.h"; sourceTree = "<group>"; };
 		C009F9916706BB07F97026F11AEE1CE5 /* Pods-ui_gradients_viewerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C122733FC67C0CEEF289EF5B27D79199 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1ECB02152D8D77B14B8BD9E09EBE1F1 /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
-		C3DDD81B99E5402394E0A5BE0E0EEC16 /* DeviceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceKit-umbrella.h"; sourceTree = "<group>"; };
-		C3DF44F8D45F3621DD294783D48A9D87 /* AnchorGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorGroupProvider.swift; path = Source/AnchorGroupProvider.swift; sourceTree = "<group>"; };
+		C08E8119CDD04C824CB4C147B20278C3 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		C1DCFDB3600BDDE6CC0F55965C57626D /* QRCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QRCode.modulemap; sourceTree = "<group>"; };
 		C6DD01DC2010C4E613EC68D0F20FBBCE /* Pods-ui_gradients_viewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewer-frameworks.sh"; sourceTree = "<group>"; };
-		C8429A2C366341E96F195857A6769B94 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		C8B4C8AE88A9580DAF84AFE9FD0588AD /* Pageboy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.xcconfig; sourceTree = "<group>"; };
 		C9899A88DAD2AF553651F9C08F12E058 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C98FB2D0EF29E899067FABD85FE50AAB /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 		CBF8A873DF45764D95055552924B91AF /* Pods-ui_gradients_viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewer.debug.xcconfig"; sourceTree = "<group>"; };
-		D1FD6ABD5CFD04AF61E5A1A0295F000E /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Anchorage.framework; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D22EF8552E10887692ED749846FFD094 /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
-		D2D67F4FAFFA98BCD6F20B286083D82D /* QRCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = QRCode/QRCode.swift; sourceTree = "<group>"; };
+		CCB8E81B4DDD857D38B0AA9CA4696BB2 /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
 		D2D78D7AC8247DCE4F63CE2B278C706F /* Pods-ui_gradients_viewerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ui_gradients_viewerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D4073917ADF61DF899FB00A7DE8BFC06 /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/Extensions/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
-		D4DACD409B4164ED3D06571A408E0068 /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pageboy.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D7C7C7A49F88D910480A9BDEE1EC79 /* Anchorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-prefix.pch"; sourceTree = "<group>"; };
 		D765C387F56EF78AE673AD1F12728052 /* Pods-ui_gradients_viewerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ui_gradients_viewerUITests-umbrella.h"; sourceTree = "<group>"; };
-		D7BB2F565C294B5601E23E52F02F8449 /* SwiftHEXColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftHEXColors.swift; path = Sources/SwiftHEXColors.swift; sourceTree = "<group>"; };
 		D848ED338CC487E60E8643C192DD2E04 /* Pods-ui_gradients_viewerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ui_gradients_viewerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D9CF13D4454465EC9C3EC12FE74D0E80 /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Utilities/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
-		DA0A34283B83D43A1530FE5B1841BCD8 /* GradientView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GradientView.xcconfig; sourceTree = "<group>"; };
-		DA60D0BAE15554A53C718C8225369BB9 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		DA0FD1562066C38CFED0E684B60D060A /* Anchorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Anchorage.modulemap; sourceTree = "<group>"; };
+		DDAF6D9E36F91AE45771A8181ACF338A /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Source/Internal.swift; sourceTree = "<group>"; };
 		DEDBE5A7B077D20A220DB5A4F121023E /* Pods-ui_gradients_viewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ui_gradients_viewer.modulemap"; sourceTree = "<group>"; };
 		DF91293B87BD0A99601313521B6571D8 /* Pods-ui_gradients_viewerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerTests.release.xcconfig"; sourceTree = "<group>"; };
-		E0805B681DA61D4357F02055AD95EEE2 /* UIViewController+PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+PulleyViewController.swift"; path = "PulleyLib/UIViewController+PulleyViewController.swift"; sourceTree = "<group>"; };
-		E527A952B470AF09609FDC11828A61DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD136AE6BAF46E177FFB13C8D91EA8B /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = GradientView/GradientView.swift; sourceTree = "<group>"; };
+		E13F4ED9AA6131FAA3C396881EEBFA8A /* UIView+constrainToParent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+constrainToParent.swift"; path = "PulleyLib/UIView+constrainToParent.swift"; sourceTree = "<group>"; };
 		E61BE8F8144FEBE3CE341EA2C9BB60AF /* Pods-ui_gradients_viewerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E6B71141AB077983CF25F795978B5876 /* Pulley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pulley-dummy.m"; sourceTree = "<group>"; };
-		E85FC5C21CC9DF5590D64701BE47E8FB /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
-		E87EAC075E6D6815987462786D6E3294 /* QRCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCode.xcconfig; sourceTree = "<group>"; };
-		E9D93EB788EEF05817759111BCACFB44 /* SwiftHEXColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftHEXColors.framework; path = SwiftHEXColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECCB10AA1B78C29E83C2390401DB2389 /* SwiftHEXColors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftHEXColors-prefix.pch"; sourceTree = "<group>"; };
-		F14EA0140779EBC1726297DCD4A64A57 /* Anchorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Anchorage-dummy.m"; sourceTree = "<group>"; };
-		F195A82E51C9A6FEDF4FCFAA2CEAF8DC /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/Components/PageboyAutoScroller.swift; sourceTree = "<group>"; };
-		F19B6BB3D3DC2C4D98EBD887E08DEA8D /* SwiftHEXColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftHEXColors-dummy.m"; sourceTree = "<group>"; };
-		F270B83D9B52FC2E3E41EEA5748A9F9F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3D97D952FE11472CF81FE7FE401059A /* Haptica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptica-dummy.m"; sourceTree = "<group>"; };
-		F4809864FE8C057F5E582D2ED6EEC8C6 /* Pulley.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pulley.xcconfig; sourceTree = "<group>"; };
-		F4A0A942106EF79A9FCE577BB955AECE /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
+		EAA19E3CB9310DA02785FC4E2FD82F8F /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
+		EB45177E49C33DFB27A15F42A82C7011 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		ED14E3B6CC84BF07BD6FF5E6D8DFB217 /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
+		ED78BAA715865F1FCCFD30AFC87843F7 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		EF0F0DF2FD7939729F31E645489AEDB3 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = QRCode/UIImageViewExtension.swift; sourceTree = "<group>"; };
+		F1F9B0C398437DB8DEBA3B36D913BE50 /* Anchorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-umbrella.h"; sourceTree = "<group>"; };
 		F71A968EAFC5A69A112D3CE62EBF3D16 /* Pods-ui_gradients_viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ui_gradients_viewer.release.xcconfig"; sourceTree = "<group>"; };
-		F7A816B70951A24B57D664B6D48FE608 /* PageboyViewController+NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+NavigationDirection.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+NavigationDirection.swift"; sourceTree = "<group>"; };
-		FF8985FDE1685DCCFDDA365A4E12E015 /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/Extensions/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
+		F7601B83D2D922270EE6644C34190627 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8132819F91E92F4F0F1818CE83A1107 /* Anchorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Anchorage-dummy.m"; sourceTree = "<group>"; };
+		FDB9842BB7C5037B1A321A3039253A46 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyPassthroughScrollView.swift; path = PulleyLib/PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
 		FFA1614315C396E9441D4C58C0EDA7A8 /* Pods-ui_gradients_viewerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ui_gradients_viewerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FFB991B1C70B6921686E57D96D4F55DF /* Haptic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptic.swift; path = Sources/Haptic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		112FBB3B57CB6D7EA87ED99A6E61BDDC /* Frameworks */ = {
+		074E8E6E5C7FCF9D9A3965A7DF4B0616 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8A08FFF53651375B880997FD0229419 /* Foundation.framework in Frameworks */,
+				4C4C384F9E2A8B5814EE680DCE871FF5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,20 +314,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D2147B02BD3024F6FF4D28214DCECA5 /* Frameworks */ = {
+		72305A8CAE3100A9902C1EFBECCFD5DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9484B53CB52F5EED66A733F1C2B503EA /* Foundation.framework in Frameworks */,
-				C0EFEC95B9DAA56CA5AE710C437CF44A /* UIKit.framework in Frameworks */,
+				928AD4536EAB633BFA686BE673C77976 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8761667B3F16A1EDEF97CFAA6942BAF4 /* Frameworks */ = {
+		7ABD2F32CD12B435F20786D526B72A55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				928DADC4C9ACF03D444AA30EB39F19FB /* Foundation.framework in Frameworks */,
+				7FBFF1BB2AE6A7598F882262481E3615 /* Foundation.framework in Frameworks */,
+				8928C36950D8A7B353417BC6AA45C093 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,14 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC0B964A0729B2232572B19B290635C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7AFB04D9839E95DEF94EF3C395572FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0788F382EE16F478BED9DE277EDCAF8E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,11 +356,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4D5C7A6AF554C6070A4EE261734784F /* Frameworks */ = {
+		D07B16B8FD75934672C31885B295C725 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198359723082878A537BFA997A3F9ABD /* Foundation.framework in Frameworks */,
+				6A4072E89B665CB5B311406693E47F98 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,47 +375,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		215A4E7B36312F26DB6F71474651ACE1 /* Support Files */ = {
+		0F45491802B41C44D005773AEE2FDEE5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B72CD3430A1A01125B44BF5564D850DF /* Info.plist */,
-				77950B0971AC57A6B68F3F887A761C25 /* QRCode.modulemap */,
-				E87EAC075E6D6815987462786D6E3294 /* QRCode.xcconfig */,
-				14E6030C07A0825D9D65A3BDC7DBA018 /* QRCode-dummy.m */,
-				11FED3C39B959B8F76DAF06A0A6EBBCF /* QRCode-prefix.pch */,
-				7989FBAE9A093E47CDB3B3856FA199FE /* QRCode-umbrella.h */,
+				F7601B83D2D922270EE6644C34190627 /* Info.plist */,
+				B2DD00F95B44D50382EE0187904B6DFF /* SwiftHEXColors.modulemap */,
+				0C845F477B026E0B8909E379EBA8AB1E /* SwiftHEXColors.xcconfig */,
+				1D29681B021B8F33BE99B369C2400161 /* SwiftHEXColors-dummy.m */,
+				7A30FB3E45E74CA6D2C9E6F7315CF382 /* SwiftHEXColors-prefix.pch */,
+				149E65E006B44DC2564E0C38C5C12890 /* SwiftHEXColors-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/QRCode";
-			sourceTree = "<group>";
-		};
-		2228CECACBBE3FD7909D4EEBE98F3AB7 /* Anchorage */ = {
-			isa = PBXGroup;
-			children = (
-				3725576E24A93E5E5F45D4CEC520EDDB /* Anchorage.swift */,
-				C3DF44F8D45F3621DD294783D48A9D87 /* AnchorGroupProvider.swift */,
-				764850824F396E87073D7F91C32EB7BF /* Compatability.swift */,
-				4102A3F4838178C8EA5832AF883D39E9 /* Internal.swift */,
-				98A05B080D8FEE7AAF915879C4186CA9 /* NSLayoutAnchor+MultiplierConstraints.swift */,
-				43A75D1E85324122554E4D83D28AC576 /* Priority.swift */,
-				25CB1D985635239FB81473AC05C7334A /* Support Files */,
-			);
-			name = Anchorage;
-			path = Anchorage;
-			sourceTree = "<group>";
-		};
-		25CB1D985635239FB81473AC05C7334A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6D07F007F341DBC316D4B14AFD58904C /* Anchorage.modulemap */,
-				C1ECB02152D8D77B14B8BD9E09EBE1F1 /* Anchorage.xcconfig */,
-				F14EA0140779EBC1726297DCD4A64A57 /* Anchorage-dummy.m */,
-				08B4192A3AA3B12B809E6A961BCB05B5 /* Anchorage-prefix.pch */,
-				B13BCDFEC90BC378F9D27CD4B76B82D0 /* Anchorage-umbrella.h */,
-				E527A952B470AF09609FDC11828A61DA /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Anchorage";
+			path = "../Target Support Files/SwiftHEXColors";
 			sourceTree = "<group>";
 		};
 		2968F2B0A7DBEDC673268C0FD58C8B1E /* Targets Support Files */ = {
@@ -473,17 +417,6 @@
 			path = "Target Support Files/Pods-ui_gradients_viewerUITests";
 			sourceTree = "<group>";
 		};
-		34285CA785597EAA0AB82185B70EA1AC /* GradientView */ = {
-			isa = PBXGroup;
-			children = (
-				3E18C9473E81DC0DDD9F337D3D812F77 /* GradientView.h */,
-				56E42D6BEB220B217B141BFC17126CFB /* GradientView.swift */,
-				F5339917CFD7E13F99C8413037C53CD1 /* Support Files */,
-			);
-			name = GradientView;
-			path = GradientView;
-			sourceTree = "<group>";
-		};
 		393A8D8404EC6CFDE3E0F411DCF16C3B /* Pods-ui_gradients_viewer */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,22 +435,40 @@
 			path = "Target Support Files/Pods-ui_gradients_viewer";
 			sourceTree = "<group>";
 		};
-		3A1EFA04A4AF5BC52D706542FCC01312 /* Products */ = {
+		3DEBB5621CEA7A8F7657A253066971AA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D1FD6ABD5CFD04AF61E5A1A0295F000E /* Anchorage.framework */,
-				B0FA7347F1D40C757F8B9E3792561667 /* DeviceKit.framework */,
-				042C8F9CF78089E2CDAB7965A45FA2EE /* GradientView.framework */,
-				4BEB411B598AD26B5616FE40F4182E79 /* Haptica.framework */,
-				D4DACD409B4164ED3D06571A408E0068 /* Pageboy.framework */,
-				BA04F2BA859ABB084AF6F5786D8305A9 /* Pods_ui_gradients_viewer.framework */,
-				0B239583FB1A0A1996882D01FC954FB0 /* Pods_ui_gradients_viewerTests.framework */,
-				BFDA359A5B13D0F57ACF1628F5F966F1 /* Pods_ui_gradients_viewerUITests.framework */,
-				6D5436A974EE6F4E167D1D13399258BE /* Pulley.framework */,
-				88BC38FA386B8B91304A48B896BDC54E /* QRCode.framework */,
-				E9D93EB788EEF05817759111BCACFB44 /* SwiftHEXColors.framework */,
+				5FA7F6828C8AE105F25D5B66E3401349 /* Info.plist */,
+				6309E5B354EF3A4612CEBCC757908007 /* Pulley.modulemap */,
+				86178FDE21A33309D70AE198961971FF /* Pulley.xcconfig */,
+				118570E8D41DF2EBC07BB3FBA6DF13DF /* Pulley-dummy.m */,
+				1A4DA345534DFE2812B229FAF6E93B11 /* Pulley-prefix.pch */,
+				BF6E0ADBB8EFE572F33D9B891818B80B /* Pulley-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Pulley";
+			sourceTree = "<group>";
+		};
+		3EB7E4D11ABB72EB779B3201B45FC5CC /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				CA521E38795BEEF4DC0695290622F0F7 /* Frameworks */,
+			);
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		3F08BED73A71836A44867E413FAB62D4 /* Pulley */ = {
+			isa = PBXGroup;
+			children = (
+				FDB9842BB7C5037B1A321A3039253A46 /* PulleyPassthroughScrollView.swift */,
+				A0E38F85A3B509AFF60091D5A9B57478 /* PulleyViewController.swift */,
+				E13F4ED9AA6131FAA3C396881EEBFA8A /* UIView+constrainToParent.swift */,
+				210478D3C8671AC313B3F8707AD0342E /* UIViewController+PulleyViewController.swift */,
+				3DEBB5621CEA7A8F7657A253066971AA /* Support Files */,
+			);
+			name = Pulley;
+			path = Pulley;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -537,44 +488,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		582FA64CF3D653BB4C2739A08BF81EB0 /* Support Files */ = {
+		67594EC6891076437BBCCB4A0B089A8F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				049D587F7315A365AD8B845150B73F55 /* Haptica.modulemap */,
-				3880E0F468120BA3567C9D905C75EE0F /* Haptica.xcconfig */,
-				F3D97D952FE11472CF81FE7FE401059A /* Haptica-dummy.m */,
-				0AD9D6B6FC4390AE63BFE934D6715AB7 /* Haptica-prefix.pch */,
-				54866DE7F0AEE28B7B9DF8A4EE9C4EC1 /* Haptica-umbrella.h */,
-				1B4F684E817394CF13B1E0CE0F1EE2C7 /* Info.plist */,
+				1891C0A6AA8C7ADF512B5CF5D3078249 /* GradientView.modulemap */,
+				21C7148B1258EA205A331E87C423D3A1 /* GradientView.xcconfig */,
+				AD10B2EC014310155823C83F8E767B59 /* GradientView-dummy.m */,
+				41FDB642F01E441ED3DD13C831EDE425 /* GradientView-prefix.pch */,
+				80764510CB4474D8137DF432CF76D207 /* GradientView-umbrella.h */,
+				89EDFCC9A4E6A847E68FC864A08008CC /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Haptica";
+			path = "../Target Support Files/GradientView";
 			sourceTree = "<group>";
 		};
-		67DF510C2A0ADC781D93E81D90CF8B9A /* Pods */ = {
+		6CFF47C9EB955FDB72C2D5E8FC5EEF3F /* SwiftHEXColors */ = {
 			isa = PBXGroup;
 			children = (
-				2228CECACBBE3FD7909D4EEBE98F3AB7 /* Anchorage */,
-				846405A9229F1F0A37D78F41CD75C887 /* Crashlytics */,
-				D73718AFEF70FCDF0779C99AD8903910 /* DeviceKit */,
-				BB65428F201D8F6E31C2E8F8D54F6C49 /* Fabric */,
-				EB49F76857E404E1B5EC1F67A6D52321 /* Google-Mobile-Ads-SDK */,
-				34285CA785597EAA0AB82185B70EA1AC /* GradientView */,
-				83DAE6C838698E290717489858F15545 /* Haptica */,
-				F3C9182B1162452F43EB9FC3BAEDD64B /* Pageboy */,
-				C328D85C12D19B90EF595824F978E2E4 /* Pulley */,
-				F131499DA50D05DC5616AA42DE56BFD8 /* QRCode */,
-				F765911F9D2CFA80B39690A886816971 /* SwiftHEXColors */,
+				0CDFBDA44E546D0BD07F3DA7A9290900 /* SwiftHEXColors.h */,
+				A86A3114E2D1228F8EC62AD0D08A0923 /* SwiftHEXColors.swift */,
+				0F45491802B41C44D005773AEE2FDEE5 /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6BFFE49FDF7DE0BDF89AAF8D20C619C1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4BA038FE52C8FCB3F845866E4EBF09AF /* Crashlytics.framework */,
-			);
-			name = Frameworks;
+			name = SwiftHEXColors;
+			path = SwiftHEXColors;
 			sourceTree = "<group>";
 		};
 		70BC210514B516602BCB26D881213C90 /* Pods-ui_gradients_viewerTests */ = {
@@ -595,225 +531,236 @@
 			path = "Target Support Files/Pods-ui_gradients_viewerTests";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		77B7EFD836C94740885540CE54BC2991 /* Pageboy */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				67DF510C2A0ADC781D93E81D90CF8B9A /* Pods */,
-				3A1EFA04A4AF5BC52D706542FCC01312 /* Products */,
-				2968F2B0A7DBEDC673268C0FD58C8B1E /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		83DAE6C838698E290717489858F15545 /* Haptica */ = {
-			isa = PBXGroup;
-			children = (
-				9613AF911637B9D5AC8055523A00D3DF /* Associated.swift */,
-				FFB991B1C70B6921686E57D96D4F55DF /* Haptic.swift */,
-				1795E2949D6876D345BC80516EC9102D /* Hapticable.swift */,
-				582FA64CF3D653BB4C2739A08BF81EB0 /* Support Files */,
-			);
-			name = Haptica;
-			path = Haptica;
-			sourceTree = "<group>";
-		};
-		83E827F838A54152EE6112C9EA3BDB78 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C98FB2D0EF29E899067FABD85FE50AAB /* GoogleMobileAds.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		846405A9229F1F0A37D78F41CD75C887 /* Crashlytics */ = {
-			isa = PBXGroup;
-			children = (
-				4FC6A6799A462B96F62CE39BD4738980 /* ANSCompatibility.h */,
-				9A6087F88F0F88EC53F0174127FD8AEF /* Answers.h */,
-				DA60D0BAE15554A53C718C8225369BB9 /* CLSAttributes.h */,
-				37F255FB50619104C38B823809D388F8 /* CLSLogging.h */,
-				6138BB1BD1E8681CF63CDDEB04FF4D2D /* CLSReport.h */,
-				B6D8E41C95DA57ECD14F97E4478B4193 /* CLSStackFrame.h */,
-				9D0C0304C080CBE4FA5805B753824635 /* Crashlytics.h */,
-				6BFFE49FDF7DE0BDF89AAF8D20C619C1 /* Frameworks */,
-			);
-			name = Crashlytics;
-			path = Crashlytics;
-			sourceTree = "<group>";
-		};
-		8634A5D3948DA1311DA9D25D1119D021 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C122733FC67C0CEEF289EF5B27D79199 /* Info.plist */,
-				D22EF8552E10887692ED749846FFD094 /* Pageboy.modulemap */,
-				5A20AA51D1AC8C721C071155112462B4 /* Pageboy.xcconfig */,
-				7451FCD478203BA207DAE6D9FA5657BF /* Pageboy-dummy.m */,
-				2D187C41049D9242BB1BD96C06720C52 /* Pageboy-prefix.pch */,
-				0C25A4E48A40A01A9FC3B04F6CAD696A /* Pageboy-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pageboy";
-			sourceTree = "<group>";
-		};
-		9EE30267A01C2BA43E36782CB55011C9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0692CB97DCFF3DFC5FCA3B56F5273CDD /* Info.plist */,
-				BE4BCD979C7A28E9E60D932C6BE2AB85 /* SwiftHEXColors.modulemap */,
-				A686BDC5BF4BED38A711988FC570DA0C /* SwiftHEXColors.xcconfig */,
-				F19B6BB3D3DC2C4D98EBD887E08DEA8D /* SwiftHEXColors-dummy.m */,
-				ECCB10AA1B78C29E83C2390401DB2389 /* SwiftHEXColors-prefix.pch */,
-				4761F7A10BD8A9A2839091273645CD4C /* SwiftHEXColors-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftHEXColors";
-			sourceTree = "<group>";
-		};
-		A5CB6B22ED5B2D8B50AA41F098C0F756 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6FC3088706FEB0FAF00FB2CF02D94F5B /* DeviceKit.modulemap */,
-				03004B41986FD4A0FED43AF39511CC24 /* DeviceKit.xcconfig */,
-				3C4CE767B0F67627647FA9614DAAB69C /* DeviceKit-dummy.m */,
-				88E71A3249AF1655065B6FA102B0F58E /* DeviceKit-prefix.pch */,
-				C3DDD81B99E5402394E0A5BE0E0EEC16 /* DeviceKit-umbrella.h */,
-				F270B83D9B52FC2E3E41EEA5748A9F9F /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DeviceKit";
-			sourceTree = "<group>";
-		};
-		BB65428F201D8F6E31C2E8F8D54F6C49 /* Fabric */ = {
-			isa = PBXGroup;
-			children = (
-				8135929614B8806FA05D4EC40A3B0337 /* FABAttributes.h */,
-				C8429A2C366341E96F195857A6769B94 /* Fabric.h */,
-				CF4966D670C81C0936CE0306BB421DB6 /* Frameworks */,
-			);
-			name = Fabric;
-			path = Fabric;
-			sourceTree = "<group>";
-		};
-		C328D85C12D19B90EF595824F978E2E4 /* Pulley */ = {
-			isa = PBXGroup;
-			children = (
-				0E59F1EAD834DBAAFA3A3CECE8E03912 /* PulleyPassthroughScrollView.swift */,
-				B0BA4F6C2B8037FED09BF5F979BEB0F3 /* PulleyViewController.swift */,
-				49FD22DED9071A0AEA80BFB631F1ED63 /* UIView+constrainToParent.swift */,
-				E0805B681DA61D4357F02055AD95EEE2 /* UIViewController+PulleyViewController.swift */,
-				E418CCF9DC164A9AA6CE8CEFCB197E8F /* Support Files */,
-			);
-			name = Pulley;
-			path = Pulley;
-			sourceTree = "<group>";
-		};
-		CF4966D670C81C0936CE0306BB421DB6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B49A6DDACB65EFB1661D212F980F0FDB /* Fabric.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D73718AFEF70FCDF0779C99AD8903910 /* DeviceKit */ = {
-			isa = PBXGroup;
-			children = (
-				1990F92044DDD0CADD879FAA5FE4214A /* Device.generated.swift */,
-				A5CB6B22ED5B2D8B50AA41F098C0F756 /* Support Files */,
-			);
-			name = DeviceKit;
-			path = DeviceKit;
-			sourceTree = "<group>";
-		};
-		E418CCF9DC164A9AA6CE8CEFCB197E8F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1EF0F61FD35A7C4237B20B718DDDF830 /* Info.plist */,
-				0D52DC13C30953D4E2342E98FFEC2258 /* Pulley.modulemap */,
-				F4809864FE8C057F5E582D2ED6EEC8C6 /* Pulley.xcconfig */,
-				E6B71141AB077983CF25F795978B5876 /* Pulley-dummy.m */,
-				0674A168CC1E9DA12412C57BB6038210 /* Pulley-prefix.pch */,
-				B41120BD808E684672FD88BCEACC25A0 /* Pulley-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pulley";
-			sourceTree = "<group>";
-		};
-		EB49F76857E404E1B5EC1F67A6D52321 /* Google-Mobile-Ads-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				83E827F838A54152EE6112C9EA3BDB78 /* Frameworks */,
-			);
-			name = "Google-Mobile-Ads-SDK";
-			path = "Google-Mobile-Ads-SDK";
-			sourceTree = "<group>";
-		};
-		F131499DA50D05DC5616AA42DE56BFD8 /* QRCode */ = {
-			isa = PBXGroup;
-			children = (
-				24B11DADFB80357850BA05AE6EAF1161 /* CIColorExtension.swift */,
-				456E880E653955ED3D64902CDAE030E7 /* CIImageExtension.swift */,
-				D2D67F4FAFFA98BCD6F20B286083D82D /* QRCode.swift */,
-				9C22CE56E6256BE389FD932A64182FB9 /* UIImageViewExtension.swift */,
-				215A4E7B36312F26DB6F71474651ACE1 /* Support Files */,
-			);
-			name = QRCode;
-			path = QRCode;
-			sourceTree = "<group>";
-		};
-		F3C9182B1162452F43EB9FC3BAEDD64B /* Pageboy */ = {
-			isa = PBXGroup;
-			children = (
-				AD55A955D50A5950DC380AADAA1280C9 /* IndexedMap.swift */,
-				21B0FD59429C52E4390EA4B245B4686D /* Pageboy.h */,
-				F195A82E51C9A6FEDF4FCFAA2CEAF8DC /* PageboyAutoScroller.swift */,
-				5C98C74C596C7435E11FE8A97382CAE5 /* PageboyViewController.swift */,
-				FF8985FDE1685DCCFDDA365A4E12E015 /* PageboyViewController+AutoScrolling.swift */,
-				F4A0A942106EF79A9FCE577BB955AECE /* PageboyViewController+Management.swift */,
-				F7A816B70951A24B57D664B6D48FE608 /* PageboyViewController+NavigationDirection.swift */,
-				27683276B4994397720427AEB6733E70 /* PageboyViewController+ScrollDetection.swift */,
-				5DDDC97A003FA00C658564694E747F9C /* PageboyViewController+Transitioning.swift */,
-				09D6E4054569051EEA15408D8981B379 /* PageboyViewControllerDataSource.swift */,
-				1C5C3A3046068139349F69EB0AA52126 /* PageboyViewControllerDelegate.swift */,
-				D9CF13D4454465EC9C3EC12FE74D0E80 /* TransitionOperation.swift */,
-				0AAF83A2A2F7C746A67FD9040B8DADE0 /* TransitionOperation+Action.swift */,
-				6682B46256680E2ED04565D740CD91BF /* UIApplication+SafeShared.swift */,
-				6357BA64E6BD23EE8331248107BAADD8 /* UIPageViewController+ScrollView.swift */,
-				09015D444FDA76B5D8F5CADB1183720C /* UIScrollView+ScrollActivity.swift */,
-				E85FC5C21CC9DF5590D64701BE47E8FB /* UIView+AutoLayout.swift */,
-				63CBD86FF55EEC61547853617D289528 /* UIView+Localization.swift */,
-				D4073917ADF61DF899FB00A7DE8BFC06 /* UIViewController+Pageboy.swift */,
-				4D03660FA74733E5A15B35D2E43C102E /* WeakWrapper.swift */,
-				8634A5D3948DA1311DA9D25D1119D021 /* Support Files */,
+				AEC1B15F41E02DB8505A5DB604502843 /* IndexedMap.swift */,
+				74170F66D002B66A8E09F46A8C7D8800 /* Pageboy.h */,
+				72841EDD0F1C00039F447F0F59BA7B73 /* PageboyAutoScroller.swift */,
+				B2CF6A6FF24CA39E66F1A8BB6BBD3363 /* PageboyViewController.swift */,
+				ABDE7932317DD132914067F131B15072 /* PageboyViewController+AutoScrolling.swift */,
+				461E7C3646B8B797EDB95413B41AB078 /* PageboyViewController+Management.swift */,
+				BC76EE6C2988CA7C0C093756632C9E69 /* PageboyViewController+NavigationDirection.swift */,
+				EAA19E3CB9310DA02785FC4E2FD82F8F /* PageboyViewController+ScrollDetection.swift */,
+				67A482505065A86FFBC55C35CE8444E6 /* PageboyViewController+Transitioning.swift */,
+				115CD762BC3D0F5437024393064D609F /* PageboyViewControllerDataSource.swift */,
+				3E426C7E9B14E3275771939550A0A312 /* PageboyViewControllerDelegate.swift */,
+				7398A0F03303F7D02E7D326B83217656 /* TransitionOperation.swift */,
+				95DA39B38169B6ECCCAC8B5B545E42A9 /* TransitionOperation+Action.swift */,
+				91DD7FFBBBFDCDE6B2F4F90079AA21F0 /* UIApplication+SafeShared.swift */,
+				CCB8E81B4DDD857D38B0AA9CA4696BB2 /* UIPageViewController+ScrollView.swift */,
+				5663B329851FAB19F14F62C93350D295 /* UIScrollView+ScrollActivity.swift */,
+				BD7C0993271CC0E0CD9350763A128660 /* UIView+AutoLayout.swift */,
+				54FBBE208BC4AB5AF0B286EA67284FAA /* UIView+Localization.swift */,
+				58E008542A2A65D436F6BD789B9ED0ED /* UIViewController+Pageboy.swift */,
+				B8A74E2F6E5E7F6AFC25F408459ED080 /* WeakWrapper.swift */,
+				DBBE6E4069541BB74ECE2A4F91EDF2C6 /* Support Files */,
 			);
 			name = Pageboy;
 			path = Pageboy;
 			sourceTree = "<group>";
 		};
-		F5339917CFD7E13F99C8413037C53CD1 /* Support Files */ = {
+		7D6875D9C92DFA14521E5903615E8F89 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A8A4888379F3EE7A937C2EEEF9D53DA /* GradientView.modulemap */,
-				DA0A34283B83D43A1530FE5B1841BCD8 /* GradientView.xcconfig */,
-				095B25E0D6288E344AE2F849C1A1B70F /* GradientView-dummy.m */,
-				0C16648C378A311C49B024823415A40E /* GradientView-prefix.pch */,
-				3C069E2924FE64836DCB83C7C431FE86 /* GradientView-umbrella.h */,
-				520B6C9BAE8CB07F0C6BA3F09EDC639B /* Info.plist */,
+				42EF9E80FDD6585166D4ABB351CA309A /* Anchorage.framework */,
+				773ACBF7D04D02587B44A8E66A579347 /* GradientView.framework */,
+				10261D44924D4D5943049A529412C11A /* Haptica.framework */,
+				1942EDBB72B00F5BC0A792212DDD4A0E /* Pageboy.framework */,
+				01B9A7E16E338F3C014A6984198A17E7 /* Pods_ui_gradients_viewer.framework */,
+				2905F429EDBB8B697B7330C237AAFFE6 /* Pods_ui_gradients_viewerTests.framework */,
+				5492463633F8C12180C4B725FCD5F98C /* Pods_ui_gradients_viewerUITests.framework */,
+				7FDE2810FCD0272798700564D6A8CA7E /* Pulley.framework */,
+				0FA303E020F617B36B24DE15F4212EDC /* QRCode.framework */,
+				6E5F55532C413297229A804AB338CB18 /* SwiftHEXColors.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GradientView";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		F765911F9D2CFA80B39690A886816971 /* SwiftHEXColors */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				19C9727E34EA6137786DC2CAC6AB40CF /* SwiftHEXColors.h */,
-				D7BB2F565C294B5601E23E52F02F8449 /* SwiftHEXColors.swift */,
-				9EE30267A01C2BA43E36782CB55011C9 /* Support Files */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				EB09F02FE021A63B53233CCB4DDBBD24 /* Pods */,
+				7D6875D9C92DFA14521E5903615E8F89 /* Products */,
+				2968F2B0A7DBEDC673268C0FD58C8B1E /* Targets Support Files */,
 			);
-			name = SwiftHEXColors;
-			path = SwiftHEXColors;
+			sourceTree = "<group>";
+		};
+		8233FF7173870ABA743D2A91446AA7B3 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				C08E8119CDD04C824CB4C147B20278C3 /* ANSCompatibility.h */,
+				1A3B675D7E4566A52BF695FBDF4C7A91 /* Answers.h */,
+				EB45177E49C33DFB27A15F42A82C7011 /* CLSAttributes.h */,
+				56FCFB31104A51A8EAB240749CB602F9 /* CLSLogging.h */,
+				2F8226D2EE101A29DF4EE147EC4ADC7F /* CLSReport.h */,
+				628BD7D49DA3C45E094DD01A8BA72039 /* CLSStackFrame.h */,
+				ED78BAA715865F1FCCFD30AFC87843F7 /* Crashlytics.h */,
+				D3CEC66AF0856B27162240E7DD324E7D /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		84D780B21BDDA2C44F6711FE672DB78D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0909F27F8BD2D65662264C8CAAFA6F3D /* Haptica.modulemap */,
+				44D44675155E1D0537A34A5E298E5704 /* Haptica.xcconfig */,
+				988E9566D226FA44E12503CE313533EE /* Haptica-dummy.m */,
+				4E88478F4F2A0000623E181EE9DEEDC7 /* Haptica-prefix.pch */,
+				B118B5596F0A4982F41349B78C5E7BAA /* Haptica-umbrella.h */,
+				583B78E57CB0B7F0EB99EC6D05DA2358 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Haptica";
+			sourceTree = "<group>";
+		};
+		96FE33AA88E2F7E71DC86DB831A4E46D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F96EBBB3B413736FB4770B39E1ACF21 /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4AD835FFDC79346FD8DCD9C3B653EEA /* Haptica */ = {
+			isa = PBXGroup;
+			children = (
+				252FDEFF636304B4E2D11EBE5636B247 /* Associated.swift */,
+				0562BFD523594DDBA073C3801A5C4074 /* Haptic.swift */,
+				19C0960268BA139DB5E8390B4571DFB5 /* Hapticable.swift */,
+				84D780B21BDDA2C44F6711FE672DB78D /* Support Files */,
+			);
+			name = Haptica;
+			path = Haptica;
+			sourceTree = "<group>";
+		};
+		A4CE73B626B721304B677A3AFD4A0C1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				718B2522E41D80B1C99424B87A83DB45 /* Info.plist */,
+				C1DCFDB3600BDDE6CC0F55965C57626D /* QRCode.modulemap */,
+				05BF5280F72A8D59B339E91E504DF25A /* QRCode.xcconfig */,
+				65E814F48AD13313C4FF95E344DFD2CC /* QRCode-dummy.m */,
+				B8B8DB25DE82EDC3DD2CE9F48CFFD9EE /* QRCode-prefix.pch */,
+				94AD07B5ACB0D68C4F2C92CFB899F648 /* QRCode-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QRCode";
+			sourceTree = "<group>";
+		};
+		BD771C0132413406D84E8935D301F8B5 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				4DD64F655E661B2718EE04455F43E500 /* CIColorExtension.swift */,
+				77A153BCBD3F5C5659F685882BDCC984 /* CIImageExtension.swift */,
+				1C10C6B1AE8454A19A593DC1CDF8851F /* QRCode.swift */,
+				EF0F0DF2FD7939729F31E645489AEDB3 /* UIImageViewExtension.swift */,
+				A4CE73B626B721304B677A3AFD4A0C1B /* Support Files */,
+			);
+			name = QRCode;
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		BE4A1C4CA00C493ED9A3072C0797C73A /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				B1D47D4091D75154B395A641A5106316 /* GradientView.h */,
+				DFD136AE6BAF46E177FFB13C8D91EA8B /* GradientView.swift */,
+				67594EC6891076437BBCCB4A0B089A8F /* Support Files */,
+			);
+			name = GradientView;
+			path = GradientView;
+			sourceTree = "<group>";
+		};
+		CA521E38795BEEF4DC0695290622F0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A9D27DF0088CB0916383738D4927E87 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3CEC66AF0856B27162240E7DD324E7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				734624AA1E5EEF2426305B38AB693B98 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBE6E4069541BB74ECE2A4F91EDF2C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E5A6E73EF1A03486BDDB4DDBABFB848 /* Info.plist */,
+				39629611610F96DA4E07C09E924135C4 /* Pageboy.modulemap */,
+				C8B4C8AE88A9580DAF84AFE9FD0588AD /* Pageboy.xcconfig */,
+				ED14E3B6CC84BF07BD6FF5E6D8DFB217 /* Pageboy-dummy.m */,
+				85BD8454EBCAF49A28F65FF1668DD2D7 /* Pageboy-prefix.pch */,
+				0C70B62E5114D567832663977F548A96 /* Pageboy-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pageboy";
+			sourceTree = "<group>";
+		};
+		E425B30DCC4F98C00DF0C687700ACD17 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				1C9CFA043D0EC7EBD83CDBB193DFEAA5 /* FABAttributes.h */,
+				4A55BD095DB200B5117974440420AA7F /* Fabric.h */,
+				96FE33AA88E2F7E71DC86DB831A4E46D /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		EB09F02FE021A63B53233CCB4DDBBD24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4D2DC52CC242F6549958F64BB6DAAC9 /* Anchorage */,
+				8233FF7173870ABA743D2A91446AA7B3 /* Crashlytics */,
+				E425B30DCC4F98C00DF0C687700ACD17 /* Fabric */,
+				3EB7E4D11ABB72EB779B3201B45FC5CC /* Google-Mobile-Ads-SDK */,
+				BE4A1C4CA00C493ED9A3072C0797C73A /* GradientView */,
+				A4AD835FFDC79346FD8DCD9C3B653EEA /* Haptica */,
+				77B7EFD836C94740885540CE54BC2991 /* Pageboy */,
+				3F08BED73A71836A44867E413FAB62D4 /* Pulley */,
+				BD771C0132413406D84E8935D301F8B5 /* QRCode */,
+				6CFF47C9EB955FDB72C2D5E8FC5EEF3F /* SwiftHEXColors */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4D2DC52CC242F6549958F64BB6DAAC9 /* Anchorage */ = {
+			isa = PBXGroup;
+			children = (
+				BE42BE38000BA42155A3165E229804A1 /* Anchorage.swift */,
+				136558CA05F8E40E7A2125A556BFC796 /* AnchorGroupProvider.swift */,
+				AC40A678E0D3D601A7F60BA76FD3C992 /* Compatability.swift */,
+				DDAF6D9E36F91AE45771A8181ACF338A /* Internal.swift */,
+				4AE806E5AAA9015213E009A713DF337F /* NSLayoutAnchor+MultiplierConstraints.swift */,
+				285FE9119BEA54160F3721B1A718A2E2 /* Priority.swift */,
+				FB085E447ACB1B6F142B065FFE2F4159 /* Support Files */,
+			);
+			name = Anchorage;
+			path = Anchorage;
+			sourceTree = "<group>";
+		};
+		FB085E447ACB1B6F142B065FFE2F4159 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA0FD1562066C38CFED0E684B60D060A /* Anchorage.modulemap */,
+				0C20B887A2784B87CAA81D7A3189D885 /* Anchorage.xcconfig */,
+				F8132819F91E92F4F0F1818CE83A1107 /* Anchorage-dummy.m */,
+				D5D7C7C7A49F88D910480A9BDEE1EC79 /* Anchorage-prefix.pch */,
+				F1F9B0C398437DB8DEBA3B36D913BE50 /* Anchorage-umbrella.h */,
+				8E45D52E8581299C4969F8E4867F30F0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Anchorage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -824,14 +771,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		29FF5573B018E183A54F87E98A5DF776 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E02BE08776A961160339C0455D0F3C96 /* Pulley-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,19 +790,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5708128CAC5CFE94DB041088FA3E779A /* Headers */ = {
+		6B2A91B108CFAE7AA82CD399AC884165 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEE4F8047C845A08E4C91B3F04FDE30F /* QRCode-umbrella.h in Headers */,
+				4FB82B0E33283BBD4C92B8FF14033023 /* Pulley-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		577CF706704964F7206762322FDC1400 /* Headers */ = {
+		83A35D534FE3F6A3EE227CE616B455B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124FD37406F301D19984CA205421F1C3 /* DeviceKit-umbrella.h in Headers */,
+				5080A0A91C98E5C857646D13EE19F4DB /* Pods-ui_gradients_viewer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -872,6 +811,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FF1D8C88F5D7BF5FE65A65F245DD8BB /* Haptica-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D3A7E01BC517168D269F430AADBB8C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0FDDFA65FF0ECB1D2C234B759894FE /* QRCode-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,14 +831,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA9B46C5FD8E5B0287540846AF750B8B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				10C7194F0860F07FAD29BB41D25AE037 /* Pods-ui_gradients_viewer-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DFB96983D19058D38A8932097C9146B4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -901,41 +840,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6545F18C3D3BA3651DADBCE9715513E /* Headers */ = {
+		E3A7887EB6C73E6D92E4334BF52C7357 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49327C10264D99405767F9EEF36D6835 /* SwiftHEXColors-umbrella.h in Headers */,
-				741EC81D38216F493EC4B0D8D24AFA6F /* SwiftHEXColors.h in Headers */,
+				CE25AB8AE74BD09A7D91650E956F4554 /* SwiftHEXColors-umbrella.h in Headers */,
+				05A0B59FA58EFC91F63003399623D50A /* SwiftHEXColors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0727DA2826BD053E527E6E7FBE96E3DF /* Pods-ui_gradients_viewer */ = {
+		0C98F0DE7C6681E88C9016B5DAD35663 /* SwiftHEXColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 99C1E90340EC0ED96ACE6CF8ACD6C904 /* Build configuration list for PBXNativeTarget "Pods-ui_gradients_viewer" */;
+			buildConfigurationList = 836E5780CFEAE090637FF5E6B161C6BD /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
 			buildPhases = (
-				0F75118CF7A2FA5653EDBFD6C4F73190 /* Sources */,
-				112FBB3B57CB6D7EA87ED99A6E61BDDC /* Frameworks */,
-				DA9B46C5FD8E5B0287540846AF750B8B /* Headers */,
+				D9FEA87EE68C173AF6B27B8AE67DE74B /* Sources */,
+				D07B16B8FD75934672C31885B295C725 /* Frameworks */,
+				E3A7887EB6C73E6D92E4334BF52C7357 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				771DE4B2A893CC01B6DDBDCE79A44BA0 /* PBXTargetDependency */,
-				BCE864247752EEA3B480157D670EBE49 /* PBXTargetDependency */,
-				27BBA37B2033A92B728F96D2278467A8 /* PBXTargetDependency */,
-				45A03B70378E75099B3759049478CA8B /* PBXTargetDependency */,
-				872529F5DC2045153D9B207C6F3A6623 /* PBXTargetDependency */,
-				A45906448D0151E5CA4A9D0BEB1F4075 /* PBXTargetDependency */,
-				9ABFBF8088A4EE3A48C41C584AD69723 /* PBXTargetDependency */,
-				C419921FA1572EAB3580080ED253B3AA /* PBXTargetDependency */,
 			);
-			name = "Pods-ui_gradients_viewer";
-			productName = "Pods-ui_gradients_viewer";
-			productReference = BA04F2BA859ABB084AF6F5786D8305A9 /* Pods_ui_gradients_viewer.framework */;
+			name = SwiftHEXColors;
+			productName = SwiftHEXColors;
+			productReference = 6E5F55532C413297229A804AB338CB18 /* SwiftHEXColors.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4BF00F9E712E93DA7B03ACF46198775B /* GradientView */ = {
@@ -952,7 +883,7 @@
 			);
 			name = GradientView;
 			productName = GradientView;
-			productReference = 042C8F9CF78089E2CDAB7965A45FA2EE /* GradientView.framework */;
+			productReference = 773ACBF7D04D02587B44A8E66A579347 /* GradientView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4E121B7515710262E2739C9A7F066EFF /* Haptica */ = {
@@ -969,7 +900,7 @@
 			);
 			name = Haptica;
 			productName = Haptica;
-			productReference = 4BEB411B598AD26B5616FE40F4182E79 /* Haptica.framework */;
+			productReference = 10261D44924D4D5943049A529412C11A /* Haptica.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5D5EECB7BC69197115540F6F579A5C14 /* Pods-ui_gradients_viewerTests */ = {
@@ -987,7 +918,31 @@
 			);
 			name = "Pods-ui_gradients_viewerTests";
 			productName = "Pods-ui_gradients_viewerTests";
-			productReference = 0B239583FB1A0A1996882D01FC954FB0 /* Pods_ui_gradients_viewerTests.framework */;
+			productReference = 2905F429EDBB8B697B7330C237AAFFE6 /* Pods_ui_gradients_viewerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6BB54457504F06D3255DB32A0F179547 /* Pods-ui_gradients_viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1F32915844E53BE930AF6AC1B00928 /* Build configuration list for PBXNativeTarget "Pods-ui_gradients_viewer" */;
+			buildPhases = (
+				42949B9FEE46275FA4B90C93FA29B3D6 /* Sources */,
+				72305A8CAE3100A9902C1EFBECCFD5DD /* Frameworks */,
+				83A35D534FE3F6A3EE227CE616B455B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11A170D6F44F4D7C16BD0F8E47622846 /* PBXTargetDependency */,
+				8DD6CD173A1B2FA0238806181193BC5A /* PBXTargetDependency */,
+				68313D5F89F5EC1C57B01587923FF4A5 /* PBXTargetDependency */,
+				E0C3DBCBD34B2449BBC6E2486E5B90AA /* PBXTargetDependency */,
+				AB04F0F97C833283FE1B326BDE118032 /* PBXTargetDependency */,
+				2657F45AD1D5023549316449979E763D /* PBXTargetDependency */,
+				C1FD1951BCD33EEC3F1744F0D6DDB65C /* PBXTargetDependency */,
+			);
+			name = "Pods-ui_gradients_viewer";
+			productName = "Pods-ui_gradients_viewer";
+			productReference = 01B9A7E16E338F3C014A6984198A17E7 /* Pods_ui_gradients_viewer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7FC78838C59FAD9F4CBE74C3850F89AF /* Pageboy */ = {
@@ -1004,67 +959,16 @@
 			);
 			name = Pageboy;
 			productName = Pageboy;
-			productReference = D4DACD409B4164ED3D06571A408E0068 /* Pageboy.framework */;
+			productReference = 1942EDBB72B00F5BC0A792212DDD4A0E /* Pageboy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A50EC946DE916CC72D75E87E631B52B0 /* Pulley */ = {
+		D7629D5146B05DE2E5E7CBD4B002CC9B /* QRCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 004118690AFB3326557D0CE0674763F9 /* Build configuration list for PBXNativeTarget "Pulley" */;
+			buildConfigurationList = 0F58789956F9A1A9F1E21649DA319509 /* Build configuration list for PBXNativeTarget "QRCode" */;
 			buildPhases = (
-				1408E8AFB63C4532615434B7B5DFF5BF /* Sources */,
-				4D2147B02BD3024F6FF4D28214DCECA5 /* Frameworks */,
-				29FF5573B018E183A54F87E98A5DF776 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Pulley;
-			productName = Pulley;
-			productReference = 6D5436A974EE6F4E167D1D13399258BE /* Pulley.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B6359C82069858A14001CAA27204A141 /* SwiftHEXColors */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2FB43EC1FD11F5FC786D848FFE5D8978 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */;
-			buildPhases = (
-				8A30E23D0E9FD2967A747141AED52584 /* Sources */,
-				8761667B3F16A1EDEF97CFAA6942BAF4 /* Frameworks */,
-				F6545F18C3D3BA3651DADBCE9715513E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftHEXColors;
-			productName = SwiftHEXColors;
-			productReference = E9D93EB788EEF05817759111BCACFB44 /* SwiftHEXColors.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B74671AC4AD442223B677430EE6BBBF5 /* DeviceKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCFC39FB2603657EAC57A06081E64739 /* Build configuration list for PBXNativeTarget "DeviceKit" */;
-			buildPhases = (
-				0A326C2F4D29BF2C4287D9E7B1C6E09D /* Sources */,
-				A7AFB04D9839E95DEF94EF3C395572FE /* Frameworks */,
-				577CF706704964F7206762322FDC1400 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DeviceKit;
-			productName = DeviceKit;
-			productReference = B0FA7347F1D40C757F8B9E3792561667 /* DeviceKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D33ED2F94F2B1C51F0A30D022A0088EB /* QRCode */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1AC89A656ECCF988CFE660EE56E64607 /* Build configuration list for PBXNativeTarget "QRCode" */;
-			buildPhases = (
-				A36E61BF253A543FE4770A98E714405D /* Sources */,
-				D4D5C7A6AF554C6070A4EE261734784F /* Frameworks */,
-				5708128CAC5CFE94DB041088FA3E779A /* Headers */,
+				20B15F274C8A4132AD238153F013FC4E /* Sources */,
+				074E8E6E5C7FCF9D9A3965A7DF4B0616 /* Frameworks */,
+				9D3A7E01BC517168D269F430AADBB8C0 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1072,7 +976,7 @@
 			);
 			name = QRCode;
 			productName = QRCode;
-			productReference = 88BC38FA386B8B91304A48B896BDC54E /* QRCode.framework */;
+			productReference = 0FA303E020F617B36B24DE15F4212EDC /* QRCode.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EDFADDD27E9AE133283F4BFCC355134F /* Anchorage */ = {
@@ -1089,7 +993,24 @@
 			);
 			name = Anchorage;
 			productName = Anchorage;
-			productReference = D1FD6ABD5CFD04AF61E5A1A0295F000E /* Anchorage.framework */;
+			productReference = 42EF9E80FDD6585166D4ABB351CA309A /* Anchorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3C61877F9A2B2861CB0BBEDB15F7C34 /* Pulley */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39F011FEA64C5479251D32E6C71D5A61 /* Build configuration list for PBXNativeTarget "Pulley" */;
+			buildPhases = (
+				EE793B17F4A3D68907767631D419C465 /* Sources */,
+				7ABD2F32CD12B435F20786D526B72A55 /* Frameworks */,
+				6B2A91B108CFAE7AA82CD399AC884165 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pulley;
+			productName = Pulley;
+			productReference = 7FDE2810FCD0272798700564D6A8CA7E /* Pulley.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FB0FAE94FD62B8C7368688A6216AD729 /* Pods-ui_gradients_viewerUITests */ = {
@@ -1107,7 +1028,7 @@
 			);
 			name = "Pods-ui_gradients_viewerUITests";
 			productName = "Pods-ui_gradients_viewerUITests";
-			productReference = BFDA359A5B13D0F57ACF1628F5F966F1 /* Pods_ui_gradients_viewerUITests.framework */;
+			productReference = 5492463633F8C12180C4B725FCD5F98C /* Pods_ui_gradients_viewerUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1127,21 +1048,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3A1EFA04A4AF5BC52D706542FCC01312 /* Products */;
+			productRefGroup = 7D6875D9C92DFA14521E5903615E8F89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EDFADDD27E9AE133283F4BFCC355134F /* Anchorage */,
-				B74671AC4AD442223B677430EE6BBBF5 /* DeviceKit */,
 				4BF00F9E712E93DA7B03ACF46198775B /* GradientView */,
 				4E121B7515710262E2739C9A7F066EFF /* Haptica */,
 				7FC78838C59FAD9F4CBE74C3850F89AF /* Pageboy */,
-				0727DA2826BD053E527E6E7FBE96E3DF /* Pods-ui_gradients_viewer */,
+				6BB54457504F06D3255DB32A0F179547 /* Pods-ui_gradients_viewer */,
 				5D5EECB7BC69197115540F6F579A5C14 /* Pods-ui_gradients_viewerTests */,
 				FB0FAE94FD62B8C7368688A6216AD729 /* Pods-ui_gradients_viewerUITests */,
-				A50EC946DE916CC72D75E87E631B52B0 /* Pulley */,
-				D33ED2F94F2B1C51F0A30D022A0088EB /* QRCode */,
-				B6359C82069858A14001CAA27204A141 /* SwiftHEXColors */,
+				F3C61877F9A2B2861CB0BBEDB15F7C34 /* Pulley */,
+				D7629D5146B05DE2E5E7CBD4B002CC9B /* QRCode */,
+				0C98F0DE7C6681E88C9016B5DAD35663 /* SwiftHEXColors */,
 			);
 		};
 /* End PBXProject section */
@@ -1152,15 +1072,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A104A79242521F963AF8D55F471BEAC7 /* Pods-ui_gradients_viewerTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0A326C2F4D29BF2C4287D9E7B1C6E09D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDB1568DFF3443E0AFF5686B89FD0D38 /* Device.generated.swift in Sources */,
-				6C22DCAE76E6D62A2801BE6C15469A28 /* DeviceKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1175,23 +1086,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F75118CF7A2FA5653EDBFD6C4F73190 /* Sources */ = {
+		20B15F274C8A4132AD238153F013FC4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				022F35665864765D4DB0B50908B902D3 /* Pods-ui_gradients_viewer-dummy.m in Sources */,
+				CB81825F4F8B2F138AFA8CB0E4A2EE33 /* CIColorExtension.swift in Sources */,
+				550909BA8D3B7F879DA19AD82A44D965 /* CIImageExtension.swift in Sources */,
+				FF3B03C3EF365AF7A9F9AEEAA47B4443 /* QRCode-dummy.m in Sources */,
+				89850F6BF5C07F6260BD31027EC9F2CC /* QRCode.swift in Sources */,
+				79E1AD0A56128F45BC312E56E447073D /* UIImageViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1408E8AFB63C4532615434B7B5DFF5BF /* Sources */ = {
+		42949B9FEE46275FA4B90C93FA29B3D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891036DA4486DC72831B080272753E43 /* Pulley-dummy.m in Sources */,
-				F84F76CB3B47CEF62ADB49D07AF5004C /* PulleyPassthroughScrollView.swift in Sources */,
-				D98B3DAE995E462E7FB80101F1396B4E /* PulleyViewController.swift in Sources */,
-				4EAE02F5158DC1D5CE08FF3E3A18B248 /* UIView+constrainToParent.swift in Sources */,
-				7E7E7E05DB1BE16317F189A9FFDE33EC /* UIViewController+PulleyViewController.swift in Sources */,
+				81C8A3C4810048C350F214805ED21F22 /* Pods-ui_gradients_viewer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1206,15 +1117,6 @@
 				E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */,
 				2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */,
 				AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A30E23D0E9FD2967A747141AED52584 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1661F93BC57FE6A8BC358BDBCF74091F /* SwiftHEXColors-dummy.m in Sources */,
-				408E303F4C8981EEAA92885CFDAABE0F /* SwiftHEXColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,24 +1147,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A36E61BF253A543FE4770A98E714405D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69E72DA7E5161D92B05DAB2356CD8B2F /* CIColorExtension.swift in Sources */,
-				0C6A3982F5113383203BBD20D023B852 /* CIImageExtension.swift in Sources */,
-				B71720CC6ADB22089359A6ABCDDA733B /* QRCode-dummy.m in Sources */,
-				44AF0D2696106FA236CE85520D7BE55F /* QRCode.swift in Sources */,
-				DDC7CD1F076F3E3CE0A9E0C889EC3717 /* UIImageViewExtension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C66C74C2666932D339741EE4DB6D36B8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B4878CB85E589213715A22584BC629BC /* GradientView-dummy.m in Sources */,
 				55BE8C51799AE7EC74532326555040D5 /* GradientView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9FEA87EE68C173AF6B27B8AE67DE74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C335A5B52898567C14EDEDCB3316403F /* SwiftHEXColors-dummy.m in Sources */,
+				8A95B6FABA87100A86B678B63F00CF4D /* SwiftHEXColors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE793B17F4A3D68907767631D419C465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6B9C0292004282642B801D2B18CF17 /* Pulley-dummy.m in Sources */,
+				8934853DB8EB7C861A609BEAA8A3F456 /* PulleyPassthroughScrollView.swift in Sources */,
+				E3F834CEBC70C52C30D3C0D41C368691 /* PulleyViewController.swift in Sources */,
+				C0154E699E2BCA013556AD8FE5E890AE /* UIView+constrainToParent.swift in Sources */,
+				9D6209C5E19CAFC120EAEC608A5A05AB /* UIViewController+PulleyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1277,72 +1188,66 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27BBA37B2033A92B728F96D2278467A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GradientView;
-			target = 4BF00F9E712E93DA7B03ACF46198775B /* GradientView */;
-			targetProxy = 60AFBA441C9FB255049DCD2E67719E0C /* PBXContainerItemProxy */;
-		};
-		45A03B70378E75099B3759049478CA8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Haptica;
-			target = 4E121B7515710262E2739C9A7F066EFF /* Haptica */;
-			targetProxy = A3356706385008F02FF11F7D0592AB73 /* PBXContainerItemProxy */;
-		};
-		771DE4B2A893CC01B6DDBDCE79A44BA0 /* PBXTargetDependency */ = {
+		11A170D6F44F4D7C16BD0F8E47622846 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Anchorage;
 			target = EDFADDD27E9AE133283F4BFCC355134F /* Anchorage */;
-			targetProxy = FE1F7CFE977B3143788F2B63BDCBDA19 /* PBXContainerItemProxy */;
+			targetProxy = 43B01C3904D0993E1A789507AD983180 /* PBXContainerItemProxy */;
 		};
-		872529F5DC2045153D9B207C6F3A6623 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pageboy;
-			target = 7FC78838C59FAD9F4CBE74C3850F89AF /* Pageboy */;
-			targetProxy = 92ABA61BE198569E1A0693904FD2FDE8 /* PBXContainerItemProxy */;
-		};
-		9ABFBF8088A4EE3A48C41C584AD69723 /* PBXTargetDependency */ = {
+		2657F45AD1D5023549316449979E763D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = QRCode;
-			target = D33ED2F94F2B1C51F0A30D022A0088EB /* QRCode */;
-			targetProxy = 7BBC6E4182E7E9BBB32889BDA439B203 /* PBXContainerItemProxy */;
+			target = D7629D5146B05DE2E5E7CBD4B002CC9B /* QRCode */;
+			targetProxy = D2F8CE78DB28607EEC5FB7A52FD9AAE7 /* PBXContainerItemProxy */;
 		};
-		A45906448D0151E5CA4A9D0BEB1F4075 /* PBXTargetDependency */ = {
+		68313D5F89F5EC1C57B01587923FF4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haptica;
+			target = 4E121B7515710262E2739C9A7F066EFF /* Haptica */;
+			targetProxy = CA761392B7635CC1AB5DFE8DF0243D13 /* PBXContainerItemProxy */;
+		};
+		8DD6CD173A1B2FA0238806181193BC5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GradientView;
+			target = 4BF00F9E712E93DA7B03ACF46198775B /* GradientView */;
+			targetProxy = 8E60B6C9D7C3E0954A4F4CB6B6D50DC9 /* PBXContainerItemProxy */;
+		};
+		AB04F0F97C833283FE1B326BDE118032 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Pulley;
-			target = A50EC946DE916CC72D75E87E631B52B0 /* Pulley */;
-			targetProxy = 72FD7099D74BA0BDCFE69669F4596B48 /* PBXContainerItemProxy */;
-		};
-		BCE864247752EEA3B480157D670EBE49 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DeviceKit;
-			target = B74671AC4AD442223B677430EE6BBBF5 /* DeviceKit */;
-			targetProxy = 3D83E3A3AE21859269130BD480FCD9A1 /* PBXContainerItemProxy */;
+			target = F3C61877F9A2B2861CB0BBEDB15F7C34 /* Pulley */;
+			targetProxy = D0CF0200CC6E7EE4D39AD52624C6E5A0 /* PBXContainerItemProxy */;
 		};
 		BDC00821D4301B267ECFC503172F8A2D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ui_gradients_viewer";
-			target = 0727DA2826BD053E527E6E7FBE96E3DF /* Pods-ui_gradients_viewer */;
+			target = 6BB54457504F06D3255DB32A0F179547 /* Pods-ui_gradients_viewer */;
 			targetProxy = 1F1232D57C87092B3BDF4283920A731D /* PBXContainerItemProxy */;
 		};
-		C419921FA1572EAB3580080ED253B3AA /* PBXTargetDependency */ = {
+		C1FD1951BCD33EEC3F1744F0D6DDB65C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftHEXColors;
-			target = B6359C82069858A14001CAA27204A141 /* SwiftHEXColors */;
-			targetProxy = 9E8C006E51CCC5759BB48AADB48DFDB2 /* PBXContainerItemProxy */;
+			target = 0C98F0DE7C6681E88C9016B5DAD35663 /* SwiftHEXColors */;
+			targetProxy = 44E9D2149EC1F6B9AE416117A041266A /* PBXContainerItemProxy */;
+		};
+		E0C3DBCBD34B2449BBC6E2486E5B90AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pageboy;
+			target = 7FC78838C59FAD9F4CBE74C3850F89AF /* Pageboy */;
+			targetProxy = 984F3CB9A0F84F147DA43449D25FDC28 /* PBXContainerItemProxy */;
 		};
 		E8F0796BF953C98984BFDA7385ACD629 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ui_gradients_viewer";
-			target = 0727DA2826BD053E527E6E7FBE96E3DF /* Pods-ui_gradients_viewer */;
+			target = 6BB54457504F06D3255DB32A0F179547 /* Pods-ui_gradients_viewer */;
 			targetProxy = 1F4BDFD068B71DBEE51EFDEBE1544BD4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04FDCCEDB4EC127359642FA613135E38 /* Release */ = {
+		02D6FDC9733C6DCFBA22684AFCCDE293 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E87EAC075E6D6815987462786D6E3294 /* QRCode.xcconfig */;
+			baseConfigurationReference = 86178FDE21A33309D70AE198961971FF /* Pulley.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1353,14 +1258,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/QRCode/QRCode-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QRCode/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Pulley/Pulley-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pulley/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QRCode/QRCode.modulemap";
-				PRODUCT_MODULE_NAME = QRCode;
-				PRODUCT_NAME = QRCode;
+				MODULEMAP_FILE = "Target Support Files/Pulley/Pulley.modulemap";
+				PRODUCT_MODULE_NAME = Pulley;
+				PRODUCT_NAME = Pulley;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1436,74 +1341,9 @@
 			};
 			name = Debug;
 		};
-		06D3CCB86E0016F180CA9E15661D2043 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A686BDC5BF4BED38A711988FC570DA0C /* SwiftHEXColors.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
-				PRODUCT_MODULE_NAME = SwiftHEXColors;
-				PRODUCT_NAME = SwiftHEXColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1C89A18742DF1EABDD0BCAFEAD71B11C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A686BDC5BF4BED38A711988FC570DA0C /* SwiftHEXColors.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
-				PRODUCT_MODULE_NAME = SwiftHEXColors;
-				PRODUCT_NAME = SwiftHEXColors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		232E3C25C69DE9FF9C41401B3456A9FB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3880E0F468120BA3567C9D905C75EE0F /* Haptica.xcconfig */;
+			baseConfigurationReference = 44D44675155E1D0537A34A5E298E5704 /* Haptica.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1533,9 +1373,42 @@
 			};
 			name = Debug;
 		};
+		323B594347F9C2A21CD6E643D16C14A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BF5280F72A8D59B339E91E504DF25A /* QRCode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/QRCode/QRCode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCode/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QRCode/QRCode.modulemap";
+				PRODUCT_MODULE_NAME = QRCode;
+				PRODUCT_NAME = QRCode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		36E48DB52EAF5ACEA7B454EE78B9D84C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA0A34283B83D43A1530FE5B1841BCD8 /* GradientView.xcconfig */;
+			baseConfigurationReference = 21C7148B1258EA205A331E87C423D3A1 /* GradientView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1564,6 +1437,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		3864BE47E596D107A9CA9AE2508DE75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71A968EAFC5A69A112D3CE62EBF3D16 /* Pods-ui_gradients_viewer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ui_gradients_viewer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ui_gradients_viewer/Pods-ui_gradients_viewer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		5E4DCF5A638D3E90DA10573D62F897E7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1623,77 +1532,9 @@
 			};
 			name = Release;
 		};
-		6BF2F65CC4839D3448C01C88FB82B2AD /* Release */ = {
+		6F433AD17FF24831F5A4E986A1C4E6E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F71A968EAFC5A69A112D3CE62EBF3D16 /* Pods-ui_gradients_viewer.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ui_gradients_viewer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ui_gradients_viewer/Pods-ui_gradients_viewer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		78C906EDC7AD5B485FB76F861F78CD19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A20AA51D1AC8C721C071155112462B4 /* Pageboy.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pageboy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
-				PRODUCT_MODULE_NAME = Pageboy;
-				PRODUCT_NAME = Pageboy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		798B3ED4A58B20C4854ED103A5C68B22 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E87EAC075E6D6815987462786D6E3294 /* QRCode.xcconfig */;
+			baseConfigurationReference = 05BF5280F72A8D59B339E91E504DF25A /* QRCode.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1723,9 +1564,73 @@
 			};
 			name = Debug;
 		};
+		7129A68415D063FD2A7A57517D5EF4F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86178FDE21A33309D70AE198961971FF /* Pulley.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pulley/Pulley-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pulley/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pulley/Pulley.modulemap";
+				PRODUCT_MODULE_NAME = Pulley;
+				PRODUCT_NAME = Pulley;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78C906EDC7AD5B485FB76F861F78CD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8B4C8AE88A9580DAF84AFE9FD0588AD /* Pageboy.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pageboy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
+				PRODUCT_MODULE_NAME = Pageboy;
+				PRODUCT_NAME = Pageboy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		88A059E7FD4CE0E690F26DA5B6F455A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A20AA51D1AC8C721C071155112462B4 /* Pageboy.xcconfig */;
+			baseConfigurationReference = C8B4C8AE88A9580DAF84AFE9FD0588AD /* Pageboy.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1756,9 +1661,42 @@
 			};
 			name = Release;
 		};
+		915F5C8D2FB3054D7A13578DF5C0BBB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C845F477B026E0B8909E379EBA8AB1E /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9F488AB1F5E846AB581061E7565A33E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1ECB02152D8D77B14B8BD9E09EBE1F1 /* Anchorage.xcconfig */;
+			baseConfigurationReference = 0C20B887A2784B87CAA81D7A3189D885 /* Anchorage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1787,39 +1725,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		A0E02659C8E1008866A0C224D17050B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4809864FE8C057F5E582D2ED6EEC8C6 /* Pulley.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pulley/Pulley-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pulley/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pulley/Pulley.modulemap";
-				PRODUCT_MODULE_NAME = Pulley;
-				PRODUCT_NAME = Pulley;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		A9C1025A973F96C0B02A81F6F9F2C8CC /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1858,7 +1763,7 @@
 		};
 		ABF5AD90D3A2F737AEE9700DD99B8034 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1ECB02152D8D77B14B8BD9E09EBE1F1 /* Anchorage.xcconfig */;
+			baseConfigurationReference = 0C20B887A2784B87CAA81D7A3189D885 /* Anchorage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1926,7 +1831,7 @@
 		};
 		C23D7D4570691D2386A9FA13C7E85951 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3880E0F468120BA3567C9D905C75EE0F /* Haptica.xcconfig */;
+			baseConfigurationReference = 44D44675155E1D0537A34A5E298E5704 /* Haptica.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1957,6 +1862,38 @@
 			};
 			name = Release;
 		};
+		C879FEA04D347F103EE91ED65015EDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C845F477B026E0B8909E379EBA8AB1E /* SwiftHEXColors.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftHEXColors/SwiftHEXColors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftHEXColors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftHEXColors/SwiftHEXColors.modulemap";
+				PRODUCT_MODULE_NAME = SwiftHEXColors;
+				PRODUCT_NAME = SwiftHEXColors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CFBD6C0693D9256E87CFECD67F3D6B81 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E61BE8F8144FEBE3CE341EA2C9BB60AF /* Pods-ui_gradients_viewerUITests.debug.xcconfig */;
@@ -1985,38 +1922,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D859923C9B83304A100099FAF83D9FDB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4809864FE8C057F5E582D2ED6EEC8C6 /* Pulley.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pulley/Pulley-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pulley/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pulley/Pulley.modulemap";
-				PRODUCT_MODULE_NAME = Pulley;
-				PRODUCT_NAME = Pulley;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2057,7 +1962,7 @@
 			};
 			name = Debug;
 		};
-		E8254EFE72412375BCF1036473C242BF /* Debug */ = {
+		E7C1061898E691F19093B99FDDF8B446 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBF8A873DF45764D95055552924B91AF /* Pods-ui_gradients_viewer.debug.xcconfig */;
 			buildSettings = {
@@ -2093,74 +1998,9 @@
 			};
 			name = Debug;
 		};
-		F1426B56088B0E272875E587C4548A47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03004B41986FD4A0FED43AF39511CC24 /* DeviceKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DeviceKit/DeviceKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DeviceKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DeviceKit/DeviceKit.modulemap";
-				PRODUCT_MODULE_NAME = DeviceKit;
-				PRODUCT_NAME = DeviceKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FBA4FD89C07DD5B74812C4190CAEFF52 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03004B41986FD4A0FED43AF39511CC24 /* DeviceKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DeviceKit/DeviceKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DeviceKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DeviceKit/DeviceKit.modulemap";
-				PRODUCT_MODULE_NAME = DeviceKit;
-				PRODUCT_NAME = DeviceKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		FC85895989743EDCFFEBC3DFF0BF18DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA0A34283B83D43A1530FE5B1841BCD8 /* GradientView.xcconfig */;
+			baseConfigurationReference = 21C7148B1258EA205A331E87C423D3A1 /* GradientView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -2194,15 +2034,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		004118690AFB3326557D0CE0674763F9 /* Build configuration list for PBXNativeTarget "Pulley" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D859923C9B83304A100099FAF83D9FDB /* Debug */,
-				A0E02659C8E1008866A0C224D17050B7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		02071E6F032538B45A8AE4C0C857C706 /* Build configuration list for PBXNativeTarget "GradientView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2230,11 +2061,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AC89A656ECCF988CFE660EE56E64607 /* Build configuration list for PBXNativeTarget "QRCode" */ = {
+		0F58789956F9A1A9F1E21649DA319509 /* Build configuration list for PBXNativeTarget "QRCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				798B3ED4A58B20C4854ED103A5C68B22 /* Debug */,
-				04FDCCEDB4EC127359642FA613135E38 /* Release */,
+				6F433AD17FF24831F5A4E986A1C4E6E4 /* Debug */,
+				323B594347F9C2A21CD6E643D16C14A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2248,11 +2079,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FB43EC1FD11F5FC786D848FFE5D8978 /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+		39F011FEA64C5479251D32E6C71D5A61 /* Build configuration list for PBXNativeTarget "Pulley" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C89A18742DF1EABDD0BCAFEAD71B11C /* Debug */,
-				06D3CCB86E0016F180CA9E15661D2043 /* Release */,
+				7129A68415D063FD2A7A57517D5EF4F5 /* Debug */,
+				02D6FDC9733C6DCFBA22684AFCCDE293 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836E5780CFEAE090637FF5E6B161C6BD /* Build configuration list for PBXNativeTarget "SwiftHEXColors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C879FEA04D347F103EE91ED65015EDFA /* Debug */,
+				915F5C8D2FB3054D7A13578DF5C0BBB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2262,15 +2102,6 @@
 			buildConfigurations = (
 				78C906EDC7AD5B485FB76F861F78CD19 /* Debug */,
 				88A059E7FD4CE0E690F26DA5B6F455A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99C1E90340EC0ED96ACE6CF8ACD6C904 /* Build configuration list for PBXNativeTarget "Pods-ui_gradients_viewer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8254EFE72412375BCF1036473C242BF /* Debug */,
-				6BF2F65CC4839D3448C01C88FB82B2AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2293,11 +2124,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCFC39FB2603657EAC57A06081E64739 /* Build configuration list for PBXNativeTarget "DeviceKit" */ = {
+		DC1F32915844E53BE930AF6AC1B00928 /* Build configuration list for PBXNativeTarget "Pods-ui_gradients_viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1426B56088B0E272875E587C4548A47 /* Debug */,
-				FBA4FD89C07DD5B74812C4190CAEFF52 /* Release */,
+				E7C1061898E691F19093B99FDDF8B446 /* Debug */,
+				3864BE47E596D107A9CA9AE2508DE75E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

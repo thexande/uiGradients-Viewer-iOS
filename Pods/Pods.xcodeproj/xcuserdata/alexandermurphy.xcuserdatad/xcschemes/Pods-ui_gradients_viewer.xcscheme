@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0727DA2826BD053E527E6E7FBE96E3DF"
+               BlueprintIdentifier = "6BB54457504F06D3255DB32A0F179547"
                BlueprintName = "Pods-ui_gradients_viewer"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-ui_gradients_viewer.framework">
