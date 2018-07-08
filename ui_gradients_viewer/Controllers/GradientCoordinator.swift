@@ -184,6 +184,67 @@ final class GradientCoordinator {
         let alert = makeDonateActionSheet(for: currency)
         exported.present(alert, animated: true, completion: nil)
     }
+    
+    private func handleSelectedColor(with identifier: UUID) {
+        guard
+            let color = selectedGradient?.colors.first(where: { $0.identifier == identifier }),
+            let index = selectedGradient?.colors.index(of: color),
+            let count = selectedGradient?.colors.count else {
+                return
+        }
+        
+        for index in 0..<count {
+            selectedGradient?.colors[index].isSelected = false
+        }
+        
+        selectedGradient?.colors[index].isSelected = true
+    }
+    
+    private func handleDonation(_ donation: GradientAction.Donation) {
+        switch donation {
+        case let .copyAddress(currency):
+            handleCopyWalletAddressToClipboard(walletAddress: currency.address)
+        case let .qr(currency):
+            donate.currency = currency
+            exported.present(UINavigationController(rootViewController: donate), animated: true, completion: nil)
+        }
+    }
+    
+    private func handleCopyWalletAddressToClipboard(walletAddress: String) {
+        let alert = UIAlertController(
+            title: "Coppied.",
+            message: "Wallet address \(walletAddress) has been coppied to your clipboard.", preferredStyle: .alert
+        )
+        
+        let action = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+            self?.exported.dismiss(animated: true, completion: nil)
+        }
+        
+        alert.addAction(action)
+        exported.present(alert, animated: true, completion: nil)
+    }
+    
+    private func makeDonateActionSheet(for currency: GradientAction.Currency) -> UIAlertController {
+        let alert = UIAlertController(title: "Thanks for wanting to help!",
+                                      message: "You can either copy my \(currency.title) wallet address, or scan my wallet's QR Code.",
+            preferredStyle: .actionSheet)
+        
+        let copyAction = UIAlertAction(title: "Copy my \(currency.title) address", style: .default) { [weak self] _ in
+            self?.dispatch(.donate(.copyAddress(currency)))
+        }
+        
+        let qrAction = UIAlertAction(title: "Display my \(currency.title) wallet QR code", style: .default) { [weak self] _ in
+            self?.dispatch(.donate(.qr(currency)))
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        [copyAction, qrAction, cancelAction].forEach { action in
+            alert.addAction(action)
+        }
+        
+        return alert
+    }
 }
 
 extension GradientCoordinator: GradientActionDispatching {
@@ -230,64 +291,7 @@ extension GradientCoordinator: GradientActionDispatching {
         case let .presentDonationOptions(currency):
             handleCurrency(currency)
         case let .gradientColorSelected(identifier):
-            guard
-                let color = selectedGradient?.colors.first(where: { $0.identifier == identifier }),
-                let index = selectedGradient?.colors.index(of: color),
-                let count = selectedGradient?.colors.count else {
-                    return
-            }
-            
-            for index in 0..<count {
-                selectedGradient?.colors[index].isSelected = false
-            }
-            
-            selectedGradient?.colors[index].isSelected = true
+            handleSelectedColor(with: identifier)
         }
-    }
-    
-    private func handleDonation(_ donation: GradientAction.Donation) {
-        switch donation {
-        case let .copyAddress(currency):
-            handleCopyWalletAddressToClipboard(walletAddress: currency.address)
-        case let .qr(currency):
-            donate.currency = currency
-            exported.present(UINavigationController(rootViewController: donate), animated: true, completion: nil)
-        }
-    }
-    
-    private func handleCopyWalletAddressToClipboard(walletAddress: String) {
-        let alert = UIAlertController(
-            title: "Coppied.",
-            message: "Wallet address \(walletAddress) has been coppied to your clipboard.", preferredStyle: .alert
-        )
-        
-        let action = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
-             self?.exported.dismiss(animated: true, completion: nil)
-        }
-        
-        alert.addAction(action)
-        exported.present(alert, animated: true, completion: nil)
-    }
-    
-    private func makeDonateActionSheet(for currency: GradientAction.Currency) -> UIAlertController {
-        let alert = UIAlertController(title: "Thanks for wanting to help!",
-                                      message: "You can either copy my \(currency.title) wallet address, or scan my wallet's QR Code.",
-                                      preferredStyle: .actionSheet)
-        
-        let copyAction = UIAlertAction(title: "Copy my \(currency.title) address", style: .default) { [weak self] _ in
-            self?.dispatch(.donate(.copyAddress(currency)))
-        }
-        
-        let qrAction = UIAlertAction(title: "Display my \(currency.title) wallet QR code", style: .default) { [weak self] _ in
-            self?.dispatch(.donate(.qr(currency)))
-        }
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-
-        [copyAction, qrAction, cancelAction].forEach { action in
-            alert.addAction(action)
-        }
-        
-        return alert
     }
 }

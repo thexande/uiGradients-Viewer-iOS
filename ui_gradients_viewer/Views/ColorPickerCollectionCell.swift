@@ -10,13 +10,15 @@ final class ColorPickerCollectionCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            if self.isSelected {
-                UIView.animate(withDuration: 0.4) {
-                    self.transform = CGAffineTransform(scaleX: 1.12, y: 1.12)
-                }
-            } else {
-                UIView.animate(withDuration: 0.4) {
-                    self.transform = CGAffineTransform.identity
+            if isSelected != oldValue {
+                if self.isSelected {
+                    UIView.animate(withDuration: 0.4) {
+                        self.transform = CGAffineTransform(scaleX: 1.12, y: 1.12)
+                    }
+                } else {
+                    UIView.animate(withDuration: 0.4) {
+                        self.transform = CGAffineTransform.identity
+                    }
                 }
             }
         }

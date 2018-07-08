@@ -30,9 +30,13 @@ final class GradientDrawerViewController: UIViewController {
         customize.gradient = gradient
         export.gradient = gradient
         
-        guard let pulley = parent as? PulleyViewController else { return }
-        
-        if gradient.colors.first?.color.isLight ?? false {
+        guard
+            let pulley = parent as? PulleyViewController,
+            let selectedColor = gradient.colors.first(where: { $0.isSelected })?.color else {
+                return
+        }
+
+        if selectedColor.isLight {
             UIView.animate(withDuration: 0.3) {
                 pulley.drawerBackgroundVisualEffectView?.effect = UIBlurEffect(style: .dark)
                 self.customize.colorPicker.hexLabel.textColor = .white

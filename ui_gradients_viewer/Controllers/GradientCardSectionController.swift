@@ -26,7 +26,7 @@ final class GradientCardSectionController: NSObject, CollectionSectionController
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
-                        indexPath: IndexPath) -> CGSize {
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (collectionView.frame.width - 36) / 2, height: 100)
     }
     

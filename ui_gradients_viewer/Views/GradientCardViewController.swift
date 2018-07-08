@@ -22,7 +22,7 @@ final class GradientCardViewController: UIViewController {
     }
     
     private func configureSections() {
-        self.sections = gradients.chunks(10).flatMap(mapSectionsFromGradientChunks(_:))
+        self.sections = gradients.chunks(10).flatMap(mapSectionsFromGradientChunks)
         DispatchQueue.main.async {
             self.collection.reloadData()
         }

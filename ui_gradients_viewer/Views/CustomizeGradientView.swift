@@ -17,9 +17,11 @@ final class CustomizeGradientView: UIView {
     }
     
     func setGradient(_ gradient: GradientColor) {
-        position.tint = gradient.colors.first?.color ?? .black
-        typeSegmented.tint = gradient.colors.first?.color ?? .black
-        radius.tint = gradient.colors.first?.color ?? .black
+        guard let selectedColor = gradient.colors.first(where: { $0.isSelected })?.color else { return }
+        
+        position.tint = selectedColor
+        typeSegmented.tint = selectedColor
+        radius.tint = selectedColor
         position.slider.setValue(gradient.position, animated: true)
         
         switch gradient.format {
@@ -28,8 +30,8 @@ final class CustomizeGradientView: UIView {
         default: return
         }
         
-        if let first = gradient.colors.first?.color, first != colorPicker.currentColor {
-            colorPicker.adjustToColor(first)
+        if selectedColor != colorPicker.currentColor {
+            colorPicker.adjustToColor(selectedColor)
         }
     }
     

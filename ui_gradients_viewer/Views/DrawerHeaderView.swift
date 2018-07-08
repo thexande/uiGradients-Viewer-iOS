@@ -20,7 +20,6 @@ final class DrawerHeaderView: UIView {
     func setGradient(_ gradient: GradientColor) {
         colorSection.items = gradient.colors
         colorCollection.reloadData()
-        segmented.tintColor = gradient.colors.first?.color ?? .black
         
         guard
             let selected = gradient.colors.first(where: { $0.isSelected }),
@@ -28,6 +27,7 @@ final class DrawerHeaderView: UIView {
                 return
         }
         colorCollection.selectItem(at: IndexPath(row: index, section: 0), animated: true, scrollPosition: .top)
+        segmented.tintColor = selected.color
     }
     
     @objc func segmentChanged(_ segment: UISegmentedControl) {
