@@ -1,4 +1,5 @@
 import UIKit
+import GoogleMobileAds
 
 final class GradientCardSectionController: NSObject, CollectionSectionController {
     var gradients: [GradientColor] = []
@@ -36,3 +37,7 @@ final class GradientCardSectionController: NSObject, CollectionSectionController
         dispatch?.dispatch(.selectedGradientFromDrawer(indexPath.row))
     }
 }
+//
+//final class AdSectionController: NSObject, CollectionSectionController {
+//    
+//}

@@ -5,7 +5,7 @@ import GradientView
 import GoogleMobileAds
 
 final class GradientDrawerViewController: UIViewController {
-    let cardView = GradientCardView()
+    let cardView = GradientCardViewController()
     let header = DrawerHeaderView()
     let pager = PagerView()
     let customize = CustomizeGradientView()
@@ -73,13 +73,9 @@ final class GradientDrawerViewController: UIViewController {
         pager.pagerDelegate = self
         pager.collection.reloadData()
         
-//        export.banner.adUnitID = "ca-app-pub-3940256099942544/2934735716" // test
-         export.banner.adUnitID = Obfuscator().reveal(key: ObfuscatedConstants.exportBannerId)
-        
+        export.banner.adUnitID = Obfuscator().reveal(key: ObfuscatedConstants.exportBannerId)
         export.banner.rootViewController = self
-        
         export.banner.load(GADRequest())
-        
         export.banner.delegate = self
         
         header.colorCollection.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongGesture(gesture:))))
@@ -112,6 +108,9 @@ final class GradientDrawerViewController: UIViewController {
                 strongSelf.cardView.gradientCardCollectionView.reloadData()
             }
         }
+        
+        addChildViewController(cardView)
+        cardView.didMove(toParentViewController: self)
     }
     
     @objc func close() {
@@ -186,7 +185,7 @@ extension GradientDrawerViewController: PagerDelegate, PagerDatasource {
     func pageForItem(at indexPath: IndexPath) -> UIView {
         switch indexPath.row {
         case 0: return customize
-        case 1: return cardView
+        case 1: return cardView.view
         default: return export
         }
     }
