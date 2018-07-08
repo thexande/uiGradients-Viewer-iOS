@@ -20,6 +20,7 @@ struct GradientColor: Equatable {
     var colors: [Color]
     var format: Format
     var position: Float
+    let identifier: UUID
 }
 
 class GradientHelper {
@@ -47,7 +48,7 @@ class GradientHelper {
                 
                 colorDicts[0].isSelected = true
                 
-                return GradientColor(title: gradName, colors: colorDicts, format: .vertical, position: 0.5)
+                return GradientColor(title: gradName, colors: colorDicts, format: .vertical, position: 0.5, identifier: UUID())
             }).compactMap({$0})
             
             completion(gradientStructs)

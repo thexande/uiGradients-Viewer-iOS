@@ -35,7 +35,7 @@ enum GradientAction {
     }
         
     case selectedGradient(Int)
-    case selectedGradientFromDrawer(Int)
+    case selectedGradientFromDrawer(String)
     case saveGradient(UIImage)
     case drawerContextChange(DrawerContext)
     case colorIndexChange(startingIndex: Int, endingIndex: Int)
@@ -60,7 +60,6 @@ final class GradientCoordinator {
     let drawer: GradientDrawerViewController
     let exported = ExportedViewController()
     let donate = QRDispalyViewController()
-    
     var gradients: [GradientColor] = []
     
     var selectedGradient: GradientColor? {
@@ -87,7 +86,7 @@ final class GradientCoordinator {
         self.content.dispatch = self
         self.drawer.dispatch = self
         exported.dispatcher = self
-        donate.dispatcher = self
+        donate.dispatcher = self          
 
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
@@ -191,7 +190,14 @@ extension GradientCoordinator: GradientActionDispatching {
         switch action {
         case .selectedGradient(let index):
             selectedGradient = gradients[index]
-        case .selectedGradientFromDrawer(let index):
+        case .selectedGradientFromDrawer(let identifier):
+            
+            guard
+                let selected = gradients.first(where: { $0.title == identifier }),
+                let index = gradients.index(of: selected) else {
+                    return
+            }
+            
             content.scrollToPage(.at(index: index), animated: true)
         case .saveGradient(let image):
             saveImage(image: image)

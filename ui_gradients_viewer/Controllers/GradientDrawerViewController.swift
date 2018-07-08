@@ -55,7 +55,7 @@ final class GradientDrawerViewController: UIViewController {
     
     weak var dispatch: GradientActionDispatching? {
         didSet {
-            cardView.cardSection.dispatch = dispatch
+            cardView.dispatcher = dispatch
             customize.dispatch = dispatch
             header.dispatch = dispatch
             export.dispatch = dispatch
@@ -101,11 +101,7 @@ final class GradientDrawerViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: navItemImageView)
         
         _ = GradientHelper.produceGradients { [weak self] (gradients) in
-            guard let strongSelf = self else { return }
-            strongSelf.gradients = gradients
-            DispatchQueue.main.async {
-                strongSelf.cardView.gradientCardCollectionView.reloadData()
-            }
+            self?.gradients = gradients
         }
         
         addChildViewController(cardView)

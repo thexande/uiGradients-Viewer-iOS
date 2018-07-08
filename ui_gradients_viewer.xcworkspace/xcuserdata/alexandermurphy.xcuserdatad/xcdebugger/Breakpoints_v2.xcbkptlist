@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
-            timestampString = "552768180.039161"
+            filePath = "ui_gradients_viewer/Views/CustomizeGradientView.swift"
+            timestampString = "552771096.508516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
-            landmarkName = "changeFormat(_:)"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "gradientFormatDidChange(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ui_gradients_viewer/Views/CustomizeGradientView.swift"
-            timestampString = "552768180.039489"
+            filePath = "ui_gradients_viewer/Controllers/GradientCardSectionController.swift"
+            timestampString = "552771096.508859"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "gradientFormatDidChange(_:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ui_gradients_viewer/Controllers/GradientCoordinator.swift"
+            timestampString = "552771096.509541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "dispatch(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
