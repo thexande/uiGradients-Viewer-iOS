@@ -103,6 +103,12 @@ class GradientDetailViewController: UIViewController {
         
         gradientView.locations = [CGFloat(gradient.position)]
         
+        switch gradient.format {
+        case .horizontal: gradientView.direction = .horizontal
+        case .vertical: gradientView.direction = .vertical
+        default: return
+        }
+        
         [titleLabel, subTitleLabel].forEach { label in
             label.textColor = ((gradient.colors.first?.color.isLight ?? false) ? .black : .white)
         }  

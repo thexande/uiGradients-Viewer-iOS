@@ -110,35 +110,30 @@ final class GradientCoordinator {
     }
     
     private func saveImage(image: UIImage) {
-        exported.gradient = selectedGradient
-        root?.present(exported, animated: true, completion: nil)
-        
-//
-//        PHPhotoLibrary.shared().performChanges({
-//            PHAssetChangeRequest.creationRequestForAsset(from: image)
-//        }, completionHandler: { success, error in
-//            if success {
-//                // Saved successfully!
-//                let successAlert = UIAlertController(title: "Save Successful", message: "save_to_camera_roll_dialog_success_message", preferredStyle: .alert)
-//                successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                DispatchQueue.main.async { [weak self] in
-//                    guard let strongSelf = self else { return }
-//                    strongSelf.root?.present(ExportedViewController(), animated: true, completion: nil)
-//                }
-//            }
-//            else if let error = error {
-//                // Save photo failed with error
-//                let successAlert = UIAlertController(title: "Save Unsuccessful", message: String(format: "save_to_camera_roll_dialog_unsuccess_message", error.localizedDescription), preferredStyle: .alert)
-//                successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//                DispatchQueue.main.async { [weak self] in
-//                    guard let strongSelf = self else { return }
-//                    strongSelf.root?.present(successAlert, animated: true, completion: nil)
-//                }
-//            }
-//            else {
-//                // Save photo failed with no error
-//            }
-//        })
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.creationRequestForAsset(from: image)
+        }, completionHandler: { success, error in
+            if success {
+                // Saved successfully!
+                DispatchQueue.main.async { [weak self] in
+                    guard let `self` = self else { return }
+                    self.exported.gradient = self.selectedGradient
+                    self.root?.present(self.exported, animated: true, completion: nil)
+                }
+            }
+            else if let error = error {
+                // Save photo failed with error
+                let successAlert = UIAlertController(title: "Save Failure", message: "Error saving background to camera roll: \(error.localizedDescription)", preferredStyle: .alert)
+                successAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self else { return }
+                    strongSelf.root?.present(successAlert, animated: true, completion: nil)
+                }
+            }
+            else {
+                // Save photo failed with no error
+            }
+        })
     }
     
     private func drawerContextDidChange(_ context: GradientAction.DrawerContext) {
@@ -234,12 +229,25 @@ extension GradientCoordinator: GradientActionDispatching {
     private func handleDonation(_ donation: GradientAction.Donation) {
         switch donation {
         case let .copyAddress(currency):
-            donate.currency = currency
-            exported.present(UINavigationController(rootViewController: donate), animated: true, completion: nil)
+            handleCopyWalletAddressToClipboard(walletAddress: currency.address)
         case let .qr(currency):
             donate.currency = currency
             exported.present(UINavigationController(rootViewController: donate), animated: true, completion: nil)
         }
+    }
+    
+    private func handleCopyWalletAddressToClipboard(walletAddress: String) {
+        let alert = UIAlertController(
+            title: "Coppied.",
+            message: "Wallet address \(walletAddress) has been coppied to your clipboard.", preferredStyle: .alert
+        )
+        
+        let action = UIAlertAction(title: "OK", style: .default) { [weak self] _ in
+             self?.exported.dismiss(animated: true, completion: nil)
+        }
+        
+        alert.addAction(action)
+        exported.present(alert, animated: true, completion: nil)
     }
     
     private func makeDonateActionSheet(for currency: GradientAction.Currency) -> UIAlertController {

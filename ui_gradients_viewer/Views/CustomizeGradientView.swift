@@ -52,6 +52,7 @@ final class CustomizeGradientView: UIView {
         colorPicker.heightAnchor == colorPicker.widthAnchor
         
         position.slider.addTarget(self, action: #selector(gradientPositionDidChange(_:)), for: .valueChanged)
+        typeSegmented.segment.addTarget(self, action: #selector(gradientFormatDidChange(_:)), for: .valueChanged)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -60,8 +61,8 @@ final class CustomizeGradientView: UIView {
     
     @objc private func gradientFormatDidChange(_ segmented: UISegmentedControl?) {
         switch segmented?.selectedSegmentIndex ?? 0 {
-        case 0: dispatch?.dispatch(.gradientFormatDidChange(.horizontal))
-        case 1: dispatch?.dispatch(.gradientFormatDidChange(.vertical))
+        case 0: dispatch?.dispatch(.gradientFormatDidChange(.vertical))
+        case 1: dispatch?.dispatch(.gradientFormatDidChange(.horizontal))
         case 2: dispatch?.dispatch(.gradientFormatDidChange(.radial))
         default: return
         }
