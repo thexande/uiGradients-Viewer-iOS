@@ -30,7 +30,11 @@ enum GradientAction {
         }
         
         var address: String {
-            return "1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX"
+            switch self {
+            case .btc: return "3J34NbtHR6YcV4aNDv9qCAEb96tujmZ2nH"
+            case .eth: return "0x0cCB57a6617460Cf43fb6C1E00275803beD8aD0A"
+            case .ltc: return "MP29JQrv4bXx6RoPZMtYimvEi8AmLZ2xyb"
+            }
         }
     }
         
@@ -211,6 +215,7 @@ final class GradientCoordinator {
     }
     
     private func handleCopyWalletAddressToClipboard(walletAddress: String) {
+        UIPasteboard.general.string = walletAddress
         let alert = UIAlertController(
             title: "Coppied.",
             message: "Wallet address \(walletAddress) has been coppied to your clipboard.", preferredStyle: .alert
