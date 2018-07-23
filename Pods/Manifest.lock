@@ -1,15 +1,15 @@
 PODS:
   - Anchorage (4.2.4)
-  - Crashlytics (3.10.3):
-    - Fabric (~> 1.7.8)
-  - Fabric (1.7.8)
+  - Crashlytics (3.10.5):
+    - Fabric (~> 1.7.9)
+  - Fabric (1.7.9)
   - Google-Mobile-Ads-SDK (7.31.0)
   - GradientView (2.3.3)
   - Haptica (2.0.2)
-  - Pageboy (2.5.2)
+  - Pageboy (2.5.4)
   - Pulley (2.4.2)
   - QRCode (2.0)
-  - SwiftHEXColors (1.1.1)
+  - SwiftHEXColors (1.1.2)
 
 DEPENDENCIES:
   - Anchorage
@@ -38,15 +38,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Anchorage: f855157310859280c706cc0b9c9281c21702f515
-  Crashlytics: 2aea305161a2122492698c75af27f2b98aa49a25
-  Fabric: fba4684a95df789565b0b27fc5b6e68f1755af32
+  Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
+  Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   GradientView: b044fa46c24062ee245a07a4e8bea4c5c4d63de0
   Haptica: fdf2cb787b131795b9f51f4e79db84f4389c5bdd
-  Pageboy: dd62a213a5cfb9cf3f97a0845e8703c0b8377a9a
+  Pageboy: 46d743783414a18f8b27a988485e0ed2ea219ff7
   Pulley: d3d144a0323b65b8aa1dd601d515d08481103034
   QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
-  SwiftHEXColors: 9681e756dc78a99ae97f277165b3f5e33b087553
+  SwiftHEXColors: 7f9f7e6bdce888d821e11749279733e5ddff5f51
 
 PODFILE CHECKSUM: 7feba2fc42e7109888844b7d81528952902b939f
 
