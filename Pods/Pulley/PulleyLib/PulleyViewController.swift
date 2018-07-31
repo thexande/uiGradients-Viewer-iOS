@@ -80,8 +80,8 @@ public typealias PulleyAnimationCompletionBlock = ((_ finished: Bool) -> Void)
     
     public static let collapsed = PulleyPosition(rawValue: 0)
     public static let partiallyRevealed = PulleyPosition(rawValue: 1)
-    public static let open = PulleyPosition(rawValue: 1)
-    public static let closed = PulleyPosition(rawValue: 2)
+    public static let open = PulleyPosition(rawValue: 2)
+    public static let closed = PulleyPosition(rawValue: 3)
     
     public static let all: [PulleyPosition] = [
         .collapsed,
@@ -494,6 +494,21 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
         return (distance: 0.0, bottomSafeArea: 0.0)
     }
     
+    
+    /// Get all gesture recognizers in the drawer scrollview
+    public var drawerGestureRecognizers: [UIGestureRecognizer] {
+        get {
+            return drawerScrollView.gestureRecognizers ?? [UIGestureRecognizer]()
+        }
+    }
+    
+    /// Get the drawer scrollview's pan gesture recognizer
+    public var drawerPanGestureRecognizer: UIPanGestureRecognizer {
+        get {
+            return drawerScrollView.panGestureRecognizer
+        }
+    }
+    
     /// The drawer positions supported by the drawer
     fileprivate var supportedPositions: [PulleyPosition] = PulleyPosition.all {
         didSet {
@@ -544,6 +559,20 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
     }
     
     fileprivate var isAnimatingDrawerPosition: Bool = false
+    
+    /// The height of the open position for the drawer
+    private var heightOfOpenDrawer: CGFloat {
+        
+        var safeAreaTopInset: CGFloat = 20.0
+        
+        if #available(iOS 11.0, *)
+        {
+            safeAreaTopInset = view.safeAreaInsets.top
+        }
+        
+        return (self.view.bounds.height - topInset - safeAreaTopInset)
+    }
+        
     
     /**
      Initialize the drawer controller programmtically.
@@ -754,7 +783,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             if supportedPositions.contains(.open)
             {
                 // Layout scrollview
-                drawerScrollView.frame = CGRect(x: adjustedLeftSafeArea, y: topInset + safeAreaTopInset, width: self.view.bounds.width - adjustedLeftSafeArea - adjustedRightSafeArea, height: self.view.bounds.height - topInset - safeAreaTopInset)
+                drawerScrollView.frame = CGRect(x: adjustedLeftSafeArea, y: topInset + safeAreaTopInset, width: self.view.bounds.width - adjustedLeftSafeArea - adjustedRightSafeArea, height: heightOfOpenDrawer)
             }
             else
             {
@@ -821,7 +850,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             if supportedPositions.contains(.open)
             {
                 // Layout scrollview
-                drawerScrollView.frame = CGRect(x: safeAreaLeftInset + panelInsetLeft, y: panelInsetTop + safeAreaTopInset, width: panelWidth, height: self.view.bounds.height - topInset - safeAreaTopInset - panelInsetTop)
+                drawerScrollView.frame = CGRect(x: safeAreaLeftInset + panelInsetLeft, y: panelInsetTop + safeAreaTopInset, width: panelWidth, height: heightOfOpenDrawer - panelInsetTop)
             }
             else
             {
@@ -936,6 +965,20 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             (feedbackGenerator as? UISelectionFeedbackGenerator)?.selectionChanged()
             (feedbackGenerator as? UINotificationFeedbackGenerator)?.notificationOccurred(.success)
         }
+    }
+    
+    /// Add a gesture recognizer to the drawer scrollview
+    ///
+    /// - Parameter gestureRecognizer: The gesture recognizer to add
+    public func addDrawerGestureRecognizer(gestureRecognizer: UIGestureRecognizer) {
+        drawerScrollView.addGestureRecognizer(gestureRecognizer)
+    }
+    
+    /// Remove a gesture recognizer from the drawer scrollview
+    ///
+    /// - Parameter gestureRecognizer: The gesture recognizer to remove
+    public func removeDrawerGestureRecognizer(gestureRecognizer: UIGestureRecognizer) {
+        drawerScrollView.removeGestureRecognizer(gestureRecognizer)
     }
     
     /// Bounce the drawer to get user attention. Note: Only works in .bottomDrawer display mode and when the drawer is in .collapsed or .partiallyRevealed position.
@@ -1061,7 +1104,7 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
             stopToMoveTo = partialRevealHeight
             
         case .open:
-            stopToMoveTo = (self.drawerScrollView.bounds.height)
+            stopToMoveTo = heightOfOpenDrawer
             
         case .closed:
             stopToMoveTo = 0
@@ -1269,14 +1312,18 @@ open class PulleyViewController: UIViewController, PulleyDrawerViewControllerDel
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         
-        coordinator.notifyWhenInteractionEnds { [weak self] (_) in
-            
-            guard let currentPosition = self?.drawerPosition else {
-                return
+        if #available(iOS 10.0, *) {
+            coordinator.notifyWhenInteractionChanges { [weak self] context in
+                guard let currentPosition = self?.drawerPosition else { return }
+                self?.setDrawerPosition(position: currentPosition, animated: false)
             }
-            
-            self?.setDrawerPosition(position: currentPosition, animated: false)
+        } else {
+            coordinator.notifyWhenInteractionEnds { [weak self] context in
+                guard let currentPosition = self?.drawerPosition else { return }
+                self?.setDrawerPosition(position: currentPosition, animated: false)
+            }
         }
+        
     }
     
     // MARK: PulleyDrawerViewControllerDelegate implementation for nested Pulley view controllers in drawers. Implemented here, rather than an extension because overriding extensions in subclasses isn't good practice. Some developers want to subclass Pulley and customize these behaviors, so we'll move them here.
@@ -1378,7 +1425,7 @@ extension PulleyViewController: UIScrollViewDelegate {
             
             if supportedPositions.contains(.open)
             {
-                drawerStops.append((self.drawerScrollView.bounds.height))
+                drawerStops.append(heightOfOpenDrawer)
                 
                 if drawerPosition == .open
                 {
@@ -1422,7 +1469,7 @@ extension PulleyViewController: UIScrollViewDelegate {
             
             var closestValidDrawerPosition: PulleyPosition = drawerPosition
             
-            if abs(Float(currentClosestStop - (self.drawerScrollView.bounds.height))) <= Float.ulpOfOne && supportedPositions.contains(.open)
+            if abs(Float(currentClosestStop - heightOfOpenDrawer)) <= Float.ulpOfOne && supportedPositions.contains(.open)
             {
                 closestValidDrawerPosition = .open
             }
@@ -1506,7 +1553,7 @@ extension PulleyViewController: UIScrollViewDelegate {
             if (scrollView.contentOffset.y - pulleySafeAreaInsets.bottom) > partialRevealHeight - lowestStop && supportedPositions.contains(.open)
             {
                 // Calculate percentage between partial and full reveal
-                let fullRevealHeight = (self.drawerScrollView.bounds.height)
+                let fullRevealHeight = heightOfOpenDrawer
                 let progress: CGFloat
                 if fullRevealHeight == partialRevealHeight {
                     progress = 1.0

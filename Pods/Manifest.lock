@@ -5,9 +5,9 @@ PODS:
   - Fabric (1.7.9)
   - Google-Mobile-Ads-SDK (7.31.0)
   - GradientView (2.3.3)
-  - Haptica (2.0.2)
+  - Haptica (2.0.3)
   - Pageboy (2.5.4)
-  - Pulley (2.4.2)
+  - Pulley (2.4.3)
   - QRCode (2.0)
   - SwiftHEXColors (1.1.2)
 
@@ -42,9 +42,9 @@ SPEC CHECKSUMS:
   Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
   Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   GradientView: b044fa46c24062ee245a07a4e8bea4c5c4d63de0
-  Haptica: fdf2cb787b131795b9f51f4e79db84f4389c5bdd
+  Haptica: 1d75f37903df17327514a18f0c966fe2116d3ad5
   Pageboy: 46d743783414a18f8b27a988485e0ed2ea219ff7
-  Pulley: d3d144a0323b65b8aa1dd601d515d08481103034
+  Pulley: 8da0464c517b66e0c17035e23bfa432e6dfad265
   QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
   SwiftHEXColors: 7f9f7e6bdce888d821e11749279733e5ddff5f51
 

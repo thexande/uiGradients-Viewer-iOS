@@ -55,7 +55,7 @@ enum GradientAction {
     case gradientColorSelected(UUID)
 }
 
-protocol GradientActionDispatching: AnyObject { 
+protocol GradientActionDispatching: AnyObject {
     func dispatch(_ action: GradientAction)
 }
 
